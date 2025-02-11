@@ -278,7 +278,7 @@
                         <ul class="tab-cont-list">
                             <!-- 1층 -->
                             <li class="tab-cont active">
-                                <!-- 카테고리 방식 아이콘 -->
+                                <!-- 카테고리 방식 아이콘 // pc 버전만-->
                                 <div class="view-system-icon">
                                     <div class="grid-icon view-icon ">
                                         <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -296,15 +296,26 @@
                                         </svg>
                                     </div>
                                 </div>
+                                <!-- 서브 카테고리 탭 방식 // mob 버전만 -->
+                                <div class="mob-swiper foor1-swiper">
+                                    <div class="swiper tb1-swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide room01">TAB01</div>
+                                            <div class="swiper-slide room02">TAB02</div>
+                                            <div class="swiper-slide room03">TAB03</div>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <!-- 맵 방식 -->
                                 <div class="map-area">
                                     <!-- 맵 이미지 // 왼쪽-->
                                     <div class="map-imges">
                                         <img id="mainImage" src="img/home/1nd-map03.png" usemap="#main_map" alt="1층 맵 이미지">
                                         <map name="main_map">
-                                            <area class="map01-list1" shape="rect" coords="49,113,219,277" alt="" onclick="changeImage('img/home/1nd-map01.png'); return false"/>
-                                            <area class="map01-list2" shape="rect" coords="48,277,219,409" alt="" onclick="changeImage('img/home/1nd-map02.png'); return false"/>
-                                            <area class="map01-list3" shape="rect" coords="399,476,692,656" alt="" onclick="changeImage('img/home/1nd-map03.png'); return false"/>
+                                            <area class="map01-list1" shape="rect" coords="49,113,219,277" alt="" data-img="img/home/1nd-map01.png"/>
+                                            <area class="map01-list2" shape="rect" coords="48,277,219,409" alt="" data-img="img/home/1nd-map02.png"/>
+                                            <area class="map01-list3" shape="rect" coords="399,476,692,656" alt="" data-img="img/home/1nd-map03.png"/>
                                         </map> 
                                     </div>
                                     <!-- 맵 컨텐츠 // 오른쪽-->
@@ -327,6 +338,7 @@
                                                 </ul>
                                             </div>
                                             <div class="content-slide">
+                                                <span>오병이어홀</span>
                                                 <div class="swiper s2-swiper">
                                                     <div class="swiper-wrapper">
                                                         <div class="swiper-slide">
@@ -366,6 +378,7 @@
                                                 </ul>
                                             </div>
                                             <div class="content-slide">
+                                                <span>박모세홀</span>
                                                 <div class="swiper s3-swiper">
                                                     <div class="swiper-wrapper">
                                                         <div class="swiper-slide">
@@ -405,6 +418,7 @@
                                                 </ul>
                                             </div>
                                             <div class="content-slide">
+                                                <span>시안홀</span>
                                                 <div class="swiper s1-swiper">
                                                     <div class="swiper-wrapper">
                                                         <div class="swiper-slide">
@@ -533,7 +547,7 @@
                             </li>
                             <!-- 2층 -->
                             <li class="tab-cont">
-                                <!-- 카테고리 방식 아이콘 -->
+                                <!-- 카테고리 방식 아이콘 // pc 버전만 -->
                                 <div class="view-system-icon">
                                     <div class="grid-icon view-icon ">
                                         <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -551,15 +565,33 @@
                                         </svg>
                                     </div>
                                 </div>
+                                <!-- 서브 카테고리 탭 방식 // mob 버전만 -->
+                                <div class="mob-swiper foor2-swiper">
+                                    <div class="swiper tb2-swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide room01">TAB01</div>
+                                            <div class="swiper-slide room02">TAB02</div>
+                                            <div class="swiper-slide room03">TAB03</div>
+                                            <div class="swiper-slide room03">TAB04</div>
+                                            <div class="swiper-slide room03">TAB05</div>
+                                            <div class="swiper-slide room03">TAB06</div>
+                                            <div class="swiper-slide room03">TAB07</div>
+                                            <div class="swiper-slide room03">TAB08</div>
+                                            <div class="swiper-slide room03">TAB09</div>
+                                            <div class="swiper-slide room03">TAB10</div>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <!-- 맵 방식 -->
                                 <div class="map-area">
                                     <!-- 맵 이미지 -->
                                     <div class="map-imges">
                                         <img id="mainImage2" src="img/home/1nd-map03.png" usemap="#main_2nd" alt="2층 맵 이미지">
                                         <map name="main_2nd">
-                                            <area class="map02-list1" shape="rect" coords="49,113,219,277" alt="" onclick="changeImage('img/home/1nd-map01.png', 'mainImage2'); return false"/>
-                                            <area class="map02-list2" shape="rect" coords="48,277,219,409" alt="" onclick="changeImage('img/home/1nd-map02.png', 'mainImage2'); return false"/>
-                                            <area class="map02-list3" shape="rect" coords="399,476,692,656" alt="" onclick="changeImage('img/home/1nd-map03.png', 'mainImage2'); return false"/>
+                                            <area class="map02-list1" shape="rect" coords="404,423,693,658" alt="" data-img="img/home/1nd-map01.png"/>
+                                            <area class="map02-list2" shape="rect" coords="138,220,266,346" alt="" data-img="img/home/1nd-map02.png"/>
+                                            <area class="map02-list3" shape="rect" coords="139,111,267,222" alt="" data-img="img/home/1nd-map03.png"/>
                                         </map> 
                                     </div>
                                     <!-- 맵 컨텐츠 -->
@@ -582,6 +614,7 @@
                                                 </ul>
                                             </div>
                                             <div class="content-slide">
+                                                <span>오병이어홀</span>
                                                 <div class="swiper s2-swiper">
                                                     <div class="swiper-wrapper">
                                                         <div class="swiper-slide">
@@ -621,6 +654,7 @@
                                                 </ul>
                                             </div>
                                             <div class="content-slide">
+                                                <span>박모세홀</span>
                                                 <div class="swiper s3-swiper">
                                                     <div class="swiper-wrapper">
                                                         <div class="swiper-slide">
@@ -660,6 +694,7 @@
                                                 </ul>
                                             </div>
                                             <div class="content-slide">
+                                                <span>시안홀</span>
                                                 <div class="swiper s1-swiper">
                                                     <div class="swiper-wrapper">
                                                         <div class="swiper-slide">
@@ -788,7 +823,7 @@
                             </li>
                             <!-- 3층 -->
                             <li class="tab-cont">
-                                <!-- 카테고리 방식 아이콘 -->
+                                <!-- 카테고리 방식 아이콘 // pc 버전만 -->
                                 <div class="view-system-icon">
                                     <div class="grid-icon view-icon ">
                                         <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -806,15 +841,39 @@
                                         </svg>
                                     </div>
                                 </div>
+                                <!-- 서브 카테고리 탭 방식 // mob 버전만 -->
+                                <div class="mob-swiper foor3-swiper">
+                                    <div class="swiper tb3-swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide room01">TAB01</div>
+                                            <div class="swiper-slide room02">TAB02</div>
+                                            <div class="swiper-slide room03">TAB03</div>
+                                            <div class="swiper-slide room03">TAB04</div>
+                                            <div class="swiper-slide room03">TAB05</div>
+                                            <div class="swiper-slide room03">TAB06</div>
+                                            <div class="swiper-slide room03">TAB07</div>
+                                            <div class="swiper-slide room03">TAB08</div>
+                                            <div class="swiper-slide room03">TAB09</div>
+                                            <div class="swiper-slide room03">TAB11</div>
+                                            <div class="swiper-slide room03">TAB12</div>
+                                            <div class="swiper-slide room03">TAB13</div>
+                                            <div class="swiper-slide room03">TAB14</div>
+                                            <div class="swiper-slide room03">TAB15</div>
+                                            <div class="swiper-slide room03">TAB16</div>
+                                            <div class="swiper-slide room03">TAB17</div>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <!-- 맵 방식 -->
                                 <div class="map-area">
                                     <!-- 맵 이미지 -->
                                     <div class="map-imges">
                                         <img id="mainImage3" src="img/home/1nd-map03.png" usemap="#main_3nd" alt="1층 맵 이미지">
                                         <map name="main_3nd">
-                                            <area class="map03-list1" shape="rect" coords="49,113,219,277" alt="" onclick="changeImage('img/home/1nd-map01.png', 'mainImage3'); return false"/>
-                                            <area class="map03-list2" shape="rect" coords="48,277,219,409" alt="" onclick="changeImage('img/home/1nd-map02.png', 'mainImage3'); return false"/>
-                                            <area class="map03-list3" shape="rect" coords="399,476,692,656" alt="" onclick="changeImage('img/home/1nd-map03.png', 'mainImage3'); return false"/>
+                                            <area class="map03-list1" shape="rect" coords="49,113,219,277" alt="" data-img="img/home/3nd-map01.png"/>
+                                            <area class="map03-list2" shape="rect" coords="48,277,219,409" alt="" data-img="img/home/3nd-map02.png"/>
+                                            <area class="map03-list3" shape="rect" coords="399,476,692,656" alt="" data-img="img/home/3nd-map03.png"/>
                                         </map> 
                                     </div>
                                     <!-- 맵 컨텐츠 -->
@@ -837,6 +896,7 @@
                                                 </ul>
                                             </div>
                                             <div class="content-slide">
+                                                <span>오병이어홀</span>
                                                 <div class="swiper s2-swiper">
                                                     <div class="swiper-wrapper">
                                                         <div class="swiper-slide">
@@ -876,6 +936,7 @@
                                                 </ul>
                                             </div>
                                             <div class="content-slide">
+                                                <span>박모세홀</span>
                                                 <div class="swiper s3-swiper">
                                                     <div class="swiper-wrapper">
                                                         <div class="swiper-slide">
@@ -915,6 +976,7 @@
                                                 </ul>
                                             </div>
                                             <div class="content-slide">
+                                                <span>시안홀</span>
                                                 <div class="swiper s1-swiper">
                                                     <div class="swiper-wrapper">
                                                         <div class="swiper-slide">
@@ -1043,7 +1105,7 @@
                             </li>
                             <!-- B1층 -->
                             <li class="tab-cont">
-                                <!-- 카테고리 방식 아이콘 -->
+                                <!-- 카테고리 방식 아이콘 // pc 버전만 -->
                                 <div class="view-system-icon">
                                     <div class="grid-icon view-icon ">
                                         <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1061,15 +1123,30 @@
                                         </svg>
                                     </div>
                                 </div>
+                                <!-- 서브 카테고리 탭 방식 // mob 버전만 -->
+                                <div class="mob-swiper foor4-swiper">
+                                    <div class="swiper tb4-swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide room01">TAB01</div>
+                                            <div class="swiper-slide room02">TAB02</div>
+                                            <div class="swiper-slide room03">TAB03</div>
+                                            <div class="swiper-slide room03">TAB04</div>
+                                            <div class="swiper-slide room03">TAB05</div>
+                                            <div class="swiper-slide room03">TAB06</div>
+                                            <div class="swiper-slide room03">TAB07</div>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <!-- 맵 방식 -->
                                 <div class="map-area">
                                     <!-- 맵 이미지 -->
                                     <div class="map-imges">
                                         <img id="mainImageB1" src="img/home/1nd-map03.png" usemap="#main_B1nd" alt="1층 맵 이미지">
                                         <map name="main_B1nd">
-                                            <area class="mapB1-list1" shape="rect" coords="49,113,219,277" alt="" onclick="changeImage('img/home/1nd-map01.png' , 'mainImageB1'); return false"/>
-                                            <area class="mapB1-list2" shape="rect" coords="48,277,219,409" alt="" onclick="changeImage('img/home/1nd-map02.png' , 'mainImageB1'); return false"/>
-                                            <area class="mapB1-list3" shape="rect" coords="399,476,692,656" alt="" onclick="changeImage('img/home/1nd-map03.png', 'mainImageB1'); return false"/>
+                                            <area class="mapB1-list1" shape="rect" coords="49,113,219,277" alt="" data-img="img/home/B1nd-map01.png"/>
+                                            <area class="mapB1-list2" shape="rect" coords="48,277,219,409" alt="" data-img="img/home/B1nd-map02.png"/>
+                                            <area class="mapB1-list3" shape="rect" coords="399,476,692,656" alt="" data-img="img/home/B1nd-map03.png"/>
                                         </map> 
                                     </div>
                                     <!-- 맵 컨텐츠 -->
@@ -1092,6 +1169,7 @@
                                                 </ul>
                                             </div>
                                             <div class="content-slide">
+                                                <span>오병이어홀</span>
                                                 <div class="swiper s2-swiper">
                                                     <div class="swiper-wrapper">
                                                         <div class="swiper-slide">
@@ -1131,6 +1209,7 @@
                                                 </ul>
                                             </div>
                                             <div class="content-slide">
+                                                <span>박모세홀</span>
                                                 <div class="swiper s3-swiper">
                                                     <div class="swiper-wrapper">
                                                         <div class="swiper-slide">
@@ -1170,6 +1249,7 @@
                                                 </ul>
                                             </div>
                                             <div class="content-slide">
+                                                <span>시안홀</span>
                                                 <div class="swiper s1-swiper">
                                                     <div class="swiper-wrapper">
                                                         <div class="swiper-slide">
@@ -1733,6 +1813,136 @@
     <script src="js/swiper.js"></script>
     <script src="js/script.js"></script>
     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // -- area 클릭시 컨텐츠 변경 및 이미지 경로 변경 ?????????????
+            const floorData = [
+                { prefix: "map01", imageId: "mainImage", usemap: "#main_map" }, // 1층
+                { prefix: "map02", imageId: "mainImage2", usemap: "#main_2nd" }, // 2층
+                { prefix: "map03", imageId: "mainImage3", usemap: "#main_3nd" }, // 3층
+                { prefix: "mapB1", imageId: "mainImageB1", usemap: "#main_B1nd" } // B1층
+            ];
+
+            function initFloorEvents() {
+                document.querySelectorAll(".tab-cont").forEach(activeTab => {
+                    // 현재 탭의 content-list 모두 숨기기
+                    activeTab.querySelectorAll(".content-list").forEach(el => el.style.display = "none");
+
+                    // 기본적으로 첫 번째 콘텐츠 보이도록 설정
+                    const defaultContent = activeTab.querySelector(".content-list03");
+                    if (defaultContent) defaultContent.style.display = "block";
+
+                    const imageData = floorData.find(data => activeTab.querySelector(`#${data.imageId}`));
+                    if (imageData) {
+                        const imageElement = activeTab.querySelector(`#${imageData.imageId}`);
+                        imageElement.useMap = imageData.usemap;
+
+                        activeTab.querySelectorAll(`map[name="${imageData.usemap.replace('#', '')}"] area`).forEach(area => {
+                            area.addEventListener("click", function (event) {
+                                event.preventDefault(); // 기본 동작 방지
+
+                                const targetClass = event.target.classList[0]; // 클릭한 area의 클래스명 가져오기
+                                let contentClass = "";
+
+                                // 클릭한 영역에 맞는 content-class 찾기
+                                if (targetClass.includes("list1")) contentClass = ".content-list01";
+                                else if (targetClass.includes("list2")) contentClass = ".content-list02";
+                                else if (targetClass.includes("list3")) contentClass = ".content-list03";
+
+                                // 이미지 경로 가져오기 (클릭된 영역의 data-img 속성 활용)
+                                const newSrc = event.target.dataset.img;
+                                showContent(activeTab, contentClass, imageData.imageId, newSrc);
+                            });
+                        });
+                    }
+                });
+            }
+
+            function showContent(activeTab, selector, imageId, imgSrc) {
+                activeTab.querySelectorAll(".content-list").forEach(el => el.style.display = "none");
+                const targetContent = activeTab.querySelector(selector);
+                if (targetContent) targetContent.style.display = "block";
+
+                const imageElement = activeTab.querySelector(`#${imageId}`);
+                if (imageElement) {
+                    imageElement.src = imgSrc;
+                }
+            }
+
+            document.querySelectorAll(".tabs .tab").forEach((tab, index) => {
+                tab.addEventListener("click", function () {
+                    setTimeout(initFloorEvents, 10);
+                });
+            });
+
+            initFloorEvents();
+
+            // -- 그리드, 맵 보기 아이콘 클릭
+            const tabs = document.querySelectorAll(".tabs .tab");
+            const tabContents = document.querySelectorAll(".tab-cont-list .tab-cont");
+            
+            tabs.forEach((tab, idx) => {
+                tab.addEventListener("click", function () {
+                    tabs.forEach(t => t.classList.remove("active"));
+                    tab.classList.add("active");
+
+                    tabContents.forEach(content => content.classList.remove("active"));
+                    tabContents[idx].classList.add("active");
+                });
+            });
+            
+            document.querySelectorAll(".tab-cont").forEach(tabCont => {
+                const gridIcon = tabCont.querySelector(".grid-icon svg");
+                const mapIcon = tabCont.querySelector(".map-icon svg");
+                const gridArea = tabCont.querySelector(".gird-area");
+                const mapArea = tabCont.querySelector(".map-area");
+
+                function updateStyles(activeIcon, inactiveIcon) {
+                    activeIcon.setAttribute("fill", "#222");
+                    activeIcon.setAttribute("stroke", "#222");
+                    activeIcon.setAttribute("stroke-width", "1.8");
+                    
+                    inactiveIcon.setAttribute("fill", "transparent");
+                    inactiveIcon.setAttribute("stroke", "#222");
+                    inactiveIcon.setAttribute("stroke-width", "1.8");
+                }
+
+                tabCont.querySelector(".grid-icon").addEventListener("click", function () {
+                    tabCont.querySelector(".grid-icon").classList.add("view-system-active");
+                    tabCont.querySelector(".map-icon").classList.remove("view-system-active");
+                    mapArea.style.display = "none";
+                    gridArea.style.display = "flex";
+                    updateStyles(gridIcon, mapIcon);
+                });
+
+                tabCont.querySelector(".map-icon").addEventListener("click", function () {
+                    tabCont.querySelector(".map-icon").classList.add("view-system-active");
+                    tabCont.querySelector(".grid-icon").classList.remove("view-system-active");
+                    mapArea.style.display = "flex";
+                    gridArea.style.display = "none";
+                    updateStyles(mapIcon, gridIcon);
+                });
+
+                // 초기 설정: 모든 tab-cont 내부에서 그리드는 숨기고, 맵은 기본 활성화
+                if (gridIcon && mapIcon) {
+                    gridIcon.setAttribute("fill", "transparent");
+                    gridIcon.setAttribute("stroke", "#222");
+                    gridIcon.setAttribute("stroke-width", "1.8");
+                    
+                    mapIcon.setAttribute("fill", "#222");
+                    mapIcon.setAttribute("stroke", "#222");
+                    mapIcon.setAttribute("stroke-width", "1.8");
+                }
+                
+                if (gridArea && mapArea) {
+                    gridArea.style.display = "none";
+                    mapArea.style.display = "flex";
+                }
+            });
+        });
+
+    </script>
+
+    <script>
         $(document).ready(function() {
             // 스크롤 시 헤더 스타일 변경 및 모바일 메뉴 클릭 이벤트
             let $header = $('.header');
@@ -1802,213 +2012,8 @@
                 //     $hamIcon.css({ background: '#222' });
                 //     $logoImg.attr('src', 'img/offcanvas-logo.png');
                 // }
-            }
-
-            
-
-
-            // ------ 섹션5
-            $('.feature-list img').css('opacity', 0);
-
-            // 스크롤 이벤트
-            $(window).on('scroll', function() {
-                var scrollTop = $(this).scrollTop();
-                var documentHeight = $(document).height();
-                var windowHeight = $(this).height();
-                
-                if (documentHeight - scrollTop - windowHeight <= 500) { // 페이지 하단에서 500px 떨어진 위치
-                    // 각 이미지에 대해 0.3초 간격으로 나타나게 하기
-                    $('.feature-list img').each(function(index) {
-                        $(this).delay(index * 300).animate({ opacity: 1 }, 500);
-                    });
-                    
-                    $(window).off('scroll'); // 스크롤 이벤트를 한 번만 실행하도록 제거
-                }
-            });
-
-            // 무한 롤링 이벤트
-            const featureList = document.querySelector('#home .section05 .feature-list');
-
-            function cloneFeatureList() {
-                // 이미 복제된 리스트가 있는지 체크 >> 복제된 리스트가 뒤로 계속 나와야함 *******
-                if (!document.querySelector('.cloned-feature-list')) {
-                    const clonedList = featureList.cloneNode(true);
-                    clonedList.classList.add('cloned-feature-list'); // 복제된 리스트에 클래스를 추가
-                    featureList.parentNode.appendChild(clonedList);
-                }
-            }
-
-            function removeClonedFeatureList() {
-                const clonedList = document.querySelector('.cloned-feature-list');
-                if (clonedList) {
-                    clonedList.remove(); // 복제된 리스트 제거
-                }
-            }
-
-            function adjustFeatureList() {
-                if (window.innerWidth <= 767) {
-                    cloneFeatureList();
-                } else {
-                    removeClonedFeatureList();
-                }
-            }
-
-            // 초기 체크
-            adjustFeatureList();
-
-            window.addEventListener('resize', adjustFeatureList);
-
-            
+            } 
         });
-
-        // area 클릭시 컨텐츠 변경 ?????????????
-        document.addEventListener("DOMContentLoaded", function () {
-            // 모든 층의 content-list 숨기기
-            document.querySelectorAll(".map-content .content-list").forEach(el => el.style.display = "none");
-
-            // 층별 데이터 설정
-            const floorData = [
-                { prefix: "map01", imageId: "mainImage", usemap: "#main_map", tabIndex: 0 }, // 1층
-                { prefix: "map02", imageId: "mainImage2", usemap: "#main_2nd", tabIndex: 1 }, // 2층
-                { prefix: "map03", imageId: "mainImage3", usemap: "#main_3nd", tabIndex: 2 }, // 3층
-                { prefix: "mapB1", imageId: "mainImageB1", usemap: "#main_B1nd", tabIndex: 3 } // B1층
-            ];
-
-            function initFloorEvents() {
-                // 현재 활성화된 탭 찾기
-                const activeTab = document.querySelector(".tab-cont.active");
-                if (!activeTab) return;
-
-                // 현재 탭의 content-list 모두 숨기기
-                activeTab.querySelectorAll(".content-list").forEach(el => el.style.display = "none");
-
-                // 현재 탭에서 기본적으로 보일 컨텐츠 설정 (첫 번째 콘텐츠 보이도록 설정)
-                const defaultContent = activeTab.querySelector(".content-list03");
-                if (defaultContent) defaultContent.style.display = "block";
-
-                // 현재 활성화된 층에 맞는 이벤트 리스너 추가
-                floorData.forEach(({ prefix, imageId, usemap }) => {
-                    const imageElement = activeTab.querySelector(`#${imageId}`);
-                    if (imageElement) {
-                        imageElement.useMap = usemap;
-                    }
-
-                    // 해당 층의 모든 area 요소에 이벤트 추가
-                    activeTab.querySelectorAll(`area`).forEach(area => {
-                        area.addEventListener("click", function (event) {
-                            event.preventDefault(); // 기본 동작 방지
-                            const targetClass = event.target.classList[0]; // 클릭한 area의 클래스명 가져오기
-                            let contentClass = "";
-
-                            // 클릭한 영역에 맞는 content-class 찾기
-                            if (targetClass.includes("list1")) contentClass = ".content-list01";
-                            else if (targetClass.includes("list2")) contentClass = ".content-list02";
-                            else if (targetClass.includes("list3")) contentClass = ".content-list03";
-
-                            // 이미지 변경 및 content 변경
-                            const newSrc = event.target.getAttribute("onclick").match(/'(.*?)'/)[1]; // onclick 속성에서 이미지 경로 추출
-                            showContent(activeTab, contentClass, imageId, newSrc);
-                        });
-                    });
-                });
-            }
-
-            function showContent(activeTab, selector, imageId, imgSrc) {
-                // 현재 활성화된 층에서만 content-list 관리
-                activeTab.querySelectorAll(".content-list").forEach(el => el.style.display = "none");
-                const targetContent = activeTab.querySelector(selector);
-                if (targetContent) targetContent.style.display = "block";
-
-                // 이미지 변경
-                document.getElementById(imageId).src = imgSrc;
-            }
-
-            // 탭이 변경될 때 이벤트 재적용
-            document.querySelectorAll(".tabs .tab").forEach((tab, index) => {
-                tab.addEventListener("click", function () {
-                    // 모든 탭의 active 제거 후, 현재 탭에 active 추가
-                    document.querySelectorAll(".tabs .tab").forEach(t => t.classList.remove("active"));
-                    tab.classList.add("active");
-
-                    // 모든 tab-cont의 active 제거 후, 현재 index에 맞는 tab-cont에 active 추가
-                    document.querySelectorAll(".tab-cont").forEach((cont, i) => {
-                        cont.classList.toggle("active", i === index);
-                    });
-
-                    // 탭 변경 후 이벤트 다시 적용
-                    initFloorEvents();
-                });
-            });
-
-            // 페이지 로드 시 초기 이벤트 설정
-            initFloorEvents();
-        });
-
-        // 그리드, 맵 보기 아이콘 클릭
-        document.addEventListener("DOMContentLoaded", function () {
-            const tabs = document.querySelectorAll(".tabs .tab");
-            const tabContents = document.querySelectorAll(".tab-cont-list .tab-cont");
-            
-            tabs.forEach((tab, idx) => {
-                tab.addEventListener("click", function () {
-                    tabs.forEach(t => t.classList.remove("active"));
-                    tab.classList.add("active");
-
-                    tabContents.forEach(content => content.classList.remove("active"));
-                    tabContents[idx].classList.add("active");
-                });
-            });
-            
-            document.querySelectorAll(".tab-cont").forEach(tabCont => {
-                const gridIcon = tabCont.querySelector(".grid-icon svg");
-                const mapIcon = tabCont.querySelector(".map-icon svg");
-                const gridArea = tabCont.querySelector(".gird-area");
-                const mapArea = tabCont.querySelector(".map-area");
-
-                function updateStyles(activeIcon, inactiveIcon) {
-                    activeIcon.setAttribute("fill", "#222");
-                    activeIcon.setAttribute("stroke", "#222");
-                    activeIcon.setAttribute("stroke-width", "1.8");
-                    
-                    inactiveIcon.setAttribute("fill", "transparent");
-                    inactiveIcon.setAttribute("stroke", "#222");
-                    inactiveIcon.setAttribute("stroke-width", "1.8");
-                }
-
-                tabCont.querySelector(".grid-icon").addEventListener("click", function () {
-                    tabCont.querySelector(".grid-icon").classList.add("view-system-active");
-                    tabCont.querySelector(".map-icon").classList.remove("view-system-active");
-                    mapArea.style.display = "none";
-                    gridArea.style.display = "flex";
-                    updateStyles(gridIcon, mapIcon);
-                });
-
-                tabCont.querySelector(".map-icon").addEventListener("click", function () {
-                    tabCont.querySelector(".map-icon").classList.add("view-system-active");
-                    tabCont.querySelector(".grid-icon").classList.remove("view-system-active");
-                    mapArea.style.display = "flex";
-                    gridArea.style.display = "none";
-                    updateStyles(mapIcon, gridIcon);
-                });
-
-                // 초기 설정: 모든 tab-cont 내부에서 그리드는 숨기고, 맵은 기본 활성화
-                if (gridIcon && mapIcon) {
-                    gridIcon.setAttribute("fill", "transparent");
-                    gridIcon.setAttribute("stroke", "#222");
-                    gridIcon.setAttribute("stroke-width", "1.8");
-                    
-                    mapIcon.setAttribute("fill", "#222");
-                    mapIcon.setAttribute("stroke", "#222");
-                    mapIcon.setAttribute("stroke-width", "1.8");
-                }
-                
-                if (gridArea && mapArea) {
-                    gridArea.style.display = "none";
-                    mapArea.style.display = "flex";
-                }
-            });
-        });
-
     </script>
 
     <script>

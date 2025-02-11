@@ -104,3 +104,21 @@
 .s4-swiper-pagination .swiper-pagination-current {
     color: #000;
 } */
+
+/* 예배페이지 */
+#home .mainIndex .section01 .mob-swiper .swiper-slide {
+    padding: 16px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    font-size: 17px;
+    cursor: pointer;
+    text-align: center;
+}
+#home .mainIndex .section01 .foor1-swiper .swiper-slide {
+    width: calc(100% / 3) !important;
+}
+#home .mainIndex .section01 .foor2-swiper .swiper-slide ,
+#home .mainIndex .section01 .foor3-swiper .swiper-slide ,
+#home .mainIndex .section01 .foor4-swiper .swiper-slide {
+    width: 20% !important;
+}
