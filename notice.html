@@ -12,6 +12,105 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/main.css">
+
+    <style>
+
+
+#home .notice li.list-appliGo {
+    flex: 0 0 80px;
+}
+#home .notice div.notice-appliGo {
+    flex: 0 0 80px;
+}
+#home .notice li.list-date {
+    flex: 0 0 150px;
+}
+#home .notice div.notice-date {
+    flex: 0 0 150px;
+    color: #777 !important;
+}
+#home .notice div.notice-appliDate {
+    flex: 0 0 146px;
+    color: #222;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+    /* 검색창 */
+#home .notice .custom-dropdown, #home .notice .custom-dropdown .options {
+    width: 70px !important;
+}
+#home .notice form.search button.searchBtn {
+    width: 40px !important;
+}
+#home .notice form.search input[type="text"] {
+    font-size: 12px !important;
+    padding: 0 5px !important;
+}
+
+
+
+    #home .notice .section01 .notice-date, #home .notice div.notice-appliGo {
+        width: fit-content;
+        position: relative;
+        font-size: 14px !important;
+        color: #777 !important;
+    }
+    #home .notice div.notice-appliGo {
+        width: fit-content;
+        float: right;
+        margin: 0px;
+        color: #222 !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+    <!-- 스타일 전체삭제 -->
+    <!-- 
+    /* -------신청 바로가기 각각 버튼 스타일 */ 
+    #home .notice button.apply {
+      display: block;
+      padding: 6px 8px 4px;
+      margin: 0 auto;
+      color: #777;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+    #home .notice button.apply.apply-focus {
+      background: #FF9B01;
+      color: #fff;
+    }
+    #home .notice button.apply.apply-finish {
+      background: #EBEBEB;
+      color: #777;
+      cursor: default;
+    }
+    /* ------ 뉴 뱃지 비활성화 숨김처리 */
+    #home .notice .notice-badge.badge-none {
+      display: none;
+    }
+    -->
+
 </head>
 <body>
     <section id="home">
@@ -231,8 +330,8 @@
                                         <li class="list-numb">번호</li>
                                         <li class="list-title">제목</li>
                                         <li class="list-appliDate">글쓴이</li>
-                                        <li class="list-appliGo">작성일</li>
-                                        <li class="list-date">조회</li>
+                                        <li class="list-date">작성일</li>
+                                        <li class="list-appliGo">조회</li>
                                     </ul>
                                     <!--공지 목록 랩핑-->
                                     <div class="notice-area">
@@ -243,21 +342,19 @@
                                                 <a href="notice-detail.html" class="notice-list-link">
                                                     <!--번호-->
                                                     <div class="notice-numb">0000</div>
-                                                    
-                                                    
                                                     <!--제목-->
                                                     <div class="notice-title">
                                                         <p class="text">홈페이지가 리뉴얼 되었습니다!</p>
                                                         <img src="img/home/notice-badge.svg" class="notice-badge" alt="new">
                                                     </div>
-                                                    <!--신청일-->
-                                                    <div class="notice-appliDate">-</div>
-                                                    <!--신청 바로가기-->
-                                                    <div class="notice-appliGo">
-                                                        <button class="apply noneBtn"> - </button>
-                                                    </div>
+                                                    <!--글쓴이-->
+                                                    <div class="notice-appliDate">비전빌리지</div>
                                                     <!--작성일-->
-                                                    <div class="notice-date">0000-00-00</div>
+                                                    <div class="notice-date">
+                                                        0000-00-00
+                                                    </div>
+                                                    <!--조회-->
+                                                    <div class="notice-appliGo">0000</div>
                                                 </a>
                                             </li>
                                             <!--목록02-->
@@ -269,17 +366,17 @@
                                                     
                                                     <!--제목-->
                                                     <div class="notice-title">
-                                                        <p class="text">선교사 신청시 참조 서류입니다.</p>
+                                                        <p class="text">시설 신청시 참조 서류입니다.</p>
                                                         <img src="img/notice/link-icon.png" class="notice-badge" alt="link">
                                                     </div>
-                                                    <!--신청일-->
-                                                    <div class="notice-appliDate">~ 0000-00-00</div>
-                                                    <!--신청 바로가기-->
-                                                    <div class="notice-appliGo">
-                                                        <button class="apply apply-focus">즉시 신청</button>
-                                                    </div>
+                                                    <!--글쓴이-->
+                                                    <div class="notice-appliDate">비전빌리지</div>
                                                     <!--작성일-->
-                                                    <div class="notice-date">0000-00-00</div>
+                                                    <div class="notice-date">
+                                                        0000-00-00
+                                                    </div>
+                                                    <!--조회-->
+                                                    <div class="notice-appliGo">0000</div>
                                                 </a>
                                             </li>
                                             <!--목록03-->
@@ -294,14 +391,14 @@
                                                         <p class="text">홈페이지가 리뉴얼 되었습니다!</p>
                                                         <img src="img/home/notice-badge.svg" class="notice-badge badge-none" alt="new">
                                                     </div>
-                                                    <!--신청일-->
-                                                    <div class="notice-appliDate">-</div>
-                                                    <!--신청 바로가기-->
-                                                    <div class="notice-appliGo">
-                                                        <button class="apply noneBtn"> - </button>
-                                                    </div>
+                                                    <!--글쓴이-->
+                                                    <div class="notice-appliDate">비전빌리지</div>
                                                     <!--작성일-->
-                                                    <div class="notice-date">0000-00-00</div>
+                                                    <div class="notice-date">
+                                                        0000-00-00
+                                                    </div>
+                                                    <!--조회-->
+                                                    <div class="notice-appliGo">0000</div>
                                                 </a>
                                             </li>
                                             <!--목록04-->
@@ -313,16 +410,31 @@
                                                     
                                                     <!--제목-->
                                                     <div class="notice-title">
-                                                        <p class="text">오늘 훈련 내용입니다.</p>
+                                                        <p class="text">[필독] ※ 훈련신청은 회원가입 후 신청하여 주시기 바랍니다! </p>
                                                     </div>
-                                                    <!--신청일-->
-                                                    <div class="notice-appliDate"> - </div>
-                                                    <!--신청 바로가기-->
-                                                    <div class="notice-appliGo">
-                                                        <button class="apply apply-finish">신청 마감</button>
-                                                    </div>
+                                                    <!--글쓴이-->
+                                                    <div class="notice-appliDate">비전빌리지</div>
                                                     <!--작성일-->
-                                                    <div class="notice-date">0000-00-00</div>
+                                                    <div class="notice-date">2016-01-20</div>
+                                                    <!--조회-->
+                                                    <div class="notice-appliGo">2854</div>
+                                                </a>
+                                            </li>
+                                            <!--목록04-->
+                                            <li class="notice-list-item">
+                                                 <a href="notice-detail.html" class="notice-list-link">
+                                                    <!--번호-->
+                                                    <div class="notice-numb">0000</div>
+                                                    <!--제목-->
+                                                    <div class="notice-title">
+                                                        <p class="text">[건강검진 및 심리검사 안내] </p>
+                                                    </div>
+                                                    <!--글쓴이-->
+                                                    <div class="notice-appliDate">비전빌리지</div>
+                                                    <!--작성일-->
+                                                    <div class="notice-date">2013-12-10</div>
+                                                    <!--조회-->
+                                                    <div class="notice-appliGo">5184</div>
                                                 </a>
                                             </li>
                                             <!--목록04-->
@@ -334,58 +446,31 @@
                                                     
                                                     <!--제목-->
                                                     <div class="notice-title">
-                                                        <p class="text">오늘 훈련 내용입니다.</p>
+                                                        <p class="text">[필독] ※ 훈련신청은 회원가입 후 신청하여 주시기 바랍니다! </p>
                                                     </div>
-                                                    <!--신청일-->
-                                                    <div class="notice-appliDate"> - </div>
-                                                    <!--신청 바로가기-->
-                                                    <div class="notice-appliGo">
-                                                        <button class="apply apply-finish">신청 마감</button>
-                                                    </div>
+                                                    <!--글쓴이-->
+                                                    <div class="notice-appliDate">비전빌리지</div>
                                                     <!--작성일-->
-                                                    <div class="notice-date">0000-00-00</div>
+                                                    <div class="notice-date">2016-01-20</div>
+                                                    <!--조회-->
+                                                    <div class="notice-appliGo">0000</div>
                                                 </a>
                                             </li>
                                             <!--목록04-->
                                             <li class="notice-list-item">
-                                                 <a href="notice-detail.html" class="notice-list-link">
+                                                <a href="notice-detail.html" class="notice-list-link">
                                                     <!--번호-->
                                                     <div class="notice-numb">0000</div>
-                                                    
-                                                    
                                                     <!--제목-->
                                                     <div class="notice-title">
-                                                        <p class="text">오늘 훈련 내용입니다.</p>
+                                                        <p class="text">[건강검진 및 심리검사 안내] </p>
                                                     </div>
-                                                    <!--신청일-->
-                                                    <div class="notice-appliDate"> - </div>
-                                                    <!--신청 바로가기-->
-                                                    <div class="notice-appliGo">
-                                                        <button class="apply apply-finish">신청 마감</button>
-                                                    </div>
+                                                    <!--글쓴이-->
+                                                    <div class="notice-appliDate">비전빌리지</div>
                                                     <!--작성일-->
-                                                    <div class="notice-date">0000-00-00</div>
-                                                </a>
-                                            </li>
-                                            <!--목록04-->
-                                            <li class="notice-list-item">
-                                                 <a href="notice-detail.html" class="notice-list-link">
-                                                    <!--번호-->
-                                                    <div class="notice-numb">0000</div>
-                                                    
-                                                    
-                                                    <!--제목-->
-                                                    <div class="notice-title">
-                                                        <p class="text">오늘 훈련 내용입니다.</p>
-                                                    </div>
-                                                    <!--신청일-->
-                                                    <div class="notice-appliDate"> - </div>
-                                                    <!--신청 바로가기-->
-                                                    <div class="notice-appliGo">
-                                                        <button class="apply apply-finish">신청 마감</button>
-                                                    </div>
-                                                    <!--작성일-->
-                                                    <div class="notice-date">0000-00-00</div>
+                                                    <div class="notice-date">2013-12-10</div>
+                                                    <!--조회-->
+                                                    <div class="notice-appliGo">5184</div>
                                                 </a>
                                             </li>
                                             <!-- ~ 추가되는 부분-->
@@ -404,14 +489,14 @@
                                                         <p class="text">선교사 신청시 참조 서류입니다.</p>
                                                         <img src="img/notice/link-icon.png" class="notice-badge" alt="link">
                                                     </div>
-                                                    <!--신청일-->
-                                                    <div class="notice-appliDate">~ 0000-00-00</div>
-                                                    <!--신청 바로가기-->
-                                                    <div class="notice-appliGo">
-                                                        <button class="apply apply-focus">즉시 신청</button>
-                                                    </div>
+                                                    <!--글쓴이-->
+                                                    <div class="notice-appliDate">비전빌리지</div>
                                                     <!--작성일-->
-                                                    <div class="notice-date">0000-00-00</div>
+                                                    <div class="notice-date">
+                                                        0000-00-00
+                                                    </div>
+                                                    <!--조회-->
+                                                    <div class="notice-appliGo">0000</div>
                                                 </a>
                                             </li>
                                             <!--목록02-->
@@ -423,16 +508,14 @@
                                                     
                                                     <!--제목-->
                                                     <div class="notice-title">
-                                                        <p class="text">오늘 훈련 내용입니다.</p>
+                                                        <p class="text">[필독] ※ 훈련신청은 회원가입 후 신청하여 주시기 바랍니다! </p>
                                                     </div>
-                                                    <!--신청일-->
-                                                    <div class="notice-appliDate"> - </div>
-                                                    <!--신청 바로가기-->
-                                                    <div class="notice-appliGo">
-                                                        <button class="apply apply-finish">신청 마감</button>
-                                                    </div>
+                                                    <!--글쓴이-->
+                                                    <div class="notice-appliDate">비전빌리지</div>
                                                     <!--작성일-->
-                                                    <div class="notice-date">0000-00-00</div>
+                                                    <div class="notice-date">2016-01-20</div>
+                                                    <!--조회-->
+                                                    <div class="notice-appliGo">0000</div>
                                                 </a>
                                             </li>
                                         </ul>
@@ -450,14 +533,14 @@
                                                         <p class="text">홈페이지가 리뉴얼 되었습니다!</p>
                                                         <img src="img/home/notice-badge.svg" class="notice-badge" alt="new">
                                                     </div>
-                                                    <!--신청일-->
-                                                    <div class="notice-appliDate">-</div>
-                                                    <!--신청 바로가기-->
-                                                    <div class="notice-appliGo">
+                                                    <!--글쓴이-->
+                                                    <div class="notice-appliDate">비전빌리지</div>
+                                                    <!--작성일-->
+                                                    <div class="notice-date">
                                                         <button class="apply noneBtn"> - </button>
                                                     </div>
-                                                    <!--작성일-->
-                                                    <div class="notice-date">0000-00-00</div>
+                                                    <!--조회-->
+                                                    <div class="notice-appliGo">0000</div>
                                                 </a>
                                             </li>
                                             <!--목록02-->
@@ -472,14 +555,14 @@
                                                         <p class="text">홈페이지가 리뉴얼 되었습니다!</p>
                                                         <img src="img/home/notice-badge.svg" class="notice-badge badge-none" alt="new">
                                                     </div>
-                                                    <!--신청일-->
-                                                    <div class="notice-appliDate">-</div>
-                                                    <!--신청 바로가기-->
-                                                    <div class="notice-appliGo">
+                                                    <!--글쓴이-->
+                                                    <div class="notice-appliDate">비전빌리지</div>
+                                                    <!--작성일-->
+                                                    <div class="notice-date">
                                                         <button class="apply noneBtn"> - </button>
                                                     </div>
-                                                    <!--작성일-->
-                                                    <div class="notice-date">0000-00-00</div>
+                                                    <!--조회-->
+                                                    <div class="notice-appliGo">0000</div>
                                                 </a>
                                             </li>
                                             <!--목록03-->
@@ -494,14 +577,14 @@
                                                         <p class="text">홈페이지가 리뉴얼 되었습니다!</p>
                                                         <img src="img/home/notice-badge.svg" class="notice-badge badge-none" alt="new">
                                                     </div>
-                                                    <!--신청일-->
-                                                    <div class="notice-appliDate">-</div>
-                                                    <!--신청 바로가기-->
-                                                    <div class="notice-appliGo">
+                                                    <!--글쓴이-->
+                                                    <div class="notice-appliDate">비전빌리지</div>
+                                                    <!--작성일-->
+                                                    <div class="notice-date">
                                                         <button class="apply noneBtn"> - </button>
                                                     </div>
-                                                    <!--작성일-->
-                                                    <div class="notice-date">0000-00-00</div>
+                                                    <!--조회-->
+                                                    <div class="notice-appliGo">0000</div>
                                                 </a>
                                             </li>
                                             <!--목록04-->
@@ -516,14 +599,14 @@
                                                         <p class="text">홈페이지가 리뉴얼 되었습니다!</p>
                                                         <img src="img/home/notice-badge.svg" class="notice-badge badge-none" alt="new">
                                                     </div>
-                                                    <!--신청일-->
-                                                    <div class="notice-appliDate">-</div>
-                                                    <!--신청 바로가기-->
-                                                    <div class="notice-appliGo">
+                                                    <!--글쓴이-->
+                                                    <div class="notice-appliDate">비전빌리지</div>
+                                                    <!--작성일-->
+                                                    <div class="notice-date">
                                                         <button class="apply noneBtn"> - </button>
                                                     </div>
-                                                    <!--작성일-->
-                                                    <div class="notice-date">0000-00-00</div>
+                                                    <!--조회-->
+                                                    <div class="notice-appliGo">0000</div>
                                                 </a>
                                             </li>
                                             <!-- ~ 추가되는 부분-->
