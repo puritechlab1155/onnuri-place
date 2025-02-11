@@ -1650,6 +1650,7 @@ letter-spacing: -0.8px;
 }
 #home .notice div.notice-appliGo {
   flex: 0 0 92px;
+  color: #777;
 }
 #home .notice div.notice-date {
   flex: 0 0 162px;
@@ -1778,7 +1779,7 @@ letter-spacing: -0.8px;
       display: none;
   }
   #home .notice div.notice-appliDate {
-      display: none;
+      /* display: none; */
   }
   #home .notice div.notice-division {
       width: fit-content;
@@ -1787,21 +1788,13 @@ letter-spacing: -0.8px;
       color: #fff;
       border-radius: 4px;
   }
-  #home .notice div.notice-title {
-      width: fit-content !important;
-      float: left;
-      padding-left: 0;
-  }
-  #home .notice div.notice-appliGo {
-      width: fit-content;
-      float: right;
-      margin-top: 10px;
-  }
   #home .notice .section01 .notice-list-item:not(:first-child) {
       margin-top: 0;
   }
   #home .notice .section01 .notice-list-link {
-      padding: 16px 0;
+      display: block;
+      padding: 24px 0;
+      position: relative;
   }
   #home .notice .section01 .notice-title .text {
       margin: 6px 0;
@@ -1816,6 +1809,33 @@ letter-spacing: -0.8px;
   #home .notice div.notice-title img {
       margin-top: 4px;
   }
+  #home .notice div.notice-title {
+    width: 100% !important;
+    float: left;
+    padding-left: 0;
+  }
+  #home .notice .section01 .notice-title .text {
+    flex:  0 0 1;
+  }
+  #home .notice div.notice-appliDate {
+    width: fit-content;
+    float: left;
+  }
+  #home .notice div.notice-appliGo {
+    position: static !important;
+    width: fit-content;
+    float: left;
+    margin-left: 8px !important;
+    margin-top: 1px !important;
+  }
+  #home .notice .section01 .notice-date {
+    line-height:normal;
+    float: right;
+  }
+  #home .notice .section01 .notice-list-item {
+    width: 100%;
+    overflow: hidden;
+  }
 }
 @media (max-width: 456px) {
   #home .notice .section01 .tab {
@@ -1823,9 +1843,6 @@ letter-spacing: -0.8px;
   }
   #home .notice div.notice-division {
       font-size: 14px !important;
-  }
-  #home .notice .section01 .notice-title .text {
-      font-size: 15px;
   }
   #home .notice button.apply {
       font-size: 14px;
