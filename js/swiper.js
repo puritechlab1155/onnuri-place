@@ -42,3 +42,10 @@ var s3swiper = new Swiper(".s3-swiper", {
         prevEl: ".swiper03-pre",
     },
 });
+
+var g1swiper = new Swiper(".g1-swiper", {
+    navigation: {
+        nextEl: ".swiper01-next",
+        prevEl: ".swiper01-pre",
+    },
+});

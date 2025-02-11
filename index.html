@@ -267,28 +267,47 @@
 
                             <p class="title-text">액츠29비전빌리지 시설 예약 현황을 확인하세요</p>
                         </div><!-- //title-area -->
-
+                        <!-- 탭 -->
                         <ul class="tabs">
                             <li class="tab active">1층</li>
                             <li class="tab">2층</li>
                             <li class="tab">3층</li>
                             <li class="tab">B1층</li>
                         </ul>
-
+                        <!-- 카테고리 방식 아이콘 -->
+                        <div class="view-system-icon">
+                            <div class="grid-icon view-icon ">
+                                <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="1.29883" y="1.29883" width="8.4" height="8.4" rx="3" stroke="#222222" stroke-width="1.8"/>
+                                    <rect x="1.29883" y="13.2988" width="8.4" height="8.4" rx="3" stroke="#222222" stroke-width="1.8"/>
+                                    <rect x="13.2988" y="1.29883" width="8.4" height="8.4" rx="3" stroke="#222222" stroke-width="1.8"/>
+                                    <rect x="13.2988" y="13.2988" width="8.4" height="8.4" rx="3" stroke="#222222" stroke-width="1.8"/>
+                                </svg>
+                            </div>
+                            <div class="map-icon view-icon view-system-active">
+                                <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="1.05859" y="1" width="8.64706" height="21" rx="2.5" stroke="#222222" stroke-width="1.8"/>
+                                    <rect x="12.793" y="1" width="8.64706" height="8.64706" rx="2.5" stroke="#222222" stroke-width="1.8"/>
+                                    <rect x="12.793" y="13.3525" width="8.64706" height="8.64706" rx="2.5" stroke="#222222" stroke-width="1.5"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <!-- 탭 리스트 -->
                         <ul class="tab-cont-list">
                             <!-- 1층 -->
                             <li class="tab-cont active">
+                                <!-- 맵 방식 -->
                                 <div class="map-area">
-                                    <!-- 맵 이미지 -->
+                                    <!-- 맵 이미지 // 왼쪽-->
                                     <div class="map-imges">
-                                        <img id="mainImage" src="img/home/map03.png" usemap="#main_map" alt="1층 맵 이미지">
+                                        <img id="mainImage" src="img/home/1nd-map03.png" usemap="#main_map" alt="1층 맵 이미지">
                                         <map name="main_map">
-                                            <area class="map01-list1" shape="rect" coords="49,113,219,277" alt="" onclick="changeImage('img/home/map01.png'); return false"/>
-                                            <area class="map01-list2" shape="rect" coords="48,277,219,409" alt="" onclick="changeImage('img/home/map02.png'); return false"/>
-                                            <area class="map01-list3" shape="rect" coords="399,476,692,656" alt="" onclick="changeImage('img/home/map03.png'); return false"/>
+                                            <area class="map01-list1" shape="rect" coords="49,113,219,277" alt="" onclick="changeImage('img/home/1nd-map01.png'); return false"/>
+                                            <area class="map01-list2" shape="rect" coords="48,277,219,409" alt="" onclick="changeImage('img/home/1nd-map02.png'); return false"/>
+                                            <area class="map01-list3" shape="rect" coords="399,476,692,656" alt="" onclick="changeImage('img/home/1nd-map03.png'); return false"/>
                                         </map> 
                                     </div>
-                                    <!-- 맵 컨텐츠 -->
+                                    <!-- 맵 컨텐츠 // 오른쪽-->
                                     <div class="map-content">
                                         <!-- 오병이어홀 -->
                                         <div class="content-list01 content-list">
@@ -409,17 +428,128 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- 그리드 방식 -->
+                                <div class="gird-area">
+                                    <!-- 시안홀 -->
+                                    <div class="grid-content-list01 grid-content-list">
+                                        <div class="content-img-box">
+                                            <span>시안홀</span>
+                                            <div class="swiper g1-swiper">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <img src="img/home/room-slide-ex.jpg" alt="룸 이미지01" style="width: 100%;">
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img src="img/home/room-slide-ex.jpg" alt="룸 이미지02" style="width: 100%;">>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img src="img/home/room-slide-ex.jpg" alt="룸 이미지03" style="width: 100%;">>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-button-next mv-swiper-button-next swiper-button swiper01-next">
+                                                    <img src="img/home/sec01-slide-next.svg" alt="다음 슬라이드로">
+                                                </div>
+                                                <div class="swiper-button-prev mv-swiper-button-prev swiper-button swiper01-pre">
+                                                    <img src="img/home/sec01-slide-pre.svg" alt="이전 슬라이드로">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul class="room-simple-informate">
+                                            <li>시안홀</li>
+                                            <li class="people-count"> <span>00</span>명</li>
+                                            <ul>
+                                                <li class="reservate-count">예약 가능 <span>2</span>건</li>
+                                                <li class="application-count">수용가능 인원 <span>00</span>명</li>
+                                                <li class="reservation-button-box">
+                                                    <a href="#" class="reservation-button">예약하기</a>
+                                                </li>
+                                            </ul>
+                                        </ul>
+                                    </div>
+                                    <!-- 오병이어홀 -->
+                                    <div class="grid-content-list01 grid-content-list">
+                                        <div class="content-img-box">
+                                            <span>오병이어홀</span>
+                                            <div class="swiper g1-swiper">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <img src="img/home/room-slide-ex.jpg" alt="룸 이미지01">
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img src="img/home/room-slide-ex.jpg" alt="룸 이미지02">
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img src="img/home/room-slide-ex.jpg" alt="룸 이미지0">
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-button-next mv-swiper-button-next swiper-button swiper01-next">
+                                                    <img src="img/home/sec01-slide-next.svg" alt="다음 슬라이드로">
+                                                </div>
+                                                <div class="swiper-button-prev mv-swiper-button-prev swiper-button swiper01-pre">
+                                                    <img src="img/home/sec01-slide-pre.svg" alt="이전 슬라이드로">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul class="room-simple-informate">
+                                            <li>시안홀</li>
+                                            <li class="people-count"> <span>00</span>명</li>
+                                            <ul>
+                                                <li class="reservate-count">예약 가능 <span>2</span>건</li>
+                                                <li class="application-count">수용가능 인원 <span>00</span>명</li>
+                                                <li class="reservation-button-box">
+                                                    <a href="#" class="reservation-button">예약하기</a>
+                                                </li>
+                                            </ul>
+                                        </ul>
+                                    </div>
+                                    <!-- 박모세홀 -->
+                                    <div class="grid-content-list01 grid-content-list">
+                                        <div class="content-img-box">
+                                            <span>박모세홀</span>
+                                            <div class="swiper g1-swiper">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <img src="img/home/room-slide-ex.jpg" alt="룸 이미지01">
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img src="img/home/room-slide-ex.jpg" alt="룸 이미지02">
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img src="img/home/room-slide-ex.jpg" alt="룸 이미지0">
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-button-next mv-swiper-button-next swiper-button swiper01-next">
+                                                    <img src="img/home/sec01-slide-next.svg" alt="다음 슬라이드로">
+                                                </div>
+                                                <div class="swiper-button-prev mv-swiper-button-prev swiper-button swiper01-pre">
+                                                    <img src="img/home/sec01-slide-pre.svg" alt="이전 슬라이드로">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul class="room-simple-informate">
+                                            <li>시안홀</li>
+                                            <li class="people-count"> <span>00</span>명</li>
+                                            <ul>
+                                                <li class="reservate-count">예약 가능 <span>2</span>건</li>
+                                                <li class="application-count">수용가능 인원 <span>00</span>명</li>
+                                                <li class="reservation-button-box">
+                                                    <a href="#" class="reservation-button">예약하기</a>
+                                                </li>
+                                            </ul>
+                                        </ul>
+                                    </div>
+                                </div>
                             </li>
                             <!-- 2층 -->
                             <li class="tab-cont">
                                 <div class="map-area">
                                     <!-- 맵 이미지 -->
                                     <div class="map-imges">
-                                        <img id="mainImage2" src="img/home/map03.png" usemap="#main_2nd" alt="2층 맵 이미지">
+                                        <img id="mainImage2" src="img/home/1nd-map03.png" usemap="#main_2nd" alt="2층 맵 이미지">
                                         <map name="main_2nd">
-                                            <area class="map02-list1" shape="rect" coords="49,113,219,277" alt="" onclick="changeImage('img/home/map01.png', 'mainImage2'); return false"/>
-                                            <area class="map02-list2" shape="rect" coords="48,277,219,409" alt="" onclick="changeImage('img/home/map02.png', 'mainImage2'); return false"/>
-                                            <area class="map02-list3" shape="rect" coords="399,476,692,656" alt="" onclick="changeImage('img/home/map03.png', 'mainImage2'); return false"/>
+                                            <area class="map02-list1" shape="rect" coords="49,113,219,277" alt="" onclick="changeImage('img/home/1nd-map01.png', 'mainImage2'); return false"/>
+                                            <area class="map02-list2" shape="rect" coords="48,277,219,409" alt="" onclick="changeImage('img/home/1nd-map02.png', 'mainImage2'); return false"/>
+                                            <area class="map02-list3" shape="rect" coords="399,476,692,656" alt="" onclick="changeImage('img/home/1nd-map03.png', 'mainImage2'); return false"/>
                                         </map> 
                                     </div>
                                     <!-- 맵 컨텐츠 -->
@@ -549,11 +679,11 @@
                                 <div class="map-area">
                                     <!-- 맵 이미지 -->
                                     <div class="map-imges">
-                                        <img id="mainImage3" src="img/home/map03.png" usemap="#main_3nd" alt="1층 맵 이미지">
+                                        <img id="mainImage3" src="img/home/1nd-map03.png" usemap="#main_3nd" alt="1층 맵 이미지">
                                         <map name="main_3nd">
-                                            <area class="map03-list1" shape="rect" coords="49,113,219,277" alt="" onclick="changeImage('img/home/map01.png', 'mainImage3'); return false"/>
-                                            <area class="map03-list2" shape="rect" coords="48,277,219,409" alt="" onclick="changeImage('img/home/map02.png', 'mainImage3'); return false"/>
-                                            <area class="map03-list3" shape="rect" coords="399,476,692,656" alt="" onclick="changeImage('img/home/map03.png', 'mainImage3'); return false"/>
+                                            <area class="map03-list1" shape="rect" coords="49,113,219,277" alt="" onclick="changeImage('img/home/1nd-map01.png', 'mainImage3'); return false"/>
+                                            <area class="map03-list2" shape="rect" coords="48,277,219,409" alt="" onclick="changeImage('img/home/1nd-map02.png', 'mainImage3'); return false"/>
+                                            <area class="map03-list3" shape="rect" coords="399,476,692,656" alt="" onclick="changeImage('img/home/1nd-map03.png', 'mainImage3'); return false"/>
                                         </map> 
                                     </div>
                                     <!-- 맵 컨텐츠 -->
@@ -683,11 +813,11 @@
                                 <div class="map-area">
                                     <!-- 맵 이미지 -->
                                     <div class="map-imges">
-                                        <img id="mainImageB1" src="img/home/map03.png" usemap="#main_B1nd" alt="1층 맵 이미지">
+                                        <img id="mainImageB1" src="img/home/1nd-map03.png" usemap="#main_B1nd" alt="1층 맵 이미지">
                                         <map name="main_B1nd">
-                                            <area class="mapB1-list1" shape="rect" coords="49,113,219,277" alt="" onclick="changeImage('img/home/map01.png' , 'mainImageB1'); return false"/>
-                                            <area class="mapB1-list2" shape="rect" coords="48,277,219,409" alt="" onclick="changeImage('img/home/map02.png' , 'mainImageB1'); return false"/>
-                                            <area class="mapB1-list3" shape="rect" coords="399,476,692,656" alt="" onclick="changeImage('img/home/map03.png', 'mainImageB1'); return false"/>
+                                            <area class="mapB1-list1" shape="rect" coords="49,113,219,277" alt="" onclick="changeImage('img/home/1nd-map01.png' , 'mainImageB1'); return false"/>
+                                            <area class="mapB1-list2" shape="rect" coords="48,277,219,409" alt="" onclick="changeImage('img/home/1nd-map02.png' , 'mainImageB1'); return false"/>
+                                            <area class="mapB1-list3" shape="rect" coords="399,476,692,656" alt="" onclick="changeImage('img/home/1nd-map03.png', 'mainImageB1'); return false"/>
                                         </map> 
                                     </div>
                                     <!-- 맵 컨텐츠 -->
@@ -1377,16 +1507,17 @@
             
         });
 
+        // area 클릭시 컨텐츠 변경
         document.addEventListener("DOMContentLoaded", function () {
             // 모든 층의 content-list 숨기기
             document.querySelectorAll(".map-content .content-list").forEach(el => el.style.display = "none");
 
             // 층별 데이터 설정
             const floorData = [
-                { prefix: "map01", imageId: "mainImage", tabIndex: 0 }, // 1층
-                { prefix: "map02", imageId: "mainImage2", tabIndex: 1 }, // 2층
-                { prefix: "map03", imageId: "mainImage3", tabIndex: 2 }, // 3층
-                { prefix: "mapB1", imageId: "mainImageB1", tabIndex: 3 } // B1층
+                { prefix: "map01", imageId: "mainImage", usemap: "#main_map", tabIndex: 0 }, // 1층
+                { prefix: "map02", imageId: "mainImage2", usemap: "#main_2nd", tabIndex: 1 }, // 2층
+                { prefix: "map03", imageId: "mainImage3", usemap: "#main_3nd", tabIndex: 2 }, // 3층
+                { prefix: "mapB1", imageId: "mainImageB1", usemap: "#main_B1nd", tabIndex: 3 } // B1층
             ];
 
             function initFloorEvents() {
@@ -1402,7 +1533,13 @@
                 if (defaultContent) defaultContent.style.display = "block";
 
                 // 현재 활성화된 층에 맞는 이벤트 리스너 추가
-                floorData.forEach(({ prefix, imageId }) => {
+                floorData.forEach(({ prefix, imageId, usemap }) => {
+                    const imageElement = activeTab.querySelector(`#${imageId}`);
+                    if (imageElement) {
+                        // usemap 다시 설정
+                        imageElement.useMap = usemap;
+                    }
+
                     if (activeTab.querySelector(`.${prefix}-list1`)) {
                         activeTab.querySelector(`.${prefix}-list1`).addEventListener("click", function () {
                             showContent(activeTab, ".content-list01", imageId);
@@ -1449,11 +1586,47 @@
             initFloorEvents();
         });
 
-        // 이미지 변경 함수
+        // area 클릭시 map 이미지 경로 변경 함수
         function changeImage(src, imageId = "mainImage") {
             document.getElementById(imageId).src = src;
         }
 
+        // 그리드, 맵 보기 아이콘 클릭
+        document.addEventListener("DOMContentLoaded", function () {
+            const gridIcon = document.querySelector(".grid-icon svg");
+            const mapIcon = document.querySelector(".map-icon svg");
+
+            function updateStyles(activeIcon, inactiveIcon) {
+                activeIcon.setAttribute("fill", "#222");
+                activeIcon.setAttribute("stroke", "#222");
+                activeIcon.setAttribute("stroke-width", "1.8");
+                
+                inactiveIcon.setAttribute("fill", "transparent");
+                inactiveIcon.setAttribute("stroke", "#222");
+                inactiveIcon.setAttribute("stroke-width", "1.8");
+            }
+
+            document.querySelector(".grid-icon").addEventListener("click", function () {
+                document.querySelector(".grid-icon").classList.add("view-system-active");
+                document.querySelector(".map-icon").classList.remove("view-system-active");
+                updateStyles(gridIcon, mapIcon);
+            });
+
+            document.querySelector(".map-icon").addEventListener("click", function () {
+                document.querySelector(".map-icon").classList.add("view-system-active");
+                document.querySelector(".grid-icon").classList.remove("view-system-active");
+                updateStyles(mapIcon, gridIcon);
+            });
+
+            // 초기 설정: 그리드 아이콘은 투명, 맵 아이콘은 활성화 상태
+            gridIcon.setAttribute("fill", "transparent");
+            gridIcon.setAttribute("stroke", "#222");
+            gridIcon.setAttribute("stroke-width", "1.8");
+            
+            mapIcon.setAttribute("fill", "#222");
+            mapIcon.setAttribute("stroke", "#222");
+            mapIcon.setAttribute("stroke-width", "1.8");
+        });
     </script>
 
     <script>
