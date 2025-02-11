@@ -187,13 +187,13 @@
   position: relative;
 }
 #home .mainIndex .main_visual .text-box .text-box-inner .slide-link:first-child {
-  background: linear-gradient(85deg, #1D479A, #0A1834);
+  background: linear-gradient(95deg, #1D479A, #0A1834);
 }
 #home .mainIndex .main_visual .text-box .text-box-inner .slide-link:nth-child(2) {
-  background: linear-gradient(85deg, #2D8752, #001F0D);
+  background: linear-gradient(95deg, #2D8752, #001F0D);
 }
 #home .mainIndex .main_visual .text-box .text-box-inner .slide-link:last-child {
-  background: linear-gradient(85deg, #B63A5D, #420013);
+  background: linear-gradient(95deg, #B63A5D, #420013);
 }
 #home .mainIndex .main_visual .text-box .text-box-inner .slide-link .button-text {
   display: block;
@@ -310,6 +310,99 @@
 #home .mainIndex .section01 .tab-cont.active {
   display: block;
 }
+#home .mainIndex .section01 .tab-cont .map-area {
+  display: flex;
+  gap: 20px; 
+}
+#home .mainIndex .section01 .tab-cont .map-imges {
+  width: 50%;
+  background: lightgoldenrodyellow;
+}
+#home .mainIndex .section01 .tab-cont .map-imges > img {
+  width: 100%;
+}
+#home .mainIndex .section01 .tab-cont .map-content {
+  width: 50%;
+  background: lightpink;
+}
+#home .mainIndex .section01 .tab-cont .map-content .content-text {
+  padding: 16px;
+  padding-bottom: 24px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #DDDDDD;
+}
+#home .mainIndex .section01 .tab-cont .map-content .content-text .title {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#home .mainIndex .section01 .tab-cont .map-content .content-text .title .room-name {
+  font-size: 20px;
+  font-weight: 600;
+}
+#home .mainIndex .reservation-button {
+  display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    border-radius: 999px;
+    background: #FF9B01;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 9px 16px;
+}
+#home .mainIndex .section01 .content-text .room-simple-informate li {
+  width: fit-content;
+  padding: 6px 10px;
+  color: #144974;
+  font-weight: 500;
+  background: #F1F3F5;
+  border-radius: 3px;
+}
+#home .mainIndex .section01 .content-text .room-simple-informate > ul {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+}
+#home .mainIndex .section01 .content-text .room-simple-informate > ul > li {
+  background: #5eb7ff77;
+}
+#home .mainIndex .section01 .content-slide img {
+  width: 100%;
+}
+#home .mainIndex .section01 .swiper-button-next:after, 
+#home .mainIndex .section01 .swiper-button-prev:after {
+  content: '';
+}
+/* section02 */
+#home .mainIndex .section02 {
+  background: #F1F3F5;
+}
+#home .mainIndex .section02 .content {
+  padding: 146px 0 170px;
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  align-items: center;
+}
+#home .mainIndex .section02 .content .list-wrap{
+  width: 50%;
+  padding: 32px;
+  background: #fff;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+#home .mainIndex .section02 .content .list-wrap .list-title {
+  margin-bottom: 24px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: #222;
+}
+#home .mainIndex .section02 .content .list-wrap .list-item {
+  border-bottom: 1px solid #DDE4EE;
+}
 /* notice 클래스 스타일은 >> 메인 페이지와 공지사항 페이지 공통 적용 */
 #home .mainIndex .section01 .notice-area {
   padding: 40px 102px;
@@ -377,376 +470,9 @@
   line-height: 160%; /* 28.8px */
   letter-spacing: -0.36px;
 }
-#home .mainIndex .section02 {
-  background: #fff;
+#home .mainIndex .section02 .content .more-button-box {
+  margin-top: 64px;
 }
-#home .mainIndex .section02 .content {
-  padding: 146px 0 170px;
-}
-#home .mainIndex .section02 .cont-box {
-  margin: 60px auto 0;
-  display: flex;
-  justify-content: space-between;
-  gap: 21px;
-  width: 100%;
-  max-width: 949px;
-}
-#home .mainIndex .section02 .text-area .text {
-  margin-top: 20px;
-  color: #222;
-  font-family: "RIDIBatang";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 180%; /* 28.8px */
-  letter-spacing: -0.32px;
-}
-#home .mainIndex .section02 .main-text {
-  width: 100%;
-  max-width: 390px;
-  text-align: center;
-  color: #222;
-  font-family: "Caveat Brush", serif;
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 140%;
-  background: url(../img/home/s2-main-text-bg.png) no-repeat;
-  background-size: 100% 100%;
-  padding: 9px 60px;
-}
-#home .mainIndex .section02 .img-area {
-  width: 100%;
-  max-width: 310px;
-  text-align: center;
-}
-#home .mainIndex .section02 .img-area .director-img {
-  width: 100%;
-  box-shadow: -7px 8px 23px rgba(0, 0, 0, 0.2);
-}
-#home .mainIndex .section02 .img-area .info-text {
-  color: #222;
-  font-family: "Pretendard-Regular";
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 160%; /* 28.8px */
-  letter-spacing: -0.36px;
-  margin-top: 24px;
-}
-#home .mainIndex .section02 .img-area .info-text span {
-  font-family: "Pretendard-SemiBold";
-}
-#home .mainIndex .section02 .img-area .name {
-  width: 100%;
-  max-width: 110px;
-  margin: 0 auto;
-}
-#home .mainIndex .section02 .img-area .name img {
-  width: 100%;
-}
-/* section03 클래스 스타일은 >> 메인 페이지와 예배 페이지 공통 적용 */
-#home .section03 {
-  padding: 220px 0;
-  background: #fff url(../img/home/section-box-bg.png) no-repeat;
-  background-size: cover;
-  background-position: right center;
-}
-#home .section03 .calendar-top {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  margin: 40px 0 20px;
-}
-#home .section03 .calendar-top .last-month-arrow, 
-#home .section03 .calendar-top .next-month-arrow {
-  width: 40px;
-  height: 40px;
-  display: block;
-}
-#home .section03 .calendar-top .calendar-date {
-  color: #222;
-  font-family: "Pretendard-ExtraBold";
-  font-size: 24px;
-  font-weight: 800;
-  line-height: 160%; /* 38.4px */
-  letter-spacing: -0.48px;
-}
-#home .section03 .calendar-bottom {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  gap: 24px;
-
-}
-#home .section03 .calendar-board {
-  width: 65%;
-  box-sizing: border-box;
-  border-collapse: collapse;
-  border: 1px solid #ddd;
-}
-#home .section03 .calendar-board colgroup col {
-  width: 14%;
-}
-#home .section03 .calendar-board thead {
-  height: 49px;
-}
-#home .section03 .calendar-board thead th {
-  background: #1C3C6B;
-  color: #eee;
-  font-family: "Pretendard-Medium";
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 160%; /* 28.8px */
-  letter-spacing: -0.36px;
-}
-#home .section03 .calendar-board thead .sunday {
-  background: #2A6ACA;
-}
-#home .section03 .calendar-board tbody td {
-  min-width: 48px;
-  height: 100px;
-  background: #fff;
-  text-align: center;
-  vertical-align: top;
-  padding: 10px;
-  color: #222;
-  font-family: "Pretendard-Medium";
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 160%; /* 28.8px */
-  letter-spacing: -0.36px;
-  cursor: pointer;
-}
-#home  .schedule-text { /*현재 일정에 추가*/
-  color: #222;
-  font-size: 16px;
-  font-weight: 300 !important;
-  font-family: "Pretendard-Regular";
-}
-#home .focusDay { /*일정 클릭시 추가되는 포커스 스타일*/
-  background: #1C3C6B !important;
-  color: #fff !important;
-}
-#home .focusDay .schedule-text { /*포커스 시 모든 텍스트 색상 변경*/
-  color: #fff !important;
-}
-#home .section03 .calendar-board tbody td ul li {
-  color: #222;
-  font-family: "Pretendard-Regular";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 160%; /* 25.6px */
-  letter-spacing: -0.32px;
-  word-break: break-all;
-}
-#home .section03 .calendar-board tbody td:first-child {
-  background: #E9F2FF;
-}
-#home .section03 .calendar-board tbody td.sunday {
-  color: #777;
-}
-#home .section03 .calendar-board tbody td.today {
-  color: #007AFF;
-  font-family: "Pretendard-ExtraBold";
-  font-size: 18px;
-  font-weight: 800;
-  line-height: 160%; /* 28.8px */
-  letter-spacing: -0.36px;
-}
-#home .section03 .calendar-board tbody td.today ul li {
-  font-family: "Pretendard-SemiBold";
-}
-#home .section03 .calendar-board tbody td.prev-month, 
-#home .section03 .calendar-board tbody td.next-month {
-  color: #bbb;
-  font-family: "Pretendard-Medium";
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 160%; /* 28.8px */
-  letter-spacing: -0.36px;
-}
-#home .section03 .calendar-board tbody td.prev-month ul li, 
-#home .section03 .calendar-board tbody td.next-month ul li {
-  color: #bbb;
-}
-#home .section03 .schedule {
-  width: 35%;
-}
-#home .section03 .schedule ul {
-  overflow: hidden;
-  margin-bottom: 10px;
-  border: 1px solid #1C3C6B;
-  border-radius: 10px;
-  font-size: 18px;
-  font-weight: 700;
-  letter-spacing: -0.36px;
-}
-#home .section03 .schedule ul li.time {
-  padding: 13px 16px;
-  background: #1C3C6B;
-  color: #fff;
-}
-#home .section03 .schedule ul li.time img {
-  vertical-align: -7px;
-  margin-right: 10px;
-}
-#home .section03 .schedule ul li.detail {
-  height: 77px;
-  line-height: 77px;
-  padding: 0 16px;
-  background: #fff;
-  color: #222;
-  font-weight: 600;
-}
-#home .mainIndex .section04 .content {
-  padding-top: 170px;
-}
-#home .mainIndex .section04 .content .title-area .title {
-  justify-content: flex-start;
-}
-#home .mainIndex .section04 .cont-area {
-  margin-top: 40px;
-  display: flex;
-  gap: 24px;
-}
-#home .mainIndex .section04 .reserv-area {
-  flex: 1;
-}
-#home .mainIndex .section04 .reserv-tabs {
-  display: flex;
-  justify-content: space-between;
-  gap: 28px;
-  align-items: center;
-}
-#home .mainIndex .section04 .reserv-tab {
-  background: url(../img/home/reserv-tab-bg.png) no-repeat;
-  background-size: 100% 100%;
-  color: #96A7BD;
-  font-family: "Pretendard-Bold";
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 160%;
-  padding: 6px 0;
-  width: 100%;
-  text-align: center;
-  cursor: pointer;
-}
-#home .mainIndex .section04 .reserv-tab.active {
-  background: url(../img/home/reserv-tab-bg-active.png) no-repeat;
-  background-size: 100% 100%;
-  color: #fff;
-}
-#home .mainIndex .section04 .reserv-info {
-  margin-top: 18px;
-}
-#home .mainIndex .section04 .reserv-info-list {
-  display: none;
-  flex-direction: column;
-  gap: 24px;
-}
-#home .mainIndex .section04 .reserv-info-list .card {
-  width: 100%;
-  border-radius: 10px;
-  border: 1px solid #ddd;
-  background: #fff;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
-}
-#home .mainIndex .section04 .reserv-info-list .card-body {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-#home .mainIndex .section04 .reserv-info-list .card-body .reserv-category {
-  color: #222;
-  font-family: "Pretendard-SemiBold";
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 160%; /* 28.8px */
-  letter-spacing: -0.36px;
-}
-#home .mainIndex .section04 .reserv-info-list .card-body .name {
-  color: #222;
-  font-family: "Pretendard-Regular";
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 160%; /* 28.8px */
-  letter-spacing: -0.36px;
-}
-#home .mainIndex .section04 .reserv-info-list .card-body .rental-time {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-#home .mainIndex .section04 .reserv-info-list .card-body .rental-time div:not(.line) {
-  color: #222;
-  font-family: "Pretendard-Regular";
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 160%; /* 28.8px */
-  letter-spacing: -0.36px;
-}
-#home .mainIndex .section04 .reserv-info-list .card-body .rental-time div:not(.line) span {
-  color: #0A387C;
-  font-family: "Pretendard-Bold";
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 160%; /* 28.8px */
-  letter-spacing: -0.36px;
-  padding-right: 6px;
-}
-#home .mainIndex .section04 .reserv-info-list .card-body .rental-time .line {
-  width: 1px;
-  height: 10px;
-  background: #BFCAD4;
-}
-#home .mainIndex .section04 .reserv-info-list .card-footer {
-  padding: 20px;
-  border-top: 1px solid #ddd;
-}
-#home .mainIndex .section04 .reserv-info-list .card-footer .date-info {
-  color: #777;
-  font-family: "Pretendard-SemiBold";
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 160%; /* 28.8px */
-  letter-spacing: -0.36px;
-}
-#home .mainIndex .section04 .reserv-info-list.active {
-  display: flex;
-}
-#home .mainIndex .section05 {
-  overflow: hidden;
-  position: relative;
-}
-#home .mainIndex .section05 .content {
-  overflow: hidden;
-  padding: 170px 0;
-}
-#home .mainIndex .section05 .feature-list {
-  min-width: 1126px;
-  display: flex;
-  gap: 75px;
-  justify-content: center;
-  align-items: center;
-}
-#home .mainIndex .section05 .feature-list a {
-  display: block;
-}
-#home .mainIndex .section05 .feature-list a img {
-  display: block;
-  width: 100%;
-  max-width: 180px;
-  transition: 0.2s linear;
-}
-@keyframes roll {
-  0% {
-      transform: translateX(0); /* 시작 위치 */
-  }
-  100% {
-      transform: translateX(-50%); /* 끝 위치 */
-  }
-}
-
-
 /*resize*/
 @media (max-width: 1014px) {
   /*main_visual*/
@@ -773,32 +499,6 @@
   }
   #home .mainIndex .section02 .text-area .text br.show {
     display: none;
-  }
-  /*section-box*/
-  #home .mainIndex .section03 {
-    padding: 80px 0;
-    background: none;
-  }
-  #home .mainIndex .section03 .calendar-top {
-    width: fit-content;
-    margin: 0 auto;
-    margin-top: 40px;
-    margin-bottom: 20px;
-  }
-  #home .section03 .calendar-bottom {
-    display: block;
-  }
-  #home .section03 .calendar-board {
-    width: 100%;
-  }
-  #home .section03 .calendar-board tbody td {
-    min-width: 40px;
-    height: 11.9vw;
-    min-height: 49px;
-  }
-  #home .section03 .schedule {
-    width: 100%;
-    margin-top: 33px;
   }
 }
 @media (max-width: 767px) {
@@ -862,24 +562,6 @@
     bottom: 0;
     animation-delay: 0.5s;
   }
-  @keyframes fadeIn {
-    0% {
-        opacity: 0; 
-        transform: translateY(-10px); 
-    }
-    50% {
-        opacity: 1; 
-        transform: translateY(0); 
-    }
-    90% {
-      opacity: 1; 
-      transform: translateY(0); 
-    }
-    100% {
-        opacity: 0; 
-        transform: translateY(0); 
-    }
-  }
   /*section01*/
   #home .mainIndex .section01 {
     padding: 73px 0 0;
@@ -890,60 +572,34 @@
   #home .mainIndex .section01 .notice-area {
     padding: 40px 40px;
   }
-  #home .notice-list-item:not(:first-child) {
+  #home .mainIndex .section01 .notice-list-item:not(:first-child) {
     margin-top: 24px;
   }
-  #home .notice-list-link {
+  #home .mainIndex .section01 .notice-list-link {
     display: block;
   }
-  #home .notice-title {
+  #home .mainIndex .section01 .notice-title {
     width: 100%;
   }
-  #home .notice-category {
+  #home .mainIndex .section01 .notice-category {
     margin: 4px 0;
   }
-  #home .notice-date {
+  #home .mainIndex .section01 .notice-date {
     position: absolute;
     top: 0;
     left: 0;
   }
-  #home .notice-list-link > img {
+  #home .mainIndex .section01 .notice-list-link > img {
     position: absolute;
-    top: 0;
+    top: 4px;
     right: 0;
   }
   /*section02*/
   #home .mainIndex .section02 .content {
-    padding: 73px 0 0;
+    flex-direction: column;
   }
-  /*section-box*/
-  #home .schedule-text {
-    width: 1.5vw;
-    margin: 0 auto;
-    margin-top: 0.5vw;
-    min-width: 7px;
-    height: 1.5vw;
-    min-height: 7px;
-    font-size: 0;
-    background: #89D275;
-    border-radius: 50%;
-  }
-  /*section05*/
-  #home .mainIndex .section05 {
-    position: relative;
-  }
-  #home .mainIndex .section05 .inner{
-    overflow: hidden;
-  }
-  #home .mainIndex .section05 .content {
-    width: calc(1126px * 2);
-    overflow: hidden;
-    padding: 42px 0;
-    animation: roll 15s linear infinite;
-  }
-  #home .mainIndex .section05 .feature-list {
-    width: calc(100% / 2) !important;
-    float: left;
+  #home .mainIndex .section02 .content .list-wrap {
+    width: 100%;
   }
 }
 @media (max-width: 524px) { /*모바일 폰트 사이즈로 줄기*/
@@ -957,7 +613,14 @@
   #home .mainIndex .main_visual .text-box .text-box-inner .text p {
     font-size: 36px;
   }
-  /*section title 아래 글*/
+  /*section title */
+  #home .mainIndex .title-area .title img {
+    width: 28%;
+    min-width: 120px;
+  }
+  #home .mainIndex .title-area .title span{
+    font-size: 30px;
+  }
   #home .mainIndex .title-area .title-text {
     font-size: 16px;
   }
