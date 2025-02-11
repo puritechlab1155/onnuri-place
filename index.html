@@ -281,11 +281,11 @@
                                 <div class="map-area">
                                     <!-- 맵 이미지 -->
                                     <div class="map-imges">
-                                        <img id="mainImage" src="img/home/map03.png" usemap="main_map" alt="1층 맵 이미지">
+                                        <img id="mainImage" src="img/home/map03.png" usemap="#main_map" alt="1층 맵 이미지">
                                         <map name="main_map">
-                                            <area class="map01-list1" shape="rect" coords="49,113,219,277" alt="" href="#" onclick="changeImage('img/home/map01.png'); return false"/>
-                                            <area class="map01-list2" shape="rect" coords="48,277,219,409" alt="" href="#" onclick="changeImage('img/home/map02.png'); return false"/>
-                                            <area class="map01-list3" shape="rect" coords="399,476,692,656" alt="" href="#" onclick="changeImage('img/home/map03.png'); return false"/>
+                                            <area class="map01-list1" shape="rect" coords="49,113,219,277" alt="" onclick="changeImage('img/home/map01.png'); return false"/>
+                                            <area class="map01-list2" shape="rect" coords="48,277,219,409" alt="" onclick="changeImage('img/home/map02.png'); return false"/>
+                                            <area class="map01-list3" shape="rect" coords="399,476,692,656" alt="" onclick="changeImage('img/home/map03.png'); return false"/>
                                         </map> 
                                     </div>
                                     <!-- 맵 컨텐츠 -->
@@ -415,11 +415,11 @@
                                 <div class="map-area">
                                     <!-- 맵 이미지 -->
                                     <div class="map-imges">
-                                        <img id="mainImage02" src="img/home/map03.png" usemap="main_map02" alt="1층 맵 이미지">
-                                        <map name="main_map02">
-                                            <area class="map02-list1" shape="rect" coords="49,113,219,277" alt="" onclick="changeImage('img/home/map01.png'); return false"/>
-                                            <area class="map02-list2" shape="rect" coords="48,277,219,409" alt="" onclick="changeImage('img/home/map02.png'); return false"/>
-                                            <area class="map02-list3" shape="rect" coords="399,476,692,656" alt="" onclick="changeImage('img/home/map03.png'); return false"/>
+                                        <img id="mainImage2" src="img/home/map03.png" usemap="#main_2nd" alt="2층 맵 이미지">
+                                        <map name="main_2nd">
+                                            <area class="map02-list1" shape="rect" coords="49,113,219,277" alt="" onclick="changeImage('img/home/map01.png', 'mainImage2'); return false"/>
+                                            <area class="map02-list2" shape="rect" coords="48,277,219,409" alt="" onclick="changeImage('img/home/map02.png', 'mainImage2'); return false"/>
+                                            <area class="map02-list3" shape="rect" coords="399,476,692,656" alt="" onclick="changeImage('img/home/map03.png', 'mainImage2'); return false"/>
                                         </map> 
                                     </div>
                                     <!-- 맵 컨텐츠 -->
@@ -546,11 +546,271 @@
                             </li>
                             <!-- 3층 -->
                             <li class="tab-cont">
-                                
+                                <div class="map-area">
+                                    <!-- 맵 이미지 -->
+                                    <div class="map-imges">
+                                        <img id="mainImage3" src="img/home/map03.png" usemap="#main_3nd" alt="1층 맵 이미지">
+                                        <map name="main_3nd">
+                                            <area class="map03-list1" shape="rect" coords="49,113,219,277" alt="" onclick="changeImage('img/home/map01.png', 'mainImage3'); return false"/>
+                                            <area class="map03-list2" shape="rect" coords="48,277,219,409" alt="" onclick="changeImage('img/home/map02.png', 'mainImage3'); return false"/>
+                                            <area class="map03-list3" shape="rect" coords="399,476,692,656" alt="" onclick="changeImage('img/home/map03.png', 'mainImage3'); return false"/>
+                                        </map> 
+                                    </div>
+                                    <!-- 맵 컨텐츠 -->
+                                    <div class="map-content">
+                                        <!-- 오병이어홀 -->
+                                        <div class="content-list01 content-list">
+                                            <div class="content-text">
+                                                <div class="title">
+                                                    <span class="room-name">오병이어홀</span>
+                                                    <div class="reservation-button-box">
+                                                        <a href="#" class="reservation-button">예약하기</a>
+                                                    </div>
+                                                </div>
+                                                <ul class="room-simple-informate">
+                                                    <li class="people-count">수용가능 인원 <span>00</span>명</li>
+                                                    <ul>
+                                                        <li class="reservate-count">예약 가능 <span>2</span>건</li>
+                                                        <li class="application-count">신청중 <span>0</span>건</li>
+                                                    </ul>
+                                                </ul>
+                                            </div>
+                                            <div class="content-slide">
+                                                <div class="swiper s2-swiper">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <img src="img/home/room-slide-ex.jpg" alt="룸 이미지01">
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img src="img/home/room-slide-ex.jpg" alt="룸 이미지02">
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img src="img/home/room-slide-ex.jpg" alt="룸 이미지0">
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-button-next mv-swiper-button-next swiper-button swiper02-next">
+                                                        <img src="img/home/sec01-slide-next.svg" alt="다음 슬라이드로">
+                                                    </div>
+                                                    <div class="swiper-button-prev mv-swiper-button-prev swiper-button swiper02-pre">
+                                                        <img src="img/home/sec01-slide-pre.svg" alt="이전 슬라이드로">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 박모세홀 -->
+                                        <div class="content-list02 content-list">
+                                            <div class="content-text">
+                                                <div class="title">
+                                                    <span class="room-name">박모세홀</span>
+                                                    <div class="reservation-button-box">
+                                                        <a href="#" class="reservation-button">예약하기</a>
+                                                    </div>
+                                                </div>
+                                                <ul class="room-simple-informate">
+                                                    <li class="people-count">수용가능 인원 <span>00</span>명</li>
+                                                    <ul>
+                                                        <li class="reservate-count">예약 가능 <span>2</span>건</li>
+                                                        <li class="application-count">신청중 <span>0</span>건</li>
+                                                    </ul>
+                                                </ul>
+                                            </div>
+                                            <div class="content-slide">
+                                                <div class="swiper s3-swiper">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <img src="img/home/room-slide-ex.jpg" alt="룸 이미지01">
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img src="img/home/room-slide-ex.jpg" alt="룸 이미지02">
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img src="img/home/room-slide-ex.jpg" alt="룸 이미지0">
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-button-next mv-swiper-button-next swiper-button swiper03-next">
+                                                        <img src="img/home/sec01-slide-next.svg" alt="다음 슬라이드로">
+                                                    </div>
+                                                    <div class="swiper-button-prev mv-swiper-button-prev swiper-button swiper03-pre">
+                                                        <img src="img/home/sec01-slide-pre.svg" alt="이전 슬라이드로">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 시안홀 -->
+                                        <div class="content-list03 content-list">
+                                            <div class="content-text">
+                                                <div class="title">
+                                                    <span class="room-name">시안홀</span>
+                                                    <div class="reservation-button-box">
+                                                        <a href="#" class="reservation-button">예약하기</a>
+                                                    </div>
+                                                </div>
+                                                <ul class="room-simple-informate">
+                                                    <li class="people-count">수용가능 인원 <span>00</span>명</li>
+                                                    <ul>
+                                                        <li class="reservate-count">예약 가능 <span>2</span>건</li>
+                                                        <li class="application-count">신청중 <span>0</span>건</li>
+                                                    </ul>
+                                                </ul>
+                                            </div>
+                                            <div class="content-slide">
+                                                <div class="swiper s1-swiper">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <img src="img/home/room-slide-ex.jpg" alt="룸 이미지01">
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img src="img/home/room-slide-ex.jpg" alt="룸 이미지02">
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img src="img/home/room-slide-ex.jpg" alt="룸 이미지0">
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-button-next mv-swiper-button-next swiper-button swiper01-next">
+                                                        <img src="img/home/sec01-slide-next.svg" alt="다음 슬라이드로">
+                                                    </div>
+                                                    <div class="swiper-button-prev mv-swiper-button-prev swiper-button swiper01-pre">
+                                                        <img src="img/home/sec01-slide-pre.svg" alt="이전 슬라이드로">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
                             <!-- B1층 -->
                             <li class="tab-cont">
-                                
+                                <div class="map-area">
+                                    <!-- 맵 이미지 -->
+                                    <div class="map-imges">
+                                        <img id="mainImageB1" src="img/home/map03.png" usemap="#main_B1nd" alt="1층 맵 이미지">
+                                        <map name="main_B1nd">
+                                            <area class="mapB1-list1" shape="rect" coords="49,113,219,277" alt="" onclick="changeImage('img/home/map01.png' , 'mainImageB1'); return false"/>
+                                            <area class="mapB1-list2" shape="rect" coords="48,277,219,409" alt="" onclick="changeImage('img/home/map02.png' , 'mainImageB1'); return false"/>
+                                            <area class="mapB1-list3" shape="rect" coords="399,476,692,656" alt="" onclick="changeImage('img/home/map03.png', 'mainImageB1'); return false"/>
+                                        </map> 
+                                    </div>
+                                    <!-- 맵 컨텐츠 -->
+                                    <div class="map-content">
+                                        <!-- 오병이어홀 -->
+                                        <div class="content-list01 content-list">
+                                            <div class="content-text">
+                                                <div class="title">
+                                                    <span class="room-name">오병이어홀</span>
+                                                    <div class="reservation-button-box">
+                                                        <a href="#" class="reservation-button">예약하기</a>
+                                                    </div>
+                                                </div>
+                                                <ul class="room-simple-informate">
+                                                    <li class="people-count">수용가능 인원 <span>00</span>명</li>
+                                                    <ul>
+                                                        <li class="reservate-count">예약 가능 <span>2</span>건</li>
+                                                        <li class="application-count">신청중 <span>0</span>건</li>
+                                                    </ul>
+                                                </ul>
+                                            </div>
+                                            <div class="content-slide">
+                                                <div class="swiper s2-swiper">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <img src="img/home/room-slide-ex.jpg" alt="룸 이미지01">
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img src="img/home/room-slide-ex.jpg" alt="룸 이미지02">
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img src="img/home/room-slide-ex.jpg" alt="룸 이미지0">
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-button-next mv-swiper-button-next swiper-button swiper02-next">
+                                                        <img src="img/home/sec01-slide-next.svg" alt="다음 슬라이드로">
+                                                    </div>
+                                                    <div class="swiper-button-prev mv-swiper-button-prev swiper-button swiper02-pre">
+                                                        <img src="img/home/sec01-slide-pre.svg" alt="이전 슬라이드로">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 박모세홀 -->
+                                        <div class="content-list02 content-list">
+                                            <div class="content-text">
+                                                <div class="title">
+                                                    <span class="room-name">박모세홀</span>
+                                                    <div class="reservation-button-box">
+                                                        <a href="#" class="reservation-button">예약하기</a>
+                                                    </div>
+                                                </div>
+                                                <ul class="room-simple-informate">
+                                                    <li class="people-count">수용가능 인원 <span>00</span>명</li>
+                                                    <ul>
+                                                        <li class="reservate-count">예약 가능 <span>2</span>건</li>
+                                                        <li class="application-count">신청중 <span>0</span>건</li>
+                                                    </ul>
+                                                </ul>
+                                            </div>
+                                            <div class="content-slide">
+                                                <div class="swiper s3-swiper">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <img src="img/home/room-slide-ex.jpg" alt="룸 이미지01">
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img src="img/home/room-slide-ex.jpg" alt="룸 이미지02">
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img src="img/home/room-slide-ex.jpg" alt="룸 이미지0">
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-button-next mv-swiper-button-next swiper-button swiper03-next">
+                                                        <img src="img/home/sec01-slide-next.svg" alt="다음 슬라이드로">
+                                                    </div>
+                                                    <div class="swiper-button-prev mv-swiper-button-prev swiper-button swiper03-pre">
+                                                        <img src="img/home/sec01-slide-pre.svg" alt="이전 슬라이드로">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 시안홀 -->
+                                        <div class="content-list03 content-list">
+                                            <div class="content-text">
+                                                <div class="title">
+                                                    <span class="room-name">시안홀</span>
+                                                    <div class="reservation-button-box">
+                                                        <a href="#" class="reservation-button">예약하기</a>
+                                                    </div>
+                                                </div>
+                                                <ul class="room-simple-informate">
+                                                    <li class="people-count">수용가능 인원 <span>00</span>명</li>
+                                                    <ul>
+                                                        <li class="reservate-count">예약 가능 <span>2</span>건</li>
+                                                        <li class="application-count">신청중 <span>0</span>건</li>
+                                                    </ul>
+                                                </ul>
+                                            </div>
+                                            <div class="content-slide">
+                                                <div class="swiper s1-swiper">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <img src="img/home/room-slide-ex.jpg" alt="룸 이미지01">
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img src="img/home/room-slide-ex.jpg" alt="룸 이미지02">
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <img src="img/home/room-slide-ex.jpg" alt="룸 이미지0">
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-button-next mv-swiper-button-next swiper-button swiper01-next">
+                                                        <img src="img/home/sec01-slide-next.svg" alt="다음 슬라이드로">
+                                                    </div>
+                                                    <div class="swiper-button-prev mv-swiper-button-prev swiper-button swiper01-pre">
+                                                        <img src="img/home/sec01-slide-pre.svg" alt="이전 슬라이드로">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
                         </ul><!-- //tab-cont-list -->
 
@@ -1117,38 +1377,82 @@
             
         });
 
-        //맵 이미지 교체
-        function changeImage(newSrc) {
-            document.getElementById("mainImage").src = newSrc;
-        }
-
-        //맵 이미지 영역 클릭시 컨텐츠 숨기고, 보여짐
         document.addEventListener("DOMContentLoaded", function () {
-            // 모든 content-list 숨기기
-            let contentLists = document.querySelectorAll(".map-content .content-list");
-            contentLists.forEach(el => el.style.display = "none");
+            // 모든 층의 content-list 숨기기
+            document.querySelectorAll(".map-content .content-list").forEach(el => el.style.display = "none");
 
-            //초기값
-            document.querySelector(".content-list01").style.display = "block";
+            // 층별 데이터 설정
+            const floorData = [
+                { prefix: "map01", imageId: "mainImage", tabIndex: 0 }, // 1층
+                { prefix: "map02", imageId: "mainImage2", tabIndex: 1 }, // 2층
+                { prefix: "map03", imageId: "mainImage3", tabIndex: 2 }, // 3층
+                { prefix: "mapB1", imageId: "mainImageB1", tabIndex: 3 } // B1층
+            ];
 
-            // 영역 클릭 시 해당하는 content-list만 보이게 설정
-            document.querySelector(".map01-list1").addEventListener("click", function () {
-                showContent(".content-list01");
-            });
+            function initFloorEvents() {
+                // 현재 활성화된 탭 찾기
+                const activeTab = document.querySelector(".tab-cont.active");
+                if (!activeTab) return;
 
-            document.querySelector(".map01-list2").addEventListener("click", function () {
-                showContent(".content-list02");
-            });
+                // 현재 탭의 content-list 모두 숨기기
+                activeTab.querySelectorAll(".content-list").forEach(el => el.style.display = "none");
 
-            document.querySelector(".map01-list3").addEventListener("click", function () {
-                showContent(".content-list03");
-            });
+                // 현재 탭에서 기본적으로 보일 컨텐츠 설정 (첫 번째 콘텐츠 보이도록 설정)
+                const defaultContent = activeTab.querySelector(".content-list03");
+                if (defaultContent) defaultContent.style.display = "block";
 
-            function showContent(selector) {
-                contentLists.forEach(el => el.style.display = "none");
-                document.querySelector(selector).style.display = "block";
+                // 현재 활성화된 층에 맞는 이벤트 리스너 추가
+                floorData.forEach(({ prefix, imageId }) => {
+                    if (activeTab.querySelector(`.${prefix}-list1`)) {
+                        activeTab.querySelector(`.${prefix}-list1`).addEventListener("click", function () {
+                            showContent(activeTab, ".content-list01", imageId);
+                        });
+                    }
+                    if (activeTab.querySelector(`.${prefix}-list2`)) {
+                        activeTab.querySelector(`.${prefix}-list2`).addEventListener("click", function () {
+                            showContent(activeTab, ".content-list02", imageId);
+                        });
+                    }
+                    if (activeTab.querySelector(`.${prefix}-list3`)) {
+                        activeTab.querySelector(`.${prefix}-list3`).addEventListener("click", function () {
+                            showContent(activeTab, ".content-list03", imageId);
+                        });
+                    }
+                });
             }
+
+            function showContent(activeTab, selector, imageId) {
+                // 현재 활성화된 층에서만 content-list 관리
+                activeTab.querySelectorAll(".content-list").forEach(el => el.style.display = "none");
+                const targetContent = activeTab.querySelector(selector);
+                if (targetContent) targetContent.style.display = "block";
+            }
+
+            // 탭이 변경될 때 이벤트 재적용
+            document.querySelectorAll(".tabs .tab").forEach((tab, index) => {
+                tab.addEventListener("click", function () {
+                    // 모든 탭의 active 제거 후, 현재 탭에 active 추가
+                    document.querySelectorAll(".tabs .tab").forEach(t => t.classList.remove("active"));
+                    tab.classList.add("active");
+
+                    // 모든 tab-cont의 active 제거 후, 현재 index에 맞는 tab-cont에 active 추가
+                    document.querySelectorAll(".tab-cont").forEach((cont, i) => {
+                        cont.classList.toggle("active", i === index);
+                    });
+
+                    // 탭 변경 후 이벤트 다시 적용
+                    initFloorEvents();
+                });
+            });
+
+            // 페이지 로드 시 초기 이벤트 설정
+            initFloorEvents();
         });
+
+        // 이미지 변경 함수
+        function changeImage(src, imageId = "mainImage") {
+            document.getElementById(imageId).src = src;
+        }
 
     </script>
 
