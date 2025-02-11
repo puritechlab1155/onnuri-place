@@ -1811,6 +1811,7 @@ letter-spacing: -0.8px;
   }
   #home .notice div.notice-title {
     width: 100% !important;
+    margin-bottom: 8px;
     float: left;
     padding-left: 0;
   }
