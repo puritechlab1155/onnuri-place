@@ -2615,6 +2615,7 @@ main.form_05 #form05 .item04 .sub-box label input {
     }
 }
 
+/* -------------- 시설예약하기 form -------------- */
 /* reservate03.html 스타일 */
 main.form .reserv-step {
     display: flex;
@@ -2624,7 +2625,7 @@ main.form .reserv-step {
 }
 main.form .reserv-step li {
     width: calc(100% / 3);
-    height: 60px;
+    height: 50px;
     text-align: center;
     margin-top: 80px;
     box-sizing: border-box;
@@ -2634,27 +2635,27 @@ main.form .reserv-step li.current_step {
     font-weight: 600;
     border-bottom: 3px solid #555;
 }
-main.form #reservate03 br.space_m {
+main.form #reservate br.space_m {
     display: none;
 }
-main.form #reservate03 fieldset {
+main.form #reservate fieldset {
     width: 100%;
     overflow: hidden;
     border: none;
     margin-top: 32px;
     margin-bottom: 60px;
 }
-main.form #reservate03 h4.list-title{
+main.form #reservate h4.list-title{
     width: 100%;
     overflow: hidden;
     margin: 16px 0;
     font-size: 18px;
     font-weight: 700;
 }
-main.form #reservate03 h4.list-title > span {
+main.form #reservate h4.list-title > span {
     margin-top: 6px;
 }
-main.form #reservate03 input:not([type = radio]) {
+main.form #reservate input:not([type = radio]) {
     width: 100%;
     height: 34px;
     padding: 8px 16px;
@@ -2666,7 +2667,7 @@ main.form #reservate03 input:not([type = radio]) {
     cursor: pointer;
 }
 /*목록 타이틀 및 목록*/
-main.form #reservate03 .input-container{
+main.form #reservate .input-container{
     width: 100%;
     overflow: hidden;
     display: flex;
@@ -2678,10 +2679,10 @@ main.form #reservate03 .input-container{
     gap: 0;
 }
 /* 목록 */
-main.form #reservate03 .list_box:not(:first-of-type) {
+main.form #reservate .list_box:not(:first-of-type) {
     margin-top: 30px;
 }
-main.form #reservate03 .list {
+main.form #reservate .list {
     box-sizing: border-box;
     display: flex;
     flex: 1 1 50%;
@@ -2691,7 +2692,7 @@ main.form #reservate03 .list {
     font-size: 18px;
     border-bottom: 1px solid #ddd;
 }
-main.form #reservate03 .list > span {
+main.form #reservate .list > span {
     flex: 0 0 210px;
     padding: 12px 0;
     box-sizing: border-box;
@@ -2700,45 +2701,45 @@ main.form #reservate03 .list > span {
     font-weight: 600;
     border-right: 1px solid #ddd;
 }
-main.form #reservate03 .item01 .reservat-type-wrap {
+main.form #reservate .item01 .reservat-type-wrap {
     display: flex;
     width: 100%;
     padding: 0 20px;
     gap: 30px;
     align-items: center;
 }
-main.form #reservate03 .list label {
+main.form #reservate .list label {
     display: block;
     width: 100%;
     max-width: 230px;
     margin: 0 16px;
 }
-main.form #reservate03 .item01 label {
+main.form #reservate .item01 label {
     max-width: fit-content;
     cursor: pointer;
     margin: 0;
 }
-main.form #reservate03 .item02 .password-container {
+main.form #reservate .item02 .password-container {
     display: flex;
     align-items: center;
 }
-main.form #reservate03 .item02 label {
+main.form #reservate .item02 label {
     width: 100%;
     display: flex;
     align-items: center;
 }
-main.form #reservate03 .item02 b {
+main.form #reservate .item02 b {
     flex: 0 0 28%;
     font-size: 16px;
     font-weight: 400;
     color: #F84242;
     font-size: 15px;
 }
-main.form #reservate03 .item05,
-main.form #reservate03 .item06 {
+main.form #reservate .item05,
+main.form #reservate .item06 {
     border-bottom: none;
 }
-main.form #reservate03 .red-text {
+main.form #reservate .red-text {
     width: 100%;
     padding: 14px 0;
     border-top: 1px solid #FFE9B0;
@@ -2746,56 +2747,56 @@ main.form #reservate03 .red-text {
     font-weight: 600;
     color: #F84242;
 }
-main.form #reservate03 .item07 ,
-main.form #reservate03 .item08 ,
-main.form #reservate03 .item09 ,
-main.form #reservate03 .item10 {
+main.form #reservate .item07 ,
+main.form #reservate .item08 ,
+main.form #reservate .item09 ,
+main.form #reservate .item10 {
     border-color: #FFE9B0 !important;
 }
-main.form #reservate03 .y-bg {
+main.form #reservate .y-bg {
     background: #FFF1CD !important;
     border-color: #FFE9B0 !important;
     border-bottom: 1px solid #FFE9B0;
 }
-main.form #reservate03 .list .w100 {
+main.form #reservate .list .w100 {
     max-width: 100% !important;
 }
-main.form #reservate03 .f100 {
+main.form #reservate .f100 {
     width: 100% !important;
     flex: 0 0 100% !important;
 }
-main.form #reservate03 .item15 {
+main.form #reservate .item15 {
     align-items: stretch;
 }
-main.form #reservate03 .item15 > span {
+main.form #reservate .item15 > span {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-main.form #reservate03 .item15 .ad_right {
+main.form #reservate .item15 .ad_right {
     width: 100%;
 }
-main.form #reservate03 .item15 .address-wrap {
+main.form #reservate .item15 .address-wrap {
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding: 14px 16px;
 }
-main.form #reservate03 .item15 .address {
+main.form #reservate .item15 .address {
     display: flex;
     gap: 10px;
 }
-main.form #reservate03 .item15 .address-container {
+main.form #reservate .item15 .address-container {
     width: 100%;
     max-width: 112px;
 }
-main.form #reservate03 .item15 .address-container input {
+main.form #reservate .item15 .address-container input {
     text-align: center;
 }
-main.form #reservate03 .item15 .g-bg {
+main.form #reservate .item15 .g-bg {
     background: #f0f0f0 !important;
 }
-main.form #reservate03 .gray_btn {
+main.form #reservate .gray_btn {
     display: flex;
     align-items: center;
     gap: 4px;
@@ -2827,11 +2828,11 @@ main.form .finish-bnt-wrap .deleteBtn {
 
 /* resize */
 @media (max-width: 1078px) {
-    main.form #reservate03 .item01 ,
-    main.form #reservate03 .item02 {
+    main.form #reservate .item01 ,
+    main.form #reservate .item02 {
         flex: 0 0 100%;
     }
-    main.form #reservate03 .list > span {
+    main.form #reservate .list > span {
         flex: 0 0 140px;
     }
 }
@@ -2847,334 +2848,76 @@ main.form .finish-bnt-wrap .deleteBtn {
     main.form .reserv-step li span {
         font-size: clamp(12px, 2.6vw, 24px);
     }
-    main.form #reservate03 .list {
+    main.form #reservate .list {
         flex: 0 0 100%;
     }
 }
 @media (max-width: 482px) {
-    main.form #reservate03 br.space_m {
+    main.form #reservate br.space_m {
         display: block;
     }
-    main.form #reservate03 .item01 label {
+    main.form #reservate .item01 label {
         font-size: 15px;
     }
-    main.form #reservate03 .red-text {
+    main.form #reservate .red-text {
         font-size: 15px;
     }
-    main.form #reservate03 input {
+    main.form #reservate input {
         font-size: 15px !important;
         padding: 8px;
     }
-    main.form #reservate03 legend.step {
+    main.form #reservate legend.step {
         font-size: 22px;
     }
-    main.form #reservate03 .list > span {
+    main.form #reservate .list > span {
         flex: 0 0 80px;
         padding: 12px 0;
         font-size: 15px;
     }
-    main.form #reservate03 .item15 .address {
+    main.form #reservate .item15 .address {
         flex-direction: column;
     }
-    main.form #reservate03 .gray_btn {
+    main.form #reservate .gray_btn {
         font-size: 15px;
     }
 }
 
-
-/*9단계 신청서 영역*/
-main.form_09 .field-title {
+/* reservate02.html 스타일 */
+main.form .reservate02 .list > span {
+    flex: 0 0 180px !important;
+}
+main.form .reservate02 .calendar-area {
+    padding: 0 16px;
     display: flex;
-    gap: 16px;
     align-items: center;
+    gap: 30px;
 }
-main.form_09 .field-title .write-whether {
-    font-size: 20px;
-    font-weight: 500;
-    display: none;
-}
-main.form_09 input {
-    border: 1px solid #BABABA;
-    font-size: 16px;
-}
-main.form_09 form {
-    width: 100%;
-    margin: 0 auto;
-    color: #222;
-}
-/*인풋 박스 및 캡션 초기값*/
-main.form_09 input::placeholder {
-    color: #777;
-}
-main.form_09 input:focus {
-    outline: none;
-}
-main.form_09 span.caption {
-    display: block;
-    font-weight: 400 !important;
-    color: #777;
-    margin-top: -4px;
-    margin-bottom: 8px;
-}
-main.form_09 .caption.m-top {
-    display: block;
-    margin-top: 8px;
-}
-main.form_09 .caption.minus-top {
-    display: block;
-    margin-top: -12px;
-}
-main.form_09 .inline-cap {
-    display: inline-block;
-}
-/*전체 문항 스타일*/
-main.form_09 fieldset {
-    border: none;
-    padding: 0;
-    margin: 0;
-    margin-top: 42px; 
-}
-main.form_09 fieldset legend {
-    display: block;
-    width: 100%;
-    font-size: 30px;
-    font-weight: 600;
-    color: #222;
+main.form .reservate02 .calendar-area label {
+    display: flex !important;
     position: relative;
 }
-main.form_09 fieldset legend span.foldBtn {
-    padding: 7px 6px;
+main.form .reservate02 .calendar-area label img {
+    margin-left: 8px;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
     position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    background: #eee;
-    border-radius: 4px;
-    line-height: 0;
+    right: -5px;
+    cursor: pointer;
+    width: 26px;
+    height: 26px;
+    opacity: 0.7;
+}
+
+input[type="date"]::-moz-calendar-picker-indicator {
+    position: absolute;
+    right: -5px;
     cursor: pointer;
 }
-main.form_09 .input-wrap {
-    width: 100%;
-    padding: 16px;
-    margin-top: 16px;
-    border: 1px solid #ddd;
+main.form .reservate02 .calendar-area .calendar-line {
+    width: 8px;
+    height: 2px;
+    background: #222;
 }
-main.form_09 .input-wrap  .step-n {
-    width: 100%;
-    margin-bottom: 34px;
-}
-main.form_09 .step-n label {
-    display: block;
-    margin-bottom: 8px;
-    width: 100%;
-    font-size: 16px;
-    font-weight: 600;
-}
-main.form_09 .step-n textarea {
-    display: block;
-    width: 100%;
-    height: 94px;
-    line-height: 160%;
-    margin-top: 8px;
-    padding: 8px 16px;
-    box-sizing: border-box;
-    font-size: 16px;
-    color: #222;
-    border: 1px solid #B1B1B1;
-    resize: none;
-}
-main.form_09 .step-n textarea:focus {
-    outline: none;
-    height: 200px;
-    text-overflow: scroll;
-}
-main.form_09 .step-n span {
-    display: inline-block;
-    font-size: 16px;
-    font-weight: 600;
-}
-
-/* 공통 클래스 스타일 */
-main.form_09 .mult-q div input {
-    flex: 1;
-    padding: 6px 16px;
-    border-radius: 8px;
-}
-main.form_09 .mult-q {
-    margin: 40px 0;
-}
-main.form_09 .mult-q span {
-    display: block;
-    margin-bottom: 8px;
-}
-main.form_09 .mult-q div {
-    margin-bottom: 34px;
-}
-main.form_09 .mult-q div:first-child {
-    margin-top: 16px;
-}
-main.form_09 .en-list {
-    margin-bottom: 8px;
-}
-main.form_09 .en-list span {
-    display: block;
-}
-main.form_09 .check > span {
-    float: left;
-    margin-right: 16px;
-}
-main.form_09 .step-n .checkBox {
-    width: 145px;
-    display: flex;
-    gap: 8px;
-    align-items: center;
-    position: relative;
-}
-main.form_09 .step-n .checkBox label {
-    margin: 0;
-    font-weight: 400;
-    cursor: pointer;
-}
-main.form_09 .step-n .checkBox input::before {
-    content: '/';
-    width: 10px;
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 50%;
-    transform: translateX(-50%);
-    color: #777;
-    font-weight: 200;
-}
-main.form_09 .check > label:first-child {
-    margin-top: 16px;
-}
-/*문항 개별 스타일*/
-main.form_09 .n1-sub04 div {
-    margin-bottom: 8px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 8px;
-}
-main.form_09 .n1-sub05 label, .n1-sub06 label, .n1-sub07 label{
-    margin-bottom: 12px;
-}
-main.form_09 .n3-sub04 span {
-    margin-top: 8px;
-}
-main.form_09 #form09 .marry-whether {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: start;
-    align-items: center;
-    gap: 4px 16px;
-}
-main.form_09 #form09 .marry-whether h3 {
-    font-weight: 500;
-}
-main.form_09 #form09 .whether-title {
-    margin: 16px 0;
-    font-size: 20px;
-    font-weight: 700;
-}
-main.form_09 #form09 .single-wrap ,
-main.form_09 #form09 .married-wrap {
-    display: none;
-}
-main.form_09 #form09 .marry-whether label {
-    cursor: pointer;
-}
-main.form_09 #form09 .marry-whether label:first-child {
-    margin-right: 30px;
-    position: relative;
-}
-main.form_09 #form09 .marry-whether label:first-child::after {
-    content: '/';
-    position: absolute;
-    top: 50%;
-    right: -18px;
-    transform: translateY(-50%);
-    font-size: 16px;
-    color: #222;
-}
-main.form_09 #form09 .n6-sub02-sub-box ,
-main.form_09 #form09 .n7-sub01-sub-box {
-    margin-top: 16px;
-    display: none;
-}
-main.form_09 .n1-sub04 label > div {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-}
-main.form_09 .n1-sub04 label > div span {
-    flex: 0 0 130px;
-    margin: 0;
-}
-main.form_09 .n1-sub04 label > div textarea {
-    padding: 0px 16px;
-    height: 36px;
-    margin: 0;
-    padding-top: 4px;
-}
-main.form_09 .n1-sub04 label > div textarea:focus {
-    height: 64px;
-}
-/* 최종제출 버튼 */
-#home main.form_09 #form09 button.next {
-    background: transparent;
-    color: #aaa;
-    border: 3px solid #aaa;
-    transition: 0.1s linear;
-}
-
-/*7단계, 8단계 */
-main.form_09 #form07 .input-wrap {
-    border: none; 
-    padding-top: 16px;
-}
-main.form_09 #form07 .step-n label {
-    color: #00A8D3;
-}
-main.form_09 #form07 .step-n label span {
-    display: contents;
-}
-main.form_09 #form07 .step-n textarea {
-    height: 150px;
-}
-main.form_09 #form07 .step-n textarea:focus {
-    height: 300px;
-}
-main.form_09 #form08 .input-wrap {
-    border: none; 
-    padding: 16px 0;
-}
-main.form_09 #form08 .step-n label {
-    color: #00A8D3;
-}
-main.form_09 #form08 .step-n textarea {
-    height: 150px;
-}
-main.form_09 #form08 .step-n textarea:focus {
-    height: 300px;
-}
-
-
-/*resize*/
-@media (max-width: 482px) {
-    main.form_09 fieldset legend {
-        font-size: 22px;
-    }
-    main.form_09 .step-n label {
-        font-size: 15px;
-    }
-    main.form_09 .step-n span {
-        font-size: 15px;
-    }
-    main.form_09 .step-n textarea {
-        font-size: 15px;
-    }
+main.form .reservate02 .point {
+    color: #F84242;
 }

@@ -6,7 +6,7 @@
     <!-- 사파리폰트적용 (프리텐다드) -->
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable.css" />
     
-    <title>Acts29비전빌리지 / 시설예약하기 3단계</title>
+    <title>Acts29비전빌리지 / 시설예약하기 2단계</title>
     <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 
     <!--Jqurey CDN-->
@@ -186,11 +186,11 @@
                 <!-- 탭 부분( 단계별 focus-step 수정필요**** ) -->
                 <ul class="reserv-step">
                     <li>1단계 <span>- 시설예약</span></li>
-                    <li>2단계 <span>- 이용계획 및 이용인원</span></li>
-                    <li class="current_step">3단계 <span>- 예약자 정보</span></li>
+                    <li class="current_step">2단계 <span>- 이용계획 및 이용인원</span></li>
+                    <li>3단계 <span>- 예약자 정보</span></li>
                 </ul>
 
-                <form id="reservate">
+                <form id="reservate" class="reservate02">
                     <!-- 단계 신청서  -->
                     <fieldset>
                         <div class="input-wrap"> 
@@ -198,23 +198,29 @@
                             <div class="list_box">
                                 <!-- 목록 -->
                                 <div class="input-container">
-                                    <div class="list item01">
-                                        <span>예약구분</span>
-                                        <div class="reservat-type-wrap">
-                                            <label>
-                                                <input id="corps" name="reservat-type" type="radio" required> 단체예약
+                                    <div class="list item01 f100">
+                                        <span>사용기간</span>
+                                        <div class="calendar-area f100">
+                                            <label for="start-date01" class="calendar-wrap">
+                                                <span style="display: none;">시작 기간</span>
+                                                <input class="input-field" id="start-date01" type="date" required>                                         
+                                                <img src="img/form/calendar.svg" alt="달력 아이콘">
                                             </label>
-                                            <label>
-                                                <input id="individual" name="reservat-type" type="radio" required> 개인예약
+                                            <div class="calendar-line"></div>
+                                            <label for="finish-date" class="calendar-wrap">
+                                                <span style="display: none;">끝나는 기간</span>
+                                                <input class="input-field" id="finish-date" type="date" required>
+                                                <img src="img/form/calendar.svg" alt="달력 아이콘">
                                             </label>
+                                            <span class="point">달력을 클릭하셔서 선택해주세요. *필수</span>
                                         </div>
                                     </div>
                                     
                                     <div class="list item02">
-                                        <span>비밀번호</span>
+                                        <span>숙박/식사</span>
                                         <div class="password-container">
-                                            <label for="password" class="">
-                                                <input id="password" type="password" placeholder=" - " required maxlength="4">
+                                            <label for="" class="">
+                                                <input id="" type="password" placeholder=" - " required maxlength="4">
                                             </label>
                                             <b>4자리 입력</b>
                                         </div>
@@ -244,8 +250,8 @@
                                     <div class="list item06">
                                         <span>휴대전화</span>
                                         <label for="mobile-phone">
-                                            <input id="mobile-phone" type="tel" placeholder=" - " required maxlength="13">
-                                        </label>                                  
+                                            <input id="mobile-phone" type="tel" placeholder=" - " required>
+                                        </label>                                    
                                     </div>
 
                                     <!-- 노란색 영역 -->
@@ -690,8 +696,7 @@
 
     <script src="js/script.js"></script>
     <script>
-        // -- 인풋 형식
-        // 전화번호 형식
+        // -- 전화번호 및 생년월일 형식
         document.addEventListener("DOMContentLoaded", function () {
             function formatMobilePhone(input) {
                 let value = input.value.replace(/\D/g, ""); // 숫자만 남김
@@ -705,69 +710,70 @@
                 input.value = value;
             }
 
-            document.querySelector('#mobile-phone').addEventListener("input", function () {
-                formatMobilePhone(this);
-            });
+            function phoneFormatter(num, type) {
+                var formatNum = '';
 
-            // 지역번호 및 휴대전화 번호 형식 생성
-            function formatPhoneNumber(input) { 
-                let value = input.value.replace(/\D/g, ""); // 숫자만 남김
-                
-                if (value.startsWith("02")) { // 서울 지역번호 (02)
-                    if (value.length > 2 && value.length <= 6) {
-                        value = value.replace(/(\d{2})(\d{1,4})/, "$1-$2");
-                    } else if (value.length > 6) {
-                        value = value.replace(/(\d{2})(\d{3,4})(\d{1,4})/, "$1-$2-$3");
+                if (num.length === 11) {
+                    // 11자리 핸드폰 번호
+                    if (type === 0) {
+                        formatNum = num.replace(/(\d{3})(\d{4})(\d{4})/, '$1-****-$3');
+                    } else {
+                        formatNum = num.replace(/(\d{3})(\d{4})(\d{4})/, '$1-$2-$3');
                     }
-                } else if (value.startsWith("010")) { // 휴대폰 번호 (010)
-                    if (value.length === 10) {
-                        value = value.replace(/(\d{3})(\d{3})(\d{4})/, "$1-$2-$3");
-                    } else if (value.length === 11) {
-                        value = value.replace(/(\d{3})(\d{4})(\d{4})/, "$1-$2-$3");
+                } else if (num.length === 8) {
+                    // 8자리 번호 (대표번호)
+                    formatNum = num.replace(/(\d{4})(\d{4})/, '$1-$2');
+                } else if (num.startsWith('02')) {
+                    // 서울 지역번호 (02) 전화번호 처리
+                    if (num.length === 10) {
+                        if (type === 0) {
+                            formatNum = num.replace(/(\d{2})(\d{3})(\d{4})/, '$1-***-$3'); // 중간 3자리 마스킹
+                        } else {
+                            formatNum = num.replace(/(\d{2})(\d{3})(\d{4})/, '$1-$2-$3');
+                        }
+                    } else if (num.length === 9) {
+                        if (type === 0) {
+                            formatNum = num.replace(/(\d{2})(\d{3})(\d{4})/, '$1-***-$3'); // 중간 3자리 마스킹
+                        } else {
+                            formatNum = num.replace(/(\d{2})(\d{3})(\d{4})/, '$1-$2-$3');
+                        }
                     }
-                } else { // 기타 지역번호 (031, 051 등)
-                    if (value.length > 3 && value.length <= 6) {
-                        value = value.replace(/(\d{3})(\d{1,3})/, "$1-$2");
-                    } else if (value.length > 6) {
-                        value = value.replace(/(\d{3})(\d{3,4})(\d{4})/, "$1-$2-$3");
+                } else {
+                    // 일반 지역번호(031, 051 등) 또는 기타 전화번호
+                    if (num.length === 10) {
+                        if (type === 0) {
+                            formatNum = num.replace(/(\d{3})(\d{3})(\d{4})/, '$1-***-$3'); // 중간 3자리 마스킹
+                        } else {
+                            formatNum = num.replace(/(\d{3})(\d{3})(\d{4})/, '$1-$2-$3');
+                        }
+                    } else if (num.length === 9) {
+                        if (type === 0) {
+                            formatNum = num.replace(/(\d{2})(\d{3})(\d{4})/, '$1-***-$3'); // 중간 3자리 마스킹
+                        } else {
+                            formatNum = num.replace(/(\d{2})(\d{3})(\d{4})/, '$1-$2-$3');
+                        }
                     }
                 }
-                
-                input.value = value;
+                return formatNum;
             }
 
             document.querySelectorAll('#church-phone, #landline-phone, [id^="office-phone"]').forEach(input => {
                 input.addEventListener("input", function () {
-                    formatPhoneNumber(this);
+                    let num = this.value.replace(/\D/g, ''); // 숫자 이외 문자 제거
+                    let type = 0; // 기본적으로 일부 마스킹 처리 (0: 일부 마스킹, 1: 전체 표시)
+
+                    this.value = phoneFormatter(num, type);
                 });
             });
 
-            // -- 휴대전화 오류 검증
-            function validateMobTel() {
-                const mobPhonInput = document.getElementById('mobile-phone');
-                const mobPhon = mobPhonInput.value;
-
-                const mobPhonRegex = /^\d{3}-\d{4}-\d{4}$/;
-
-                if (!mobPhonRegex.test(mobPhon)) {
-                    mobPhonInput.setCustomValidity("올바른 전화번호 형식을 입력해주세요.");
-                } else {
-                    mobPhonInput.setCustomValidity("");
-                }
-
-                // 오류 메시지 강제 출력
-                mobPhonInput.reportValidity();
-            }
-
-            // input 이벤트에서 유효성 검사 실행
             document.querySelector('#mobile-phone').addEventListener("input", function () {
-                validateMobTel();
+                formatMobilePhone(this);
             });
 
 
-            // -- 이메일 오류 검증
+            // -- 이메일 형식(gmail만 지원)
             function validateGmail() {
-                const emailInput = document.getElementById('e-mail');
+                const emailInput = document.getElementById('email');
                 const email = emailInput.value;
 
                 // Gmail 주소만 허용하는 정규식
@@ -782,7 +788,7 @@
             }
 
             // 이메일 입력 필드에 이벤트 리스너 추가
-            document.getElementById('e-mail').addEventListener('input', validateGmail);
+            document.getElementById('email').addEventListener('input', validateGmail);
         });
 
         // -- 우편번호
