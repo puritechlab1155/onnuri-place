@@ -394,6 +394,19 @@
 }
 
 /* reservate02.html */
+#main.form #reservate .inner-flex {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#main.form #reservate .inner-flex label {
+    width: fit-content !important;
+    display: flex !important;
+    align-items: center;
+    gap: 1.5vw;
+    position: relative;
+}
 #main.form #reservate .calendar-area {
     padding: 0 16px;
     display: flex;
@@ -443,19 +456,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
-#main.form .reservate02 .inner-flex {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-#main.form .reservate02 .inner-flex label {
-    width: fit-content !important;
-    display: flex !important;
-    align-items: center;
-    gap: 1.5vw;
-    position: relative;
 }
 #main.form .reservate02 .gray-text {
     padding: 14px 16px;
@@ -610,3 +610,6 @@
     }
 }
 /* reservate01.html */
+#main.form .reservate01 .input-container {
+    display: block !important;
+}
