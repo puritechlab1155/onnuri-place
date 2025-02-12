@@ -7,6 +7,7 @@
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable.css" />
     
     <title>Acts29비전빌리지 / 6단계</title>
+    <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 
     <!--Jqurey CDN-->
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
@@ -180,240 +181,172 @@
             <div class="containner">
                 <!-- 상단 부분 -->
                 <div class="text-box">
-                    <h2 class="title">훈련신청</h2>
-                        <details open>
-                            <summary>
-                                선교사 지원신청
-                                <span class="toggle-icon"></span>
-                            </summary>
-                            <div class="text-wrap">
-                                <p>이 지원서는 단기/장기 선교후보지원자가 <span class="br"></span>선교사로서 스스로를 진단하고, <br>면접 인사위원회가 지원자를 이해하기 위한 <span class="br"></span>목적 외 다른 용도로 사용치 않으며,<br> 개인 정보에 대해 절대적으로<span class="br"></span> 비밀을 보장하오니,<br> 성실하고 정직하게 기술하신 후 <span class="br"></span> 제출하여 주시기 바랍니다.</p>
-                                <ul>
-                                    <h4>작성 요령</h4>
-                                    <li>1. 모든 질문에 대해 기도하는 마음으로 <span class="br"></span>성실하고 상세하게 답변하여 주십시오.</li>
-                                    <li>2. 지원서 제출 시 반명함(3X4cm)사이즈의 <span class="br"></span>증명사진 파일을 첨부하여 주십시오.</li>
-                                    <li>3. 간증문은 구체적으로(A4용지 1장 이상) <span class="br"></span>기술하여 주십시오.(OSOM/TP 지원자만 해당)</li>
-                                    <li>4. 기타 문의는 행정 담당에게 연락 주십시오.</li>
-                                </ul>
-    
-                            </div>
-                        </details>
+                    <h2 class="title">시설 예약하기</h2>
                 </div>
                 <!-- 탭 부분( 단계별 focus-step 수정필요**** ) -->
-                <div class="step-tab">
-                    <ul>
-                        <a href="https://puritechlab1155.github.io/onnuri-front/form01.html">
-                            <li class="stepNumb">1</li>
-                            <li class="stepKo">단계</li>
-                        </a>
-                        <div class="progress-indicator" id="progress-1">0%</div>
-                    </ul>
-                    <ul>
-                        <a href="https://puritechlab1155.github.io/onnuri-front/form02.html">
-                            <li class="stepNumb">2</li>
-                            <li class="stepKo">단계</li>
-                            <div class="progress-indicator" id="progress-2">0%</div>
-                        </a>    
-                    </ul>
-                    <ul>
-                        <a href="https://puritechlab1155.github.io/onnuri-front/form03.html">
-                            <li class="stepNumb">3</li>
-                            <li class="stepKo">단계</li>
-                            <div class="progress-indicator" id="progress-3">0%</div>
-                        </a>
-                    </ul>
-                    <ul>
-                        <a href="https://puritechlab1155.github.io/onnuri-front/form04.html">
-                            <li class="stepNumb">4</li>
-                            <li class="stepKo">단계</li>
-                            <div class="progress-indicator" id="progress-4">0%</div>
-                        </a>
-                    </ul>
-                    <ul>
-                        <a href="https://puritechlab1155.github.io/onnuri-front/form05.html">
-                            <li class="stepNumb">5</li>
-                            <li class="stepKo">단계</li>
-                            <div class="progress-indicator" id="progress-5">0%</div>
-                        </a>
-                    </ul>
-                    <ul class="focus-step">
-                        <a href="https://puritechlab1155.github.io/onnuri-front/form06.html">
-                            <li>6</li>
-                            <li>단계</li>
-                            <div class="progress-indicator" id="progress-6">0%</div>
-                        </a>
-                    </ul>
-                    <ul>
-                        <a href="https://puritechlab1155.github.io/onnuri-front/form07.html">
-                            <li class="stepNumb">7</li>
-                            <li class="stepKo">단계</li>
-                            <div class="progress-indicator" id="progress-7">0%</div>
-                        </a>
-                    </ul>
-                    <ul>
-                        <a href="https://puritechlab1155.github.io/onnuri-front/form08.html">
-                            <li class="stepNumb">8</li>
-                            <li class="stepKo">단계</li>
-                            <div class="progress-indicator" id="progress-8">0%</div>
-                        </a>
-                    </ul>
-                    <ul>
-                        <a href="https://puritechlab1155.github.io/onnuri-front/form09.html">
-                            <li class="stepNumb">9</li>
-                            <li class="stepKo">단계</li>
-                            <div class="progress-indicator" id="progress-9">0%</div>
-                        </a>
-                    </ul>
-                </div>
+                <ul class="reserv-step">
+                    <li>1단계 <span>- 시설예약</span></li>
+                    <li>2단계 <span>- 이용계획 및 이용인원</span></li>
+                    <li class="current_step">3단계 <span>- 예약자 정보</span></li>
+                </ul>
 
-                <form id="form06">
+                <form id="reservate03">
                     <!-- 단계 신청서  -->
                     <fieldset>
-                        <legend class="step">6. 선교 훈련 추천</legend>
                         <div class="input-wrap"> 
                             <!-- 추천인1 -->
                             <div class="list_box">
-                                <!-- 타이틀 -->
-                                <h4 class="list-title">
-                                    <span>추천인1 담당교역자 및 담임목사(비온누리)</span>
-                                </h4>
                                 <!-- 목록 -->
-                                <div class="input-container border_b">
-                                    <label for="name01" class="list item01">
+                                <div class="input-container">
+                                    <div class="list item01">
+                                        <span>예약구분</span>
+                                        <div class="reservat-type-wrap">
+                                            <label>
+                                                <input id="corps" name="reservat-type" type="radio" required> 단체예약
+                                            </label>
+                                            <label>
+                                                <input id="individual" name="reservat-type" type="radio" required> 개인예약
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="list item02">
+                                        <span>비밀번호</span>
+                                        <div class="password-container">
+                                            <label for="password" class="">
+                                                <input id="password" type="password" placeholder=" - " required maxlength="4">
+                                            </label>
+                                            <b>4자리 입력</b>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="list item03">
                                         <span>이름</span>
-                                        <input id="name01" type="text" placeholder=" 홍길동 " required class="input-field" oninput="updateProgress()">
-                                    </label>
+                                        <label for="name">
+                                            <input id="name" type="text" placeholder=" - " required>
+                                        </label>
+                                    </div>
                                     
-                                    <label for="position01" class="list item02">
-                                        <span>직분</span>
-                                        <input id="position01" type="text" placeholder=" - " required class="input-field" oninput="updateProgress()">
-                                    </label>
+                                    <div class="list item04">
+                                        <span>이메일</span>
+                                        <label for="e-mail">
+                                            <input id="e-mail" type="email" placeholder=" - " required>
+                                        </label>                                    
+                                    </div>
+
+                                    <div class="list item05">
+                                        <span>일반전화</span>
+                                        <label for="landline-phone">
+                                            <input id="landline-phone" type="tel" placeholder=" - " required>
+                                        </label>                                    
+                                    </div>
+
+                                    <div class="list item06">
+                                        <span>휴대전화</span>
+                                        <label for="mobile-phone">
+                                            <input id="mobile-phone" type="tel" placeholder=" - " required>
+                                        </label>                                    
+                                    </div>
+
+                                    <!-- 노란색 영역 -->
+                                    <div class="red-text y-bg">*소속교회가 온누리교회가 아닐 경우 입력해주세요.</div>
+
+                                    <div class="list item07">
+                                        <span class="y-bg">소속교회</span>
+                                        <label for="affiliated-church">
+                                            <input id="affiliated-church" type="text" placeholder=" - " required>
+                                        </label>                                    
+                                    </div>
+
+                                    <div class="list item08">
+                                        <span class="y-bg">목사님 성함</span>
+                                        <label for="pastors-name">
+                                            <input id="pastors-name" type="text" placeholder=" - " required>
+                                        </label>                                    
+                                    </div>
+
+                                    <div class="list item09">
+                                        <span class="y-bg">교회전화</span>
+                                        <label for="church-phone">
+                                            <input id="church-phone" type="tel" placeholder=" - " required>
+                                        </label>                                    
+                                    </div>
+
+                                    <div class="list item10">
+                                        <span class="y-bg">주소</span>
+                                        <label for="address" class="w100">
+                                            <input id="address" type="text" placeholder=" - " required>
+                                        </label><!-- // 노란색 영역 -->                           
+                                    </div>
+
+                                    <div class="list item11">
+                                        <span>소속공동체</span>
+                                        <label for="community-grop">
+                                            <input id="community-grop" type="text" placeholder=" - " required>
+                                        </label>                                    
+                                    </div>
+
+                                    <div class="list item12">
+                                        <span>다락방장/<br class="space_m">순장이름</br></span>
+                                        <label for="attic-manager">
+                                            <input id="attic-manager" type="text" placeholder=" - " required>
+                                        </label>                                    
+                                    </div>
+
+                                    <div class="list item13 f100">
+                                        <span>행사명</span>
+                                        <label for="event-name" class="w100">
+                                            <input id="event-name" type="text" placeholder=" - " required>
+                                        </label>                                    
+                                    </div>
+
+                                    <div class="list item14">
+                                        <span>단체명</span>
+                                        <label for="grop-name">
+                                            <input id="grop-name" type="text" placeholder=" - " required>
+                                        </label>                                    
+                                    </div>
                                     
-                                    <label for="church01" class="list item03">
-                                        <span>참석 교회명 <br class="space_m">(단체명)</span>
-                                        <input id="church01" type="text" placeholder=" - " required class="input-field" oninput="updateProgress()">
-                                    </label>
-                                    
-                                    <label for="tel01" class="list item04">
-                                        <span>교회 <br class="space_m"> 전화번호</span>
-                                        <input id="tel01" type="tel" placeholder=" ' - ' 없이 숫자만 입력하세요 " required class="input-field" oninput="updateProgress()">
-                                    </label>
-                                </div>
-                            </div>
-                            <!-- 추천인2 -->
-                            <div class="list_box">
-                                <!-- 타이틀 -->
-                                <h4 class="list-title">
-                                    <span>추천인2 소속단체장</span>
-                                </h4>
-                                <!-- 목록 -->
-                                <div class="input-container border_b">
-                                    <label for="name02" class="list item01">
-                                        <span>이름</span>
-                                        <input id="name02" type="text" placeholder=" 홍길동 " required class="input-field" oninput="updateProgress()">
-                                    </label>
-                                    
-                                    <label for="position02" class="list item02">
-                                        <span>직분</span>
-                                        <input id="position02" type="text" placeholder=" - " required class="input-field" oninput="updateProgress()">
-                                    </label>
-                                    
-                                    <label for="church02" class="list item03">
-                                        <span>참석 교회명<br class="space_m"> (단체명)</span>
-                                        <input id="church02" type="text" placeholder=" - " required class="input-field" oninput="updateProgress()">
-                                    </label>
-                                    
-                                    <label for="tel02" class="list item04">
-                                        <span>교회 <br class="space_m">전화번호</span>
-                                        <input id="tel02" type="tel" placeholder=" ' - ' 없이 숫자만 입력하세요 " required class="input-field" oninput="updateProgress()">
-                                    </label>
-                                </div>
-                            </div>
-                            <!-- 추천인3 -->
-                            <div class="list_box">
-                                <!-- 타이틀 -->
-                                <h4 class="list-title">
-                                    <span>추천인3 공동체순장 및 담당 교역자</span>
-                                </h4>
-                                <!-- 목록 -->
-                                <div class="input-container border_b">
-                                    <label for="name03" class="list item01">
-                                        <span>이름</span>
-                                        <input id="name03" type="text" placeholder=" 홍길동 " required class="input-field" oninput="updateProgress()">
-                                    </label>
-                                    
-                                    <label for="position03" class="list item02">
-                                        <span>직분</span>
-                                        <input id="position03" type="text" placeholder=" - " required class="input-field" oninput="updateProgress()">
-                                    </label>
-                                    
-                                    <label for="church03" class="list item03">
-                                        <span>참석 교회명 <br class="space_m">(단체명)</span>
-                                        <input id="church03" type="text" placeholder=" - " required class="input-field" oninput="updateProgress()">
-                                    </label>
-                                    
-                                    <label for="tel03" class="list item04">
-                                        <span>교회 <br class="space_m">전화번호</span>
-                                        <input id="tel03" type="tel" placeholder=" ' - ' 없이 숫자만 입력하세요 " required class="input-field" oninput="updateProgress()">
-                                    </label>
-                                </div>
-                            </div>
-                            <!-- 추천인4 -->
-                            <div class="list_box">
-                                <!-- 타이틀 -->
-                                <h4 class="list-title">
-                                    <span>추천인4 가족추천서</span>
-                                </h4>
-                                <!-- 목록 -->
-                                <div class="input-container border_b">
-                                    <label for="name04" class="list item01">
-                                        <span>이름</span>
-                                        <input id="name04" type="text" placeholder=" 홍길동 " required class="input-field" oninput="updateProgress()">
-                                    </label>
-                                    
-                                    <label for="position04" class="list item02">
-                                        <span>직분</span>
-                                        <input id="position04" type="text" placeholder=" - " required class="input-field" oninput="updateProgress()">
-                                    </label>
-                                    
-                                    <label for="church04" class="list item03">
-                                        <span>참석 교회명 <br class="space_m">(단체명)</span>
-                                        <input id="church04" type="text" placeholder=" - " required class="input-field" oninput="updateProgress()">
-                                    </label>
-                                    
-                                    <label for="tel04" class="list item04">
-                                        <span>교회 <br class="space_m">전화번호</span>
-                                        <input id="tel04" type="tel" placeholder=" ' - ' 없이 숫자만 입력하세요 " required class="input-field" oninput="updateProgress()">
-                                    </label>
-                                </div>
-                            </div>
-                            <!-- 추천인5 -->
-                            <div class="list_box list_box05">
-                                <!-- 타이틀 -->
-                                <h4 class="list-title">
-                                    <span>추천인5 일대일양육자(OSOM만 해당)</span>
-                                </h4>
-                                <!-- 목록 -->
-                                <div class="input-container border_b">
-                                    <label for="name05" class="list item01">
-                                        <span>이름</span>
-                                        <input id="name05" type="text" placeholder=" 홍길동 " required class="input-field" oninput="updateProgress()">
-                                    </label>
-                                    
-                                    <label for="position05" class="list item02">
-                                        <span>직분</span>
-                                        <input id="position05" type="text" placeholder=" - " required class="input-field" oninput="updateProgress()">
-                                    </label>
-                                    
-                                    <label for="church05" class="list item03">
-                                        <span>참석 교회명 <br class="space_m">(단체명)</span>
-                                        <input id="church05" type="text" placeholder=" - " required class="input-field" oninput="updateProgress()">
-                                    </label>
-                                    
-                                    <label for="tel05" class="list item04">
-                                        <span>교회 <br class="space_m">전화번호</span>
-                                        <input id="tel05" type="tel" placeholder=" ' - ' 없이 숫자만 입력하세요 " required class="input-field" oninput="updateProgress()">
-                                    </label>
+                                    <div class="list item14">
+                                        <span>대표자명</span>
+                                        <label for="exponent-name">
+                                            <input id="exponent-name" type="text" placeholder=" - " required>
+                                        </label>                                    
+                                    </div>
+
+                                    <div class="list item14 f100">
+                                        <span>사무실전화</span>
+                                        <label for="office-phone" class="w100">
+                                            <input id="office-phone" type="tel" placeholder=" - " required>
+                                        </label>                                    
+                                    </div>
+
+                                    <div class="list item15 f100">
+                                        <span>주소</span>
+                                        <div class="ad_right">
+                                            <div class="address-wrap">
+                                                <div class="address">
+                                                    <div class="address-container">
+                                                        <label for="zonecode" style="display: none;">우편번호</label>
+                                                        <input class="g-bg" id="zonecode" type="text" placeholder="우편번호" readonly autocomplete="off"/>
+                                                    </div>
+                                                    <div class="gray_btn-container">
+                                                        <button id="search-btn" class="gray_btn">우편번호 찾기 
+                                                            <img src="img/form/search.png" alt="돋보기">
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <label for="roadAddress" style="display: none;">주소</label>
+                                                    <input class="g-bg" id="roadAddress" type="text" placeholder="주소" readonly autocomplete="off"/>
+                                                </div>
+                                                <div>
+                                                    <label for="roadAddressDetail" style="display: none;">상세주소</label>
+                                                    <input id="roadAddressDetail" type="text" placeholder="상세주소" autocomplete="off">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -422,12 +355,12 @@
                 
                 <!--버튼 랩핑-->
                 <div class="finish-bnt-wrap">
-                    <div class="temporary">
-                        <button class="temporaryBtn">임시저장</button>
+                    <div class="check-box">
+                        <button class="checkBtn">확인</button>
                     </div>
                     
-                    <div class="next-container">
-                        <button class="next" type="button" onclick="location.href='https://puritechlab1155.github.io/onnuri-front/form07.html'" >다음</button>
+                    <div class="delete-box">
+                        <button class="deleteBtn" type="button" onclick="location.href='https://puritechlab1155.github.io/onnuri-front/form07.html'" >취소</button>
                     </div>
                 </div>
             </div>
@@ -757,124 +690,96 @@
 
     <script src="js/script.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // 모든 전화번호 입력 필드를 선택
-            const telInputs = document.querySelectorAll('input[id^="tel"]');
+        // -- 전화번호 및 생년월일 형식
+        document.addEventListener("DOMContentLoaded", function () {
+            function formatMobilePhone(input) {
+                let value = input.value.replace(/\D/g, ""); // 숫자만 남김
+                
+                if (value.length > 3 && value.length <= 7) {
+                    value = value.replace(/(\d{3})(\d{1,4})/, "$1-$2");
+                } else if (value.length > 7) {
+                    value = value.replace(/(\d{3})(\d{4})(\d{1,4})/, "$1-$2-$3");
+                }
+                
+                input.value = value;
+            }
 
-            telInputs.forEach(telInput => {
-                telInput.addEventListener('input', function () {
-                    // 입력 값에서 하이픈을 제거
-                    let inputValue = telInput.value.replace(/-/g, '');
-
-                    // 전화번호 형식에 맞게 하이픈 추가
-                    if (inputValue.length === 11) {
-                        // 010-xxxx-xxxx 형식으로 변환 (휴대전화)
-                        inputValue = inputValue.replace(/^(\d{3})(\d{4})(\d{4})$/, '$1-$2-$3');
-                    } else if (inputValue.length === 10) {
-                        // 0xx-xxx-xxxx 형식으로 변환 (서울 외 지역)
-                        inputValue = inputValue.replace(/^(\d{3})(\d{3})(\d{4})$/, '$1-$2-$3');
-                    } else if (inputValue.length === 9) {
-                        // 0x-xxx-xxxx 형식으로 변환 (서울 지역)
-                        inputValue = inputValue.replace(/^(\d{2})(\d{3})(\d{})$/, '$1-$2-$3');
+            function formatLandlinePhone(input) {
+                let value = input.value.replace(/\D/g, ""); // 숫자만 남김
+                
+                if (value.startsWith("02")) {
+                    if (value.length > 2 && value.length <= 6) {
+                        value = value.replace(/(\d{2})(\d{1,4})/, "$1-$2");
+                    } else if (value.length > 6) {
+                        value = value.replace(/(\d{2})(\d{3,4})(\d{1,4})/, "$1-$2-$3");
                     }
+                } else {
+                    if (value.length > 3 && value.length <= 7) {
+                        value = value.replace(/(\d{3})(\d{1,4})/, "$1-$2");
+                    } else if (value.length > 7) {
+                        value = value.replace(/(\d{3})(\d{3,4})(\d{1,4})/, "$1-$2-$3");
+                    }
+                }
+                
+                input.value = value;
+            }
 
-                    // 수정된 값을 입력 필드에 설정
-                    telInput.value = inputValue;
+            document.querySelector('#mobile-phone').addEventListener("input", function () {
+                formatMobilePhone(this);
+            });
+
+            document.querySelectorAll('#church-phone, #landline-phone, [id^="office-phone"]').forEach(input => {
+                input.addEventListener("input", function () {
+                    formatLandlinePhone(this);
                 });
             });
-        });       
 
-        // ---- 프로그래스 % 업데이트
-        function updateProgress() {
-            const inputs = document.querySelectorAll('.input-field'); 
-            const selects = document.querySelectorAll('.select-field');
 
-            // 체크할 라디오 그룹들 (name="lunar" 제외)
-            const radioGroups = new Set();
-            document.querySelectorAll('input[type="radio"]').forEach(radio => {
-                if (radio.name !== "") { // "lunar" 제외
-                    radioGroups.add(radio.name);
+            // -- 이메일 형식(gmail만 지원)
+            function validateGmail() {
+                const emailInput = document.getElementById('email');
+                const email = emailInput.value;
+
+                // Gmail 주소만 허용하는 정규식
+                const gmailRegex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+
+                if (!gmailRegex.test(email)) {
+                    emailInput.setCustomValidity("유효한 Gmail 주소를 입력해주세요.");
+                    emailInput.reportValidity(); // 브라우저의 기본 검증 메시지를 표시
+                } else {
+                    emailInput.setCustomValidity(""); // 유효한 이메일이면 customValidity 초기화
                 }
-            });
-
-            const totalFields = inputs.length + selects.length + radioGroups.size; 
-            let filledFields = 0;
-
-            inputs.forEach(input => {
-                if (input.value.trim() !== '') {
-                    filledFields++;
-                }
-            });
-
-            selects.forEach(select => {
-                if (select.value !== '') {
-                    filledFields++;
-                }
-            });
-
-            radioGroups.forEach(name => {
-                if (document.querySelector(`input[name="${name}"]:checked`)) {
-                    filledFields++;
-                }
-            });
-
-            let percentage = totalFields > 0 ? (filledFields / totalFields) * 100 : 0;
-
-            const progressIndicator = document.getElementById('progress-6'); // 필요에 따라 변경
-
-            if (percentage === 100) {
-                progressIndicator.textContent = "완료";
-                progressIndicator.style.color = '#007AFF';
-                progressIndicator.style.borderColor = '#007AFF';
-                progressIndicator.style.display = 'block'; // 표시
-            } else if (percentage > 0) {
-                progressIndicator.textContent = `${percentage.toFixed(0)}%`;
-                progressIndicator.style.color = '#E72929';
-                progressIndicator.style.borderColor = '#E72929';
-                progressIndicator.style.display = 'block'; // 표시
-            } else {
-                progressIndicator.style.display = 'none'; // 0%일 때 숨김
             }
-        }
 
-        document.addEventListener('DOMContentLoaded', () => {
-            updateProgress();
+            // 이메일 입력 필드에 이벤트 리스너 추가
+            document.getElementById('email').addEventListener('input', validateGmail);
         });
 
-        document.querySelectorAll('input[type="radio"]').forEach(radio => {
-            radio.addEventListener('change', updateProgress);
+        // -- 우편번호
+        document.addEventListener("DOMContentLoaded", function () {
+            const elZonecode = document.querySelector("#zonecode");
+            const elRoadAddress = document.querySelector("#roadAddress");
+            const elRoadAddressDetail = document.querySelector("#roadAddressDetail");
+            const searchBtn = document.querySelector("#search-btn");
+
+            const onClickSearch = () => {
+                new daum.Postcode({
+                    oncomplete: function (data) {
+                        console.log(elZonecode, elRoadAddress);
+                        
+                        if (elZonecode && elRoadAddress) {
+                            elZonecode.value = data.zonecode; 
+                            elRoadAddress.value = data.address; 
+                        }
+                    },
+                }).open();
+            };
+
+            if (searchBtn) {
+                searchBtn.addEventListener("click", onClickSearch);
+            }
         });
 
-         // -- 폼태그 안의 입력이 모두 채워지면 확인버튼이 활성화되고 **다음페이지**로 넘어가게 설정
-        // document.addEventListener('DOMContentLoaded', function () {
-        //     const form = document.getElementById('form06');
-        //     const submitBtn = document.getElementById('submit-btn');
-            
-        //     // 모든 input입력 필드를 가져오기
-        //     const inputs = form.querySelectorAll('input[required]');
-
-        //     // 각 input입력 필드에 변화가 있을 때마다 체크하는 함수
-        //     function checkFormCompletion() {
-        //         // 모든 input입력 필드가 채워졌는지 확인
-        //         const allFilled = Array.from(inputs).every(input => input.value.trim() !== '');
-                
-        //         // 모든 input입력 필드가 채워졌다면 버튼 활성화, 그렇지 않으면 비활성화
-        //         submitBtn.disabled = !allFilled;
-        //     }
-
-        //     // 각 input입력 필드에 이벤트 리스너 추가 (입력 변경 시마다 체크하는 코드)
-        //     inputs.forEach(input => {
-        //         input.addEventListener('input', checkFormCompletion);
-        //     });
-
-        //     // 확인 버튼 클릭 시 **다음html**로 넘어가도록 설정
-        //     submitBtn.addEventListener('click', function () {
-        //         if (!submitBtn.disabled) {
-        //             // 폼이 모두 채워졌을 때만 이동
-        //             window.location.href = 'https://puritechlab1155.github.io/onnuri-front/form07.html';
-        //         }
-        //     });
-        // });
 
     </script>
 </body>

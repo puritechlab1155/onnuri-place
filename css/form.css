@@ -139,56 +139,6 @@
   box-shadow: 0 0 0 1px #004BBA; /* 라인 */
 }
 
-/*탭 부분*/
-#home .step-tab {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    border-bottom: 1px solid #ddd;
-}
-#home .step-tab ul {
-    width: calc(100% / 9);
-    padding: 10px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    box-sizing: border-box;
-    text-align: center;
-    font-size: 20px;
-    position: relative;
-}
-#home .step-tab ul a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#home .step-tab ul .progress-indicator {
-    width: fit-content;
-    padding: 0 6px;
-    position: absolute;
-    top: -16px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 14px;
-    color: #ccc;
-    border: 1px solid #ccc;
-    border-radius: 12px;
-    display: block;
-}
-#home .step-tab ul li {
-    color: #767676;
-}
-#home ul.focus-step {
-    border-bottom: 3px solid #555;
-}
-#home ul.focus-step li {
-    color: #222 !important;
-    font-weight: 600;
-}
-
 /*작성칸 추가 버튼 스타일*/
 #home button.add-field {
     width: 100%;
@@ -211,73 +161,6 @@
 }
 #home button.add-field img {
     margin-left: 6px;
-}
-
-/* 모바일 전용 br */
-#home span.br{
-    /* display: block; */
-}
-
-
-/* 상단 부분 (지원신청 박스) */
-
-#home details {
-    width: 100%;
-    height: auto;
-    background-color: #FAFAFA;
-    border: 1px solid #DDDDDD;
-    border-radius: 5px;
-    padding: 50px;
-    margin: 50px 0;
-}
-#home summary {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    position: relative;
-    font-size: 30px;
-    justify-content: center;
-    font-weight: 600;
-}
-#home summary::-webkit-details-marker {
-    display: none;
-}
-/* 접기/펼치기 이미지 아이콘 */ 
-#home summary .toggle-icon {
-    width: 20px; /* 아이콘 크기 */
-    height: 20px;
-    background-size: contain; /* 이미지가 비율에 맞게 조정 */
-    background-repeat: no-repeat;
-    position: absolute;
-    right: 400px; /* 오른쪽 끝으로 위치 */
-    transition: transform 0.3s ease;
-    background-image: url('../img/home/form-toggle1.png'); /* 펼쳤을 때 사용할 이미지 */
-}
-/* 펼쳤을 때 이미지 변경 */
-#home details[open] summary .toggle-icon {
-    background-image: url('../img/home/form-toggle1.png'); /* 접었을 때 사용할 이미지 */
-    transform: rotate(180deg); /* 기호 회전 효과 */
-}
-#home details .text-wrap p{
-    margin-bottom: 35px;
-}
-#home details .text-wrap ul{
-    border-top: 1px solid #ddd;
-    padding-top: 32px;
-    width: fit-content;
-    margin: auto;
-    text-align: center;
-}
-#home details .text-wrap h4{
-    font-size: 20px;
-    font-weight: 700;
-    padding-bottom: 20px;
-}
-#home details p {
-    font-size: 16px;
-    margin-top: 10px;
-    padding: 10px;
-    text-align: center;
 }
 /* 버튼 스타일 */
 #home .finish-bnt-wrap {
@@ -2732,31 +2615,48 @@ main.form_05 #form05 .item04 .sub-box label input {
     }
 }
 
-/* 6단계 */
-main.form #form06 br.space_m {
+/* reservate03.html 스타일 */
+main.form .reserv-step {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+main.form .reserv-step li {
+    width: calc(100% / 3);
+    height: 60px;
+    text-align: center;
+    margin-top: 80px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+main.form .reserv-step li.current_step {
+    font-weight: 600;
+    border-bottom: 3px solid #555;
+}
+main.form #reservate03 br.space_m {
     display: none;
 }
-main.form #form06 fieldset {
+main.form #reservate03 fieldset {
     width: 100%;
     overflow: hidden;
     border: none;
     margin-top: 32px;
     margin-bottom: 60px;
 }
-main.form #form06 h4.list-title{
+main.form #reservate03 h4.list-title{
     width: 100%;
     overflow: hidden;
     margin: 16px 0;
     font-size: 18px;
     font-weight: 700;
 }
-main.form #form06 h4.list-title > span {
+main.form #reservate03 h4.list-title > span {
     margin-top: 6px;
 }
-main.form #form06 input {
+main.form #reservate03 input:not([type = radio]) {
     width: 100%;
     height: 34px;
-    margin: 0 10px;
     padding: 8px 16px;
     line-height: normal !important;
     border: 1px solid #BABABA;
@@ -2766,7 +2666,7 @@ main.form #form06 input {
     cursor: pointer;
 }
 /*목록 타이틀 및 목록*/
-main.form #form06 .input-container{
+main.form #reservate03 .input-container{
     width: 100%;
     overflow: hidden;
     display: flex;
@@ -2778,68 +2678,205 @@ main.form #form06 .input-container{
     gap: 0;
 }
 /* 목록 */
-main.form #form06 .list_box:not(:first-of-type) {
+main.form #reservate03 .list_box:not(:first-of-type) {
     margin-top: 30px;
 }
-main.form #form06 label.list {
+main.form #reservate03 .list {
     box-sizing: border-box;
     display: flex;
     flex: 1 1 50%;
-    justify-content: space-between;
     align-items: center;
     flex-direction: row;
     border-top: none;
     font-size: 18px;
+    border-bottom: 1px solid #ddd;
 }
-main.form #form06 label.list > span {
+main.form #reservate03 .list > span {
     flex: 0 0 210px;
     padding: 12px 0;
     box-sizing: border-box;
-    background: #E0EBF0;
+    background: #F7F7F7;
     font-size: 18px;
-    font-weight: 500;
-    border-right: 1px solid #ACC7D4;
+    font-weight: 600;
+    border-right: 1px solid #ddd;
 }
-main.form #form06 .item01 , main.form #form06 .item02 {
-    border-bottom: 1px solid #ACC7D4;
+main.form #reservate03 .item01 .reservat-type-wrap {
+    display: flex;
+    width: 100%;
+    padding: 0 20px;
+    gap: 30px;
+    align-items: center;
 }
-main.form #form06 .item01 , main.form #form06 .item03 {
-    border-right: 1px solid #ACC7D4;
-} 
+main.form #reservate03 .list label {
+    display: block;
+    width: 100%;
+    max-width: 230px;
+    margin: 0 16px;
+}
+main.form #reservate03 .item01 label {
+    max-width: fit-content;
+    cursor: pointer;
+    margin: 0;
+}
+main.form #reservate03 .item02 .password-container {
+    display: flex;
+    align-items: center;
+}
+main.form #reservate03 .item02 label {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+main.form #reservate03 .item02 b {
+    flex: 0 0 28%;
+    font-size: 16px;
+    font-weight: 400;
+    color: #F84242;
+    font-size: 15px;
+}
+main.form #reservate03 .item05,
+main.form #reservate03 .item06 {
+    border-bottom: none;
+}
+main.form #reservate03 .red-text {
+    width: 100%;
+    padding: 14px 0;
+    border-top: 1px solid #FFE9B0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #F84242;
+}
+main.form #reservate03 .item07 ,
+main.form #reservate03 .item08 ,
+main.form #reservate03 .item09 ,
+main.form #reservate03 .item10 {
+    border-color: #FFE9B0 !important;
+}
+main.form #reservate03 .y-bg {
+    background: #FFF1CD !important;
+    border-color: #FFE9B0 !important;
+    border-bottom: 1px solid #FFE9B0;
+}
+main.form #reservate03 .list .w100 {
+    max-width: 100% !important;
+}
+main.form #reservate03 .f100 {
+    width: 100% !important;
+    flex: 0 0 100% !important;
+}
+main.form #reservate03 .item15 {
+    align-items: stretch;
+}
+main.form #reservate03 .item15 > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main.form #reservate03 .item15 .ad_right {
+    width: 100%;
+}
+main.form #reservate03 .item15 .address-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 14px 16px;
+}
+main.form #reservate03 .item15 .address {
+    display: flex;
+    gap: 10px;
+}
+main.form #reservate03 .item15 .address-container {
+    width: 100%;
+    max-width: 112px;
+}
+main.form #reservate03 .item15 .address-container input {
+    text-align: center;
+}
+main.form #reservate03 .item15 .g-bg {
+    background: #f0f0f0 !important;
+}
+main.form #reservate03 .gray_btn {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 16px;
+    border: 1px solid #D1D1D1;
+    border-radius: 3px;
+    background-color: #F7F7F8;
+    padding: 3px 10px;
+}
+main.form .finish-bnt-wrap button {
+    width: 120px;
+    height: 47px;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 10px;
+}
+main.form .finish-bnt-wrap .checkBtn {
+    background: #33B9DC;
+    border: 1px solid #2AA6C6;
+    color: #fff;
+    letter-spacing: -0.36px;
+    line-height: 0;
+}
+main.form .finish-bnt-wrap .deleteBtn {
+    border: 1px solid #DDDDDD;
+    color: #000000;
+    background: #F2F2F2;
+}
+
 /* resize */
-@media (max-width: 1014px) {
-    main.form #form06 label.list > span {
-        flex: 0 0 160px;
+@media (max-width: 1078px) {
+    main.form #reservate03 .item01 ,
+    main.form #reservate03 .item02 {
+        flex: 0 0 100%;
+    }
+    main.form #reservate03 .list > span {
+        flex: 0 0 140px;
     }
 }
 @media (max-width: 767px) {
-    main.form #form06 br.space_m {
-        display: block;
+    main.form .reserv-step {
+        align-items: baseline;
     }
-    main.form #form06 .item03 , .item04 {
-        flex: 1 1 100% !important;
+    main.form .reserv-step li {
+        height: 64px;
+        display: flex;
+        flex-direction: column;
     }
-    main.form #form06 .item03 {
-        border-right: none;
-        border-bottom: 1px solid #ACC7D4;
+    main.form .reserv-step li span {
+        font-size: clamp(12px, 2.6vw, 24px);
     }
-    main.form #form06 label.list > span {
-        flex: 0 0 110px;
-        padding: 12px 6px;
-        line-height: 22px;
+    main.form #reservate03 .list {
+        flex: 0 0 100%;
     }
 }
 @media (max-width: 482px) {
-    main.form #form06 input {
+    main.form #reservate03 br.space_m {
+        display: block;
+    }
+    main.form #reservate03 .item01 label {
         font-size: 15px;
+    }
+    main.form #reservate03 .red-text {
+        font-size: 15px;
+    }
+    main.form #reservate03 input {
+        font-size: 15px !important;
         padding: 8px;
     }
-    main.form #form06 legend.step {
+    main.form #reservate03 legend.step {
         font-size: 22px;
     }
-    main.form #form06 label.list > span {
-        flex: 0 0 70px;
+    main.form #reservate03 .list > span {
+        flex: 0 0 80px;
         padding: 12px 0;
+        font-size: 15px;
+    }
+    main.form #reservate03 .item15 .address {
+        flex-direction: column;
+    }
+    main.form #reservate03 .gray_btn {
         font-size: 15px;
     }
 }
