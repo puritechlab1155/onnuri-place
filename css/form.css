@@ -316,45 +316,45 @@
 
 
 /* 1단계 */
-main.form_01 #form01 {
+#main.form_01 #form01 {
     margin-bottom: 60px;
 }
-main.form_01 #form01 input:not([type="radio"]) {
+#main.form_01 #form01 input:not([type="radio"]) {
     padding: 8px 16px;
     font-size: 16px;
     border-radius: 8px;
 }
-main.form_01 #form01 input[type="file"] {
+#main.form_01 #form01 input[type="file"] {
     background: none;
     border: none;
     font-size: 16px;
     display: none;
 }
-main.form_01 #form01 .custom-file-upload {
+#main.form_01 #form01 .custom-file-upload {
     display: inline-block;
     cursor: pointer;
 }
-main.form_01 #form01 legend.step {
+#main.form_01 #form01 legend.step {
     margin-bottom: 24px;
 }
-main.form_01 #form01 .red { 
+#main.form_01 #form01 .red { 
     color: #DF2A2A; font-size: 14px; 
 }
-main.form_01 #form01 .space_mpb {
+#main.form_01 #form01 .space_mpb {
     display: none;
 }
-main.form_01 #form01 .gray_btn { 
+#main.form_01 #form01 .gray_btn { 
     border: 1px solid #D1D1D1; 
     border-radius: 3px;
     background-color: #F7F7F8; 
     color: #222; 
     padding: 3px 10px; 
 }
-main.form_01 #form01 .input_containner {
+#main.form_01 #form01 .input_containner {
     border-left: 1px solid #ACC7D4;
     border-bottom: 1px solid #ACC7D4;
 }
-main.form_01 #form01 div.inner-box {
+#main.form_01 #form01 div.inner-box {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -364,12 +364,12 @@ main.form_01 #form01 div.inner-box {
     border-left: none;
     background: #E0EBF0;
 }
-main.form_01 #form01 .input-wrap {
+#main.form_01 #form01 .input-wrap {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-main.form_01 #form01 .ad_left, .blue-box {
+#main.form_01 #form01 .ad_left, .blue-box {
     flex: 0 0 170px;
     background: #E0EBF0;
     text-align: center; 
@@ -377,7 +377,7 @@ main.form_01 #form01 .ad_left, .blue-box {
     font-weight: 600;
     font-size: 18px;
 }
-main.form_01 #form01 label.blue-box-inner {
+#main.form_01 #form01 label.blue-box-inner {
     flex: 0 0 100px;
     display: flex;
     justify-content: center;
@@ -392,25 +392,25 @@ main.form_01 #form01 label.blue-box-inner {
     box-sizing: border-box;
 }
 /* 입력칸 공통스타일 */
-main.form_01 #form01 div.top_left>div>div, 
-main.form_01 #form01 div.top_right>div>div, 
-main.form_01 #form01 div.bottom>div>div, 
-main.form_01 #form01 div.ad_right, 
-main.form_01 #form01 .tl_inner>div{
+#main.form_01 #form01 div.top_left>div>div, 
+#main.form_01 #form01 div.top_right>div>div, 
+#main.form_01 #form01 div.bottom>div>div, 
+#main.form_01 #form01 div.ad_right, 
+#main.form_01 #form01 .tl_inner>div{
     flex: 1;
     padding: 12.6px;
     font-size: 18px;
     background: #fff;
 }
 /* 상단 */
-main.form_01 #form01 .top {
+#main.form_01 #form01 .top {
     width: 100%;
     display: flex;
     align-items: stretch;
     flex-wrap: wrap;
     background: lightblue;
 }
-main.form_01 #form01 .top_left, main.form_01 #form01 .top_right {
+#main.form_01 #form01 .top_left, #main.form_01 #form01 .top_right {
     flex: 0 0 50%;
     display: flex;
     flex-direction: column;
@@ -418,28 +418,28 @@ main.form_01 #form01 .top_left, main.form_01 #form01 .top_right {
 }
 
 /* 상단왼쪽 */
-main.form_01 #form01 div.inner-contain-box {
+#main.form_01 #form01 div.inner-contain-box {
     padding: 0 !important;
 }
-main.form_01 #form01 .tl_inner {
+#main.form_01 #form01 .tl_inner {
     display: flex;
     justify-content: flex-start;
     width: 100%;
 }
-main.form_01 #form01 .tl_inner>div {
+#main.form_01 #form01 .tl_inner>div {
     width: 100%;
 }
-main.form_01 #form01 .out-box01 .blue-box ,
-main.form_01 #form01 .out-box07 .blue-box ,
-main.form_01 #form01 .out-box10 .ad_left {
+#main.form_01 #form01 .out-box01 .blue-box ,
+#main.form_01 #form01 .out-box07 .blue-box ,
+#main.form_01 #form01 .out-box10 .ad_left {
     flex: 0 0 170px;
     padding: 10px;
     background: #E0EBF0;
 }
-main.form_01 #form01 .out-box01 .tl_inner:not(:last-child) {
+#main.form_01 #form01 .out-box01 .tl_inner:not(:last-child) {
     border-bottom: 1px solid #ACC7D4;
 }
-main.form_01 #form01 .out-box02 .check {
+#main.form_01 #form01 .out-box02 .check {
     flex: 0 0 64px;
     margin-left: 6px;
     display: flex;
@@ -448,21 +448,21 @@ main.form_01 #form01 .out-box02 .check {
 /*위 코드에서 input이 value="no"인 라디오 버튼을 클릭한다면 answer-yes클래스를 가진 태그의 input-field 클래스를 제거하고, 
 value="yes" 인 라디오 버튼을 클릭한다면 answer-no클래스를 가진 태그의 input-field클래스를 제거하도록 하여 예, 아니오 버튼 클릭에 따른 퍼센트를 실행하고 싶어*/
 /* 상단오른쪽 */
-main.form_01 #form01 .top_right .inner-box {
+#main.form_01 #form01 .top_right .inner-box {
     height: calc(100% / 4);
     padding: 0 !important;
     align-items: stretch;
 }
-main.form_01 #form01 .top_right div.inner-box .blue-box{
+#main.form_01 #form01 .top_right div.inner-box .blue-box{
     border-right: 1px solid #ACC7D4;
     background: #E0EBF0;
 }
-main.form_01 #form01 .inner-box .right-tit {
+#main.form_01 #form01 .inner-box .right-tit {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-main.form_01 #form01 .top_right .radio-box {
+#main.form_01 #form01 .top_right .radio-box {
     padding: 0 14px;
     display: flex;
     flex: 1;
@@ -472,223 +472,223 @@ main.form_01 #form01 .top_right .radio-box {
     font-size: 18px;
     background: #fff;
 }
-main.form_01 #form01 .top_right .radio-box li{
+#main.form_01 #form01 .top_right .radio-box li{
     padding: 20px 0;
     background: #fff;
 }
-main.form_01 #form01 .out-box04 .input-wrap{
+#main.form_01 #form01 .out-box04 .input-wrap{
     justify-content: start;
     gap: 8px;
 }
-main.form_01 #form01 .out-box04 .input-wrap input {
+#main.form_01 #form01 .out-box04 .input-wrap input {
     width: 60px;
     text-align: center;
 }
-main.form_01 #form01 .out-box05 .blue-box ,
-main.form_01 #form01 .out-box07 .blue-box ,
-main.form_01 #form01 .out-box11 .ad_left ,
-main.form_01 #form01 .out-box12 .ad_left {
+#main.form_01 #form01 .out-box05 .blue-box ,
+#main.form_01 #form01 .out-box07 .blue-box ,
+#main.form_01 #form01 .out-box11 .ad_left ,
+#main.form_01 #form01 .out-box12 .ad_left {
     flex: 0 0 170px;
     background: #E0EBF0;
 }
-main.form_01 #form01 .out-box06 .input-wrap input{
+#main.form_01 #form01 .out-box06 .input-wrap input{
     flex: 0 0 60px;
 }
 /* 하단 */
-main.form_01 #form01 .middle-wrap {
+#main.form_01 #form01 .middle-wrap {
     display: flex;
 }
-main.form_01 #form01 .middle-wrap .middle-box {
+#main.form_01 #form01 .middle-wrap .middle-box {
     padding: 0 !important;
 }
-main.form_01 #form01 .middle-wrap .middle-box > div {
+#main.form_01 #form01 .middle-wrap .middle-box > div {
     align-items: stretch !important;
 }
-main.form_01 #form01 .top_right .middle-box .inner-box {
+#main.form_01 #form01 .top_right .middle-box .inner-box {
     display: flex;
     padding: 0 !important;
 }
-main.form_01 #form01 .middle-box div.inner-box .input-wrap{
+#main.form_01 #form01 .middle-box div.inner-box .input-wrap{
     flex: 1;
     padding: 14px;
     background: #fff;
     border-left: 1px solid #ACC7D4;
 }
-main.form_01 #form01 .out-box10 .ad_right ,
-main.form_01 #form01 .out-box12 .input-wrap {
+#main.form_01 #form01 .out-box10 .ad_right ,
+#main.form_01 #form01 .out-box12 .input-wrap {
     border-left: 1px solid #ACC7D4;
 }
-main.form_01 #form01 .out-box10 .ad_right .input-wrap , 
-main.form_01 #form01 .out-box12 .input-wrap ,
-main.form_01 #form01 .out-box06 .input-wrap  {
+#main.form_01 #form01 .out-box10 .ad_right .input-wrap , 
+#main.form_01 #form01 .out-box12 .input-wrap ,
+#main.form_01 #form01 .out-box06 .input-wrap  {
     justify-content: start;
     gap: 16px;
 }
-main.form_01 #form01 .out-box08 .blue-box ,
-main.form_01 #form01 .out-box09 .blue-box {
+#main.form_01 #form01 .out-box08 .blue-box ,
+#main.form_01 #form01 .out-box09 .blue-box {
     flex: 0 0 169px;
 }
-main.form_01 #form01 .out-box10 .ad_right .input-wrap:first-child {
+#main.form_01 #form01 .out-box10 .ad_right .input-wrap:first-child {
     position: relative;
 }
-main.form_01 #form01 .out-box10 .ad_right .input-wrap:first-child input {
+#main.form_01 #form01 .out-box10 .ad_right .input-wrap:first-child input {
     width: 110px;
     text-align: center;
 }
-main.form_01 #form01 .out-box10 .ad_right .input-wrap:nth-child(2) {
+#main.form_01 #form01 .out-box10 .ad_right .input-wrap:nth-child(2) {
     padding: 14px 0;
 }
-main.form_01 #form01 .out-box10 .input-wrap {
+#main.form_01 #form01 .out-box10 .input-wrap {
     flex-wrap: wrap;
 }
-main.form_01 #form01 .out-box10 .input-wrap .address {
+#main.form_01 #form01 .out-box10 .input-wrap .address {
     display: flex;
     gap: 8px;
     align-items: center;
     justify-content: start;
 }
-main.form_01 #form01 .out-box10 .input-wrap .address input {
+#main.form_01 #form01 .out-box10 .input-wrap .address input {
     background: #f0f0f0;
 }
-main.form_01 #form01 .out-box10 .input-wrap .address-detaile {
+#main.form_01 #form01 .out-box10 .input-wrap .address-detaile {
     width: 100%;
 }
-main.form_01 #form01 .out-box10 .input-wrap .address-detaile > div:first-child {
+#main.form_01 #form01 .out-box10 .input-wrap .address-detaile > div:first-child {
     margin-bottom: 14px;
 }
-main.form_01 #form01 .out-box10 .input-wrap .address-detaile input {
+#main.form_01 #form01 .out-box10 .input-wrap .address-detaile input {
     width: 100% !important;
     text-align: left !important;
 }
-main.form_01 #form01 .out-box10 .input-wrap .address-detaile input#roadAddress {
+#main.form_01 #form01 .out-box10 .input-wrap .address-detaile input#roadAddress {
     background: #f0f0f0;
 }
-main.form_01 #form01 .out-box10 .gray_btn {
+#main.form_01 #form01 .out-box10 .gray_btn {
     display: flex;
     align-items: center;
     gap: 4px;
     font-size: 16px;
 }
-main.form_01 #form01 .out-box11 .ad_right {
+#main.form_01 #form01 .out-box11 .ad_right {
     display: flex;
     flex-wrap: wrap;
     gap: 10px 32px;
     align-items: center;
     border-left: 1px solid #ACC7D4;
 }
-main.form_01 #form01 .out-box11 .ad_right .input-wrap {
+#main.form_01 #form01 .out-box11 .ad_right .input-wrap {
     gap: 16px;
 }
-main.form_01 #form01 .out-box11 .ad_right .input-wrap:first-child input{
+#main.form_01 #form01 .out-box11 .ad_right .input-wrap:first-child input{
     width: 90px;
     text-align: center;
 }
-main.form_01 #form01 .out-box11 .ad_right .input-wrap:nth-child(2) input{
+#main.form_01 #form01 .out-box11 .ad_right .input-wrap:nth-child(2) input{
     width: 60px;
     text-align: center;
 }
-main.form_01 #form01 .out-box11 .ad_right .input-wrap label{
+#main.form_01 #form01 .out-box11 .ad_right .input-wrap label{
     display: block;
     flex: 0 0 auto;
 }
 @media (max-width: 940px) {
-    main.form_01 #form01 .top {
+    #main.form_01 #form01 .top {
         display: block;
     }
-    main.form_01 #form01 .middle-wrap {
+    #main.form_01 #form01 .middle-wrap {
         display: block;
     }
-    main.form_01 #form01 .ad_left, .blue-box {
+    #main.form_01 #form01 .ad_left, .blue-box {
         flex: 0 0 120px;
     }
-    main.form_01 #form01 .out-box01 .blue-box ,
-    main.form_01 #form01 .out-box07 .blue-box ,
-    main.form_01 #form01 .out-box10 .ad_left {
+    #main.form_01 #form01 .out-box01 .blue-box ,
+    #main.form_01 #form01 .out-box07 .blue-box ,
+    #main.form_01 #form01 .out-box10 .ad_left {
         flex: 0 0 120px;
     }
-    main.form_01 #form01 .top_right .blue-box {
+    #main.form_01 #form01 .top_right .blue-box {
         flex: 0 0 121px !important;
     }
-    main.form_01 #form01 .out-box05 .blue-box ,
-    main.form_01 #form01 .out-box07 .blue-box ,
-    main.form_01 #form01 .out-box11 .ad_left ,
-    main.form_01 #form01 .out-box12 .ad_left {
+    #main.form_01 #form01 .out-box05 .blue-box ,
+    #main.form_01 #form01 .out-box07 .blue-box ,
+    #main.form_01 #form01 .out-box11 .ad_left ,
+    #main.form_01 #form01 .out-box12 .ad_left {
         flex: 0 0 120px;
     }
-    main.form_01 #form01 .out-box08 .blue-box, main.form_01 #form01 .out-box09 .blue-box {
+    #main.form_01 #form01 .out-box08 .blue-box, #main.form_01 #form01 .out-box09 .blue-box {
         flex: 0 0 120px;
     }
-    main.form_01 #form01 .out-box10 .ad_right .input-wrap:first-child {
+    #main.form_01 #form01 .out-box10 .ad_right .input-wrap:first-child {
         flex-wrap: wrap;
     }
     .gray_btn-container {
         width: 100%;
     }
-    main.form_01 #form01 .out-box11 .ad_right span {
+    #main.form_01 #form01 .out-box11 .ad_right span {
         width: 100%;
     }
 }
 @media (max-width: 482px) {
-    main.form_01 #form01 input {
+    #main.form_01 #form01 input {
         font-size: 15px !important;
     }
-    main.form_01 #form01 div.top_left>div>div, main.form_01 #form01 div.top_right>div>div, main.form_01 #form01 div.bottom>div>div, main.form_01 #form01 div.ad_right, main.form_01 #form01 .tl_inner>div {
+    #main.form_01 #form01 div.top_left>div>div, #main.form_01 #form01 div.top_right>div>div, #main.form_01 #form01 div.bottom>div>div, #main.form_01 #form01 div.ad_right, #main.form_01 #form01 .tl_inner>div {
         font-size: 15px;
     }
-    main.form_01 #form01 .ad_left, .blue-box {
+    #main.form_01 #form01 .ad_left, .blue-box {
         font-size: 15px;
     }
-    main.form_01 #form01 label.blue-box-inner {
+    #main.form_01 #form01 label.blue-box-inner {
         font-size: 14px;
     }
-    main.form_01 #form01 .top_right .radio-box {
+    #main.form_01 #form01 .top_right .radio-box {
         font-size: 15px;
     }
-    main.form_01 #form01 .out-box10 .gray_btn {
+    #main.form_01 #form01 .out-box10 .gray_btn {
         font-size: 14px;
     }
-    main.form_01 #form01 .ad_left, .blue-box {
+    #main.form_01 #form01 .ad_left, .blue-box {
         flex: 0 0 80px;
     }
-    main.form_01 #form01 .out-box01 .blue-box ,
-    main.form_01 #form01 .out-box07 .blue-box ,
-    main.form_01 #form01 .out-box10 .ad_left {
+    #main.form_01 #form01 .out-box01 .blue-box ,
+    #main.form_01 #form01 .out-box07 .blue-box ,
+    #main.form_01 #form01 .out-box10 .ad_left {
         flex: 0 0 80px;
     }
-    main.form_01 #form01 .top_right .blue-box {
+    #main.form_01 #form01 .top_right .blue-box {
         flex: 0 0 81px !important;
     }
-    main.form_01 #form01 .out-box05 .blue-box ,
-    main.form_01 #form01 .out-box07 .blue-box ,
-    main.form_01 #form01 .out-box11 .ad_left ,
-    main.form_01 #form01 .out-box12 .ad_left {
+    #main.form_01 #form01 .out-box05 .blue-box ,
+    #main.form_01 #form01 .out-box07 .blue-box ,
+    #main.form_01 #form01 .out-box11 .ad_left ,
+    #main.form_01 #form01 .out-box12 .ad_left {
         flex: 0 0 80px;
     }
-    main.form_01 #form01 .out-box08 .blue-box, main.form_01 #form01 .out-box09 .blue-box {
+    #main.form_01 #form01 .out-box08 .blue-box, #main.form_01 #form01 .out-box09 .blue-box {
         flex: 0 0 80px;
     }
-    main.form_01 #form01 label.blue-box-inner {
+    #main.form_01 #form01 label.blue-box-inner {
         flex: 0 0 80px;
     }
-    main.form_01 #form01 .out-box10 .ad_right .input-wrap:first-child input {
+    #main.form_01 #form01 .out-box10 .ad_right .input-wrap:first-child input {
         width: 80px;
     }
-    main.form_01 #form01 .space_mpb {
+    #main.form_01 #form01 .space_mpb {
         display: block;
     }
-    main.form_01 #form01 input:not([type='radio']) {
+    #main.form_01 #form01 input:not([type='radio']) {
         padding: 6px 8px !important;
     }
 }
 
 /*2단계*/
-main.form_02 #form02 fieldset {
+#main.form_02 #form02 fieldset {
     width: 100%;
     overflow: hidden;
     border: none;
     margin-top: 32px;
 }
-main.form_02 #form02 h4.list-title{
+#main.form_02 #form02 h4.list-title{
     width: 100%;
     overflow: hidden;
     display: flex;
@@ -698,12 +698,12 @@ main.form_02 #form02 h4.list-title{
     font-size: 18px;
     font-weight: 700;
 }
-main.form_02 #form02 h4.list-title > span {
+#main.form_02 #form02 h4.list-title > span {
     display: block;
     float: left;
     margin-top: 6px;
 }
-main.form_02 #form02 input {
+#main.form_02 #form02 input {
     width: 90%;
     height: 34px; 
     margin: 0 auto;
@@ -715,21 +715,21 @@ main.form_02 #form02 input {
     font-size: 16px;
     cursor: pointer;
 }
-main.form_02 #form02 button.add-field {
+#main.form_02 #form02 button.add-field {
     display: flex;
     align-items: center;
     justify-content: center;
     float: right;
 }
-main.form_02 #form02 button.add-field > span {
+#main.form_02 #form02 button.add-field > span {
     display: inline-block;
     color: #777;
 }
 /*목록 타이틀 및 목록*/
-main.form_02 #form02 .input-wrap .out-box {
+#main.form_02 #form02 .input-wrap .out-box {
     margin-bottom: 70px;
 }
-main.form_02 #form02 .item-title , main.form_02 #form02 .input-container{
+#main.form_02 #form02 .item-title , #main.form_02 #form02 .input-container{
     width: 100%;
     overflow: hidden;
     display: flex;
@@ -740,7 +740,7 @@ main.form_02 #form02 .item-title , main.form_02 #form02 .input-container{
     box-sizing: border-box;
     gap: 0;
 }
-main.form_02 #form02 .item-title  {
+#main.form_02 #form02 .item-title  {
     align-items: center;
     border-top: 1px solid #ACC7D4;
     border-right: 1px solid #ACC7D4;
@@ -748,23 +748,23 @@ main.form_02 #form02 .item-title  {
     font-weight: 500;
     background: #E0EBF0;
 }
-main.form_02 #form02 .item {
+#main.form_02 #form02 .item {
     padding: 8px 0;
     box-sizing: border-box;
     border-left: 1px solid #ACC7D4;
 }
-main.form_02 #form02 span.br {
+#main.form_02 #form02 span.br {
     display: block;
     margin-top: -8px;
 }
 /* 목록 */
-main.form_02 #form02 .item-title .item {
+#main.form_02 #form02 .item-title .item {
     border-bottom: 1px solid #ACC7D4;
 }
-main.form_02 #form02 .list_box .list {
+#main.form_02 #form02 .list_box .list {
     border-top: none;
 }
-main.form_02 #form02 .input-container label:not(.radio-container label){
+#main.form_02 #form02 .input-container label:not(.radio-container label){
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -773,179 +773,179 @@ main.form_02 #form02 .input-container label:not(.radio-container label){
     box-sizing: border-box;
     border-right: none;
 }
-main.form_02 #form02 .input-container span.mob-title {
+#main.form_02 #form02 .input-container span.mob-title {
     display: none;
 }
 /* 각 항목에 대해 비율을 다르게 설정 */
-main.form_02 #form02 .delete-item {
+#main.form_02 #form02 .delete-item {
     flex: 0.31;
 }
-main.form_02 #form02 .item01 {
+#main.form_02 #form02 .item01 {
     border-right: none;
 }
-main.form_02 #form02 .item02 {
+#main.form_02 #form02 .item02 {
     border-right: 1px solid #ACC7D4;
 }
-main.form_02 #form02 .item03:not(.out-box01 .list_box .item03) { 
+#main.form_02 #form02 .item03:not(.out-box01 .list_box .item03) { 
     border-left: none;
 }
-main.form_02 #form02 .item04 {
+#main.form_02 #form02 .item04 {
     border-right: none;
 }
-main.form_02 #form02 .item05 {
+#main.form_02 #form02 .item05 {
     border-right: none;
 }
-main.form_02 #form02 .item06 {
+#main.form_02 #form02 .item06 {
     border-right: none;
 }
 /* 학력사항 */
-main.form_02 #form02 .out-box01 .item01 {
+#main.form_02 #form02 .out-box01 .item01 {
     flex: 2;
 }
-main.form_02 #form02 .list_box .item01 {
+#main.form_02 #form02 .list_box .item01 {
     border-bottom: none;
     border-top: none;
 }
-main.form_02 #form02 .out-box01 .item02 {
+#main.form_02 #form02 .out-box01 .item02 {
     flex: 1;
     border-right: 1px solid #ACC7D4;
 }
 
-main.form_02 #form02 .out-box01 .item03 {
+#main.form_02 #form02 .out-box01 .item03 {
     flex: 1; 
 }
 
-main.form_02 #form02 .out-box01 .item04 {
+#main.form_02 #form02 .out-box01 .item04 {
     flex: 0.5;
 }
 
-main.form_02 #form02 .out-box01 .item05 {
+#main.form_02 #form02 .out-box01 .item05 {
     flex: 0.5;
 }
 /* 외국어능력 */
-main.form_02 #form02 .ft-400 {
+#main.form_02 #form02 .ft-400 {
     font-weight: 400;
     font-size: 16px;
 }
-main.form_02 #form02 .out-box02 .item-title {
+#main.form_02 #form02 .out-box02 .item-title {
     border-left: 1px solid #ACC7D4;
     align-items: stretch;
     justify-content: center;
 }
-main.form_02 #form02 .out-box02 .item-title .item {
+#main.form_02 #form02 .out-box02 .item-title .item {
     padding: 0;
     line-height: 160%;
 }
-main.form_02 #form02 .out-box02 .item-title .item:not(.item02) {
+#main.form_02 #form02 .out-box02 .item-title .item:not(.item02) {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-main.form_02 #form02 .out-box02 .item-title .item01 {
+#main.form_02 #form02 .out-box02 .item-title .item01 {
     border-left: none;
 }
-main.form_02 #form02 .out-box02 .item > span {
+#main.form_02 #form02 .out-box02 .item > span {
     display: block;
     padding: 6px 0;
     line-height: 120%;
 }
-main.form_02 #form02 .out-box02 .item01 {
+#main.form_02 #form02 .out-box02 .item01 {
     flex: 1;
     border-bottom: 1px solid #ACC7D4;
 }
-main.form_02 #form02 .out-box02 .item02 {
+#main.form_02 #form02 .out-box02 .item02 {
     flex: 2.5;
     border-right: 1px solid #ACC7D4;
 }
-main.form_02 #form02 .out-box02 .item03 {
+#main.form_02 #form02 .out-box02 .item03 {
     flex: 1; 
 }
-main.form_02 #form02 .out-box02 .item04 {
+#main.form_02 #form02 .out-box02 .item04 {
     flex: 0.8;
 }
-main.form_02 #form02 .item02-sub-title {
+#main.form_02 #form02 .item02-sub-title {
     width: 100%;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
     border-top: 1px solid #ACC7D4;
 }
-main.form_02 #form02 .item02-sub-title li {
+#main.form_02 #form02 .item02-sub-title li {
     flex: 1;
     padding: 14px 0;
 }
-main.form_02 #form02 .item02-sub-title li:not(:last-child) {
+#main.form_02 #form02 .item02-sub-title li:not(:last-child) {
     border-right: 1px solid #ACC7D4;
 }
-main.form_02 #form02 .out-box02 .select {
+#main.form_02 #form02 .out-box02 .select {
     display: flex;
     align-items: center;
 }
-main.form_02 #form02 .out-box02 .select li {
+#main.form_02 #form02 .out-box02 .select li {
     flex: 1;
     padding: 0 8px;
 }
-main.form_02 #form02 .out-box02 .select li:not(:last-child) {
+#main.form_02 #form02 .out-box02 .select li:not(:last-child) {
     border-right: 1px solid #ACC7D4;
 }
-main.form_02 #form02 .out-box02 .select li select {
+#main.form_02 #form02 .out-box02 .select li select {
     width: 100%;
     padding: 6px 16px;
     border: 1px solid #BABABA;
     border-radius: 8px;
     font-size: 15px;
 }
-main.form_02 #form02 .out-box02 label {
+#main.form_02 #form02 .out-box02 label {
     padding: 0;
 }
 /* 경력사항 */
-main.form_02 #form02 .out-box03 .item01 {
+#main.form_02 #form02 .out-box03 .item01 {
     flex: 1;
     border-bottom: 1px solid #ACC7D4;
 }
-main.form_02 #form02 .out-box03 .item02 {
+#main.form_02 #form02 .out-box03 .item02 {
     flex: 2;
 }
-main.form_02 #form02 .out-box03 .item02:not(.item-title .item02){
+#main.form_02 #form02 .out-box03 .item02:not(.item-title .item02){
     border-bottom: none;
 }
-main.form_02 #form02 .out-box03 .item03 {
+#main.form_02 #form02 .out-box03 .item03 {
     flex: 0.5; 
 }
-main.form_02 #form02 .out-box03 .item04 {
+#main.form_02 #form02 .out-box03 .item04 {
     flex: 1;
 }
-main.form_02 #form02 .out-box03 .item05 {
+#main.form_02 #form02 .out-box03 .item05 {
     flex: 0.5;
 }
 /* 전문기술・자격증 */
-main.form_02 #form02 .out-box04 .item01 {
+#main.form_02 #form02 .out-box04 .item01 {
     flex: 1;
     border-bottom: 1px solid #ACC7D4;
 }
-main.form_02 #form02 .out-box04 .item02 {
+#main.form_02 #form02 .out-box04 .item02 {
     flex: 1; 
 }
-main.form_02 #form02 .out-box04 .item02:not(.item-title .item02) {
+#main.form_02 #form02 .out-box04 .item02:not(.item-title .item02) {
     border-bottom: none;
 }
-main.form_02 #form02 .out-box04 .item03 {
+#main.form_02 #form02 .out-box04 .item03 {
     flex: 1; 
 }
-main.form_02 #form02 .out-box04 .item04 {
+#main.form_02 #form02 .out-box04 .item04 {
     flex: 1.2;
 }
-main.form_02 #form02 .out-box04 .list .calendar-wrap {
+#main.form_02 #form02 .out-box04 .list .calendar-wrap {
     display: flexbox;
     flex: 1;
 }
-main.form_02 #form02 .out-box04 .calendar-wrap:first-child::after {
+#main.form_02 #form02 .out-box04 .calendar-wrap:first-child::after {
     content: none !important;
 }
-main.form_02 #form02 .out-box04 .calendar-wrap input {
+#main.form_02 #form02 .out-box04 .calendar-wrap input {
     width: 75%;
 }
-main.form_02 #form02 .out-box04 .item04 .radio-container {
+#main.form_02 #form02 .out-box04 .item04 .radio-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -954,10 +954,10 @@ main.form_02 #form02 .out-box04 .item04 .radio-container {
     top: 50%;
     transform: translateY(-50%);
 }
-main.form_02 #form02 .out-box04 .item04 .radio-container label {
+#main.form_02 #form02 .out-box04 .item04 .radio-container label {
     cursor: pointer;
 }
-main.form_02 #form02 input[type='radio'] {
+#main.form_02 #form02 input[type='radio'] {
     width: 13px;
     height: 13px;
     appearance: radio;
@@ -968,65 +968,65 @@ main.form_02 #form02 input[type='radio'] {
     padding: 0;
 }
 /* 병역 */
-main.form_02 #form02 .out-box05 .list_box .item01 {
+#main.form_02 #form02 .out-box05 .list_box .item01 {
     border-bottom: 1px solid #ACC7D4;
 }
-main.form_02 #form02 .out-box05 .item01 {
+#main.form_02 #form02 .out-box05 .item01 {
     flex: 0.5;
 }
-main.form_02 #form02 .out-box05 .item02 {
+#main.form_02 #form02 .out-box05 .item02 {
     flex: 0.5;
     border-right: 1px solid #ACC7D4 !important;
 }
-main.form_02 #form02 .out-box05 .item03 {
+#main.form_02 #form02 .out-box05 .item03 {
     flex: 0.5;
 }
-main.form_02 #form02 .out-box05 .item04 {
+#main.form_02 #form02 .out-box05 .item04 {
     flex: 2;
 }
-main.form_02 #form02 .out-box05 .list_box .item04 {
+#main.form_02 #form02 .out-box05 .list_box .item04 {
     border-bottom: none;
 }
-main.form_02 #form02 .out-box05 .item05 {
+#main.form_02 #form02 .out-box05 .item05 {
     flex: 1;
 }
-main.form_02 #form02 .out-box05 .item06 {
+#main.form_02 #form02 .out-box05 .item06 {
     flex: 0.5;
 }
 
 
 /* 달력 */
-main.form_02 #form02 .list .calendar-area {
+#main.form_02 #form02 .list .calendar-area {
     display: flex;
     flex-wrap: nowrap;
     border-bottom: 1px solid #ACC7D4;
 }
-main.form_02 #form02 .list .calendar-area label {
+#main.form_02 #form02 .list .calendar-area label {
     display: flex;
     flex-direction: row !important;
 }
-main.form_02 #form02 .list .calendar-wrap  {
+#main.form_02 #form02 .list .calendar-wrap  {
     display: flex;
     flex: 1;
     align-items: center;
     justify-content: center;
     position: relative;
 }
-main.form_02 #form02 .list .calendar-wrap:first-child::after {
+#main.form_02 #form02 .list .calendar-wrap:first-child::after {
     content: ' - ';
     position: absolute;
     right: -2%;
     color: #222;
 }
-main.form_02 #form02 .calendar-wrap input {
+#main.form_02 #form02 .calendar-wrap input {
     width: 72%;
     margin: 0;
 }
-main.form_02 #form02 .calendar-wrap img {
+#main.form_02 #form02 .calendar-wrap img {
     margin-right: 8px;
 }
-main.form_02 #form02 .calendar-wrap input::-webkit-calendar-picker-indicator, 
-main.form_02 #form02 .list.item03 input::-webkit-inner-spin-button {  
+#main.form_02 #form02 .calendar-wrap input::-webkit-calendar-picker-indicator, 
+#main.form_02 #form02 .list.item03 input::-webkit-inner-spin-button {  
     opacity: 0;
     width: 24px;
     height: 24px;
@@ -1034,12 +1034,12 @@ main.form_02 #form02 .list.item03 input::-webkit-inner-spin-button {
     left: 5%;
 }
 /* 삭제 버튼 */
-main.form_02 #form02 .list.item06 {
+#main.form_02 #form02 .list.item06 {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-main.form_02 #form02 button.delete { /* 추가되는 칸부터 생기는 삭제 스타일 */
+#main.form_02 #form02 button.delete { /* 추가되는 칸부터 생기는 삭제 스타일 */
     padding: 2px 4px;
     font-size: 16px;
     border: 1px solid #FF9393;
@@ -1049,31 +1049,31 @@ main.form_02 #form02 button.delete { /* 추가되는 칸부터 생기는 삭제 
     top: 50%;
     transform: translateY(-50%);
 }
-main.form_02 #form02 button.delete > span{
+#main.form_02 #form02 button.delete > span{
     color: #EF2626;
 }
-main.form_02 #form02 button.n-delete {
+#main.form_02 #form02 button.n-delete {
     display: none;
 }
 /* 두 번째 박스 ~ */
-main.form_02 #form02 .add-box label, .form02 .add-box .list.item06{
+#main.form_02 #form02 .add-box label, .form02 .add-box .list.item06{
     border-top: none;
 }
-main.form_02 #form02 .no-border-top {
+#main.form_02 #form02 .no-border-top {
     border-top: none !important;
 }
 
 /* resize */
 @media (max-width: 976px) { 
-    main.form_02 #form02 input {
+    #main.form_02 #form02 input {
         width: calc(100% - 20px);
         margin: 10px 0;
     }
     /* 목록 타이틀 */
-    main.form_02 #form02 .item-title {
+    #main.form_02 #form02 .item-title {
         display: none;
     }
-    main.form_02 #form02 .input-container span.mob-title {
+    #main.form_02 #form02 .input-container span.mob-title {
         display: block;
         width: 100%;
         padding: 6px 0;
@@ -1083,184 +1083,184 @@ main.form_02 #form02 .no-border-top {
         border-bottom: 1px solid #ACC7D4;
     }
     /* 목록 공통 */
-    main.form_02 #form02 .input-container {
+    #main.form_02 #form02 .input-container {
         display: block;
         margin-bottom: 20px;
         border-bottom: 1px solid #ACC7D4;
         position: relative;
     }
-    main.form_02 #form02 .input-container label {
+    #main.form_02 #form02 .input-container label {
         display: block;
         padding: 0;
     }
-    main.form_02 #form02 .input-container label:not(.radio-container label) {
+    #main.form_02 #form02 .input-container label:not(.radio-container label) {
         padding: 0;
     }
     /* 학력사항 */
-    main.form_02 #form02 .out-box01 .list:not(.out-box01 .item01) {
+    #main.form_02 #form02 .out-box01 .list:not(.out-box01 .item01) {
         width: 50%;
         padding: 0;
         float: left;
     }
     /* 외국어능력 */
-    main.form_02 #form02 .out-box02 .input-container span.mob-title {
+    #main.form_02 #form02 .out-box02 .input-container span.mob-title {
         padding-top: 6px;
         padding-bottom: 0;
         line-height: 140%;
     }
-    main.form_02 #form02 .out-box02 .input-container .item01 span.mob-title ,
-    main.form_02 #form02 .out-box02 .input-container .item03 span.mob-title ,
-    main.form_02 #form02 .out-box02 .input-container .item04 span.mob-title {
+    #main.form_02 #form02 .out-box02 .input-container .item01 span.mob-title ,
+    #main.form_02 #form02 .out-box02 .input-container .item03 span.mob-title ,
+    #main.form_02 #form02 .out-box02 .input-container .item04 span.mob-title {
         padding-bottom: 6px;
     }
-    main.form_02 #form02 .out-box02 .input-container .item03 span.mob-title ,
-    main.form_02 #form02 .out-box02 .input-container .item04 span.mob-title {
+    #main.form_02 #form02 .out-box02 .input-container .item03 span.mob-title ,
+    #main.form_02 #form02 .out-box02 .input-container .item04 span.mob-title {
         border-top: 1px solid #ACC7D4;
     }
 
-    main.form_02 #form02 .out-box02 .list_box .mob-sub-title {
+    #main.form_02 #form02 .out-box02 .list_box .mob-sub-title {
         display: flex;
         margin-top: 6px;
         justify-content: space-around;
         align-items: center;
     }
-    main.form_02 #form02 .out-box02 .list_box .mob-sub-title li {
+    #main.form_02 #form02 .out-box02 .list_box .mob-sub-title li {
         width: 100%;
         padding: 6px 0;
     }
-    main.form_02 #form02 .out-box02 .select li {
+    #main.form_02 #form02 .out-box02 .select li {
         padding: 10px 8px;
     }
-    main.form_02 #form02 .out-box02 .list_box .mob-sub-title li:not(:last-child) {
+    #main.form_02 #form02 .out-box02 .list_box .mob-sub-title li:not(:last-child) {
         border-right: 1px solid #ACC7D4;
     }
-    main.form_02 #form02 .out-box02 .item03 , .main.form_02 #form02 .out-box02 .item04 {
+    #main.form_02 #form02 .out-box02 .item03 , #main.form_02 #form02 .out-box02 .item04 {
         width: 50%;
         float: left;
     }
     /* 경력사항 */
-    main.form_02 #form02 .out-box03 .item01 , main.form_02 #form02 .out-box03 .item03 {
+    #main.form_02 #form02 .out-box03 .item01 , #main.form_02 #form02 .out-box03 .item03 {
         width: 30%;
         float: left;
     }
-    main.form_02 #form02 .out-box03 .item02 , main.form_02 #form02 .out-box03 .item04{
+    #main.form_02 #form02 .out-box03 .item02 , #main.form_02 #form02 .out-box03 .item04{
         width: 70%;
         float: left;
     }
-    main.form_02 #form02 .out-box03 .item05 {
+    #main.form_02 #form02 .out-box03 .item05 {
         clear: both;
     }
     /* 전문기술・자격증 */
-    main.form_02 #form02 .out-box04 .list {
+    #main.form_02 #form02 .out-box04 .list {
         width: 50%;
         float: left;
     }
-    main.form_02 #form02 .out-box04 .list .calendar-wrap {
+    #main.form_02 #form02 .out-box04 .list .calendar-wrap {
         width: 100%;
     }
-    main.form_02 #form02 .out-box04 .item04 .radio-container {
+    #main.form_02 #form02 .out-box04 .item04 .radio-container {
         position: static;
         padding: 15px 0;
         transform: none;
     }
-    main.form_02 #form02 .out-box04 .item04 .radio-container {
+    #main.form_02 #form02 .out-box04 .item04 .radio-container {
         gap: 30px;
     }
     /* 병역 */
-    main.form_02 #form02 .out-box05 .item01, 
-    main.form_02 #form02 .out-box05 .item02, 
-    main.form_02 #form02 .out-box05 .item03 {
+    #main.form_02 #form02 .out-box05 .item01, 
+    #main.form_02 #form02 .out-box05 .item02, 
+    #main.form_02 #form02 .out-box05 .item03 {
         width: calc(100% / 3);
         float: left;
     }
-    main.form_02 #form02 .out-box05 .item02 {
+    #main.form_02 #form02 .out-box05 .item02 {
         border-right: none !important;
     }
-    main.form_02 #form02 .out-box05 .item04 {
+    #main.form_02 #form02 .out-box05 .item04 {
         clear: both;
     }
-    main.form_02 #form02 .out-box05 .item05 , 
-    main.form_02 #form02 .out-box05 .item06 {
+    #main.form_02 #form02 .out-box05 .item05 , 
+    #main.form_02 #form02 .out-box05 .item06 {
         width: 50%;
         float: left;
     }
-    main.form_02 #form02 .out-box05 .item06 {
+    #main.form_02 #form02 .out-box05 .item06 {
         display: block !important;
     }
     /* 달력 */
-    main.form_02 #form02 .list .calendar-area {
+    #main.form_02 #form02 .list .calendar-area {
         padding: 10px 0;
     }
-    main.form_02 #form02 .calendar-wrap input::-webkit-calendar-picker-indicator, 
-    main.form_02 #form02 .list input::-webkit-inner-spin-button {  
+    #main.form_02 #form02 .calendar-wrap input::-webkit-calendar-picker-indicator, 
+    #main.form_02 #form02 .list input::-webkit-inner-spin-button {  
         left: 1.5%;
     }
-    main.form_02 #form02 .list .calendar-wrap:first-child::after {
+    #main.form_02 #form02 .list .calendar-wrap:first-child::after {
         right: -1%;
     }
-    main.form_02 #form02 .calendar-wrap input {
+    #main.form_02 #form02 .calendar-wrap input {
         width: calc(100% - 50px) !important;
     }
     /* 삭제 버튼 */
-    main.form_02 #form02 .delete-item {
+    #main.form_02 #form02 .delete-item {
         width: fit-content !important;
         border: none !important;
         position: absolute;
         top: 0px;
         right: 0;
     }
-    main.form_02 #form02 .delete-item button {
+    #main.form_02 #form02 .delete-item button {
         position: static;
         transform: none;
     }
     /* border 스타일 */
-    main.form_02 #form02 .list_box .list:not(.delete-item) {
+    #main.form_02 #form02 .list_box .list:not(.delete-item) {
         border: none;
         border-left: 1px solid #ACC7D4 !important;
     }
-    main.form_02 #form02 .out-box02 .list_box .item04 {
+    #main.form_02 #form02 .out-box02 .list_box .item04 {
         border-right: 1px solid #ACC7D4 !important;
     }
-    main.form_02 #form02 .out-box01 .list_box .item05 {
+    #main.form_02 #form02 .out-box01 .list_box .item05 {
         border-right: 1px solid #ACC7D4 !important;
     }
-    main.form_02 #form02 .out-box01 .item01 , main.form_02 #form02 .out-box01 .item04 , 
-    main.form_02 #form02 .out-box01 .item05 , main.form_02 #form02 .out-box02 .item01 , 
-    main.form_02 #form02 .out-box02 .item02 , main.form_02 #form02 .out-box02 .list_box .mob-sub-title ,
-    main.form_02 #form02 .out-box03 .item01 , main.form_02 #form02 .out-box03 .item02 , 
-    main.form_02 #form02 .out-box03 .item03 , main.form_02 #form02 .out-box03 .item05 ,
-    main.form_02 #form02 .out-box04 .item01 , main.form_02 #form02 .out-box04 .item02 , 
-    main.form_02 #form02 .out-box04 .item03 , main.form_02 #form02 .out-box05 .item01 , 
-    main.form_02 #form02 .out-box05 .item02 , main.form_02 #form02 .out-box05 .item03 , 
-    main.form_02 #form02 .out-box05 .item04 {
+    #main.form_02 #form02 .out-box01 .item01 , #main.form_02 #form02 .out-box01 .item04 , 
+    #main.form_02 #form02 .out-box01 .item05 , #main.form_02 #form02 .out-box02 .item01 , 
+    #main.form_02 #form02 .out-box02 .item02 , #main.form_02 #form02 .out-box02 .list_box .mob-sub-title ,
+    #main.form_02 #form02 .out-box03 .item01 , #main.form_02 #form02 .out-box03 .item02 , 
+    #main.form_02 #form02 .out-box03 .item03 , #main.form_02 #form02 .out-box03 .item05 ,
+    #main.form_02 #form02 .out-box04 .item01 , #main.form_02 #form02 .out-box04 .item02 , 
+    #main.form_02 #form02 .out-box04 .item03 , #main.form_02 #form02 .out-box05 .item01 , 
+    #main.form_02 #form02 .out-box05 .item02 , #main.form_02 #form02 .out-box05 .item03 , 
+    #main.form_02 #form02 .out-box05 .item04 {
         border-top: 1px solid #ACC7D4 !important;
     }
-    main.form_02 #form02 .out-box01 .item01 , main.form_02 #form02 .out-box02 .item01 ,
-    main.form_02 #form02 .out-box01 .item03 , .main.form_02 #form02 .out-box01 .item05 , 
-    main.form_02 #form02 .out-box02 .item02 , .main.form_02 #form02 .out-box02 .item04 ,
-    main.form_02 #form02 .out-box03 .item02 , main.form_02 #form02 .out-box03 .item04 , 
-    main.form_02 #form02 .out-box03 .item05 , main.form_02 #form02 .out-box04 .item02 , 
-    main.form_02 #form02 .out-box04 .item04 , main.form_02 #form02 .out-box05 .item03 , 
-    main.form_02 #form02 .out-box05 .item04 , main.form_02 #form02 .out-box05 .item06 {
+    #main.form_02 #form02 .out-box01 .item01 , #main.form_02 #form02 .out-box02 .item01 ,
+    #main.form_02 #form02 .out-box01 .item03 , #main.form_02 #form02 .out-box01 .item05 , 
+    #main.form_02 #form02 .out-box02 .item02 , #main.form_02 #form02 .out-box02 .item04 ,
+    #main.form_02 #form02 .out-box03 .item02 , #main.form_02 #form02 .out-box03 .item04 , 
+    #main.form_02 #form02 .out-box03 .item05 , #main.form_02 #form02 .out-box04 .item02 , 
+    #main.form_02 #form02 .out-box04 .item04 , #main.form_02 #form02 .out-box05 .item03 , 
+    #main.form_02 #form02 .out-box05 .item04 , #main.form_02 #form02 .out-box05 .item06 {
         border-right: 1px solid #ACC7D4 !important;
     }
 }
 @media (max-width: 767px) {
     /* 경력사항 */
-    main.form_02 #form02 .out-box03 .item01 , main.form_02 #form02 .out-box03 .item02{
+    #main.form_02 #form02 .out-box03 .item01 , #main.form_02 #form02 .out-box03 .item02{
         width: 100%;
     }
-    main.form_02 #form02 .out-box03 .item01 {
+    #main.form_02 #form02 .out-box03 .item01 {
         border-right: 1px solid #ACC7D4 !important;
     }
-    main.form_02 #form02 .out-box03 .item03 {
+    #main.form_02 #form02 .out-box03 .item03 {
         border-top: none !important;
     }
     /* 모바일 버튼 스타일 */
-    main.form_02 #form02 button.delete {
+    #main.form_02 #form02 button.delete {
         padding: 9px;
     }
-    main.form_02 #form02 button.delete > span{
+    #main.form_02 #form02 button.delete > span{
         display: block;
         width: 12px;
         height: 3px;
@@ -1269,49 +1269,49 @@ main.form_02 #form02 .no-border-top {
     }
 }
 @media (max-width: 482px) {
-    main.form_02 #form02 input {
+    #main.form_02 #form02 input {
         padding: 8px;
         font-size: 15px;
     }
-    main.form_02 #form02 legend.step {
+    #main.form_02 #form02 legend.step {
         font-size: 22px;
     }
     /* 외국어 능력 */
-    main.form_02 #form02 .out-box02 .select li select {
+    #main.form_02 #form02 .out-box02 .select li select {
         padding: 6px 8px;
     }
     /* 전문기술・자격증 */
-    main.form_02 #form02 .out-box04 .list.item01 , 
-    main.form_02 #form02 .out-box04 .list.item02 {
+    #main.form_02 #form02 .out-box04 .list.item01 , 
+    #main.form_02 #form02 .out-box04 .list.item02 {
         width: 100%;
     }
-    main.form_02 #form02 .out-box04 .item04 .radio-container {
+    #main.form_02 #form02 .out-box04 .item04 .radio-container {
         font-size: 15px;
         gap: 14px;
     }
     /* bordee 스타일 */
-    main.form_02 #form02 .out-box04 .item03 {
+    #main.form_02 #form02 .out-box04 .item03 {
         border-top: none !important;
     }
-    main.form_02 #form02 .out-box04 .list.item01 {
+    #main.form_02 #form02 .out-box04 .list.item01 {
         border-right: 1px solid #ACC7D4;
     }
     /* 폰트 사이즈 */
-    main.form_02 #form02 .input-container span.mob-title {
+    #main.form_02 #form02 .input-container span.mob-title {
         font-size: 15px;
     }
-    main.form_02 #form02 .out-box02 .select li select {
+    #main.form_02 #form02 .out-box02 .select li select {
         font-size: 15px;
     }
 }
 /* 3단계 */
-main.form_03 #form03 fieldset {
+#main.form_03 #form03 fieldset {
     width: 100%;
     overflow: hidden;
     border: none;
     margin-top: 32px;
 }
-main.form_03 #form03 h4.list-title{
+#main.form_03 #form03 h4.list-title{
     width: 100%;
     overflow: hidden;
     display: flex;
@@ -1321,12 +1321,12 @@ main.form_03 #form03 h4.list-title{
     font-size: 18px;
     font-weight: 700;
 }
-main.form_03 #form03 h4.list-title > span {
+#main.form_03 #form03 h4.list-title > span {
     display: block;
     float: left;
     margin-top: 6px;
 }
-main.form_03 #form03 input[type='text'] {
+#main.form_03 #form03 input[type='text'] {
     width: 90%;
     height: 34px; 
     margin: 0 auto;
@@ -1338,21 +1338,21 @@ main.form_03 #form03 input[type='text'] {
     font-size: 16px;
     cursor: pointer;
 }
-main.form_03 #form03 button.add-field {
+#main.form_03 #form03 button.add-field {
     display: flex;
     align-items: center;
     justify-content: center;
     float: right;
 }
-main.form_03 #form03 button.add-field > span {
+#main.form_03 #form03 button.add-field > span {
     display: inline-block;
     color: #777;
 }
 /*목록 타이틀 및 목록*/
-main.form_03 #form03 .input-wrap .out-box {
+#main.form_03 #form03 .input-wrap .out-box {
     margin-bottom: 70px;
 }
-main.form_03 #form03 .item-title , main.form_03 #form03 .input-container{
+#main.form_03 #form03 .item-title , #main.form_03 #form03 .input-container{
     width: 100%;
     overflow: hidden;
     display: flex;
@@ -1363,7 +1363,7 @@ main.form_03 #form03 .item-title , main.form_03 #form03 .input-container{
     box-sizing: border-box;
     gap: 0;
 }
-main.form_03 #form03 .item-title  {
+#main.form_03 #form03 .item-title  {
     align-items: center;
     border-top: 1px solid #ACC7D4;
     border-right: 1px solid #ACC7D4;
@@ -1371,156 +1371,156 @@ main.form_03 #form03 .item-title  {
     font-weight: 500;
     background: #E0EBF0;
 }
-main.form_03 #form03 .item {
+#main.form_03 #form03 .item {
     padding: 8px 0;
     box-sizing: border-box;
     border-left: 1px solid #ACC7D4;
 }
-main.form_03 #form03 span.br {
+#main.form_03 #form03 span.br {
     display: block;
     margin-top: -8px;
 }
 /* 목록 */
-main.form_03 #form03 .item-title .item {
+#main.form_03 #form03 .item-title .item {
     border-bottom: 1px solid #ACC7D4;
 }
-main.form_03 #form03 .list_box .list {
+#main.form_03 #form03 .list_box .list {
     border-top: none;
 }
-main.form_03 #form03 .input-container label{
+#main.form_03 #form03 .input-container label{
     padding: 8px 0;
     box-sizing: border-box;
     border-right: none;
 }
-main.form_03 #form03 .input-container span.mob-title {
+#main.form_03 #form03 .input-container span.mob-title {
     display: none;
 }
-main.form_03 #form03 .delete-item { /* 삭제 버튼 비율 */
+#main.form_03 #form03 .delete-item { /* 삭제 버튼 비율 */
     flex: 0.31;
 }
-main.form_03 #form03 .list_box .item01 {
+#main.form_03 #form03 .list_box .item01 {
     border-bottom: none;
     border-top: none;
 }
-main.form_03 #form03 .out-box01 .list_box .item02 {
+#main.form_03 #form03 .out-box01 .list_box .item02 {
     border-bottom: none;
     border-right: none;
 }
-main.form_03 #form03 .out-box01 .list_box .item05 {
+#main.form_03 #form03 .out-box01 .list_box .item05 {
     border-right: 1px solid #ACC7D4;
 }
-main.form_03 #form03 .out-box02 .list_box .item03 {
+#main.form_03 #form03 .out-box02 .list_box .item03 {
     border-bottom: none;
     border-right: none;
 }
-main.form_03 #form03 .out-box03 .item01 {
+#main.form_03 #form03 .out-box03 .item01 {
     border-left: none;
 }
-main.form_03 #form03 .out-box03 .item02 {
+#main.form_03 #form03 .out-box03 .item02 {
     border-right: none;
     border-left: none;
 }
 /* 각 항목에 대해 비율을 다르게 설정 */
 /* 교회등록 */
-main.form_03 #form03 .out-box01 .item01 {
+#main.form_03 #form03 .out-box01 .item01 {
     flex: 2;
     border-right: none;
     border-bottom: 1px solid #ACC7D4;
 }
-main.form_03 #form03 .out-box01 .item02 {
+#main.form_03 #form03 .out-box01 .item02 {
     flex: 2;
 }
-main.form_03 #form03 .out-box01 .item03 {
+#main.form_03 #form03 .out-box01 .item03 {
     flex: 1; 
 }
-main.form_03 #form03 .out-box01 .item04 {
+#main.form_03 #form03 .out-box01 .item04 {
     flex: 2;
     border-right: none;
 }
-main.form_03 #form03 .out-box01 .item05 {
+#main.form_03 #form03 .out-box01 .item05 {
     flex: 0.8;
 }
-main.form_03 #form03 .out-box01 .list .text-area {
+#main.form_03 #form03 .out-box01 .list .text-area {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-main.form_03 #form03 .out-box01 .list .text-area .text-wrap {
+#main.form_03 #form03 .out-box01 .list .text-area .text-wrap {
     display: block;
     flex: 1;
     position: relative;
 }
-main.form_03 #form03 .out-box01 .item02 .calendar-wrap:first-child::after {
+#main.form_03 #form03 .out-box01 .item02 .calendar-wrap:first-child::after {
     content: none !important;
 }
-main.form_03 #form03 .out-box01 .calendar-wrap input::-webkit-calendar-picker-indicator {
+#main.form_03 #form03 .out-box01 .calendar-wrap input::-webkit-calendar-picker-indicator {
     left: 2%;
 }
 /* 사역활동 */
-main.form_03 #form03 .out-box02 .item-title {
+#main.form_03 #form03 .out-box02 .item-title {
     border-left: 1px solid #ACC7D4;
     align-items: stretch;
     justify-content: center;
 }
-main.form_03 #form03 .out-box02 .item-title .item:not(.item02) {
+#main.form_03 #form03 .out-box02 .item-title .item:not(.item02) {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-main.form_03 #form03 .out-box02 .item-title .item01 {
+#main.form_03 #form03 .out-box02 .item-title .item01 {
     border-left: none;
 }
-main.form_03 #form03 .out-box02 .item01 {
+#main.form_03 #form03 .out-box02 .item01 {
     flex: 0.7;
     border-bottom: 1px solid #ACC7D4;
 }
-main.form_03 #form03 .out-box02 .item02 {
+#main.form_03 #form03 .out-box02 .item02 {
     flex: 1;
 }
-main.form_03 #form03 .out-box02 .item03 {
+#main.form_03 #form03 .out-box02 .item03 {
     flex: 2; 
 }
-main.form_03 #form03 .out-box02 .item04 {
+#main.form_03 #form03 .out-box02 .item04 {
     flex: 0.5;
 }
 /* 1:1 제자양육 */
-main.form_03 #form03 .out-box03 .list-title {
+#main.form_03 #form03 .out-box03 .list-title {
     justify-content: flex-start !important;
     gap: 20px;
 }
-main.form_03 #form03 .out-box03 h4.list-title > span {
+#main.form_03 #form03 .out-box03 h4.list-title > span {
     margin-top: 0;
 }
-main.form_03 #form03 .out-box03 .list-title label.radio-container {
+#main.form_03 #form03 .out-box03 .list-title label.radio-container {
     font-size: 16px !important;
     font-weight: 400;
     cursor: pointer;
 }
-main.form_03 #form03 input[type='radio'] {
+#main.form_03 #form03 input[type='radio'] {
     margin: 0;
     margin-right: 8px;
     padding: 0;
 }
-main.form_03 #form03 .out-box03 .input-container {
+#main.form_03 #form03 .out-box03 .input-container {
     display: block !important;
 }
 /* 상단 컨테이너 */
-main.form_03 #form03 .ft-400 {
+#main.form_03 #form03 .ft-400 {
     font-weight: 400;
     font-size: 16px;
 }
-main.form_03 #form03 .out-box03 .top-container {
+#main.form_03 #form03 .out-box03 .top-container {
     display: flex;
     flex-wrap: wrap;
     border: 1px solid #ACC7D4;
 }
-main.form_03 #form03 .out-box03 .list {
+#main.form_03 #form03 .out-box03 .list {
     flex: 1;
     display: flex;
     align-items: stretch;
     justify-content: center;
 }
-main.form_03 #form03 .out-box03 .list .box03-title {
+#main.form_03 #form03 .out-box03 .list .box03-title {
     flex: 0 0 160px;
     display: flex;
     flex-direction: column;
@@ -1531,100 +1531,100 @@ main.form_03 #form03 .out-box03 .list .box03-title {
     font-size: 18px;
     font-weight: 500;
 }
-main.form_03 #form03 .out-box03 .top-container .sub-box {
+#main.form_03 #form03 .out-box03 .top-container .sub-box {
     flex: 1;
 }
-main.form_03 #form03 .out-box03 label{
+#main.form_03 #form03 .out-box03 label{
     display: flex;
     align-items: center;
     padding: 0;
 }
-main.form_03 #form03 .out-box03 .top-container .sub-box .sub-title {
+#main.form_03 #form03 .out-box03 .top-container .sub-box .sub-title {
     flex: 0 0 100px;
     padding: 14px 0;
     background: #EFF5F7;
     border-right: 1px solid #ACC7D4;
 }
-main.form_03 #form03 .out-box03 .top-container .sub-box label:nth-child(1) {
+#main.form_03 #form03 .out-box03 .top-container .sub-box label:nth-child(1) {
     border-bottom: 1px solid #ACC7D4;
 }
-main.form_03 #form03 .out-box03 input {
+#main.form_03 #form03 .out-box03 input {
     margin: 0 10px;
 }
-main.form_03 #form03 .out-box03 .item02:not(.item-title .item02){
+#main.form_03 #form03 .out-box03 .item02:not(.item-title .item02){
     border-bottom: none;
 }
 /* 하단 컨테이너 */
-main.form_03 #form03 .out-box03 .bottom-container {
+#main.form_03 #form03 .out-box03 .bottom-container {
     display: flex;
     flex-wrap: wrap;
     border-right: 1px solid #ACC7D4;
 }
-main.form_03 #form03 .out-box03 .bottom-container .list {
+#main.form_03 #form03 .out-box03 .bottom-container .list {
     align-items: center;
 }
-main.form_03 #form03 .bottom-container .list .box03-title {
+#main.form_03 #form03 .bottom-container .list .box03-title {
     flex: 0 0 260px;
     padding: 14px 0;
     background : #E0EBF0;
 }
 /* 신앙 훈련 (교회 내・외부 각종 훈련 포함) */
-main.form_03 #form03 .out-box04 .item01 {
+#main.form_03 #form03 .out-box04 .item01 {
     flex: 0.5;
     border-bottom: 1px solid #ACC7D4;
 }
-main.form_03 #form03 .out-box04 .item02 {
+#main.form_03 #form03 .out-box04 .item02 {
     flex: 2; 
     border-right: none;
 }
-main.form_03 #form03 .out-box04 .item02:not(.item-title .item02) {
+#main.form_03 #form03 .out-box04 .item02:not(.item-title .item02) {
     border-bottom: none;
 }
-main.form_03 #form03 .out-box04 .item03 {
+#main.form_03 #form03 .out-box04 .item03 {
     flex: 0.5; 
 }
-main.form_03 #form03 .out-box04 .item04 {
+#main.form_03 #form03 .out-box04 .item04 {
     flex: 1; 
 }
-main.form_03 #form03 .out-box04 .item05 {
+#main.form_03 #form03 .out-box04 .item05 {
     flex: 0.5;
 }
 /* 단기 선교・아웃리치 경험 */
-main.form_03 #form03 .out-box05 .list_box .item01 {
+#main.form_03 #form03 .out-box05 .list_box .item01 {
     border-bottom: 1px solid #ACC7D4;
 }
-main.form_03 #form03 .out-box05 .item01 {
+#main.form_03 #form03 .out-box05 .item01 {
     flex: 0.5;
 }
-main.form_03 #form03 .out-box05 .item02 {
+#main.form_03 #form03 .out-box05 .item02 {
     flex: 2;
 }
-main.form_03 #form03 .out-box05 .item03 {
+#main.form_03 #form03 .out-box05 .item03 {
     flex: 0.5;
 }
-main.form_03 #form03 .out-box05 .item04 {
+#main.form_03 #form03 .out-box05 .item04 {
     flex: 1;
 }
-main.form_03 #form03 .out-box05 .item05 {
+#main.form_03 #form03 .out-box05 .item05 {
     flex: 0.5;
 }
-main.form_03 #form03 .out-box05 .list_box .item02 {
+#main.form_03 #form03 .out-box05 .list_box .item02 {
     border-bottom: none;
     border-right: none;
 }
 
 /* 파송 희망 지역 (택1) */
-main.form_03 #form03 .out-box06 .input-container {
+#main.form_03 #form03 .out-box06 .input-container {
     display: block;
 }
-main.form_03 #form03 .out-box06 .item01 {
+#main.form_03 #form03 .out-box06 .item01 {
     padding: 6px 0;
     border: 1px solid #ACC7D4;
 }
-main.form_03 #form03 .out-box06 .item01 .radio-container {
+#main.form_03 #form03 .out-box06 .item01 .radio-container {
     padding-left: 16px;
 }
-main.form_03 #form03 .out-box06 .item01 .radio-area {
+#main.form_03 #form03 .out-box06 .item01 .radio-area {
     display: flex;
     flex: 1;
     flex-wrap: wrap;
@@ -1632,29 +1632,29 @@ main.form_03 #form03 .out-box06 .item01 .radio-area {
     align-items: center;
     justify-content: flex-start;
 }
-main.form_03 #form03 .radio-etc label{
+#main.form_03 #form03 .radio-etc label{
     width: fit-content;
     display: flex;
     align-items: center;
 }
-main.form_03 #form03 .radio-etc label input[type='text'] {
+#main.form_03 #form03 .radio-etc label input[type='text'] {
     width: fit-content;
     margin: 0;
     margin-left: 16px
 }
-main.form_03 #form03 .out-box06 .item01 .radio-area label {
+#main.form_03 #form03 .out-box06 .item01 .radio-area label {
     cursor: pointer;
 }
-main.form_03 #form03 .out-box06 .bottom-container {
+#main.form_03 #form03 .out-box06 .bottom-container {
     display: flex;
 }
-main.form_03 #form03 .out-box06 .bottom-container label {
+#main.form_03 #form03 .out-box06 .bottom-container label {
     display: flex;
     align-items: center;
     flex: 1;
     padding: 0;
 }
-main.form_03 #form03 .out-box06 .bottom-container label .box06-title {
+#main.form_03 #form03 .out-box06 .bottom-container label .box06-title {
     padding: 14px 0;
     flex: 0 0 210px;
     display: flex;
@@ -1665,20 +1665,20 @@ main.form_03 #form03 .out-box06 .bottom-container label .box06-title {
     font-size: 18px;
     font-weight: 500;
 }
-main.form_03 #form03 .out-box06 .bottom-container label input {
+#main.form_03 #form03 .out-box06 .bottom-container label input {
     margin: 0 10px;
 }
-main.form_03 #form03 .out-box06 .item04 {
+#main.form_03 #form03 .out-box06 .item04 {
     border-right: 1px solid #ACC7D4;
 }
 
 /* 달력 */
-main.form_03 #form03 .list .calendar-area {
+#main.form_03 #form03 .list .calendar-area {
     display: flex;
     flex-wrap: nowrap;
     border-bottom: 1px solid #ACC7D4;
 }
-main.form_03 #form03 .list .calendar-wrap  {
+#main.form_03 #form03 .list .calendar-wrap  {
     display: flex;
     padding: 8px 10px;
     flex: 1;
@@ -1686,13 +1686,13 @@ main.form_03 #form03 .list .calendar-wrap  {
     justify-content: center;
     position: relative;
 }
-main.form_03 #form03 .list .calendar-wrap:first-child::after {
+#main.form_03 #form03 .list .calendar-wrap:first-child::after {
     content: ' - ';
     position: absolute;
     right: -2%;
     color: #222;
 }
-main.form_03 #form03 .calendar-wrap input {
+#main.form_03 #form03 .calendar-wrap input {
     width: 100%;
     height: 34px;
     margin: 0 auto;
@@ -1704,10 +1704,10 @@ main.form_03 #form03 .calendar-wrap input {
     font-size: 16px;
     cursor: pointer;
 }
-main.form_03 #form03 .calendar-wrap img {
+#main.form_03 #form03 .calendar-wrap img {
     margin-right: 8px;
 }
-main.form_03 #form03 .calendar-wrap input::-webkit-calendar-picker-indicator {  
+#main.form_03 #form03 .calendar-wrap input::-webkit-calendar-picker-indicator {  
     opacity: 0;
     width: 24px;
     height: 24px;
@@ -1716,12 +1716,12 @@ main.form_03 #form03 .calendar-wrap input::-webkit-calendar-picker-indicator {
     cursor: pointer;
 }
 /* 삭제 버튼 */
-main.form_03 #form03 .list.item06 {
+#main.form_03 #form03 .list.item06 {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-main.form_03 #form03 button.delete { /* 추가되는 칸부터 생기는 삭제 스타일 */
+#main.form_03 #form03 button.delete { /* 추가되는 칸부터 생기는 삭제 스타일 */
     padding: 2px 4px;
     font-size: 16px;
     border: 1px solid #FF9393;
@@ -1731,211 +1731,211 @@ main.form_03 #form03 button.delete { /* 추가되는 칸부터 생기는 삭제 
     top: 50%;
     transform: translateY(-50%);
 }
-main.form_03 #form03 button.delete > span{
+#main.form_03 #form03 button.delete > span{
     color: #EF2626;
 }
-main.form_03 #form03 button.n-delete {
+#main.form_03 #form03 button.n-delete {
     display: none;
 }
 /* resize */
 @media (max-width: 984px) {
-    main.form_03 #form03 .item-title {
+    #main.form_03 #form03 .item-title {
         display: none;
     }
-    main.form_03 #form03 .input-container span.mob-title {
+    #main.form_03 #form03 .input-container span.mob-title {
         display: block;
         background: #E0EBF0;
         font-size: 18px;
         font-weight: 500;
         padding: 14px 0;
     }
-    main.form_03 #form03 .input-container {
+    #main.form_03 #form03 .input-container {
         display: block;
         margin-bottom: 40px;
         position: relative;
     }
-    main.form_03 #form03 .input-container label {
+    #main.form_03 #form03 .input-container label {
         padding: 0;
     }
-    main.form_03 #form03 .out-box .list {
+    #main.form_03 #form03 .out-box .list {
         display: block;
         width: 50%;
         float: left;
     }
-    main.form_03 #form03 .out-box01 .item05 {
+    #main.form_03 #form03 .out-box01 .item05 {
         width: 100%;
     }
-    main.form_03 #form03 .out-box01 .list {
+    #main.form_03 #form03 .out-box01 .list {
         padding: 0;
     }
-    main.form_03 #form03 .out-box .list input:not([type='radio']) {
+    #main.form_03 #form03 .out-box .list input:not([type='radio']) {
         width: calc(100% - 20px);
         margin: 14px 0;
     }
-    main.form_03 #form03 .list .calendar-wrap {
+    #main.form_03 #form03 .list .calendar-wrap {
         padding: 0 12px;
     }
-    main.form_03 #form03 .out-box02 .item03 , main.form_03 #form03 .out-box02 .item04 {
+    #main.form_03 #form03 .out-box02 .item03 , #main.form_03 #form03 .out-box02 .item04 {
         width: 100%;
     }
-    main.form_03 #form03 .out-box03 .top-container > div {
+    #main.form_03 #form03 .out-box03 .top-container > div {
         flex: 0 0 100%;
     }
-    main.form_03 #form03 .out-box03 .top-container > div label {
+    #main.form_03 #form03 .out-box03 .top-container > div label {
         padding-right: 10px;
     }
-    main.form_03 #form03 .out-box03 .top-container .sub-box .sub-title, 
-    main.form_03 #form03 .out-box06 .bottom-container label .box06-title{
+    #main.form_03 #form03 .out-box03 .top-container .sub-box .sub-title, 
+    #main.form_03 #form03 .out-box06 .bottom-container label .box06-title{
         display: block;
         padding: 19px 0;
         margin-right: 10px;
     }
-    main.form_03 #form03 .out-box03 .top-container .box03-title {
+    #main.form_03 #form03 .out-box03 .top-container .box03-title {
         padding: 10px 0;
     }
-    main.form_03 #form03 .out-box01 .item01 ,
-    main.form_03 #form03 .out-box01 .item02 ,
-    main.form_03 #form03 .out-box04 .item05 ,
-    main.form_03 #form03 .out-box04 .item01 ,
-    main.form_03 #form03 .out-box04 .item02 ,
-    main.form_03 #form03 .out-box05 .item01 ,
-    main.form_03 #form03 .out-box05 .item02 ,
-    main.form_03 #form03 .out-box05 .item05 {
+    #main.form_03 #form03 .out-box01 .item01 ,
+    #main.form_03 #form03 .out-box01 .item02 ,
+    #main.form_03 #form03 .out-box04 .item05 ,
+    #main.form_03 #form03 .out-box04 .item01 ,
+    #main.form_03 #form03 .out-box04 .item02 ,
+    #main.form_03 #form03 .out-box05 .item01 ,
+    #main.form_03 #form03 .out-box05 .item02 ,
+    #main.form_03 #form03 .out-box05 .item05 {
         width: 100%;
     }
-    main.form_03 #form03 .out-box06 .input-container .list{
+    #main.form_03 #form03 .out-box06 .input-container .list{
         width: 100%;
         padding-right: 10px;
         float: none;
     }
-    main.form_03 #form03 .out-box06 .radio-area label{
+    #main.form_03 #form03 .out-box06 .radio-area label{
         display: flex;
         gap: 6px;
         align-items: center;
     }
-    main.form_03 #form03 .radio-etc label {
+    #main.form_03 #form03 .radio-etc label {
         width: 100%;
         gap: 6px;
     }
-    main.form_03 #form03 .radio-etc label input[type='text'] {
+    #main.form_03 #form03 .radio-etc label input[type='text'] {
         width: 50% !important;
     }
-    main.form_03 #form03 .out-box06 .bottom-container {
+    #main.form_03 #form03 .out-box06 .bottom-container {
         display: block;
     }
     /* 삭제 버튼 */
-    main.form_03 #form03 .delete-item {
+    #main.form_03 #form03 .delete-item {
         width: fit-content !important;
         border: none !important;
         position: absolute;
         top: 0px;
         right: 0;
     }
-    main.form_03 #form03 .delete-item button {
+    #main.form_03 #form03 .delete-item button {
         position: static;
         transform: none;
     }
     /* border 스타일 */
-    main.form_03 #form03 .out-box01 .item01 {
+    #main.form_03 #form03 .out-box01 .item01 {
         border: none;
     }
-    main.form_03 #form03 .out-box01 .list .text-area {
+    #main.form_03 #form03 .out-box01 .list .text-area {
         border-left: 1px solid #ACC7D4;
         border-right: 1px solid #ACC7D4;
     }
-    main.form_03 #form03 .out-box01 .item01 span.mob-title {
+    #main.form_03 #form03 .out-box01 .item01 span.mob-title {
         border-left: 1px solid #ACC7D4;
     }
-    main.form_03 #form03 .input-container span.mob-title {
+    #main.form_03 #form03 .input-container span.mob-title {
         border: 1px solid #ACC7D4;
         border-left: none;
     }
-    main.form_03 #form03 .out-box01 .item03 {
+    #main.form_03 #form03 .out-box01 .item03 {
         border-bottom: none;
     }
-    main.form_03 #form03 .out-box01 .item04 {
+    #main.form_03 #form03 .out-box01 .item04 {
         border: none;
     }
-    main.form_03 #form03 .list .calendar-area {
+    #main.form_03 #form03 .list .calendar-area {
         border-right: 1px solid #ACC7D4;
         border-bottom: none;
     }
-    main.form_03 #form03 .out-box01 .item05 span.mob-title {
+    #main.form_03 #form03 .out-box01 .item05 span.mob-title {
         border-right: none !important;
     }
-    main.form_03 #form03 out-box02 .item03 span.mob-title {
+    #main.form_03 #form03 out-box02 .item03 span.mob-title {
         border-top: none !important;
     }
-    main.form_03 #form03 .out-box03 .top-container .box03-title {
+    #main.form_03 #form03 .out-box03 .top-container .box03-title {
         border-bottom: 1px solid #ACC7D4;
         border-right: none;
     }
-    main.form_03 #form03 .out-box03 .item02 .box03-title {
+    #main.form_03 #form03 .out-box03 .item02 .box03-title {
         border-top: 1px solid #ACC7D4;
     }
-    main.form_03 #form03 .out-box03 .item03 .box03-title ,
-    main.form_03 #form03 .out-box03 .item04 .box03-title{
+    #main.form_03 #form03 .out-box03 .item03 .box03-title ,
+    #main.form_03 #form03 .out-box03 .item04 .box03-title{
         border-right: none;
         border-bottom: 1px solid #ACC7D4 !important;
     }
-    main.form_03 #form03 .out-box03 .top-container > div {
+    #main.form_03 #form03 .out-box03 .top-container > div {
         border-right: none;
     }
-    main.form_03 #form03 .out-box04 .item02 span.mob-title ,
-    main.form_03 #form03 .out-box04 .item05 span.mob-title {
+    #main.form_03 #form03 .out-box04 .item02 span.mob-title ,
+    #main.form_03 #form03 .out-box04 .item05 span.mob-title {
         border-top: none;
     }
-    main.form_03 #form03 .out-box04 .list {
+    #main.form_03 #form03 .out-box04 .list {
         border-right: 1px solid #ACC7D4;
     }
-    main.form_03 #form03 .out-box04 .item03 {
+    #main.form_03 #form03 .out-box04 .item03 {
         border-right: none;
     }
-    main.form_03 #form03 .out-box04 .list span.mob-title {
+    #main.form_03 #form03 .out-box04 .list span.mob-title {
         border-right: none;
     }
-    main.form_03 #form03 .out-box05 .list_box .list {
+    #main.form_03 #form03 .out-box05 .list_box .list {
         border-right: 1px solid #ACC7D4;
     }
-    main.form_03 #form03 .out-box04 .calendar-area ,
-    main.form_03 #form03 .out-box05 .list_box .item03 .mob-title ,
-    main.form_03 #form03 .out-box05 .list_box .item02 ,
-    main.form_03 #form03 .out-box05 .list_box .item03 ,
-    main.form_03 #form03 .out-box05 .list_box .item01 .mob-title ,
-    main.form_03 #form03 .out-box05 .list_box .item04 .mob-title ,
-    main.form_03 #form03 .out-box05 .list_box .item05 .mob-title ,
-    main.form_03 #form03 .out-box02 .list_box .item01 .mob-title ,
-    main.form_03 #form03 .out-box02 .list_box .item02 .mob-title ,
-    main.form_03 #form03 .out-box02 .list_box .item04 .mob-title {
+    #main.form_03 #form03 .out-box04 .calendar-area ,
+    #main.form_03 #form03 .out-box05 .list_box .item03 .mob-title ,
+    #main.form_03 #form03 .out-box05 .list_box .item02 ,
+    #main.form_03 #form03 .out-box05 .list_box .item03 ,
+    #main.form_03 #form03 .out-box05 .list_box .item01 .mob-title ,
+    #main.form_03 #form03 .out-box05 .list_box .item04 .mob-title ,
+    #main.form_03 #form03 .out-box05 .list_box .item05 .mob-title ,
+    #main.form_03 #form03 .out-box02 .list_box .item01 .mob-title ,
+    #main.form_03 #form03 .out-box02 .list_box .item02 .mob-title ,
+    #main.form_03 #form03 .out-box02 .list_box .item04 .mob-title {
         border-right: none;
     }
-    main.form_03 #form03 .out-box05 .list_box .item02 .mob-title ,
-    main.form_03 #form03 .out-box05 .list_box .item05 .mob-title ,
-    main.form_03 #form03 .out-box02 .list_box .item03 .mob-title {
+    #main.form_03 #form03 .out-box05 .list_box .item02 .mob-title ,
+    #main.form_03 #form03 .out-box05 .list_box .item05 .mob-title ,
+    #main.form_03 #form03 .out-box02 .list_box .item03 .mob-title {
         border-top: none !important;
     }
-    main.form_03 #form03 .out-box02 .input-container .item02 ,
-    main.form_03 #form03 .out-box02 .input-container .item04 ,
-    main.form_03 #form03 .out-box06 .input-container .item03 {
+    #main.form_03 #form03 .out-box02 .input-container .item02 ,
+    #main.form_03 #form03 .out-box02 .input-container .item04 ,
+    #main.form_03 #form03 .out-box06 .input-container .item03 {
         border-right: 1px solid #ACC7D4;
     }
 }
 @media (max-width: 767px) {
     /* 삭제 버튼 */
-    main.form_03 #form03 button.add-field {
+    #main.form_03 #form03 button.add-field {
         margin-top: 10px;
     }
-    main.form_03 #form03 .input-container label > span:not(.radio-etc span) {
+    #main.form_03 #form03 .input-container label > span:not(.radio-etc span) {
         flex: 0 0 120px !important;
     }
-    main.form_03 #form03 .input-container label input:not([type='radio']) {
+    #main.form_03 #form03 .input-container label input:not([type='radio']) {
         flex: 1;
         margin: 0 8px;
     }
-    main.form_03 #form03 button.delete {
+    #main.form_03 #form03 button.delete {
         padding: 9px;
     }
-    main.form_03 #form03 button.delete > span{
+    #main.form_03 #form03 button.delete > span{
         display: block;
         width: 12px;
         height: 3px;
@@ -1944,63 +1944,63 @@ main.form_03 #form03 button.n-delete {
     }
 }
 @media (max-width: 482px) {
-    main.form_03 #form03 legend.step {
+    #main.form_03 #form03 legend.step {
         font-size: 22px;
     }
-    main.form_03 #form03 .input-container span.mob-title {
+    #main.form_03 #form03 .input-container span.mob-title {
         padding: 8px 0;
         font-size: 15px;
     }
-    main.form_03 #form03 .out-box03 .list .box03-title {
+    #main.form_03 #form03 .out-box03 .list .box03-title {
         padding: 8px 0;
         font-size: 15px;
     }
-    main.form_03 #form03 .out-box .list input:not([type='radio']) {
+    #main.form_03 #form03 .out-box .list input:not([type='radio']) {
         font-size: 15px;
         padding: 0 8px;
     }
-    main.form_03 #form03 .out-box06 .item01 .radio-area {
+    #main.form_03 #form03 .out-box06 .item01 .radio-area {
         display: block;
     }
-    main.form_03 #form03 .out-box06 .item01 .radio-area label:not(:last-child) {
+    #main.form_03 #form03 .out-box06 .item01 .radio-area label:not(:last-child) {
         margin-bottom: 10px;
     }
-    main.form_03 #form03 .list .calendar-area {
+    #main.form_03 #form03 .list .calendar-area {
         display: block;
     }
-    main.form_03 #form03 .list .calendar-wrap:first-child::after {
+    #main.form_03 #form03 .list .calendar-wrap:first-child::after {
         top: 50px;
         left: 50%;
         transform: translateX(-50%);
     }
-    main.form_03 #form03 .out-box03 .top-container .sub-box .sub-title ,
-    main.form_03 #form03 .out-box06 .bottom-container label .box06-title {
+    #main.form_03 #form03 .out-box03 .top-container .sub-box .sub-title ,
+    #main.form_03 #form03 .out-box06 .bottom-container label .box06-title {
         font-size: 15px;
     }
 
 }
 
 /* 4단계 */
-main.form_04 #form04 fieldset {
+#main.form_04 #form04 fieldset {
     width: 100%;
     overflow: hidden;
     border: none;
     margin-top: 32px;
     margin-bottom: 60px;
 }
-main.form_04 #form04 h4.list-title{
+#main.form_04 #form04 h4.list-title{
     width: 100%;
     overflow: hidden;
     margin: 16px 0;
     font-size: 18px;
     font-weight: 700;
 }
-main.form_04 #form04 h4.list-title > span {
+#main.form_04 #form04 h4.list-title > span {
     display: block;
     float: left;
     margin-top: 6px;
 }
-main.form_04 #form04 input {
+#main.form_04 #form04 input {
     width: 82%;
     height: 34px; 
     margin: 0 auto;
@@ -2012,19 +2012,19 @@ main.form_04 #form04 input {
     font-size: 16px;
     cursor: pointer;
 }
-main.form_04 #form04 button.add-field {
+#main.form_04 #form04 button.add-field {
     display: flex;
     align-items: center;
     justify-content: center;
     float: right;
 }
-main.form_04 #form04 button.add-field > span {
+#main.form_04 #form04 button.add-field > span {
     display: inline-block;
     color: #777;
 }
 /*목록 타이틀 및 목록*/
-main.form_04 #form04 .item-title , 
-main.form_04 #form04 .input-container{
+#main.form_04 #form04 .item-title , 
+#main.form_04 #form04 .input-container{
     width: 100%;
     overflow: hidden;
     display: flex;
@@ -2035,7 +2035,7 @@ main.form_04 #form04 .input-container{
     box-sizing: border-box;
     gap: 0;
 }
-main.form_04 #form04 .item-title  {
+#main.form_04 #form04 .item-title  {
     height: 46px;
     align-items: center;
     border-top: 1px solid #ACC7D4;
@@ -2044,7 +2044,7 @@ main.form_04 #form04 .item-title  {
     font-weight: 500;
     background: #E0EBF0;
 }
-main.form_04 #form04 .item {
+#main.form_04 #form04 .item {
     height: 100%;
     box-sizing: border-box;
     border-left: 1px solid #ACC7D4;
@@ -2053,78 +2053,78 @@ main.form_04 #form04 .item {
     align-items: center;
     justify-content: center;
 }
-main.form_04 #form04 span.br {
+#main.form_04 #form04 span.br {
     display: block;
     margin-top: -8px;
 }
 /* 각 항목에 대해 비율을 다르게 설정 */
-main.form_04 #form04 .item01 {
+#main.form_04 #form04 .item01 {
     flex: 1;
 }
 
-main.form_04 #form04 .item02 {
+#main.form_04 #form04 .item02 {
     flex: 1.5; 
 }
 
-main.form_04 #form04 .item03 {
+#main.form_04 #form04 .item03 {
     flex: 2; 
 }
 
-main.form_04 #form04 .item04 {
+#main.form_04 #form04 .item04 {
     flex: 2;
 }
 
-main.form_04 #form04 .item05 {
+#main.form_04 #form04 .item05 {
     flex: 1;
 }
 
-main.form_04 #form04 .item06 {
+#main.form_04 #form04 .item06 {
     flex: 1; 
 }
 
-main.form_04 #form04 .item07 {
+#main.form_04 #form04 .item07 {
     flex: 2; 
 }
 
-main.form_04 #form04 .item08 {
+#main.form_04 #form04 .item08 {
     flex: 1; 
 }
 
-main.form_04 #form04 .item09 {
+#main.form_04 #form04 .item09 {
     flex: 0.5; 
 }
 
-main.form_04 #form04 .item10 {
+#main.form_04 #form04 .item10 {
     flex: 0.5; 
 }
 /* 목록 */
-main.form_04 #form04 .list {
+#main.form_04 #form04 .list {
     box-sizing: border-box;
 }
-main.form_04 #form04 .input-container label{
+#main.form_04 #form04 .input-container label{
     padding: 8px 0;
     box-sizing: border-box;
     border-right: none;
 }
-main.form_04 #form04 .input-container label > span {
+#main.form_04 #form04 .input-container label > span {
     display: none;
 }
 /* 달력 */
-main.form_04 #form04 .list .calendar-wrap  {
+#main.form_04 #form04 .list .calendar-wrap  {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
 }
-main.form_04 #form04 .calendar-wrap input {
+#main.form_04 #form04 .calendar-wrap input {
     width: 72%;
     margin: 0;
 }
-main.form_04 #form04 .calendar-wrap svg {
+#main.form_04 #form04 .calendar-wrap svg {
     margin-right: 8px;
 }
-main.form_04 #form04 .calendar-wrap input::-webkit-calendar-picker-indicator, 
-main.form_04 #form04 .list.item03 input::-webkit-inner-spin-button {  
+#main.form_04 #form04 .calendar-wrap input::-webkit-calendar-picker-indicator, 
+#main.form_04 #form04 .list.item03 input::-webkit-inner-spin-button {  
     opacity: 0;
     width: 24px;
     height: 24px;
@@ -2132,7 +2132,7 @@ main.form_04 #form04 .list.item03 input::-webkit-inner-spin-button {
     left: 8px;
 }
 /* 체크 박스 */
-main.form_04 #form04 .checkBox-wrap {
+#main.form_04 #form04 .checkBox-wrap {
     display: block;
     width: 20px;
     height: 20px;
@@ -2143,48 +2143,48 @@ main.form_04 #form04 .checkBox-wrap {
     cursor: pointer;
 }
 /* 삭제 버튼 */
-main.form_04 #form04 .list.item10 {
+#main.form_04 #form04 .list.item10 {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-main.form_04 #form04 button.delete { /* 추가되는 칸부터 생기는 삭제 스타일 */
+#main.form_04 #form04 button.delete { /* 추가되는 칸부터 생기는 삭제 스타일 */
     padding: 2px 4px;
     font-size: 16px;
     border: 1px solid #FF9393;
     color: #EF2626 !important;
     border-radius: 4px;
 }
-main.form_04 #form04 button.delete > span{
+#main.form_04 #form04 button.delete > span{
     color: #EF2626;
 }
-main.form_04 #form04 button.n-delete {
+#main.form_04 #form04 button.n-delete {
     display: none;
 }
 
 /* 두 번째 박스 ~ */
-main.form_04 #form04 .add-box label, 
-main.form_04 #form04 .add-box .list.item10{
+#main.form_04 #form04 .add-box label, 
+#main.form_04 #form04 .add-box .list.item10{
     border-top: none;
 }
 
 /* resize */
 @media (max-width: 1120px) {
-    main.form_04 #form04 .list_box {
+    #main.form_04 #form04 .list_box {
         margin-bottom: 20px;
         position: relative;
     }
-    main.form_04 #form04 .border_b {
+    #main.form_04 #form04 .border_b {
         border: none;
     }
-    main.form_04 #form04 .item-title {
+    #main.form_04 #form04 .item-title {
         display: none;
     }
-    main.form_04 #form04 .input-container {
+    #main.form_04 #form04 .input-container {
         display: block;
         overflow: hidden;
     }
-    main.form_04 #form04 .input-container label {
+    #main.form_04 #form04 .input-container label {
         width: 100%;
         padding: 0;
         box-sizing: border-box;
@@ -2196,14 +2196,14 @@ main.form_04 #form04 .add-box .list.item10{
         border-top: none;
         font-size: 18px;
     }
-    main.form_04 #form04 .list.item01, 
-    main.form_04 #form04 .list.item02 {
+    #main.form_04 #form04 .list.item01, 
+    #main.form_04 #form04 .list.item02 {
         border-top: 1px solid #ACC7D4;
     }
-    main.form_04 #form04 .b_none_r {
+    #main.form_04 #form04 .b_none_r {
         border-right: none !important;
     }
-    main.form_04 #form04 .input-container label > span {
+    #main.form_04 #form04 .input-container label > span {
         display: block;
         padding: 12px 0;
         flex: 0 0 112px;
@@ -2211,33 +2211,33 @@ main.form_04 #form04 .add-box .list.item10{
         border-right:  1px solid #ACC7D4;
         font-weight: 500;
     }
-    main.form_04 #form04 .input-container label input {
+    #main.form_04 #form04 .input-container label input {
         flex: 1;
         margin: 0 16px;
     }
-    main.form_04 #form04 .list .calendar-wrap {
+    #main.form_04 #form04 .list .calendar-wrap {
         flex: 1;
     }
-    main.form_04 #form04 .calendar-wrap svg {
+    #main.form_04 #form04 .calendar-wrap svg {
         margin: 0;
         margin-left: 16px;
     }
-    main.form_04 #form04 .calendar-wrap input::-webkit-calendar-picker-indicator, 
-    main.form_04 #form04 .list.item03 input::-webkit-inner-spin-button { 
+    #main.form_04 #form04 .calendar-wrap input::-webkit-calendar-picker-indicator, 
+    #main.form_04 #form04 .list.item03 input::-webkit-inner-spin-button { 
         left: 12px;
     }
-    main.form_04 #form04 .list .checkBox-wrap {
+    #main.form_04 #form04 .list .checkBox-wrap {
         flex: 1;
         position: static;
         transform: none;
     }
-    main.form_04 #form04 .item01, main.form_04 #form04 .item02, 
-    main.form_04 #form04 .item06, main.form_04 #form04 .item07, 
-    main.form_04 #form04 .item08, main.form_04 #form04 .item09 {
+    #main.form_04 #form04 .item01, #main.form_04 #form04 .item02, 
+    #main.form_04 #form04 .item06, #main.form_04 #form04 .item07, 
+    #main.form_04 #form04 .item08, #main.form_04 #form04 .item09 {
         width: 50% !important;
         float: left;
     }
-    main.form_04 #form04 .list.item10 {
+    #main.form_04 #form04 .list.item10 {
         width: fit-content;
         display: block;
         text-align: right;
@@ -2247,25 +2247,25 @@ main.form_04 #form04 .add-box .list.item10{
     }
 
     /* 두 번째 박스 ~ */
-    main.form_04 #form04 .add-box {
+    #main.form_04 #form04 .add-box {
         position: relative;
     }
 }
 @media (max-width: 767px) {
-    main.form_04 #form04 button.add-field {
+    #main.form_04 #form04 button.add-field {
         margin-top: 10px;
     }
-    main.form_04 #form04 .input-container label > span {
+    #main.form_04 #form04 .input-container label > span {
         flex: 0 0 80px !important;
     }
-    main.form_04 #form04 .input-container label input {
+    #main.form_04 #form04 .input-container label input {
         flex: 1;
         margin: 0 8px;
     }
-    main.form_04 #form04 button.delete {
+    #main.form_04 #form04 button.delete {
         padding: 9px;
     }
-    main.form_04 #form04 button.delete > span{
+    #main.form_04 #form04 button.delete > span{
         display: block;
         width: 12px;
         height: 3px;
@@ -2275,44 +2275,44 @@ main.form_04 #form04 .add-box .list.item10{
     }
 }
 @media (max-width: 482px) {
-    main.form_04 #form04 legend.step {
+    #main.form_04 #form04 legend.step {
         font-size: 22px;
     }
-    main.form_04 #form04 .input-container label > span {
+    #main.form_04 #form04 .input-container label > span {
         flex: 0 0 64px !important;
         font-size: 15px;
     }
-    main.form_04 #form04 input-container label input {
+    #main.form_04 #form04 input-container label input {
         margin: 0 4px !important;
         font-size: 15px !important;
     }
-    main.form_04 #form04 input {
+    #main.form_04 #form04 input {
         padding: 8px;
         font-size: 15px;
     }
 }
 /* 5단계 */
-main.form_05 #form05 div.item04 .space_mob {
+#main.form_05 #form05 div.item04 .space_mob {
     display: none;
 }
-main.form_05 #form05 fieldset {
+#main.form_05 #form05 fieldset {
     width: 100%;
     overflow: hidden;
     border: none;
     margin-top: 32px;
     margin-bottom: 60px;
 }
-main.form_05 #form05 h4.list-title{
+#main.form_05 #form05 h4.list-title{
     width: 100%;
     overflow: hidden;
     margin: 16px 0;
     font-size: 18px;
     font-weight: 700;
 }
-main.form_05 #form05 h4.list-title > span {
+#main.form_05 #form05 h4.list-title > span {
     margin-top: 6px;
 }
-main.form_05 #form05 input {
+#main.form_05 #form05 input {
     width: 100%;
     height: 34px;
     margin-left: 10px;
@@ -2325,21 +2325,21 @@ main.form_05 #form05 input {
     cursor: pointer;
 }
 /*목록 타이틀 및 목록*/
-main.form_05 #form05 .input-container{
+#main.form_05 #form05 .input-container{
     width: 100%;
     overflow: hidden;
     box-sizing: border-box;
 }
 /* 목록 */
-main.form_05 #form05 .list {
+#main.form_05 #form05 .list {
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
 }
-main.form_05 #form05 .list:not(:last-child){
+#main.form_05 #form05 .list:not(:last-child){
     border-bottom: 1px solid #ACC7D4;
 }
-main.form_05 #form05 .list .item-title {
+#main.form_05 #form05 .list .item-title {
     box-sizing: border-box;
     font-size: 18px;
     font-weight: 600;
@@ -2349,20 +2349,20 @@ main.form_05 #form05 .list .item-title {
     align-items: center;
     background: #E0EBF0;
 }
-main.form_05 #form05 .sub-wrap {
+#main.form_05 #form05 .sub-wrap {
     flex: 1;
 }
-main.form_05 #form05 .sub-wrap .sub-box {
+#main.form_05 #form05 .sub-wrap .sub-box {
     width: 100%;
     box-sizing: border-box;
 }
 /* item01 */
-main.form_05 #form05 .item01 > .item-title {
+#main.form_05 #form05 .item01 > .item-title {
     flex: 0 0 300px;
     padding: 16px 10px;
     border-right: 1px solid #ACC7D4;
 }
-main.form_05 #form05 .item01 > ul {
+#main.form_05 #form05 .item01 > ul {
     padding: 0 10px;
     display: flex;
     flex: 1;
@@ -2371,11 +2371,11 @@ main.form_05 #form05 .item01 > ul {
     align-items: center;
     justify-content: flex-start;
 }
-main.form_05 #form05 .item01 > ul li label{
+#main.form_05 #form05 .item01 > ul li label{
     cursor: pointer;
     font-size: 18px;
 }
-main.form_05 #form05 .item01 input[type='radio'] {
+#main.form_05 #form05 .item01 input[type='radio'] {
     width: 13px;
     height: 13px;
     padding: 0;
@@ -2383,20 +2383,20 @@ main.form_05 #form05 .item01 input[type='radio'] {
     background: #F2F2F2;
     border-color: #C5C5C5;
 }
-main.form_05 #form05 .item01 input[type='radio']:checked {
+#main.form_05 #form05 .item01 input[type='radio']:checked {
     background: #004BBA;
     border-color: #fff;
 }
 /* item02 */
-main.form_05 #form05 .item02 > .item-title, .item04 > .item-title {
+#main.form_05 #form05 .item02 > .item-title, .item04 > .item-title {
     flex: 0 0 150px;
 }
-main.form_05 #form05 .item02 .sub-box {
+#main.form_05 #form05 .item02 .sub-box {
     flex: 1;
     display: flex;
     align-items: stretch;
 }
-main.form_05 #form05 .item02 .sub-box > span {
+#main.form_05 #form05 .item02 .sub-box > span {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2408,13 +2408,13 @@ main.form_05 #form05 .item02 .sub-box > span {
     border: 1px solid #ACC7D4;
     border-top: none;
 }
-main.form_05 #form05 .item02 .sub-box:nth-child(2) > span {
+#main.form_05 #form05 .item02 .sub-box:nth-child(2) > span {
     border-bottom: none;
 }
-main.form_05 #form05 .item02 .sub-box .input-box {
+#main.form_05 #form05 .item02 .sub-box .input-box {
     flex: 1;
 }
-main.form_05 #form05 .item02 .sub-box label {
+#main.form_05 #form05 .item02 .sub-box label {
     padding: 10px 16px;
     display: flex;
     align-items: center;
@@ -2422,37 +2422,37 @@ main.form_05 #form05 .item02 .sub-box label {
     font-size: 18px;
     border-bottom: 1px solid #ACC7D4;
 }
-main.form_05 #form05 .item02 .sub-box:last-child label:last-child {
+#main.form_05 #form05 .item02 .sub-box:last-child label:last-child {
     border-bottom: none;
 }
-main.form_05 #form05 .item02 .sub-box label span {
+#main.form_05 #form05 .item02 .sub-box label span {
     display: inline-block;
     flex: none;
 }
 /* item03 */
-main.form_05 #form05 .list.item03 {
+#main.form_05 #form05 .list.item03 {
     align-items: center;
 }
-main.form_05 #form05 .item03 .item-title {
+#main.form_05 #form05 .item03 .item-title {
     padding: 16px 10px;
     flex: 0 0 300px;
     border-right: 1px solid #ACC7D4;
 }
-main.form_05 #form05 .item03 label {
+#main.form_05 #form05 .item03 label {
     flex: 1;
     padding: 0 16px;
 }
-main.form_05 #form05 .item03 input {
+#main.form_05 #form05 .item03 input {
     margin-left: 0;
 }
 /* item04 */
-main.form_05 #form05 .item04 .sub-box{
+#main.form_05 #form05 .item04 .sub-box{
     flex: 1;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
-main.form_05 #form05 .item04 .sub-box span {
+#main.form_05 #form05 .item04 .sub-box span {
     padding: 2px 0;
     display: flex;
     justify-content: center;
@@ -2466,164 +2466,167 @@ main.form_05 #form05 .item04 .sub-box span {
     border: 1px solid #ACC7D4;
     border-top: none;
 }
-main.form_05 #form05 .item04 .sub-box:last-child span {
+#main.form_05 #form05 .item04 .sub-box:last-child span {
     border-bottom: none;
 }
-main.form_05 #form05 .item04 .sub-box:last-child label span {
+#main.form_05 #form05 .item04 .sub-box:last-child label span {
     border-bottom: none;
 }
-main.form_05 #form05 .item04 .sub-box label {
+#main.form_05 #form05 .item04 .sub-box label {
     flex: 1;
     padding: 0 16px;
 }
-main.form_05 #form05 .item04 .sub-box label input {
+#main.form_05 #form05 .item04 .sub-box label input {
     margin: 0;
 }
 /* resize */
 @media (max-width: 974px) {
-    main.form_05 #form05 .item01 > .item-title {
+    #main.form_05 #form05 .item01 > .item-title {
         flex: 0 0 240px;
     }
-    main.form_05 #form05 .item02 > .item-title, .item04 > .item-title {
+    #main.form_05 #form05 .item02 > .item-title, .item04 > .item-title {
         flex: 0 0 120px;
     }
-    main.form_05 #form05 .item02 .sub-box > span {
+    #main.form_05 #form05 .item02 .sub-box > span {
         flex:  0 0 120px;
     }
-    main.form_05 #form05 .item03 .item-title {
+    #main.form_05 #form05 .item03 .item-title {
         flex: 0 0 240px;
     }
-    main.form_05 #form05 .item04 .sub-box span {
+    #main.form_05 #form05 .item04 .sub-box span {
         flex:  0 120px;
     }
-    main.form_05 #form05 .space_mob {
+    #main.form_05 #form05 .space_mob {
         display: block;
     }
 }
 @media (max-width: 767px) {
-    main.form_05 #form05 .list {
+    #main.form_05 #form05 .list {
         display: block;
     }
-    main.form_05 #form05 .item01 > .item-title {
+    #main.form_05 #form05 .item01 > .item-title {
         border-right: none;
     }
-    main.form_05 #form05 .item01 > ul {
+    #main.form_05 #form05 .item01 > ul {
         justify-content: space-around;
         padding: 16px 10px;
         gap: 0.6vw;
     }
-    main.form_05 #form05 .item02 > .item-title, .item04 > .item-title {
+    #main.form_05 #form05 .item02 > .item-title, .item04 > .item-title {
         padding: 16px 0;
     }
-    main.form_05 #form05 .item03 label {
+    #main.form_05 #form05 .item03 label {
         display: block;
         margin: 14px 0;
         width: 100% !important;
     }
-    main.form_05 #form05 .space_mob {
+    #main.form_05 #form05 .space_mob {
         display: none;
     }
     /* border 스타일 */
-    main.form_05 #form05 .item01 > ul {
+    #main.form_05 #form05 .item01 > ul {
         border-top: 1px solid #ACC7D4;
     }
-    main.form_05 #form05 .item02 .sub-box > span {
+    #main.form_05 #form05 .item02 .sub-box > span {
         border-right: none;
         border-left: none;
     }
-    main.form_05 #form05 .item02 .sub-box .input-box {
+    #main.form_05 #form05 .item02 .sub-box .input-box {
         border-left: 1px solid #ACC7D4;
     }
-    main.form_05 #form05 .item03 .item-title {
+    #main.form_05 #form05 .item03 .item-title {
         border-right: none;
         border-bottom: 1px solid #ACC7D4;
     }
-    main.form_05 #form05 .sub-wrap {
+    #main.form_05 #form05 .sub-wrap {
         border-top: 1px solid #ACC7D4;
     }
-    main.form_05 #form05 .item04 .sub-box label span {
+    #main.form_05 #form05 .item04 .sub-box label span {
         border-left: none;
     }
-    main.form_05 #form05 .item04 .sub-box span {
+    #main.form_05 #form05 .item04 .sub-box span {
         border-left: none;
     }
 }
 @media (max-width: 546px) {
-    main.form_05 #form05 .item02 .sub-box {
+    #main.form_05 #form05 .item02 .sub-box {
         display: block;
     }
-    main.form_05 #form05 .item02 .sub-box .input-box {
+    #main.form_05 #form05 .item02 .sub-box .input-box {
         border-left: none;
     }
-    main.form_05 #form05 .item02 .sub-box > span {
+    #main.form_05 #form05 .item02 .sub-box > span {
         padding: 4px 0;
     }
-    main.form_05 #form05 .item02 .sub-box:nth-child(2) > span {
+    #main.form_05 #form05 .item02 .sub-box:nth-child(2) > span {
         border-bottom: 1px solid #ACC7D4;
     }
-    main.form_05 #form05 .item04 .sub-box {
+    #main.form_05 #form05 .item04 .sub-box {
         display: block;
     }
-    main.form_05 #form05 .item04 .sub-box label {
+    #main.form_05 #form05 .item04 .sub-box label {
         display: block;
         width: 100%;
         padding: 14px 16px;
     }
-    main.form_05 #form05 .item04 .sub-box span {
+    #main.form_05 #form05 .item04 .sub-box span {
         padding: 4px 0;
         border-left: none;
         border-right: none;
     }
-    main.form_05 #form05 .item04 .sub-box:not(:first-child) span {
+    #main.form_05 #form05 .item04 .sub-box:not(:first-child) span {
         border-top: 1px solid #ACC7D4;
     }
-    main.form_05 #form05 .pc_space {
+    #main.form_05 #form05 .pc_space {
         display: none;
     }
 }
 @media (max-width: 482px) {
-    main.form_05 #form05 input {
+    #main.form_05 #form05 input {
         font-size: 15px !important;
     }
-    main.form_05 #form05 legend.step {
+    #main.form_05 #form05 legend.step {
         font-size: 22px;
     }
-    main.form_05 #form05 .list .item-title {
+    #main.form_05 #form05 .list .item-title {
         font-size: 16px;
     }
-    main.form_05 #form05 .item01 > ul {
+    #main.form_05 #form05 .item01 > ul {
         gap: 0;
         justify-content: space-evenly;
     }
-    main.form_05 #form05 input[type='radio'] {
+    #main.form_05 #form05 input[type='radio'] {
         margin-right: 2px;
     }
-    main.form_05 #form05 .item01 > ul li label {
+    #main.form_05 #form05 .item01 > ul li label {
         font-size: 15px;
     }
-    main.form_05 #form05 .item02 .sub-box > span {
+    #main.form_05 #form05 .item02 .sub-box > span {
         font-size: 15px;
     }
-    main.form_05 #form05 .item02 .sub-box label span {
+    #main.form_05 #form05 .item02 .sub-box label span {
         font-size: 15px;
     }
-    main.form_05 #form05 .item04 .sub-box span {
+    #main.form_05 #form05 .item04 .sub-box span {
         font-size: 15px;
     }
-    main.form_05 #form05 input {
+    #main.form_05 #form05 input {
         padding: 8px;
     }
 }
 
 /* -------------- 시설예약하기 form -------------- */
-/* reservate03.html 스타일 */
-main.form .reserv-step {
+/* reservate form.html 공통 스타일 */
+#main.form #reservate .reservate-step-title {
+    display: none;
+}
+#main.form .reserv-step {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
 }
-main.form .reserv-step li {
+#main.form .reserv-step li {
     width: calc(100% / 3);
     height: 50px;
     text-align: center;
@@ -2631,34 +2634,34 @@ main.form .reserv-step li {
     box-sizing: border-box;
     font-size: 20px;
 }
-main.form .reserv-step li.current_step {
+#main.form .reserv-step li.current_step {
     font-weight: 600;
     border-bottom: 3px solid #555;
 }
-main.form #reservate br.space_m {
+#main.form #reservate br.space_m {
     display: none;
 }
-main.form #reservate fieldset {
+#main.form #reservate fieldset {
     width: 100%;
     overflow: hidden;
     border: none;
     margin-top: 32px;
     margin-bottom: 60px;
 }
-main.form #reservate h4.list-title{
+#main.form #reservate h4.list-title{
     width: 100%;
     overflow: hidden;
     margin: 16px 0;
     font-size: 18px;
     font-weight: 700;
 }
-main.form #reservate h4.list-title > span {
+#main.form #reservate h4.list-title > span {
     margin-top: 6px;
 }
-main.form #reservate input:not([type = radio]) {
+#main.form #reservate input:not([type = radio]) {
     width: 100%;
     height: 34px;
-    padding: 8px 16px;
+    padding: 18px 16px !important;
     line-height: normal !important;
     border: 1px solid #BABABA;
     box-sizing: border-box;
@@ -2667,7 +2670,7 @@ main.form #reservate input:not([type = radio]) {
     cursor: pointer;
 }
 /*목록 타이틀 및 목록*/
-main.form #reservate .input-container{
+#main.form #reservate .input-container{
     width: 100%;
     overflow: hidden;
     display: flex;
@@ -2679,10 +2682,40 @@ main.form #reservate .input-container{
     gap: 0;
 }
 /* 목록 */
-main.form #reservate .list_box:not(:first-of-type) {
+#main.form #reservate .red-text {
+    width: 100%;
+    padding: 14px 16px;
+    border-top: 1px solid #FFE9B0;
+    border-bottom: 1px solid #FFE9B0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #F84242;
+}
+#main.form #reservate .bord-t {
+    border-top: 1px solid #ddd;
+}
+#main.form #reservate .bord-b-y {
+    border-color: #FFE9B0 !important;
+}
+#main.form #reservate .bord-n {
+    border-bottom: none !important;
+}
+#main.form #reservate .y-bg {
+    background: #FFF1CD !important;
+    border-color: #FFE9B0 !important;
+}
+#main.form #reservate .list .w100 {
+    width: 100%;
+    max-width: 100% !important;
+}
+#main.form #reservate .f100 {
+    width: 100% !important;
+    flex: 0 0 100% !important;
+}
+#main.form #reservate .list_box:not(:first-of-type) {
     margin-top: 30px;
 }
-main.form #reservate .list {
+#main.form #reservate .list {
     box-sizing: border-box;
     display: flex;
     flex: 1 1 50%;
@@ -2692,111 +2725,84 @@ main.form #reservate .list {
     font-size: 18px;
     border-bottom: 1px solid #ddd;
 }
-main.form #reservate .list > span {
+#main.form #reservate .list > span {
     flex: 0 0 210px;
     padding: 12px 0;
     box-sizing: border-box;
     background: #F7F7F7;
     font-size: 18px;
-    font-weight: 600;
-    border-right: 1px solid #ddd;
+    font-weight: 700;
 }
-main.form #reservate .item01 .reservat-type-wrap {
+#main.form #reservate .item01 .reservat-type-wrap {
     display: flex;
     width: 100%;
     padding: 0 20px;
     gap: 30px;
     align-items: center;
 }
-main.form #reservate .list label {
+#main.form #reservate .list label {
     display: block;
     width: 100%;
     max-width: 230px;
     margin: 0 16px;
 }
-main.form #reservate .item01 label {
+#main.form #reservate .item01 label {
     max-width: fit-content;
     cursor: pointer;
     margin: 0;
 }
-main.form #reservate .item02 .password-container {
+#main.form #reservate .item02 .password-container {
+    width: 100%;
     display: flex;
+    gap: 0;
     align-items: center;
 }
-main.form #reservate .item02 label {
+#main.form #reservate .item02 label {
     width: 100%;
     display: flex;
     align-items: center;
 }
-main.form #reservate .item02 b {
-    flex: 0 0 28%;
+#main.form #reservate .item02 b {
+    margin-right: 10px;
+    line-height: 16px;
     font-size: 16px;
     font-weight: 400;
     color: #F84242;
     font-size: 15px;
 }
-main.form #reservate .item05,
-main.form #reservate .item06 {
-    border-bottom: none;
-}
-main.form #reservate .red-text {
-    width: 100%;
-    padding: 14px 0;
-    border-top: 1px solid #FFE9B0;
-    font-size: 18px;
-    font-weight: 600;
-    color: #F84242;
-}
-main.form #reservate .item07 ,
-main.form #reservate .item08 ,
-main.form #reservate .item09 ,
-main.form #reservate .item10 {
-    border-color: #FFE9B0 !important;
-}
-main.form #reservate .y-bg {
-    background: #FFF1CD !important;
-    border-color: #FFE9B0 !important;
-    border-bottom: 1px solid #FFE9B0;
-}
-main.form #reservate .list .w100 {
-    max-width: 100% !important;
-}
-main.form #reservate .f100 {
-    width: 100% !important;
-    flex: 0 0 100% !important;
-}
-main.form #reservate .item15 {
+#main.form #reservate .item17 {
     align-items: stretch;
 }
-main.form #reservate .item15 > span {
+#main.form #reservate .item17 > span {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-main.form #reservate .item15 .ad_right {
+#main.form #reservate .item17 .ad_right {
     width: 100%;
 }
-main.form #reservate .item15 .address-wrap {
+#main.form #reservate .item17 .address-wrap {
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding: 14px 16px;
 }
-main.form #reservate .item15 .address {
+#main.form #reservate .item17 .address {
     display: flex;
+    align-items: center;
     gap: 10px;
 }
-main.form #reservate .item15 .address-container {
+#main.form #reservate .item17 .address-container {
     width: 100%;
     max-width: 112px;
 }
-main.form #reservate .item15 .address-container input {
+#main.form #reservate .item17 .address-container input {
     text-align: center;
 }
-main.form #reservate .item15 .g-bg {
+#main.form #reservate .item17 .g-bg {
     background: #f0f0f0 !important;
 }
-main.form #reservate .gray_btn {
+#main.form #reservate .gray_btn {
     display: flex;
     align-items: center;
     gap: 4px;
@@ -2806,21 +2812,21 @@ main.form #reservate .gray_btn {
     background-color: #F7F7F8;
     padding: 3px 10px;
 }
-main.form .finish-bnt-wrap button {
+#main.form .finish-bnt-wrap button {
     width: 120px;
     height: 47px;
     font-weight: 600;
     font-size: 18px;
     border-radius: 10px;
 }
-main.form .finish-bnt-wrap .checkBtn {
+#main.form .finish-bnt-wrap .checkBtn {
     background: #33B9DC;
     border: 1px solid #2AA6C6;
     color: #fff;
     letter-spacing: -0.36px;
     line-height: 0;
 }
-main.form .finish-bnt-wrap .deleteBtn {
+#main.form .finish-bnt-wrap .deleteBtn {
     border: 1px solid #DDDDDD;
     color: #000000;
     background: #F2F2F2;
@@ -2828,75 +2834,97 @@ main.form .finish-bnt-wrap .deleteBtn {
 
 /* resize */
 @media (max-width: 1078px) {
-    main.form #reservate .item01 ,
-    main.form #reservate .item02 {
+    #main.form #reservate .item01 ,
+    #main.form #reservate .item02 {
         flex: 0 0 100%;
     }
-    main.form #reservate .list > span {
+    #main.form #reservate .list > span {
         flex: 0 0 140px;
     }
 }
 @media (max-width: 767px) {
-    main.form .reserv-step {
+    #main.form #reservate .bord-y {
+        border-bottom: 1px solid #ddd !important;
+    }
+    #main.form .reserv-step {
         align-items: baseline;
     }
-    main.form .reserv-step li {
+    #main.form .reserv-step li {
         height: 64px;
         display: flex;
         flex-direction: column;
     }
-    main.form .reserv-step li span {
+    #main.form .reserv-step li span {
         font-size: clamp(12px, 2.6vw, 24px);
     }
-    main.form #reservate .list {
+    #main.form #reservate .list {
         flex: 0 0 100%;
     }
 }
 @media (max-width: 482px) {
-    main.form #reservate br.space_m {
+    #main.form #reservate br.space_m {
         display: block;
     }
-    main.form #reservate .item01 label {
+    #main.form #reservate .item01 label {
         font-size: 15px;
     }
-    main.form #reservate .red-text {
-        font-size: 15px;
+    #main.form #reservate .red-text {
+        font-size: 14px;
     }
-    main.form #reservate input {
+    #main.form #reservate .item02 b {
+        font-size: 13px;
+    }
+    #main.form #reservate input:not([type = 'radio']) {
         font-size: 15px !important;
         padding: 8px;
     }
-    main.form #reservate legend.step {
+    #main.form #reservate legend.step {
         font-size: 22px;
     }
-    main.form #reservate .list > span {
+    #main.form #reservate .list > span {
         flex: 0 0 80px;
         padding: 12px 0;
         font-size: 15px;
     }
-    main.form #reservate .item15 .address {
+    #main.form #reservate .item17 .address {
         flex-direction: column;
+        align-items: start;
     }
-    main.form #reservate .gray_btn {
+    #main.form #reservate .gray_btn {
         font-size: 15px;
     }
 }
 
 /* reservate02.html 스타일 */
-main.form .reservate02 .list > span {
-    flex: 0 0 180px !important;
+#main.form .reservate02 .point {
+    color: #F84242;
+    font-weight: 400;
 }
-main.form .reservate02 .calendar-area {
+#main.form .reservate02 .list {
+    align-items: stretch !important;
+}
+#main.form .reservate02 .list > span {
+    flex: 0 0 180px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#main.form .reservate02 .calendar-area {
     padding: 0 16px;
     display: flex;
     align-items: center;
-    gap: 30px;
+    flex-wrap: wrap;
+    gap: 10px 30px;
 }
-main.form .reservate02 .calendar-area label {
+#main.form .reservate02 .calendar-area label {
     display: flex !important;
+    align-items: center;
     position: relative;
 }
-main.form .reservate02 .calendar-area label img {
+#main.form .reservate02 .calendar-area label input {
+    flex: 0 0 150px !important;
+}
+#main.form .reservate02 .calendar-area label img {
     margin-left: 8px;
 }
 input[type="date"]::-webkit-calendar-picker-indicator {
@@ -2905,19 +2933,184 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     cursor: pointer;
     width: 26px;
     height: 26px;
-    opacity: 0.7;
+    opacity: 0;
 }
-
 input[type="date"]::-moz-calendar-picker-indicator {
     position: absolute;
     right: -5px;
     cursor: pointer;
+    opacity: 0;
 }
-main.form .reservate02 .calendar-area .calendar-line {
+#main.form .reservate02 .calendar-area .calendar-line {
     width: 8px;
     height: 2px;
     background: #222;
 }
-main.form .reservate02 .point {
-    color: #F84242;
+#main.form .reservate02 .inner-flex {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#main.form .reservate02 .inner-flex label {
+    width: fit-content !important;
+    display: flex !important;
+    align-items: center;
+    gap: 1.5vw;
+    position: relative;
+}
+#main.form .reservate02 .gray-text {
+    padding: 14px 16px;
+    background: #E6E6E6;
+    color: #6B6B6B;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+    font-weight: 500;
+}
+#main.form .reservate02 .content-flex {
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 18px;
+}
+#main.form .reservate02 input.w55 {
+    max-width: 55px;
+    text-align: center;
+}
+#main.form .reservate02 input.w60 {
+    max-width: 60px;
+    text-align: center;
+}
+#main.form .reservate02 input.w230 {
+    max-width: 230px !important;
+}
+#main.form .reservate02 .item07 .date-eat-count {
+    padding: 16px 0;
+}
+#main.form .reservate02 .item07 .inner-flex {
+    padding: 10px 14px;
+    gap: 10px 32px;
+}
+#main.form .reservate02 .item07 .inner-flex h4 {
+    flex: 0 0 60px;
+    font-weight: 600;
+}
+#main.form .reservate02 .item07 .inner-flex li:nth-child(2) label:after{
+    display: block;
+    content: ' ';
+    width: 2px;
+    height: 13px;
+    background: #DDDDDD;
+    position: absolute;
+    right: -26px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#main.form .reservate02 .item07 .inner-flex li:nth-child(2) label::before{
+    display: block;
+    content: ' ';
+    width: 2px;
+    height: 13px;
+    background: #DDDDDD;
+    position: absolute;
+    left: -26px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+@media (max-width: 1038px) {
+    #main.form .reservate02 .list > span {
+        flex: 0 0 120px !important;
+    }
+    #main.form .reservate02 .calendar-area {
+        padding: 10px 16px;
+    }
+    #main.form .reservate02 .item05 .inner-flex ,
+    #main.form .reservate02 .item06 .inner-flex {
+        padding-bottom: 10px;
+    }
+    #main.form .reservate02 .item05 .inner-flex label ,
+    #main.form .reservate02 .item06 .inner-flex label {
+        margin: 10px 16px !important;
+        margin-bottom: 0 !important;
+        margin-right: 0 !important;
+    }
+    #main.form .reservate02 .item05 .point, 
+    #main.form .reservate02 .item06 .point {
+        margin-top: 10px;
+        margin-left: 16px;
+    }
+}
+@media (max-width: 550px) {
+    #main.form .reserv-step li {
+        height: 42px;
+    }
+    #main.form .reserv-step li span {
+        display: none;
+    }
+    #main.form #reservate .reservate-step-title {
+        display: block;
+        margin-bottom: 20px;
+        font-size: 22px;
+        font-weight: 600;
+        text-align: center;
+    }
+    #main.form .reservate02 .content-flex {
+        justify-content: start;
+    }
+    #main.form .reservate02 .item07 .date-eat-count {
+        padding: 0;
+    }
+    #main.form .reservate02 .item07 .inner-flex {
+        padding: 0;
+        padding-bottom: 10px;
+    }
+    #main.form .reservate02 .item07 .inner-flex:not(:first-child) h4 {
+        border-top: 1px solid #ddd;
+    }
+    #main.form .reservate02 .item07 .inner-flex h4 {
+        flex: 0 0 100%;
+        padding: 4px 0;
+        background: #FDFDFD;
+        border-bottom: 1px solid;
+        border-color: #ddd;
+    }
+}
+@media (max-width: 522px) {
+    #main.form .reservate02 .content-flex {
+        justify-content: start;
+    }
+}
+@media (max-width: 482px) {
+    #main.form .reservate02 .list > span {
+        flex: 0 0 80px !important;
+    }
+    #main.form .reservate02 .point {
+        font-size: 15px;
+    }
+    #main.form #reservate .list label {
+        font-size: 15px;
+    }
+    #main.form .reservate02 .item07 .inner-flex h4 {
+        font-size: 15px;
+    }
+    #main.form .reservate02 .content-flex {
+        /* justify-content: start; */
+    }
+    #main.form #reservate .list label span {
+        font-size: 15px;
+    }
+    #main.form .reservate02 .gray-text {
+        font-size: 14px;
+    }
+}
+@media (max-width: 420px) {
+    #main.form .reservate02 .item07 .inner-flex li:nth-child(2) label::before {
+        content: none;
+    }
+    #main.form .reservate02 .item07 .inner-flex li:nth-child(2) label::after {
+        content: none;
+    }
+    #main.form .reservate02 .content-flex {
+        justify-content: center;
+    }
 }

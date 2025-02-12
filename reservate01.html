@@ -6,8 +6,7 @@
     <!-- 사파리폰트적용 (프리텐다드) -->
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable.css" />
     
-    <title>Acts29비전빌리지 / 시설예약하기 2단계</title>
-    <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <title>Acts29비전빌리지 / 3단계</title>
 
     <!--Jqurey CDN-->
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
@@ -177,238 +176,486 @@
             </div>
         </header>
 
-        <main id="main" class="form mt-120 inner">
+        <main id="main" class="form_03 form mt-120 inner">
             <div class="containner">
                 <!-- 상단 부분 -->
                 <div class="text-box">
-                    <h2 class="title">시설 예약하기</h2>
+                    <h2 class="title">훈련신청</h2>
+                        <details open>
+                            <summary>
+                                선교사 지원신청
+                                <span class="toggle-icon"></span>
+                            </summary>
+                            <div class="text-wrap">
+                                <p>이 지원서는 단기/장기 선교후보지원자가 <span class="br"></span>선교사로서 스스로를 진단하고, <br>면접 인사위원회가 지원자를 이해하기 위한 <span class="br"></span>목적 외 다른 용도로 사용치 않으며,<br> 개인 정보에 대해 절대적으로<span class="br"></span> 비밀을 보장하오니,<br> 성실하고 정직하게 기술하신 후 <span class="br"></span> 제출하여 주시기 바랍니다.</p>
+                                <ul>
+                                    <h4>작성 요령</h4>
+                                    <li>1. 모든 질문에 대해 기도하는 마음으로 <span class="br"></span>성실하고 상세하게 답변하여 주십시오.</li>
+                                    <li>2. 지원서 제출 시 반명함(3X4cm)사이즈의 <span class="br"></span>증명사진 파일을 첨부하여 주십시오.</li>
+                                    <li>3. 간증문은 구체적으로(A4용지 1장 이상) <span class="br"></span>기술하여 주십시오.(OSOM/TP 지원자만 해당)</li>
+                                    <li>4. 기타 문의는 행정 담당에게 연락 주십시오.</li>
+                                </ul>
+    
+                            </div>
+                        </details>
                 </div>
-                <!-- 탭 부분 -->
-                <ul class="reserv-step">
-                    <li>1단계 <span class="space_pc">- 시설예약</span></li>
-                    <li class="current_step">2단계 <span class="space_pc">- 이용계획 및 이용인원</span></li>
-                    <li>3단계 <span class="space_pc">- 예약자 정보</span></li>
-                </ul>
+                <!-- 탭 부분( 단계별 focus-step 수정필요**** ) -->
+                <div class="step-tab">
+                    <ul>
+                        <a href="https://puritechlab1155.github.io/onnuri-front/form01.html">
+                            <li class="stepNumb">1</li>
+                            <li class="stepKo">단계</li>
+                        </a>
+                        <div class="progress-indicator" id="progress-1">0%</div>
+                    </ul>
+                    <ul>
+                        <a href="https://puritechlab1155.github.io/onnuri-front/form02.html">
+                            <li class="stepNumb">2</li>
+                            <li class="stepKo">단계</li>
+                            <div class="progress-indicator" id="progress-2">0%</div>
+                        </a>    
+                    </ul>
+                    <ul class="focus-step">
+                        <a href="https://puritechlab1155.github.io/onnuri-front/form03.html">
+                            <li>3</li>
+                            <li>단계</li>
+                            <div class="progress-indicator" id="progress-3">0%</div>
+                        </a>
+                    </ul>
+                    <ul>
+                        <a href="https://puritechlab1155.github.io/onnuri-front/form04.html">
+                            <li class="stepNumb">4</li>
+                            <li class="stepKo">단계</li>
+                            <div class="progress-indicator" id="progress-4">0%</div>
+                        </a>
+                    </ul>
+                    <ul>
+                        <a href="https://puritechlab1155.github.io/onnuri-front/form05.html">
+                            <li class="stepNumb">5</li>
+                            <li class="stepKo">단계</li>
+                            <div class="progress-indicator" id="progress-5">0%</div>
+                        </a>
+                    </ul>
+                    <ul>
+                        <a href="https://puritechlab1155.github.io/onnuri-front/form06.html">
+                            <li class="stepNumb">6</li>
+                            <li class="stepKo">단계</li>
+                            <div class="progress-indicator" id="progress-6">0%</div>
+                        </a>
+                    </ul>
+                    <ul>
+                        <a href="https://puritechlab1155.github.io/onnuri-front/form07.html">
+                            <li class="stepNumb">7</li>
+                            <li class="stepKo">단계</li>
+                            <div class="progress-indicator" id="progress-7">0%</div>
+                        </a>
+                    </ul>
+                    <ul>
+                        <a href="https://puritechlab1155.github.io/onnuri-front/form08.html">
+                            <li class="stepNumb">8</li>
+                            <li class="stepKo">단계</li>
+                            <div class="progress-indicator" id="progress-8">0%</div>
+                        </a>
+                    </ul>
+                    <ul>
+                        <a href="https://puritechlab1155.github.io/onnuri-front/form09.html">
+                            <li class="stepNumb">9</li>
+                            <li class="stepKo">단계</li>
+                            <div class="progress-indicator" id="progress-9">0%</div>
+                        </a>
+                    </ul>
+                </div>
 
-                <form id="reservate" class="reservate02">
+                <form id="form03">
                     <!-- 단계 신청서  -->
                     <fieldset>
-                        <div class="reservate-step-title">이용계획 및 이용인원</div>
-                        <div class="input-wrap"> 
-                            <div class="list_box">
+                        <legend class="step">3. 신앙생활</legend>
+                        <div class="input-wrap">
+                            <!--  교회등록 -->
+                            <div class="out-box out-box01">
+                                <!-- 타이틀 및 작성칸 추가 버튼 -->
+                                <h4 class="list-title">
+                                    <span>교회등록</span>
+                                </h4>
+                                <!--목록 타이틀-->
+                                <ul class="item-title">
+                                    <li class="item01 item">현출석교회(담임목사명)</li>
+                                    <li class="item02 item">교적등록 연월일</li>
+                                    <li class="item03 item">직분</li>
+                                    <li class="item04 item">세례받은 교회/연도</li>
+                                    <li class="item05 item">집례목사</li>
+                                </ul>
                                 <!-- 목록 -->
-                                <div class="input-container bord-t">
-                                    <div class="list item01 f100">
-                                        <span>사용기간</span>
-                                        <div class="calendar-area w100">
-                                            <label for="start-date01" class="calendar-wrap">
-                                                <span style="display: none;">시작 기간</span>
-                                                <input class="input-field" id="start-date01" type="date" required>                                         
-                                                <img src="img/form/calendar.svg" alt="달력 아이콘">
-                                            </label>
-                                            <div class="calendar-line"></div>
-                                            <label for="finish-date" class="calendar-wrap">
-                                                <span style="display: none;">끝나는 기간</span>
-                                                <input class="input-field" id="finish-date" type="date" required>
-                                                <img src="img/form/calendar.svg" alt="달력 아이콘">
-                                            </label>
-                                            <span class="point">달력을 클릭하여 선택해주세요. &nbsp; *필수</span>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="list item02 f100">
-                                        <span>숙박/식사</span>
-                                        <div class="inner-flex">
-                                            <label for="" class="">
-                                                <input class="w60" id="" type="text" placeholder=" - " required maxlength="4">
-                                                <span>박</span>
-                                            </label>
-                                            <label for="" class="">
-                                                <input class="w60" id="" type="text" placeholder=" - " required maxlength="4">
-                                                <span>식</span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="list item03">
-                                        <span>입실시간</span>
-                                        <div class="inner-flex">
-                                            <label for="" class="">
-                                                <input id=""  class="w60" type="text" placeholder=" - " required maxlength="4">
-                                                <span>일</span>
-                                            </label>
-                                            <label for="" class="">
-                                                <input id="" class="w60" type="text" placeholder=" - " required maxlength="4">
-                                                <span>시</span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="list item04">
-                                        <span>퇴실시간</span>
-                                        <div class="inner-flex">
-                                            <label for="" class="">
-                                                <input id=""  class="w60" type="text" placeholder=" - " required maxlength="4">
-                                                <span>일</span>
-                                            </label>
-                                            <label for="" class="">
-                                                <input id="" class="w60" type="text" placeholder=" - " required maxlength="4">
-                                                <span>시</span>
-                                            </label>
-                                        </div>
-                                    </div>
-
-                                    <!--  회색 박스 -->
-                                    <div class="gray-text g-bg f100">
-                                        기본 입실시간 :  오후 3시이후 |
-                                        <br class="space_m"> 퇴실시간 : 오전 11시 이전 (이외 시간은 협의필요)</br>
-                                    </div>
-
-                                    <div class="list item05 bord-y">
-                                        <span class="">숙박인원</span>
-                                        <div class="inner-flex">
-                                            <label for="">
-                                                <input id="" class="w230" type="text" placeholder=" - " required>
-                                                <span>명</span>
-                                            </label>                                    
-                                            <b class="point">*필수</b>
-                                        </div>
-                                    </div>
-
-                                    <div class="list item06 bord-y">
-                                        <span class="">식사인원</span>
-                                        <div class="inner-flex">
-                                            <label for="">
-                                                <input id="" class="w230" type="text" placeholder=" - " required>
-                                                <span>명</span>
-                                            </label>     
-                                            <b class="point">*필수</b>
-                                        </div>                          
-                                    </div>
-
-                                    <div class="list item07 w100">
-                                        <span>식사인원</span>
-                                        <div class="date-eat-count w100">
-                                            <div class="inner-flex">
-                                                <h4>1일째</h4>
-                                                <ul class="content-flex">
-                                                    <li>
-                                                        <label>
-                                                            조식 <input id="" class="w55" type="text" placeholder=" - " required> 명
-                                                        </label>
-                                                    </li>
-                                                    <li>
-                                                        <label>
-                                                            중식 <input id="" class="w55" type="text" placeholder=" - " required> 명
-                                                        </label>
-                                                    </li>
-                                                    <li>
-                                                        <label>
-                                                            석식 <input id="" class="w55" type="text" placeholder=" - " required> 명
-                                                        </label>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="inner-flex">
-                                                <h4>2일째</h4>
-                                                <ul class="content-flex">
-                                                    <li>
-                                                        <label>
-                                                            조식 <input id="" class="w55" type="text" placeholder=" - " required> 명
-                                                        </label>
-                                                    </li>
-                                                    <li>
-                                                        <label>
-                                                            중식 <input id="" class="w55" type="text" placeholder=" - " required> 명
-                                                        </label>
-                                                    </li>
-                                                    <li>
-                                                        <label>
-                                                            석식 <input id="" class="w55" type="text" placeholder=" - " required> 명
-                                                        </label>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="inner-flex">
-                                                <h4>3일째</h4>
-                                                <ul class="content-flex">
-                                                    <li>
-                                                        <label>
-                                                            조식 <input id="" class="w55" type="text" placeholder=" - " required> 명
-                                                        </label>
-                                                    </li>
-                                                    <li>
-                                                        <label>
-                                                            중식 <input id="" class="w55" type="text" placeholder=" - " required> 명
-                                                        </label>
-                                                    </li>
-                                                    <li>
-                                                        <label>
-                                                            석식 <input id="" class="w55" type="text" placeholder=" - " required> 명
-                                                        </label>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="inner-flex">
-                                                <h4>4일째</h4>
-                                                <ul class="content-flex">
-                                                    <li>
-                                                        <label>
-                                                            조식 <input id="" class="w55" type="text" placeholder=" - " required> 명
-                                                        </label>
-                                                    </li>
-                                                    <li>
-                                                        <label>
-                                                            중식 <input id="" class="w55" type="text" placeholder=" - " required> 명
-                                                        </label>
-                                                    </li>
-                                                    <li>
-                                                        <label>
-                                                            석식 <input id="" class="w55" type="text" placeholder=" - " required> 명
-                                                        </label>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="inner-flex">
-                                                <h4>5일째</h4>
-                                                <ul class="content-flex">
-                                                    <li>
-                                                        <label>
-                                                            조식 <input id="" class="w55" type="text" placeholder=" - " required> 명
-                                                        </label>
-                                                    </li>
-                                                    <li>
-                                                        <label>
-                                                            중식 <input id="" class="w55" type="text" placeholder=" - " required> 명
-                                                        </label>
-                                                    </li>
-                                                    <li>
-                                                        <label>
-                                                            석식 <input id="" class="w55" type="text" placeholder=" - " required> 명
-                                                        </label>
-                                                    </li>
-                                                </ul>
+                                <div class="list_box">  
+                                    <div class="input-container">
+                                        <div class="list item01 border_b">
+                                            <span class="mob-title">현출석교회(담임목사명)</span>
+                                            <div class="text-area">
+                                                <label for="church-name01" class="text-wrap">
+                                                    <span style="display: none;">교회 이름</span>
+                                                    <input id="church-name01" type="text" placeholder=" - " required class="input-field" oninput="updateProgress()">                                         
+                                                </label>
+                                                <label for="pastor-name01" class="text-wrap">
+                                                    <span style="display: none;">담임목사명</span>
+                                                    <input id="pastor-name01" type="text" placeholder=" - " required class="input-field" oninput="updateProgress()">
+                                                </label>
                                             </div>
                                         </div>
                                         
-                                    </div>
+                                        <div class="list item02 border_b">
+                                            <span class="mob-title">교적등록 연월일</span>
+                                            <div class="calendar-area">
+                                                <label for="date01" class="calendar-wrap">
+                                                    <span style="display: none;">교적등록 연월일</span>
+                                                    <img src="img/form/calendar.svg" alt="달력 아이콘">
+                                                    <input id="date01" type="date" required class="input-field" oninput="updateProgress()">                                         
+                                                </label>
+                                            </div>
+                                        </div>
+                                        
+                                        <label for="position01" class="list item03 border_b">
+                                            <span class="mob-title">직분</span>
+                                            <input id="position01" type="text" placeholder=" - " required class="input-field" oninput="updateProgress()">
+                                        </label>
 
-                                    <!--  회색 박스 -->
-                                    <div class="gray-text g-bg f100">6박 이상의 식사는 고객센터로 문의 해주시기 바랍니다.</div>
+                                        <div class="list item04 border_b">
+                                            <span class="mob-title">세례받은 교회/연도</span>
+                                            <div class="text-area">
+                                                <label for="church-name02" class="text-wrap">
+                                                    <span style="display: none;">교회 이름</span>
+                                                    <input id="church-name02" type="text" placeholder=" - " required class="input-field" oninput="updateProgress()">                                         
+                                                </label>
+                                                <label for="year" class="text-wrap">
+                                                    <span style="display: none;">연도</span>
+                                                    <input id="year" type="text" placeholder=" - "  required class="input-field" oninput="updateProgress()">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        
+                                        <label for="officiating-pastor" class="list item05 border_b">
+                                            <span class="mob-title">집례목사</span>
+                                            <input id="officiating-pastor" type="text" placeholder=" - " required class="input-field" oninput="updateProgress()">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  사역활동 -->
+                            <div class="out-box out-box02">
+                                <!-- 타이틀 및 작성칸 추가 버튼 -->
+                                <h4 class="list-title">
+                                    <span>사역활동</span>
+                                    <button class="add-field">
+                                        <span>작성칸 추가</span> <img src="img/form/add-field.png" alt="작성칸 추가 아이콘">
+                                    </button>
+                                </h4>
+                                <!--목록 타이틀-->
+                                <ul class="item-title">
+                                    <li class="item01 item">소속기관(부서)</li>
+                                    <li class="item02 item">내용</li>
+                                    <li class="item03 item">기간</li>
+                                    <li class="item04 item">비고</li>
+                                    <li class="item delete-item">삭제</li>
+                                </ul>
+                                <!-- 목록 -->
+                                <div class="list_box">
+                                    <div class="input-container">
+                                        <label for="department" class="list item01 border_b b_none_r">
+                                            <span class="mob-title">소속기관(부서)</span>
+                                            <input id="department" type="text" placeholder=" - " required class="input-field" oninput="updateProgress()">
+                                        </label>
+                                        
+                                        <label for="detail01" class="list item02 border_b">
+                                            <span class="mob-title">내용</span>
+                                            <input id="detail01" type="text" placeholder=" - " required class="input-field" oninput="updateProgress()">
+                                        </label>
+                                        
+                                        <div class="list item03 border_b b_none_r">
+                                            <span class="mob-title">기간</span>
+                                            <div class="calendar-area">
+                                                <label for="start-date01" class="calendar-wrap">
+                                                    <span style="display: none;">시작 기간</span>
+                                                    <img src="img/form/calendar.svg" alt="달력 아이콘">
+                                                    <input id="start-date01" type="date" required class="input-field" oninput="updateProgress()">                                         
+                                                </label>
+                                                <label for="finish-date01" class="calendar-wrap">
+                                                    <span style="display: none;">끝나는 기간</span>
+                                                    <img src="img/form/calendar.svg" alt="달력 아이콘">
+                                                    <input id="finish-date01" type="date" required class="input-field" oninput="updateProgress()">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        
+                                        <label for="note01" class="list item04 border_b">
+                                            <span class="mob-title">비고</span>
+                                            <input id="note01" type="text" placeholder=" - " required class="input-field" oninput="updateProgress()">
+                                        </label>
+                                        
+                                        <!-- 삭제 버튼 -->
+                                        <span class="list delete-item border_b">
+                                            <button class="n-delete" type="button">
+                                                <span>삭제</span>
+                                            </button>
+                                        </span>
+                                    </div>
+                                    <!-- ~ 작성칸 추가 시 추가됨 -->
+                                </div>
+                            </div>
+                            <!--  1:1 제자양육 // 목록 타이틀 없음-->
+                            <div class="out-box out-box03">
+                                <!-- 타이틀 및 작성칸 추가 버튼 -->
+                                <h4 class="list-title">
+                                    <span>1:1 제자양육</span>
+                                    <label class="radio-container">
+                                        <input id="not" type="checkbox" name="not">해당없음
+                                    </label>
+                                </h4>
+                                <!-- 목록 -->
+                                <div class="list_box">
+                                    <div class="input-container">
+                                        <!-- 상단 컨테이너 -->
+                                        <div class="top-container">
+                                            <div class="list item01 border_b b_none_r">
+                                                <span class="box03-title">
+                                                    동반자반 수료연월<br>
+                                                    <span class="ft-400">(양육자이름)</span>
+                                                </span>
+                                                <div class="sub-box">
+                                                    <label for="completion-date01">
+                                                        <span class="sub-title">수료연월</span>
+                                                        <input id="completion-date01" type="text" placeholder=" - " required class="input-field" oninput="updateProgress()">
+                                                    </label>
+                                                    <label for="rearer01">
+                                                        <span class="sub-title">양육자</span>
+                                                        <input id="rearer01" type="text" placeholder=" - " required class="input-field" oninput="updateProgress()">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="list item02 border_b b_none_r">
+                                                <span class="box03-title">
+                                                    동반자반 수료연월<br>
+                                                    <span class="ft-400">(양육자이름)</span>
+                                                </span>
+                                                <div class="sub-box">
+                                                    <label for="completion-date02">
+                                                        <span class="sub-title">수료연월</span>
+                                                        <input id="completion-date02" type="text" placeholder=" - " required class="input-field" oninput="updateProgress()">
+                                                    </label>
+                                                    <label for="rearer02">
+                                                        <span class="sub-title">양육자</span>
+                                                        <input id="rearer02" type="text" placeholder=" - " required class="input-field" oninput="updateProgress()">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 하단 컨테이너 -->
+                                        <div class="bottom-container">
+                                            <label for="bible-count" class="list item03 border_b">
+                                                <span class="box03-title">성경통독 횟수 (구약, 신약)</span>
+                                                <input id="bible-count" type="text" placeholder=" - " required class="input-field" oninput="updateProgress()">
+                                            </label>
+                                            
+                                            <label for="foster-children-count" class="list item04 border_b">
+                                                <span class="box03-title">양육명수</span>
+                                                <input id="foster-children-count" type="text" placeholder=" - " required class="input-field" oninput="updateProgress()">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  신앙 훈련 (교회 내・외부 각종 훈련 포함) -->
+                            <div class="out-box out-box04">
+                                <!-- 타이틀 및 작성칸 추가 버튼 -->
+                                <h4 class="list-title">
+                                    <span>신앙 훈련 (교회 내・외부 각종 훈련 포함)</span>
+                                    <button class="add-field">
+                                        <span>작성칸 추가</span> <img src="img/form/add-field.png" alt="작성칸 추가 아이콘">
+                                    </button>
+                                </h4>
+                                <!--목록 타이틀-->
+                                <ul class="item-title">
+                                    <li class="item01 item">훈련명</li>
+                                    <li class="item02 item">기간</li>
+                                    <li class="item03 item">담당기관</li>
+                                    <li class="item04 item">훈련내용</li>
+                                    <li class="item05 item">비고</li>
+                                    <li class="delete-item item">삭제</li>
+                                </ul>
+                                <!-- 목록 -->
+                                <div class="list_box">
+                                    <div class="input-container">
+                                        <label for="training-name" class="list item01 border_b">
+                                            <span class="mob-title">훈련명</span>
+                                            <input id="training-name" type="text" placeholder=" - " required class="input-field" oninput="updateProgress()">
+                                        </label>
+                                        
+                                        <div class="list item02 border_b">
+                                            <span class="mob-title">기간</span>
+                                            <div class="calendar-area">
+                                                <label for="start-date02" class="calendar-wrap">
+                                                    <span style="display: none;">시작 기간</span>
+                                                    <img src="img/form/calendar.svg" alt="달력 아이콘">
+                                                    <input id="start-date02" type="date" required class="input-field" oninput="updateProgress()">                                         
+                                                </label>
+                                                <label for="finish-date02" class="calendar-wrap">
+                                                    <span style="display: none;">끝나는 기간</span>
+                                                    <img src="img/form/calendar.svg" alt="달력 아이콘">
+                                                    <input id="finish-date02" type="date" required class="input-field" oninput="updateProgress()">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    
+                                        <label for="organ01" class="list item03 border_b">
+                                            <span class="mob-title">담당기관</span>
+                                            <input id="organ01" type="text" placeholder=" - " required class="input-field" oninput="updateProgress()">
+                                        </label>
+                                        
+                                        <label for="detail02" class="list item04 border_b">
+                                            <span class="mob-title">훈련내용</span>
+                                            <input id="detail02" type="text" placeholder=" - " required class="input-field" oninput="updateProgress()">
+                                        </label>
+
+                                        <label for="note02" class="list item05 border_b">
+                                            <span class="mob-title">비고</span>
+                                            <input id="note02" type="text" placeholder=" - " required class="input-field" oninput="updateProgress()">
+                                        </label>
+                                        
+                                        <!-- 삭제 버튼 -->
+                                        <span class="list delete-item border_b">
+                                            <button class="n-delete" type="button">
+                                                <span>삭제</span>
+                                            </button>
+                                        </span>
+                                    </div>
+                                    <!-- ~ 작성칸 추가 시 추가됨 -->
+                                </div>
+                            </div>
+                            <!--  단기 선교・아웃리치 경험 -->
+                            <div class="out-box out-box05">
+                                <!-- 타이틀 및 작성칸 추가 버튼 -->
+                                <h4 class="list-title">
+                                    <span>단기 선교・아웃리치 경험</span>
+                                    <button class="add-field">
+                                        <span>작성칸 추가</span> <img src="img/form/add-field.png" alt="작성칸 추가 아이콘">
+                                    </button>
+                                </h4>
+                                <!--목록 타이틀-->
+                                <ul class="item-title">
+                                    <li class="item01 item">국가</li>
+                                    <li class="item02 item">기간</li>
+                                    <li class="item03 item">담당기관</li>
+                                    <li class="item04 item">사역내용</li>
+                                    <li class="item05 item">비고</li>
+                                    <li class="delete-item item">삭제</li>
+                                </ul>
+                                <!-- 목록 -->
+                                <div class="list_box">
+                                    <div class="input-container">
+                                        <label for="nation" class="list item01 border_b">
+                                            <span class="mob-title">국가</span>
+                                            <input id="nation" type="text" placeholder=" - " required class="input-field" oninput="updateProgress()">
+                                        </label>
+                                        
+                                        <div class="list item02 border_b">
+                                            <span class="mob-title">기간</span>
+                                            <div class="calendar-area">
+                                                <label for="start-date03" class="calendar-wrap">
+                                                    <span style="display: none;">시작 기간</span>
+                                                    <img src="img/form/calendar.svg" alt="달력 아이콘">
+                                                    <input id="start-date03" type="date" required class="input-field" oninput="updateProgress()">                                         
+                                                </label>
+                                                <label for="finish-date03" class="calendar-wrap">
+                                                    <span style="display: none;">끝나는 기간</span>
+                                                    <img src="img/form/calendar.svg" alt="달력 아이콘">
+                                                    <input id="finish-date03" type="date" required class="input-field" oninput="updateProgress()">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    
+                                        <label for="organ02" class="list item03 border_b">
+                                            <span class="mob-title">담당기관</span>
+                                            <input id="organ02" type="text" placeholder=" - " required class="input-field" oninput="updateProgress()">
+                                        </label>
+                                        
+                                        <label for="ministry-detail" class="list item04 border_b">
+                                            <span class="mob-title">사역내용</span>
+                                            <input id="ministry-detail" type="text" placeholder=" - " required class="input-field" oninput="updateProgress()">
+                                        </label>
+
+                                        <label for="note03" class="list item05 border_b">
+                                            <span class="mob-title">비고</span>
+                                            <input id="note03" type="text" placeholder=" - " required class="input-field" oninput="updateProgress()">
+                                        </label>
+                                        
+                                        <!-- 삭제 버튼 -->
+                                        <span class="list delete-item border_b">
+                                            <button class="n-delete" type="button">
+                                                <span>삭제</span>
+                                            </button>
+                                        </span>
+                                    </div>
+                                    <!-- ~ 작성칸 추가 시 추가됨 -->
+                                </div>
+                            </div>
+                            <!--  파송 희망 지역 (택1) // 목록 타이틀 없음 -->
+                            <div class="out-box out-box06">
+                                <!-- 타이틀 및 작성칸 추가 버튼 -->
+                                <h4 class="list-title">
+                                    <span>파송 희망 지역 (택1) </span>
+                                </h4>
+                                <!-- 목록 -->
+                                <div class="list_box">
+                                    <div class="input-container">
+                                        <div class="list item01 border_b">
+                                            <div class="radio-container">
+                                                <div class="radio-area">
+                                                    <label>
+                                                        <input id="northeast-asia" type="radio" name="area" required> 동북아권역 (중국/몽골)
+                                                    </label>
+                                                    <label>
+                                                        <input id="central-asia" type="radio" name="area" required> 중앙아시아/소아시아권역
+                                                    </label>
+                                                    <label>
+                                                        <input id="south-asia" type="radio" name="area" required> 남아시아 권역
+                                                    </label>
+                                                    <label>
+                                                        <input id="middle-east" type="radio" name="area" required> 중동/아프리카권역
+                                                    </label>
+                                                </div>
+                                                <div class="radio-etc">
+                                                    <label>
+                                                        <input id="other-regions" type="radio" name="area" required> <span>기타 희망 지역</span>
+                                                        <input type="text" placeholder=" - " required>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="bottom-container">
+                                            <label for="sending-organization" class="list item03 border_b b_none_r">
+                                                <span class="box06-title">파송선교단체</span>
+                                                <input id="sending-organization" type="text" placeholder=" - " required class="input-field" oninput="updateProgress()">
+                                            </label>
+
+                                            <label for="sending-church" class="list item04 border_b b_none_r">
+                                                <span class="box06-title">파송교회</span>
+                                                <input id="sending-church" type="text" placeholder=" - " required class="input-field" oninput="updateProgress()">
+                                            </label>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </fieldset>
                 </form>
-                
                 <!--버튼 랩핑-->
                 <div class="finish-bnt-wrap">
-                    <div class="check-box">
-                        <button class="checkBtn">확인</button>
+                    <div class="temporary">
+                        <button class="temporaryBtn">임시저장</button>
                     </div>
                     
-                    <div class="delete-box">
-                        <button class="deleteBtn" type="button" onclick="location.href='https://puritechlab1155.github.io/onnuri-front/form07.html'" >취소</button>
+                    <div class="next-container">
+                        <button class="next" type="button" onclick="location.href='https://puritechlab1155.github.io/onnuri-front/form04.html'" >다음</button>
                     </div>
                 </div>
             </div>
@@ -420,41 +667,41 @@
                     <div class="footer-logo"><img src="img/footer-logo.png" alt="Acts29비전빌리지"></div>
 
                     <div class="footer-info01">
-                       <div class="partner-site">
-                       <span class="text">협력사이트 :</span>
+                    <div class="partner-site">
+                    <span class="text">협력사이트 :</span>
 
-                       <div class="site site01">
-                       <a href="https://www.onnuri.org/" target="_blank">ACTS29 비전빌리지</a>
-                       </div>
-                       <div class="site site02">
-                       <a href="https://www.cgntv.net/" target="_blank">CGNTV</a>
-                       </div>
-                       <div class="site site03">
-                       <a href="https://www.duranno.com/" target="_blank">두란노해외선교회</a>
-                       </div>
-                       <div class="site site04">
-                       <a href="https://www.2000mission.org/" target="_blank">온누리2000선</a>
-                       </div>
-                       </div><!-- //partner-site -->
+                    <div class="site site01">
+                    <a href="https://www.onnuri.org/" target="_blank">ACTS29 비전빌리지</a>
+                    </div>
+                    <div class="site site02">
+                    <a href="https://www.cgntv.net/" target="_blank">CGNTV</a>
+                    </div>
+                    <div class="site site03">
+                    <a href="https://www.duranno.com/" target="_blank">두란노해외선교회</a>
+                    </div>
+                    <div class="site site04">
+                    <a href="https://www.2000mission.org/" target="_blank">온누리2000선</a>
+                    </div>
+                    </div><!-- //partner-site -->
 
-                       <div class="support-links">
-                       <div class="link" id="sitemap-btn"><a href="#">사이트맵</a></div>
-                       <div class="link" id="terms-btn"><a href="#">이용약관</a></div>
-                       <div class="link" id="privacy-btn"><a href="#">개인정보처리방침</a></div>
-                       </div><!-- //support-links -->
-                    </div><!-- //footer-info01 -->
+                    <div class="support-links">
+                    <div class="link" id="sitemap-btn"><a href="#">사이트맵</a></div>
+                    <div class="link" id="terms-btn"><a href="#">이용약관</a></div>
+                    <div class="link" id="privacy-btn"><a href="#">개인정보처리방침</a></div>
+                    </div><!-- //support-links -->
+                </div><!-- //footer-info01 -->
 
-                    <div class="line"></div>
+                <div class="line"></div>
 
-                    <div class="footer-info02">
-                       <div class="company-info">
-                       <div class="info info01"><span>TEL</span>031-331-8100</div>
-                       <div class="info info01"><span>FAX</span>031-331-8189</div>
-                       <div class="info"><span>E-MAIL</span>school@visionvillage.org</div>
-                       <div class="info">경기도 용인시 처인구 양지면 추계로 62</div>
-                       </div>
+                <div class="footer-info02">
+                    <div class="company-info">
+                    <div class="info info01"><span>TEL</span>031-331-8100</div>
+                    <div class="info info01"><span>FAX</span>031-331-8189</div>
+                    <div class="info"><span>E-MAIL</span>school@visionvillage.org</div>
+                    <div class="info">경기도 용인시 처인구 양지면 추계로 62</div>
+                    </div>
 
-                       <div class="copyright">Copyright © 2025 Acts29비전빌리지/Acts29Visionvillage Allright reserved</div>
+                    <div class="copyright">Copyright © 2025 Acts29비전빌리지/Acts29Visionvillage Allright reserved</div>
                     </div>
                 </div>
             </div>
@@ -735,9 +982,181 @@
             </div>
         </div>
     </section>
-
     <script src="js/script.js"></script>
     <script>
+        // -- 작성칸 추가 버튼
+        let counter = 1; // 초기 카운터 설정
+
+        document.querySelectorAll('.add-field').forEach(button => {
+            button.addEventListener('click', function(event) {
+                event.preventDefault(); // 기본 동작 방지
+
+                // 부모 div 선택
+                const parentBox = this.closest('.out-box');
+                // 기존 input-container 선택
+                const inputContainer = parentBox.querySelector('.input-container');
+                // input-container 복제
+                const newContainer = inputContainer.cloneNode(true);
+                
+                // 모든 input 요소의 값을 리셋
+                newContainer.querySelectorAll('input').forEach(input => {
+                    input.value = '';
+                });
+
+                // 삭제 버튼 클래스를 변경
+                const deleteButton = newContainer.querySelector('.n-delete');
+                deleteButton.classList.remove('n-delete');
+                deleteButton.classList.add('delete');
+
+                // 현재 윈도우 너비 확인
+                const windowWidth = window.innerWidth;
+
+                // 윈도우 너비가 976px 이하일 때만 패딩 설정
+                if (windowWidth <= 984) {
+                    newContainer.style.paddingTop = '40px';
+                }
+
+                // label의 for 값과 input, select의 id 값을 수정
+                newContainer.querySelectorAll('label').forEach(label => {
+                    const inputId = label.getAttribute('for');
+                    if (inputId) {
+                        label.setAttribute('for', `${inputId}-${counter}`);
+                    }
+                });
+
+                newContainer.querySelectorAll('input').forEach(input => {
+                    const inputId = input.id;
+                    if (inputId) {
+                        input.id = `${inputId}-${counter}`;
+                    }
+                });
+
+                newContainer.querySelectorAll('select').forEach(select => {
+                    const selectId = select.id;
+                    if (selectId) {
+                        select.id = `${selectId}-${counter}`;
+                    }
+                });
+
+                counter++; // 카운터 증가
+
+                // 새로운 input-container를 list_box에 추가
+                parentBox.querySelector('.list_box').appendChild(newContainer);
+            });
+        });
+
+        // -- 삭제 버튼 클릭 시 해당 input-container 삭제
+        document.querySelectorAll('.list_box').forEach(listBox => {
+            listBox.addEventListener('click', function(event) {
+                const deleteButton = event.target.closest('.delete');
+                if (deleteButton) {
+                    event.preventDefault(); // 기본 동작 방지
+                    
+                    const inputContainer = deleteButton.closest('.input-container');
+                    if (inputContainer) {
+                        inputContainer.remove();
+                    }
+                }
+            });
+        });
+
+        // --- 폼태그 안의 입력이 모두 채워지면 확인버튼이 활성화되고 다음 페이지로 넘어가게 설정
+        // >> 복제된 박스 경우 값이 존재해도 버튼 활성화 안되는 오류 *******************************
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.getElementById('form03');
+            const submitBtn = document.getElementById('submit-btn');
+            
+            // 모든 필수 input과 복제된 박스의 input 가져오기
+            const getAllInputs = () => form.querySelectorAll('input[required], .input-container input');
+
+            // 각 input 입력 필드에 변화가 있을 때마다 체크하는 함수
+            function checkFormCompletion() {
+                const inputs = getAllInputs(); 
+                const allFilled = Array.from(inputs).every(input => input.value.trim() !== ''); 
+                submitBtn.disabled = !allFilled; // 모든 입력이 채워지면 버튼 활성화
+            }
+
+            // 초기 입력 필드에 이벤트 리스너 추가
+            const inputs = getAllInputs(); 
+            inputs.forEach(input => {
+                input.addEventListener('input', checkFormCompletion);
+            });
+
+            // 확인 버튼 클릭 시 다음 HTML로 넘어가도록 설정
+            submitBtn.addEventListener('click', function () {
+                const allInputs = getAllInputs(); 
+                const allFilled = Array.from(allInputs).every(input => input.value.trim() !== '');
+                
+                if (allFilled) { 
+                    window.location.href = 'https://puritechlab1155.github.io/onnuri-front/form04.html';
+                }
+            });
+
+            // 페이지 로드 시 초기 상태 체크 (버튼 활성화 상태 초기화)
+            checkFormCompletion(); // 페이지가 로드될 때 입력 필드의 상태를 체크하여 버튼 활성화 여부 결정
+        });
+
+        // ---- 프로그래스 % 업데이트
+        function updateProgress() {
+            const inputs = document.querySelectorAll('.input-field'); 
+            const selects = document.querySelectorAll('.select-field');
+
+            // 체크할 라디오 그룹들 (name="lunar" 제외)
+            const radioGroups = new Set();
+            document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+                if (checkbox.name !== "not") { // "lunar" 제외
+                    radioGroups.add(checkbox.name);
+                }
+            });
+
+            const totalFields = inputs.length + selects.length + radioGroups.size; 
+            let filledFields = 0;
+
+            inputs.forEach(input => {
+                if (input.value.trim() !== '') {
+                    filledFields++;
+                }
+            });
+
+            selects.forEach(select => {
+                if (select.value !== '') {
+                    filledFields++;
+                }
+            });
+
+            radioGroups.forEach(name => {
+                if (document.querySelector(`input[name="${name}"]:checked`)) {
+                    filledFields++;
+                }
+            });
+
+            let percentage = totalFields > 0 ? (filledFields / totalFields) * 100 : 0;
+
+            const progressIndicator = document.getElementById('progress-3'); // 필요에 따라 변경
+
+            if (percentage === 100) {
+                progressIndicator.textContent = "완료";
+                progressIndicator.style.color = '#007AFF';
+                progressIndicator.style.borderColor = '#007AFF';
+                progressIndicator.style.display = 'block'; // 표시
+            } else if (percentage > 0) {
+                progressIndicator.textContent = `${percentage.toFixed(0)}%`;
+                progressIndicator.style.color = '#E72929';
+                progressIndicator.style.borderColor = '#E72929';
+                progressIndicator.style.display = 'block'; // 표시
+            } else {
+                progressIndicator.style.display = 'none'; // 0%일 때 숨김
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            updateProgress();
+        });
+
+        document.querySelectorAll('input[type="radio"]').forEach(radio => {
+            radio.addEventListener('change', updateProgress);
+        });
+
 
 
     </script>
