@@ -1304,681 +1304,6 @@ value="yes" 인 라디오 버튼을 클릭한다면 answer-no클래스를 가진
         font-size: 15px;
     }
 }
-/* 3단계 */
-#main.form_03 #form03 fieldset {
-    width: 100%;
-    overflow: hidden;
-    border: none;
-    margin-top: 32px;
-}
-#main.form_03 #form03 h4.list-title{
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 16px 0;
-    font-size: 18px;
-    font-weight: 700;
-}
-#main.form_03 #form03 h4.list-title > span {
-    display: block;
-    float: left;
-    margin-top: 6px;
-}
-#main.form_03 #form03 input[type='text'] {
-    width: 90%;
-    height: 34px; 
-    margin: 0 auto;
-    padding: 8px 16px;
-    line-height: normal !important;
-    box-sizing: border-box;
-    border: 1px solid #BABABA;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-}
-#main.form_03 #form03 button.add-field {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    float: right;
-}
-#main.form_03 #form03 button.add-field > span {
-    display: inline-block;
-    color: #777;
-}
-/*목록 타이틀 및 목록*/
-#main.form_03 #form03 .input-wrap .out-box {
-    margin-bottom: 70px;
-}
-#main.form_03 #form03 .item-title , #main.form_03 #form03 .input-container{
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    text-align: center;
-    box-sizing: border-box;
-    gap: 0;
-}
-#main.form_03 #form03 .item-title  {
-    align-items: center;
-    border-top: 1px solid #ACC7D4;
-    border-right: 1px solid #ACC7D4;
-    font-size: 18px;
-    font-weight: 500;
-    background: #E0EBF0;
-}
-#main.form_03 #form03 .item {
-    padding: 8px 0;
-    box-sizing: border-box;
-    border-left: 1px solid #ACC7D4;
-}
-#main.form_03 #form03 span.br {
-    display: block;
-    margin-top: -8px;
-}
-/* 목록 */
-#main.form_03 #form03 .item-title .item {
-    border-bottom: 1px solid #ACC7D4;
-}
-#main.form_03 #form03 .list_box .list {
-    border-top: none;
-}
-#main.form_03 #form03 .input-container label{
-    padding: 8px 0;
-    box-sizing: border-box;
-    border-right: none;
-}
-#main.form_03 #form03 .input-container span.mob-title {
-    display: none;
-}
-#main.form_03 #form03 .delete-item { /* 삭제 버튼 비율 */
-    flex: 0.31;
-}
-#main.form_03 #form03 .list_box .item01 {
-    border-bottom: none;
-    border-top: none;
-}
-#main.form_03 #form03 .out-box01 .list_box .item02 {
-    border-bottom: none;
-    border-right: none;
-}
-#main.form_03 #form03 .out-box01 .list_box .item05 {
-    border-right: 1px solid #ACC7D4;
-}
-#main.form_03 #form03 .out-box02 .list_box .item03 {
-    border-bottom: none;
-    border-right: none;
-}
-#main.form_03 #form03 .out-box03 .item01 {
-    border-left: none;
-}
-#main.form_03 #form03 .out-box03 .item02 {
-    border-right: none;
-    border-left: none;
-}
-/* 각 항목에 대해 비율을 다르게 설정 */
-/* 교회등록 */
-#main.form_03 #form03 .out-box01 .item01 {
-    flex: 2;
-    border-right: none;
-    border-bottom: 1px solid #ACC7D4;
-}
-#main.form_03 #form03 .out-box01 .item02 {
-    flex: 2;
-}
-#main.form_03 #form03 .out-box01 .item03 {
-    flex: 1; 
-}
-#main.form_03 #form03 .out-box01 .item04 {
-    flex: 2;
-    border-right: none;
-}
-#main.form_03 #form03 .out-box01 .item05 {
-    flex: 0.8;
-}
-#main.form_03 #form03 .out-box01 .list .text-area {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#main.form_03 #form03 .out-box01 .list .text-area .text-wrap {
-    display: block;
-    flex: 1;
-    position: relative;
-}
-#main.form_03 #form03 .out-box01 .item02 .calendar-wrap:first-child::after {
-    content: none !important;
-}
-#main.form_03 #form03 .out-box01 .calendar-wrap input::-webkit-calendar-picker-indicator {
-    left: 2%;
-}
-/* 사역활동 */
-#main.form_03 #form03 .out-box02 .item-title {
-    border-left: 1px solid #ACC7D4;
-    align-items: stretch;
-    justify-content: center;
-}
-#main.form_03 #form03 .out-box02 .item-title .item:not(.item02) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#main.form_03 #form03 .out-box02 .item-title .item01 {
-    border-left: none;
-}
-#main.form_03 #form03 .out-box02 .item01 {
-    flex: 0.7;
-    border-bottom: 1px solid #ACC7D4;
-}
-#main.form_03 #form03 .out-box02 .item02 {
-    flex: 1;
-}
-#main.form_03 #form03 .out-box02 .item03 {
-    flex: 2; 
-}
-#main.form_03 #form03 .out-box02 .item04 {
-    flex: 0.5;
-}
-/* 1:1 제자양육 */
-#main.form_03 #form03 .out-box03 .list-title {
-    justify-content: flex-start !important;
-    gap: 20px;
-}
-#main.form_03 #form03 .out-box03 h4.list-title > span {
-    margin-top: 0;
-}
-#main.form_03 #form03 .out-box03 .list-title label.radio-container {
-    font-size: 16px !important;
-    font-weight: 400;
-    cursor: pointer;
-}
-#main.form_03 #form03 input[type='radio'] {
-    margin: 0;
-    margin-right: 8px;
-    padding: 0;
-}
-#main.form_03 #form03 .out-box03 .input-container {
-    display: block !important;
-}
-/* 상단 컨테이너 */
-#main.form_03 #form03 .ft-400 {
-    font-weight: 400;
-    font-size: 16px;
-}
-#main.form_03 #form03 .out-box03 .top-container {
-    display: flex;
-    flex-wrap: wrap;
-    border: 1px solid #ACC7D4;
-}
-#main.form_03 #form03 .out-box03 .list {
-    flex: 1;
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
-}
-#main.form_03 #form03 .out-box03 .list .box03-title {
-    flex: 0 0 160px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-right: 1px solid #ACC7D4;
-    background: #E0EBF0;
-    font-size: 18px;
-    font-weight: 500;
-}
-#main.form_03 #form03 .out-box03 .top-container .sub-box {
-    flex: 1;
-}
-#main.form_03 #form03 .out-box03 label{
-    display: flex;
-    align-items: center;
-    padding: 0;
-}
-#main.form_03 #form03 .out-box03 .top-container .sub-box .sub-title {
-    flex: 0 0 100px;
-    padding: 14px 0;
-    background: #EFF5F7;
-    border-right: 1px solid #ACC7D4;
-}
-#main.form_03 #form03 .out-box03 .top-container .sub-box label:nth-child(1) {
-    border-bottom: 1px solid #ACC7D4;
-}
-#main.form_03 #form03 .out-box03 input {
-    margin: 0 10px;
-}
-#main.form_03 #form03 .out-box03 .item02:not(.item-title .item02){
-    border-bottom: none;
-}
-/* 하단 컨테이너 */
-#main.form_03 #form03 .out-box03 .bottom-container {
-    display: flex;
-    flex-wrap: wrap;
-    border-right: 1px solid #ACC7D4;
-}
-#main.form_03 #form03 .out-box03 .bottom-container .list {
-    align-items: center;
-}
-#main.form_03 #form03 .bottom-container .list .box03-title {
-    flex: 0 0 260px;
-    padding: 14px 0;
-    background : #E0EBF0;
-}
-/* 신앙 훈련 (교회 내・외부 각종 훈련 포함) */
-#main.form_03 #form03 .out-box04 .item01 {
-    flex: 0.5;
-    border-bottom: 1px solid #ACC7D4;
-}
-#main.form_03 #form03 .out-box04 .item02 {
-    flex: 2; 
-    border-right: none;
-}
-#main.form_03 #form03 .out-box04 .item02:not(.item-title .item02) {
-    border-bottom: none;
-}
-#main.form_03 #form03 .out-box04 .item03 {
-    flex: 0.5; 
-}
-#main.form_03 #form03 .out-box04 .item04 {
-    flex: 1; 
-}
-#main.form_03 #form03 .out-box04 .item05 {
-    flex: 0.5;
-}
-/* 단기 선교・아웃리치 경험 */
-#main.form_03 #form03 .out-box05 .list_box .item01 {
-    border-bottom: 1px solid #ACC7D4;
-}
-#main.form_03 #form03 .out-box05 .item01 {
-    flex: 0.5;
-}
-#main.form_03 #form03 .out-box05 .item02 {
-    flex: 2;
-}
-#main.form_03 #form03 .out-box05 .item03 {
-    flex: 0.5;
-}
-#main.form_03 #form03 .out-box05 .item04 {
-    flex: 1;
-}
-#main.form_03 #form03 .out-box05 .item05 {
-    flex: 0.5;
-}
-#main.form_03 #form03 .out-box05 .list_box .item02 {
-    border-bottom: none;
-    border-right: none;
-}
-
-/* 파송 희망 지역 (택1) */
-#main.form_03 #form03 .out-box06 .input-container {
-    display: block;
-}
-#main.form_03 #form03 .out-box06 .item01 {
-    padding: 6px 0;
-    border: 1px solid #ACC7D4;
-}
-#main.form_03 #form03 .out-box06 .item01 .radio-container {
-    padding-left: 16px;
-}
-#main.form_03 #form03 .out-box06 .item01 .radio-area {
-    display: flex;
-    flex: 1;
-    flex-wrap: wrap;
-    gap: 10px 30px;
-    align-items: center;
-    justify-content: flex-start;
-}
-#main.form_03 #form03 .radio-etc label{
-    width: fit-content;
-    display: flex;
-    align-items: center;
-}
-#main.form_03 #form03 .radio-etc label input[type='text'] {
-    width: fit-content;
-    margin: 0;
-    margin-left: 16px
-}
-#main.form_03 #form03 .out-box06 .item01 .radio-area label {
-    cursor: pointer;
-}
-#main.form_03 #form03 .out-box06 .bottom-container {
-    display: flex;
-}
-#main.form_03 #form03 .out-box06 .bottom-container label {
-    display: flex;
-    align-items: center;
-    flex: 1;
-    padding: 0;
-}
-#main.form_03 #form03 .out-box06 .bottom-container label .box06-title {
-    padding: 14px 0;
-    flex: 0 0 210px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #E0EBF0;
-    border-right: 1px solid #ACC7D4;
-    font-size: 18px;
-    font-weight: 500;
-}
-#main.form_03 #form03 .out-box06 .bottom-container label input {
-    margin: 0 10px;
-}
-#main.form_03 #form03 .out-box06 .item04 {
-    border-right: 1px solid #ACC7D4;
-}
-
-/* 달력 */
-#main.form_03 #form03 .list .calendar-area {
-    display: flex;
-    flex-wrap: nowrap;
-    border-bottom: 1px solid #ACC7D4;
-}
-#main.form_03 #form03 .list .calendar-wrap  {
-    display: flex;
-    padding: 8px 10px;
-    flex: 1;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-#main.form_03 #form03 .list .calendar-wrap:first-child::after {
-    content: ' - ';
-    position: absolute;
-    right: -2%;
-    color: #222;
-}
-#main.form_03 #form03 .calendar-wrap input {
-    width: 100%;
-    height: 34px;
-    margin: 0 auto;
-    padding: 8px 16px;
-    line-height: normal !important;
-    box-sizing: border-box;
-    border: 1px solid #BABABA;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-}
-#main.form_03 #form03 .calendar-wrap img {
-    margin-right: 8px;
-}
-#main.form_03 #form03 .calendar-wrap input::-webkit-calendar-picker-indicator {  
-    opacity: 0;
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    left: 3%;
-    cursor: pointer;
-}
-/* 삭제 버튼 */
-#main.form_03 #form03 .list.item06 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#main.form_03 #form03 button.delete { /* 추가되는 칸부터 생기는 삭제 스타일 */
-    padding: 2px 4px;
-    font-size: 16px;
-    border: 1px solid #FF9393;
-    color: #EF2626 !important;
-    border-radius: 4px;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
-#main.form_03 #form03 button.delete > span{
-    color: #EF2626;
-}
-#main.form_03 #form03 button.n-delete {
-    display: none;
-}
-/* resize */
-@media (max-width: 984px) {
-    #main.form_03 #form03 .item-title {
-        display: none;
-    }
-    #main.form_03 #form03 .input-container span.mob-title {
-        display: block;
-        background: #E0EBF0;
-        font-size: 18px;
-        font-weight: 500;
-        padding: 14px 0;
-    }
-    #main.form_03 #form03 .input-container {
-        display: block;
-        margin-bottom: 40px;
-        position: relative;
-    }
-    #main.form_03 #form03 .input-container label {
-        padding: 0;
-    }
-    #main.form_03 #form03 .out-box .list {
-        display: block;
-        width: 50%;
-        float: left;
-    }
-    #main.form_03 #form03 .out-box01 .item05 {
-        width: 100%;
-    }
-    #main.form_03 #form03 .out-box01 .list {
-        padding: 0;
-    }
-    #main.form_03 #form03 .out-box .list input:not([type='radio']) {
-        width: calc(100% - 20px);
-        margin: 14px 0;
-    }
-    #main.form_03 #form03 .list .calendar-wrap {
-        padding: 0 12px;
-    }
-    #main.form_03 #form03 .out-box02 .item03 , #main.form_03 #form03 .out-box02 .item04 {
-        width: 100%;
-    }
-    #main.form_03 #form03 .out-box03 .top-container > div {
-        flex: 0 0 100%;
-    }
-    #main.form_03 #form03 .out-box03 .top-container > div label {
-        padding-right: 10px;
-    }
-    #main.form_03 #form03 .out-box03 .top-container .sub-box .sub-title, 
-    #main.form_03 #form03 .out-box06 .bottom-container label .box06-title{
-        display: block;
-        padding: 19px 0;
-        margin-right: 10px;
-    }
-    #main.form_03 #form03 .out-box03 .top-container .box03-title {
-        padding: 10px 0;
-    }
-    #main.form_03 #form03 .out-box01 .item01 ,
-    #main.form_03 #form03 .out-box01 .item02 ,
-    #main.form_03 #form03 .out-box04 .item05 ,
-    #main.form_03 #form03 .out-box04 .item01 ,
-    #main.form_03 #form03 .out-box04 .item02 ,
-    #main.form_03 #form03 .out-box05 .item01 ,
-    #main.form_03 #form03 .out-box05 .item02 ,
-    #main.form_03 #form03 .out-box05 .item05 {
-        width: 100%;
-    }
-    #main.form_03 #form03 .out-box06 .input-container .list{
-        width: 100%;
-        padding-right: 10px;
-        float: none;
-    }
-    #main.form_03 #form03 .out-box06 .radio-area label{
-        display: flex;
-        gap: 6px;
-        align-items: center;
-    }
-    #main.form_03 #form03 .radio-etc label {
-        width: 100%;
-        gap: 6px;
-    }
-    #main.form_03 #form03 .radio-etc label input[type='text'] {
-        width: 50% !important;
-    }
-    #main.form_03 #form03 .out-box06 .bottom-container {
-        display: block;
-    }
-    /* 삭제 버튼 */
-    #main.form_03 #form03 .delete-item {
-        width: fit-content !important;
-        border: none !important;
-        position: absolute;
-        top: 0px;
-        right: 0;
-    }
-    #main.form_03 #form03 .delete-item button {
-        position: static;
-        transform: none;
-    }
-    /* border 스타일 */
-    #main.form_03 #form03 .out-box01 .item01 {
-        border: none;
-    }
-    #main.form_03 #form03 .out-box01 .list .text-area {
-        border-left: 1px solid #ACC7D4;
-        border-right: 1px solid #ACC7D4;
-    }
-    #main.form_03 #form03 .out-box01 .item01 span.mob-title {
-        border-left: 1px solid #ACC7D4;
-    }
-    #main.form_03 #form03 .input-container span.mob-title {
-        border: 1px solid #ACC7D4;
-        border-left: none;
-    }
-    #main.form_03 #form03 .out-box01 .item03 {
-        border-bottom: none;
-    }
-    #main.form_03 #form03 .out-box01 .item04 {
-        border: none;
-    }
-    #main.form_03 #form03 .list .calendar-area {
-        border-right: 1px solid #ACC7D4;
-        border-bottom: none;
-    }
-    #main.form_03 #form03 .out-box01 .item05 span.mob-title {
-        border-right: none !important;
-    }
-    #main.form_03 #form03 out-box02 .item03 span.mob-title {
-        border-top: none !important;
-    }
-    #main.form_03 #form03 .out-box03 .top-container .box03-title {
-        border-bottom: 1px solid #ACC7D4;
-        border-right: none;
-    }
-    #main.form_03 #form03 .out-box03 .item02 .box03-title {
-        border-top: 1px solid #ACC7D4;
-    }
-    #main.form_03 #form03 .out-box03 .item03 .box03-title ,
-    #main.form_03 #form03 .out-box03 .item04 .box03-title{
-        border-right: none;
-        border-bottom: 1px solid #ACC7D4 !important;
-    }
-    #main.form_03 #form03 .out-box03 .top-container > div {
-        border-right: none;
-    }
-    #main.form_03 #form03 .out-box04 .item02 span.mob-title ,
-    #main.form_03 #form03 .out-box04 .item05 span.mob-title {
-        border-top: none;
-    }
-    #main.form_03 #form03 .out-box04 .list {
-        border-right: 1px solid #ACC7D4;
-    }
-    #main.form_03 #form03 .out-box04 .item03 {
-        border-right: none;
-    }
-    #main.form_03 #form03 .out-box04 .list span.mob-title {
-        border-right: none;
-    }
-    #main.form_03 #form03 .out-box05 .list_box .list {
-        border-right: 1px solid #ACC7D4;
-    }
-    #main.form_03 #form03 .out-box04 .calendar-area ,
-    #main.form_03 #form03 .out-box05 .list_box .item03 .mob-title ,
-    #main.form_03 #form03 .out-box05 .list_box .item02 ,
-    #main.form_03 #form03 .out-box05 .list_box .item03 ,
-    #main.form_03 #form03 .out-box05 .list_box .item01 .mob-title ,
-    #main.form_03 #form03 .out-box05 .list_box .item04 .mob-title ,
-    #main.form_03 #form03 .out-box05 .list_box .item05 .mob-title ,
-    #main.form_03 #form03 .out-box02 .list_box .item01 .mob-title ,
-    #main.form_03 #form03 .out-box02 .list_box .item02 .mob-title ,
-    #main.form_03 #form03 .out-box02 .list_box .item04 .mob-title {
-        border-right: none;
-    }
-    #main.form_03 #form03 .out-box05 .list_box .item02 .mob-title ,
-    #main.form_03 #form03 .out-box05 .list_box .item05 .mob-title ,
-    #main.form_03 #form03 .out-box02 .list_box .item03 .mob-title {
-        border-top: none !important;
-    }
-    #main.form_03 #form03 .out-box02 .input-container .item02 ,
-    #main.form_03 #form03 .out-box02 .input-container .item04 ,
-    #main.form_03 #form03 .out-box06 .input-container .item03 {
-        border-right: 1px solid #ACC7D4;
-    }
-}
-@media (max-width: 767px) {
-    /* 삭제 버튼 */
-    #main.form_03 #form03 button.add-field {
-        margin-top: 10px;
-    }
-    #main.form_03 #form03 .input-container label > span:not(.radio-etc span) {
-        flex: 0 0 120px !important;
-    }
-    #main.form_03 #form03 .input-container label input:not([type='radio']) {
-        flex: 1;
-        margin: 0 8px;
-    }
-    #main.form_03 #form03 button.delete {
-        padding: 9px;
-    }
-    #main.form_03 #form03 button.delete > span{
-        display: block;
-        width: 12px;
-        height: 3px;
-        background: #EF2626;
-        text-indent: -9999px;   
-    }
-}
-@media (max-width: 482px) {
-    #main.form_03 #form03 legend.step {
-        font-size: 22px;
-    }
-    #main.form_03 #form03 .input-container span.mob-title {
-        padding: 8px 0;
-        font-size: 15px;
-    }
-    #main.form_03 #form03 .out-box03 .list .box03-title {
-        padding: 8px 0;
-        font-size: 15px;
-    }
-    #main.form_03 #form03 .out-box .list input:not([type='radio']) {
-        font-size: 15px;
-        padding: 0 8px;
-    }
-    #main.form_03 #form03 .out-box06 .item01 .radio-area {
-        display: block;
-    }
-    #main.form_03 #form03 .out-box06 .item01 .radio-area label:not(:last-child) {
-        margin-bottom: 10px;
-    }
-    #main.form_03 #form03 .list .calendar-area {
-        display: block;
-    }
-    #main.form_03 #form03 .list .calendar-wrap:first-child::after {
-        top: 50px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    #main.form_03 #form03 .out-box03 .top-container .sub-box .sub-title ,
-    #main.form_03 #form03 .out-box06 .bottom-container label .box06-title {
-        font-size: 15px;
-    }
-
-}
 
 /* 4단계 */
 #main.form_04 #form04 fieldset {
@@ -2895,7 +2220,7 @@ value="yes" 인 라디오 버튼을 클릭한다면 answer-no클래스를 가진
     }
 }
 
-/* reservate02.html 스타일 */
+/* reservate02.html */
 #main.form .reservate02 .point {
     color: #F84242;
     font-weight: 400;
@@ -3113,4 +2438,679 @@ input[type="date"]::-moz-calendar-picker-indicator {
     #main.form .reservate02 .content-flex {
         justify-content: center;
     }
+}
+/* reservate01.html */
+#main.form .reservate01 fieldset {
+    width: 100%;
+    overflow: hidden;
+    border: none;
+    margin-top: 32px;
+}
+#main.form .reservate01 h4.list-title{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 16px 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+#main.form .reservate01 h4.list-title > span {
+    display: block;
+    float: left;
+    margin-top: 6px;
+}
+#main.form .reservate01 input[type='text'] {
+    width: 90%;
+    height: 34px; 
+    margin: 0 auto;
+    padding: 8px 16px;
+    line-height: normal !important;
+    box-sizing: border-box;
+    border: 1px solid #BABABA;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#main.form .reservate01 button.add-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+}
+#main.form .reservate01 button.add-field > span {
+    display: inline-block;
+    color: #777;
+}
+/*목록 타이틀 및 목록*/
+#main.form .reservate01 .input-wrap .out-box {
+    margin-bottom: 70px;
+}
+#main.form .reservate01 .item-title , #main.form .reservate01 .input-container{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    text-align: center;
+    box-sizing: border-box;
+    gap: 0;
+}
+#main.form .reservate01 .item-title  {
+    align-items: center;
+    border-top: 1px solid #ACC7D4;
+    border-right: 1px solid #ACC7D4;
+    font-size: 18px;
+    font-weight: 500;
+    background: #E0EBF0;
+}
+#main.form .reservate01 .item {
+    padding: 8px 0;
+    box-sizing: border-box;
+    border-left: 1px solid #ACC7D4;
+}
+#main.form .reservate01 span.br {
+    display: block;
+    margin-top: -8px;
+}
+/* 목록 */
+#main.form .reservate01 .item-title .item {
+    border-bottom: 1px solid #ACC7D4;
+}
+#main.form .reservate01 .list_box .list {
+    border-top: none;
+}
+#main.form .reservate01 .input-container label{
+    padding: 8px 0;
+    box-sizing: border-box;
+    border-right: none;
+}
+#main.form .reservate01 .input-container span.mob-title {
+    display: none;
+}
+#main.form .reservate01 .delete-item { /* 삭제 버튼 비율 */
+    flex: 0.31;
+}
+#main.form .reservate01 .list_box .item01 {
+    border-bottom: none;
+    border-top: none;
+}
+#main.form .reservate01 .out-box01 .list_box .item02 {
+    border-bottom: none;
+    border-right: none;
+}
+#main.form .reservate01 .out-box01 .list_box .item05 {
+    border-right: 1px solid #ACC7D4;
+}
+#main.form .reservate01 .out-box02 .list_box .item03 {
+    border-bottom: none;
+    border-right: none;
+}
+#main.form .reservate01 .out-box03 .item01 {
+    border-left: none;
+}
+#main.form .reservate01 .out-box03 .item02 {
+    border-right: none;
+    border-left: none;
+}
+/* 각 항목에 대해 비율을 다르게 설정 */
+/* 교회등록 */
+#main.form .reservate01 .out-box01 .item01 {
+    flex: 2;
+    border-right: none;
+    border-bottom: 1px solid #ACC7D4;
+}
+#main.form .reservate01 .out-box01 .item02 {
+    flex: 2;
+}
+#main.form .reservate01 .out-box01 .item03 {
+    flex: 1; 
+}
+#main.form .reservate01 .out-box01 .item04 {
+    flex: 2;
+    border-right: none;
+}
+#main.form .reservate01 .out-box01 .item05 {
+    flex: 0.8;
+}
+#main.form .reservate01 .out-box01 .list .text-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main.form .reservate01 .out-box01 .list .text-area .text-wrap {
+    display: block;
+    flex: 1;
+    position: relative;
+}
+#main.form .reservate01 .out-box01 .item02 .calendar-wrap:first-child::after {
+    content: none !important;
+}
+#main.form .reservate01 .out-box01 .calendar-wrap input::-webkit-calendar-picker-indicator {
+    left: 2%;
+}
+/* 사역활동 */
+#main.form .reservate01 .out-box02 .item-title {
+    border-left: 1px solid #ACC7D4;
+    align-items: stretch;
+    justify-content: center;
+}
+#main.form .reservate01 .out-box02 .item-title .item:not(.item02) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#main.form .reservate01 .out-box02 .item-title .item01 {
+    border-left: none;
+}
+#main.form .reservate01 .out-box02 .item01 {
+    flex: 0.7;
+    border-bottom: 1px solid #ACC7D4;
+}
+#main.form .reservate01 .out-box02 .item02 {
+    flex: 1;
+}
+#main.form .reservate01 .out-box02 .item03 {
+    flex: 2; 
+}
+#main.form .reservate01 .out-box02 .item04 {
+    flex: 0.5;
+}
+/* 1:1 제자양육 */
+#main.form .reservate01 .out-box03 .list-title {
+    justify-content: flex-start !important;
+    gap: 20px;
+}
+#main.form .reservate01 .out-box03 h4.list-title > span {
+    margin-top: 0;
+}
+#main.form .reservate01 .out-box03 .list-title label.radio-container {
+    font-size: 16px !important;
+    font-weight: 400;
+    cursor: pointer;
+}
+#main.form .reservate01 input[type='radio'] {
+    margin: 0;
+    margin-right: 8px;
+    padding: 0;
+}
+#main.form .reservate01 .out-box03 .input-container {
+    display: block !important;
+}
+/* 상단 컨테이너 */
+#main.form .reservate01 .ft-400 {
+    font-weight: 400;
+    font-size: 16px;
+}
+#main.form .reservate01 .out-box03 .top-container {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #ACC7D4;
+}
+#main.form .reservate01 .out-box03 .list {
+    flex: 1;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+#main.form .reservate01 .out-box03 .list .box03-title {
+    flex: 0 0 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #ACC7D4;
+    background: #E0EBF0;
+    font-size: 18px;
+    font-weight: 500;
+}
+#main.form .reservate01 .out-box03 .top-container .sub-box {
+    flex: 1;
+}
+#main.form .reservate01 .out-box03 label{
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+#main.form .reservate01 .out-box03 .top-container .sub-box .sub-title {
+    flex: 0 0 100px;
+    padding: 14px 0;
+    background: #EFF5F7;
+    border-right: 1px solid #ACC7D4;
+}
+#main.form .reservate01 .out-box03 .top-container .sub-box label:nth-child(1) {
+    border-bottom: 1px solid #ACC7D4;
+}
+#main.form .reservate01 .out-box03 input {
+    margin: 0 10px;
+}
+#main.form .reservate01 .out-box03 .item02:not(.item-title .item02){
+    border-bottom: none;
+}
+/* 하단 컨테이너 */
+#main.form .reservate01 .out-box03 .bottom-container {
+    display: flex;
+    flex-wrap: wrap;
+    border-right: 1px solid #ACC7D4;
+}
+#main.form .reservate01 .out-box03 .bottom-container .list {
+    align-items: center;
+}
+#main.form .reservate01 .bottom-container .list .box03-title {
+    flex: 0 0 260px;
+    padding: 14px 0;
+    background : #E0EBF0;
+}
+/* 신앙 훈련 (교회 내・외부 각종 훈련 포함) */
+#main.form .reservate01 .out-box04 .item01 {
+    flex: 0.5;
+    border-bottom: 1px solid #ACC7D4;
+}
+#main.form .reservate01 .out-box04 .item02 {
+    flex: 2; 
+    border-right: none;
+}
+#main.form .reservate01 .out-box04 .item02:not(.item-title .item02) {
+    border-bottom: none;
+}
+#main.form .reservate01 .out-box04 .item03 {
+    flex: 0.5; 
+}
+#main.form .reservate01 .out-box04 .item04 {
+    flex: 1; 
+}
+#main.form .reservate01 .out-box04 .item05 {
+    flex: 0.5;
+}
+/* 단기 선교・아웃리치 경험 */
+#main.form .reservate01 .out-box05 .list_box .item01 {
+    border-bottom: 1px solid #ACC7D4;
+}
+#main.form .reservate01 .out-box05 .item01 {
+    flex: 0.5;
+}
+#main.form .reservate01 .out-box05 .item02 {
+    flex: 2;
+}
+#main.form .reservate01 .out-box05 .item03 {
+    flex: 0.5;
+}
+#main.form .reservate01 .out-box05 .item04 {
+    flex: 1;
+}
+#main.form .reservate01 .out-box05 .item05 {
+    flex: 0.5;
+}
+#main.form .reservate01 .out-box05 .list_box .item02 {
+    border-bottom: none;
+    border-right: none;
+}
+
+/* 파송 희망 지역 (택1) */
+#main.form .reservate01 .out-box06 .input-container {
+    display: block;
+}
+#main.form .reservate01 .out-box06 .item01 {
+    padding: 6px 0;
+    border: 1px solid #ACC7D4;
+}
+#main.form .reservate01 .out-box06 .item01 .radio-container {
+    padding-left: 16px;
+}
+#main.form .reservate01 .out-box06 .item01 .radio-area {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    gap: 10px 30px;
+    align-items: center;
+    justify-content: flex-start;
+}
+#main.form .reservate01 .radio-etc label{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+#main.form .reservate01 .radio-etc label input[type='text'] {
+    width: fit-content;
+    margin: 0;
+    margin-left: 16px
+}
+#main.form .reservate01 .out-box06 .item01 .radio-area label {
+    cursor: pointer;
+}
+#main.form .reservate01 .out-box06 .bottom-container {
+    display: flex;
+}
+#main.form .reservate01 .out-box06 .bottom-container label {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding: 0;
+}
+#main.form .reservate01 .out-box06 .bottom-container label .box06-title {
+    padding: 14px 0;
+    flex: 0 0 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #E0EBF0;
+    border-right: 1px solid #ACC7D4;
+    font-size: 18px;
+    font-weight: 500;
+}
+#main.form .reservate01 .out-box06 .bottom-container label input {
+    margin: 0 10px;
+}
+#main.form .reservate01 .out-box06 .item04 {
+    border-right: 1px solid #ACC7D4;
+}
+
+/* 달력 */
+#main.form .reservate01 .list .calendar-area {
+    display: flex;
+    flex-wrap: nowrap;
+    border-bottom: 1px solid #ACC7D4;
+}
+#main.form .reservate01 .list .calendar-wrap  {
+    display: flex;
+    padding: 8px 10px;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#main.form .reservate01 .list .calendar-wrap:first-child::after {
+    content: ' - ';
+    position: absolute;
+    right: -2%;
+    color: #222;
+}
+#main.form .reservate01 .calendar-wrap input {
+    width: 100%;
+    height: 34px;
+    margin: 0 auto;
+    padding: 8px 16px;
+    line-height: normal !important;
+    box-sizing: border-box;
+    border: 1px solid #BABABA;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#main.form .reservate01 .calendar-wrap img {
+    margin-right: 8px;
+}
+#main.form .reservate01 .calendar-wrap input::-webkit-calendar-picker-indicator {  
+    opacity: 0;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 3%;
+    cursor: pointer;
+}
+/* 삭제 버튼 */
+#main.form .reservate01 .list.item06 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#main.form .reservate01 button.delete { /* 추가되는 칸부터 생기는 삭제 스타일 */
+    padding: 2px 4px;
+    font-size: 16px;
+    border: 1px solid #FF9393;
+    color: #EF2626 !important;
+    border-radius: 4px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#main.form .reservate01 button.delete > span{
+    color: #EF2626;
+}
+#main.form .reservate01 button.n-delete {
+    display: none;
+}
+/* resize */
+@media (max-width: 984px) {
+    #main.form .reservate01 .item-title {
+        display: none;
+    }
+    #main.form .reservate01 .input-container span.mob-title {
+        display: block;
+        background: #E0EBF0;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 14px 0;
+    }
+    #main.form .reservate01 .input-container {
+        display: block;
+        margin-bottom: 40px;
+        position: relative;
+    }
+    #main.form .reservate01 .input-container label {
+        padding: 0;
+    }
+    #main.form .reservate01 .out-box .list {
+        display: block;
+        width: 50%;
+        float: left;
+    }
+    #main.form .reservate01 .out-box01 .item05 {
+        width: 100%;
+    }
+    #main.form .reservate01 .out-box01 .list {
+        padding: 0;
+    }
+    #main.form .reservate01 .out-box .list input:not([type='radio']) {
+        width: calc(100% - 20px);
+        margin: 14px 0;
+    }
+    #main.form .reservate01 .list .calendar-wrap {
+        padding: 0 12px;
+    }
+    #main.form .reservate01 .out-box02 .item03 , #main.form .reservate01 .out-box02 .item04 {
+        width: 100%;
+    }
+    #main.form .reservate01 .out-box03 .top-container > div {
+        flex: 0 0 100%;
+    }
+    #main.form .reservate01 .out-box03 .top-container > div label {
+        padding-right: 10px;
+    }
+    #main.form .reservate01 .out-box03 .top-container .sub-box .sub-title, 
+    #main.form .reservate01 .out-box06 .bottom-container label .box06-title{
+        display: block;
+        padding: 19px 0;
+        margin-right: 10px;
+    }
+    #main.form .reservate01 .out-box03 .top-container .box03-title {
+        padding: 10px 0;
+    }
+    #main.form .reservate01 .out-box01 .item01 ,
+    #main.form .reservate01 .out-box01 .item02 ,
+    #main.form .reservate01 .out-box04 .item05 ,
+    #main.form .reservate01 .out-box04 .item01 ,
+    #main.form .reservate01 .out-box04 .item02 ,
+    #main.form .reservate01 .out-box05 .item01 ,
+    #main.form .reservate01 .out-box05 .item02 ,
+    #main.form .reservate01 .out-box05 .item05 {
+        width: 100%;
+    }
+    #main.form .reservate01 .out-box06 .input-container .list{
+        width: 100%;
+        padding-right: 10px;
+        float: none;
+    }
+    #main.form .reservate01 .out-box06 .radio-area label{
+        display: flex;
+        gap: 6px;
+        align-items: center;
+    }
+    #main.form .reservate01 .radio-etc label {
+        width: 100%;
+        gap: 6px;
+    }
+    #main.form .reservate01 .radio-etc label input[type='text'] {
+        width: 50% !important;
+    }
+    #main.form .reservate01 .out-box06 .bottom-container {
+        display: block;
+    }
+    /* 삭제 버튼 */
+    #main.form .reservate01 .delete-item {
+        width: fit-content !important;
+        border: none !important;
+        position: absolute;
+        top: 0px;
+        right: 0;
+    }
+    #main.form .reservate01 .delete-item button {
+        position: static;
+        transform: none;
+    }
+    /* border 스타일 */
+    #main.form .reservate01 .out-box01 .item01 {
+        border: none;
+    }
+    #main.form .reservate01 .out-box01 .list .text-area {
+        border-left: 1px solid #ACC7D4;
+        border-right: 1px solid #ACC7D4;
+    }
+    #main.form .reservate01 .out-box01 .item01 span.mob-title {
+        border-left: 1px solid #ACC7D4;
+    }
+    #main.form .reservate01 .input-container span.mob-title {
+        border: 1px solid #ACC7D4;
+        border-left: none;
+    }
+    #main.form .reservate01 .out-box01 .item03 {
+        border-bottom: none;
+    }
+    #main.form .reservate01 .out-box01 .item04 {
+        border: none;
+    }
+    #main.form .reservate01 .list .calendar-area {
+        border-right: 1px solid #ACC7D4;
+        border-bottom: none;
+    }
+    #main.form .reservate01 .out-box01 .item05 span.mob-title {
+        border-right: none !important;
+    }
+    #main.form .reservate01 out-box02 .item03 span.mob-title {
+        border-top: none !important;
+    }
+    #main.form .reservate01 .out-box03 .top-container .box03-title {
+        border-bottom: 1px solid #ACC7D4;
+        border-right: none;
+    }
+    #main.form .reservate01 .out-box03 .item02 .box03-title {
+        border-top: 1px solid #ACC7D4;
+    }
+    #main.form .reservate01 .out-box03 .item03 .box03-title ,
+    #main.form .reservate01 .out-box03 .item04 .box03-title{
+        border-right: none;
+        border-bottom: 1px solid #ACC7D4 !important;
+    }
+    #main.form .reservate01 .out-box03 .top-container > div {
+        border-right: none;
+    }
+    #main.form .reservate01 .out-box04 .item02 span.mob-title ,
+    #main.form .reservate01 .out-box04 .item05 span.mob-title {
+        border-top: none;
+    }
+    #main.form .reservate01 .out-box04 .list {
+        border-right: 1px solid #ACC7D4;
+    }
+    #main.form .reservate01 .out-box04 .item03 {
+        border-right: none;
+    }
+    #main.form .reservate01 .out-box04 .list span.mob-title {
+        border-right: none;
+    }
+    #main.form .reservate01 .out-box05 .list_box .list {
+        border-right: 1px solid #ACC7D4;
+    }
+    #main.form .reservate01 .out-box04 .calendar-area ,
+    #main.form .reservate01 .out-box05 .list_box .item03 .mob-title ,
+    #main.form .reservate01 .out-box05 .list_box .item02 ,
+    #main.form .reservate01 .out-box05 .list_box .item03 ,
+    #main.form .reservate01 .out-box05 .list_box .item01 .mob-title ,
+    #main.form .reservate01 .out-box05 .list_box .item04 .mob-title ,
+    #main.form .reservate01 .out-box05 .list_box .item05 .mob-title ,
+    #main.form .reservate01 .out-box02 .list_box .item01 .mob-title ,
+    #main.form .reservate01 .out-box02 .list_box .item02 .mob-title ,
+    #main.form .reservate01 .out-box02 .list_box .item04 .mob-title {
+        border-right: none;
+    }
+    #main.form .reservate01 .out-box05 .list_box .item02 .mob-title ,
+    #main.form .reservate01 .out-box05 .list_box .item05 .mob-title ,
+    #main.form .reservate01 .out-box02 .list_box .item03 .mob-title {
+        border-top: none !important;
+    }
+    #main.form .reservate01 .out-box02 .input-container .item02 ,
+    #main.form .reservate01 .out-box02 .input-container .item04 ,
+    #main.form .reservate01 .out-box06 .input-container .item03 {
+        border-right: 1px solid #ACC7D4;
+    }
+}
+@media (max-width: 767px) {
+    /* 삭제 버튼 */
+    #main.form .reservate01 button.add-field {
+        margin-top: 10px;
+    }
+    #main.form .reservate01 .input-container label > span:not(.radio-etc span) {
+        flex: 0 0 120px !important;
+    }
+    #main.form .reservate01 .input-container label input:not([type='radio']) {
+        flex: 1;
+        margin: 0 8px;
+    }
+    #main.form .reservate01 button.delete {
+        padding: 9px;
+    }
+    #main.form .reservate01 button.delete > span{
+        display: block;
+        width: 12px;
+        height: 3px;
+        background: #EF2626;
+        text-indent: -9999px;   
+    }
+}
+@media (max-width: 482px) {
+    #main.form .reservate01 legend.step {
+        font-size: 22px;
+    }
+    #main.form .reservate01 .input-container span.mob-title {
+        padding: 8px 0;
+        font-size: 15px;
+    }
+    #main.form .reservate01 .out-box03 .list .box03-title {
+        padding: 8px 0;
+        font-size: 15px;
+    }
+    #main.form .reservate01 .out-box .list input:not([type='radio']) {
+        font-size: 15px;
+        padding: 0 8px;
+    }
+    #main.form .reservate01 .out-box06 .item01 .radio-area {
+        display: block;
+    }
+    #main.form .reservate01 .out-box06 .item01 .radio-area label:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    #main.form .reservate01 .list .calendar-area {
+        display: block;
+    }
+    #main.form .reservate01 .list .calendar-wrap:first-child::after {
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #main.form .reservate01 .out-box03 .top-container .sub-box .sub-title ,
+    #main.form .reservate01 .out-box06 .bottom-container label .box06-title {
+        font-size: 15px;
+    }
+
 }
