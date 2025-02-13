@@ -203,11 +203,15 @@
   font-weight: 700;
   line-height: 180%;
   letter-spacing: -0.36px;
+  color: #fff;
 }
 #home .mainIndex .main_visual .text-box .text-box-inner .slide-link .button-sub-text {
   display: flex;
   flex-direction: column;
   gap: 4px;
+}
+#home .mainIndex .main_visual .text-box .text-box-inner .slide-link .button-sub-text span {
+  color: #fff;
 }
 #home .mainIndex .main_visual .text-box .text-box-inner .slide-link img {
   width: 52%;
