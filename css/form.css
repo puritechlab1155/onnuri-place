@@ -270,7 +270,7 @@
     display: flex;
     align-items: center;
 }
-#main.form #reservate .item02 b {
+#main.form #reservate b {
     margin-right: 10px;
     line-height: 16px;
     font-size: 16px;
@@ -435,7 +435,7 @@
     #main.form #reservate .red-text {
         font-size: 14px;
     }
-    #main.form #reservate .item02 b {
+    #main.form #reservate b {
         font-size: 13px;
     }
     #main.form #reservate input:not([type = 'radio']) {
@@ -691,9 +691,12 @@
     justify-content: center;
     background: #EDEDED;
 }
+#main.form .reservate02 b {
+    font-weight: 600 !important;
+}
 #main.form .reservate02 .list .room-personnel {
     flex: 1;
-    gap: 16px;
+    gap: 8px 16px;
     padding: 8px 20px;
 }
 #main.form .reservate02 .list .contour-line {
@@ -767,6 +770,9 @@
     }
     #main.form .reservate02 .list .chapel-room {
         align-items: center !important;
+    }
+    #main.form .reservate02 b {
+        width: 100%;
     }
 }
 @media (max-width: 482px) {
