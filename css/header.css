@@ -177,7 +177,10 @@ button {
 
 @media (max-width: 998px) {
     .header .content .nav .gnb {
-        gap: 16px;
+        gap: 28px;
+    }
+    .header .content .login-before {
+        display: none;
     }
 }
 @media (max-width: 767px) {
