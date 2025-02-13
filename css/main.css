@@ -1879,6 +1879,37 @@ letter-spacing: -0.8px;
   }
 }
 
+/* --- questions.html 스타일 --- */
+#home .question .questions-wrap {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+#home .question .questions-icon img {
+  float: left;
+}
+#home .question .questions-list-link:first-child {
+  border-top: 3px solid #ddd;
+}
+#home .question .questions-list-link {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+#home .question .questions-wrap .text {
+  font-weight: 600;
+  font-size: 20px;
+}
+#home .question .questions-wrap .text-wrap {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+
 
 /* --- contact.html 스타일  --- */ 
 /*main*/
