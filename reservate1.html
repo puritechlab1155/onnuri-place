@@ -190,7 +190,7 @@
                     <li>3단계 <span class="space_pc">- 이용계획 및 이용인원</span></li>
                 </ul>
 
-                <form id="reservate">
+                <form id="reservate" class="reservate01">
                     <!-- 단계 신청서  -->
                     <fieldset>
                         <div class="reservate-step-title">예약자 정보</div>
@@ -214,9 +214,9 @@
                                         <span>비밀번호</span>
                                         <div class="password-container">
                                             <label for="password">
-                                                <input id="password" type="password" placeholder=" - " required maxlength="4">
+                                                <input id="password" type="password" placeholder="4자리를 입력해주세요." required maxlength="4" title="숫자 4자리를 입력해주세요.">
                                             </label>
-                                            <b>숫자 4자리</b>
+                                            <b>*숫자만</b>
                                         </div>
                                     </div>
                                     
@@ -292,57 +292,59 @@
                                             <input id="attic-manager" type="text" placeholder=" - " required>
                                         </label>                                    
                                     </div>
+                                    <!-- 개인예약시 숨김처리 되는 부분 -->
+                                    <div class="inner-flex">
+                                        <div class="list item13 f100">
+                                            <span>행사명</span>
+                                            <label for="event-name" class="w100">
+                                                <input id="event-name" type="text" placeholder=" - " required>
+                                            </label>                                    
+                                        </div>
 
-                                    <div class="list item13 f100">
-                                        <span>행사명</span>
-                                        <label for="event-name" class="w100">
-                                            <input id="event-name" type="text" placeholder=" - " required>
-                                        </label>                                    
-                                    </div>
+                                        <div class="list item14">
+                                            <span>단체명</span>
+                                            <label for="grop-name">
+                                                <input id="grop-name" type="text" placeholder=" - " required>
+                                            </label>                                    
+                                        </div>
+                                        
+                                        <div class="list item15">
+                                            <span>대표자명</span>
+                                            <label for="exponent-name">
+                                                <input id="exponent-name" type="text" placeholder=" - " required>
+                                            </label>                                    
+                                        </div>
 
-                                    <div class="list item14">
-                                        <span>단체명</span>
-                                        <label for="grop-name">
-                                            <input id="grop-name" type="text" placeholder=" - " required>
-                                        </label>                                    
-                                    </div>
-                                    
-                                    <div class="list item15">
-                                        <span>대표자명</span>
-                                        <label for="exponent-name">
-                                            <input id="exponent-name" type="text" placeholder=" - " required>
-                                        </label>                                    
-                                    </div>
+                                        <div class="list item16 f100">
+                                            <span>사무실전화</span>
+                                            <label for="office-phone" class="w100">
+                                                <input id="office-phone" type="tel" placeholder=" - " required>
+                                            </label>                                    
+                                        </div>
 
-                                    <div class="list item16 f100">
-                                        <span>사무실전화</span>
-                                        <label for="office-phone" class="w100">
-                                            <input id="office-phone" type="tel" placeholder=" - " required>
-                                        </label>                                    
-                                    </div>
-
-                                    <div class="list item17 f100">
-                                        <span>주소</span>
-                                        <div class="ad_right">
-                                            <div class="address-wrap">
-                                                <div class="address">
-                                                    <div class="address-container">
-                                                        <label for="zonecode" style="display: none;">우편번호</label>
-                                                        <input class="g-bg" id="zonecode" type="text" placeholder="우편번호" readonly autocomplete="off"/>
+                                        <div class="list item17 f100">
+                                            <span>주소</span>
+                                            <div class="ad_right">
+                                                <div class="address-wrap">
+                                                    <div class="address">
+                                                        <div class="address-container">
+                                                            <label for="zonecode" style="display: none !important;">우편번호</label>
+                                                            <input class="g-bg" id="zonecode" type="text" placeholder="우편번호" readonly autocomplete="off"/>
+                                                        </div>
+                                                        <div class="gray_btn-container">
+                                                            <button id="search-btn" class="gray_btn">우편번호 찾기 
+                                                                <img src="img/form/search.png" alt="돋보기">
+                                                            </button>
+                                                        </div>
                                                     </div>
-                                                    <div class="gray_btn-container">
-                                                        <button id="search-btn" class="gray_btn">우편번호 찾기 
-                                                            <img src="img/form/search.png" alt="돋보기">
-                                                        </button>
+                                                    <div>
+                                                        <label for="roadAddress" style="display: none !important;">주소</label>
+                                                        <input class="g-bg" id="roadAddress" type="text" placeholder="주소" readonly autocomplete="off"/>
                                                     </div>
-                                                </div>
-                                                <div>
-                                                    <label for="roadAddress" style="display: none;">주소</label>
-                                                    <input class="g-bg" id="roadAddress" type="text" placeholder="주소" readonly autocomplete="off"/>
-                                                </div>
-                                                <div>
-                                                    <label for="roadAddressDetail" style="display: none;">상세주소</label>
-                                                    <input id="roadAddressDetail" type="text" placeholder="상세주소" autocomplete="off">
+                                                    <div>
+                                                        <label for="roadAddressDetail" style="display: none !important;">상세주소</label>
+                                                        <input id="roadAddressDetail" type="text" placeholder="상세주소" autocomplete="off">
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -356,11 +358,11 @@
                 <!--버튼 랩핑-->
                 <div class="finish-bnt-wrap">
                     <div class="check-box">
-                        <button class="checkBtn">확인</button>
+                        <button class="checkBtn" onclick="location.href=''">확인</button>
                     </div>
                     
                     <div class="delete-box">
-                        <button class="deleteBtn" type="button" onclick="location.href='https://puritechlab1155.github.io/onnuri-front/form07.html'" >취소</button>
+                        <button class="deleteBtn" type="button" onclick="location.href=''" >취소</button>
                     </div>
                 </div>
             </div>
@@ -771,10 +773,10 @@
                 const email = emailInput.value;
 
                 // Gmail 주소만 허용하는 정규식
-                const gmailRegex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+                const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
-                if (!gmailRegex.test(email)) {
-                    emailInput.setCustomValidity("유효한 Gmail 주소를 입력해주세요.");
+                if (!emailRegex.test(email)) {
+                    emailInput.setCustomValidity("올바른 이메일 형식으로 입력해주세요.");
                     emailInput.reportValidity(); // 브라우저의 기본 검증 메시지를 표시
                 } else {
                     emailInput.setCustomValidity(""); // 유효한 이메일이면 customValidity 초기화
@@ -783,6 +785,35 @@
 
             // 이메일 입력 필드에 이벤트 리스너 추가
             document.getElementById('e-mail').addEventListener('input', validateGmail);
+        });
+
+        // 비밀번호 4자리 숫자만
+        document.getElementById("password").addEventListener("input", function (event) {
+            this.value = this.value.replace(/[^0-9]/g, ""); // 숫자가 아니면 제거
+        });
+
+        // -- 단체 예약 & 개인 예약 라디오 버튼 클릭시 박스 제어
+        document.addEventListener("DOMContentLoaded", function () {
+            const corpsRadio = document.getElementById("corps");
+            const individualRadio = document.getElementById("individual");
+            const groupFields = document.querySelector(".inner-flex");
+
+            // 기본적으로 '단체예약'이 선택된 상태로 설정
+            corpsRadio.checked = true;
+
+            function toggleGroupFields() {
+                if (individualRadio.checked) {
+                    groupFields.style.display = "none";
+                } else {
+                    groupFields.style.display = "flex"; // 기존 flex 레이아웃 유지
+                }
+            }
+
+            corpsRadio.addEventListener("change", toggleGroupFields);
+            individualRadio.addEventListener("change", toggleGroupFields);
+
+            // 페이지 로드 시 초기 상태 설정
+            toggleGroupFields();
         });
 
         // -- 우편번호

@@ -203,7 +203,7 @@
                                                 <h4>5인실(온돌)</h4>
                                                 <div class="room-personnel inner-flex">
                                                     <div class="personnel-select select-wrap">
-                                                        <select id="room-select01" class="select-field" onchange="updateProgress()">
+                                                        <select id="room-select01" class="select-field">
                                                             <option value="" disabled="" selected="">선택</option>
                                                             <option value="5">5</option>
                                                             <option value="4">4</option>
@@ -215,7 +215,7 @@
                                                     <div class="contour-line"></div>
                                                     <div class="personnel-text">
                                                         <label for="people-count01">
-                                                            <input id="people-count01" type="text" placeholder=" - " required maxlength="4"> 
+                                                            <input class="onlyNumb" id="people-count01" type="text" placeholder=" - " required maxlength="1"> 
                                                             <span>명</span>
                                                         </label>
                                                     </div>
@@ -238,7 +238,7 @@
                                                     <div class="contour-line"></div>
                                                     <div class="personnel-text">
                                                         <label for="people-count02">
-                                                            <input id="people-count02" type="text" placeholder=" - " required maxlength="4"> 
+                                                            <input class="onlyNumb" id="people-count02" type="text" placeholder=" - " required maxlength="2"> 
                                                             <span>명</span>
                                                         </label>
                                                     </div>
@@ -261,15 +261,19 @@
                                                     <div class="contour-line"></div>
                                                     <div class="personnel-text">
                                                         <label for="people-count03">
-                                                            <input id="people-count03" type="text" placeholder=" - " required maxlength="4"> 
+                                                            <input class="onlyNumb" id="people-count03" type="text" placeholder=" - " required maxlength="2"> 
                                                             <span>명</span>
                                                         </label>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>                      
+                                    <!--  회색 박스 -->
+                                    <div class="gray-text g-bg f100">
+                                        객실예약 시 수용인원을 초과하는 경우
+                                        <br class="space_m"> 고객센터로 문의바랍니다.</br>
                                     </div>
-                                    
                                     <div class="list item02">
                                         <span>예배실 예약</span>
                                         <div class="chapel-reservation-wrap">
@@ -796,11 +800,11 @@
                 <!--버튼 랩핑-->
                 <div class="finish-bnt-wrap">
                     <div class="check-box">
-                        <button class="checkBtn">확인</button>
+                        <button class="checkBtn" onclick="location.href=''">확인</button>
                     </div>
                     
                     <div class="delete-box">
-                        <button class="deleteBtn" type="button" onclick="location.href='https://puritechlab1155.github.io/onnuri-front/form07.html'" >취소</button>
+                        <button class="deleteBtn" type="button" onclick="location.href=''" >취소</button>
                     </div>
                 </div>
             </div>
@@ -1130,6 +1134,11 @@
 
     <script src="js/script.js"></script>
     <script>
+        document.querySelectorAll(".onlyNumb").forEach((input) => {
+            input.addEventListener("input", function () {
+                this.value = this.value.replace(/[^0-9]/g, ""); // 숫자 이외의 문자 제거
+            });
+        });
     </script>
 </body>
 </html>
