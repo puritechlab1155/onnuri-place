@@ -346,7 +346,7 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 10px 30px;
+    gap: 16px 30px;
 }
 #main.form #reservate .calendar-area label {
     display: flex !important;
@@ -537,6 +537,25 @@
         margin-left: 16px;
     }
 }
+@media (max-width: 611px) {
+    #main.form .reservate03 .calendar-area {
+        flex-direction: column;
+        align-items: baseline !important;
+        position: relative;
+    }
+    #main.form #reservate .calendar-area .calendar-line {
+        position: absolute;
+        left: 88px;
+        top: 56px;
+    }
+    #main.form .reservate03 .point {
+        margin-top: -10px;
+    }
+    #main.form .reservate03 .item05 .point ,
+    #main.form .reservate03 .item06 .point {
+        margin-top: 5px;
+    }
+}
 @media (max-width: 550px) {
     #main.form .reserv-step li {
         height: 42px;
@@ -551,9 +570,6 @@
         font-weight: 600;
         text-align: center;
     }
-    #main.form .reservate03 .content-flex {
-        justify-content: start;
-    }
     #main.form .reservate03 .item07 .date-eat-count {
         padding: 0;
     }
@@ -567,14 +583,22 @@
     #main.form .reservate03 .item07 .inner-flex h4 {
         flex: 0 0 100%;
         padding: 4px 0;
-        background: #FDFDFD;
+        background: #f0f0f0;
         border-bottom: 1px solid;
         border-color: #ddd;
     }
 }
-@media (max-width: 522px) {
+@media (max-width: 510px) {
     #main.form .reservate03 .content-flex {
-        justify-content: start;
+        flex-direction: column;
+        flex: 1;
+        align-items: center;
+    }
+    #main.form .reservate03 .item07 .inner-flex li:nth-child(2) label::before {
+        content: none !important;
+    }
+    #main.form .reservate03 .item07 .inner-flex li:nth-child(2) label::after {
+        content: none !important;
     }
 }
 @media (max-width: 482px) {
@@ -582,7 +606,7 @@
         flex: 0 0 80px !important;
     }
     #main.form .reservate03 .point {
-        font-size: 15px;
+        font-size: 13px;
     }
     #main.form #reservate .list label {
         font-size: 15px;
