@@ -33,6 +33,7 @@
 }
 .footer .footer-info01 .partner-site .text {
     padding-right: 10px;
+    color: #777;
 }
 .footer .footer-info01 .partner-site .site:not(:last-child) {
     padding-right: 8px;
