@@ -21,12 +21,6 @@
             display: flex;
             justify-content: center;
         }
-        #home .notice-search_box {
-
-        }
-        #home .section01 .total {
-
-        }
         #home li.total-text {
             padding: 10px 0;
             font-size: 16px;
@@ -308,56 +302,40 @@
                                     <span>공지사항</span>
                                 </h3>
                             </div>
-
                             <div class="notice-search_box">
-                            <!--검색 랩핑-->
-                            <div class="search_wrap">
-
-                                <div class="search_inner">
-
-                                    <!--검색 카테고리-->
-                                    <form class="search_categoty">
-                                        <label>검색 카테고리</label>
-                                        <div class="custom-dropdown">
-                                            <div class="selected">
-                                                전체
-                                                <img class="custom-arrow" src="img/notice/custom-arrow.png" alt="드롭다운 아이콘">
+                                <!--검색 랩핑-->
+                                <div class="search_wrap">
+                                    <div class="search_inner">
+                                        <!--검색 카테고리-->
+                                        <form class="search_categoty">
+                                            <label>검색 카테고리</label>
+                                            <div class="custom-dropdown">
+                                                <div class="selected">
+                                                    전체
+                                                    <img class="custom-arrow" src="img/notice/custom-arrow.png" alt="드롭다운 아이콘">
+                                                </div>
+                                                <div class="options">
+                                                    <div class="option" data-value="all">제목</div>
+                                                    <div class="option" data-value="training">내용</div>
+                                                    <div class="option" data-value="notice">글쓴이</div>
+                                                </div>
                                             </div>
-                                            <div class="options">
-                                                <div class="option" data-value="all">제목</div>
-                                                <div class="option" data-value="training">내용</div>
-                                                <div class="option" data-value="notice">글쓴이</div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                    <!--검색창-->
-                                    <form class="search">
-                                        <label style="display: none;">검색</label>
-                                        <input type="text" placeholder="검색어 입력">
-                                        <button type="button" class="searchBtn">
-                                            <img src="img/notice/search-icon.png" alt="검색 아이콘">
-                                        </button>
-                                    </form>
-
-
-
-
-
-
-
-
-
+                                        </form>
+                                        <!--검색창-->
+                                        <form class="search">
+                                            <label style="display: none;">검색</label>
+                                            <input type="text" placeholder="검색어 입력">
+                                            <button type="button" class="searchBtn">
+                                                <img src="img/notice/search-icon.png" alt="검색 아이콘">
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- 게시글 토탈 -->
+                                <div class="total">
+                                    <li class="total-text">총 <span id="total-count">2</span> 개의 게시물이 있습니다</li>
                                 </div>
                             </div>
-
-                                                                    <!-- 게시글 토탈 -->
-                                                                    <div class="total">
-                                                                        <li class="total-text">총 <span id="total-count">2</span> 개의 게시물이 있습니다</li>
-                                                                    </div>
-
-
-
-                                </div>
                             <!--공지-->
                             <div class="tab-cont-list">
                                     <!--목록 타이틀-->
@@ -648,7 +626,6 @@
                                         </ul>
                                     </div>
                             </div>
-
                             <!--페이지 카운트-->
                             <div class="pagenation_wrap">
                                 <div class="double_arrow">
