@@ -26,7 +26,6 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/form.css">
 </head>
 <body>
     <section id="home">
@@ -2011,7 +2010,7 @@
 
                 }
                 else { // 스크롤 탑이 0
-                    $header.css({ background: 'transparent' });
+                    $header.css({ background: '#0000003b' });
                     $logoImg.attr('src', 'img/avv_logo.png');
                     $menuItem.css({ color: '#fff' });
                     $menuItem.mouseleave (function(){
@@ -2021,12 +2020,6 @@
                     $line.css({ background: '#fff' });
                     $hamIcon.css({ background: '#fff' });
                 }
-                
-                // if ($scrollTop === 0 && $offcanvas.hasClass('active')) {  // 스크롤 탑이 0dlrh, 메뉴가 열렸을 때
-                //     $header.css({ background: '#fff' });
-                //     $hamIcon.css({ background: '#222' });
-                //     $logoImg.attr('src', 'img/offcanvas-logo.png');
-                // }
             } 
         });
     </script>
