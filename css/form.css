@@ -673,6 +673,7 @@
 }
 #main.form .reservate02 .list .personnel-text input {
     width: 55px !important;
+    text-align: center;
 }
 #main.form .reservate02 .list .chapel-room {
     padding: 8px 20px;
@@ -702,6 +703,7 @@
     #main.form .reservate02 .list > span {
         flex: auto !important;
         padding: 18px 0;
+        border-bottom: 1px solid #ddd;
     }
 }
 @media (max-width: 1034px) {
@@ -719,6 +721,7 @@
 @media (max-width: 648px) {
     #main.form .reservate02 .list .room-item {
         flex-direction: column;
+        border-bottom: none;
     }
     #main.form .reservate02 .list .room-item h4 {
         flex: auto;

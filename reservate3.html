@@ -206,9 +206,9 @@
                                                 <img src="img/form/calendar.svg" alt="달력 아이콘">
                                             </label>
                                             <div class="calendar-line"></div>
-                                            <label for="finish-date" class="calendar-wrap">
+                                            <label for="finish-date01" class="calendar-wrap">
                                                 <span style="display: none;">끝나는 기간</span>
-                                                <input class="input-field" id="finish-date" type="date" required>
+                                                <input class="input-field" id="finish-date01" type="date" required>
                                                 <img src="img/form/calendar.svg" alt="달력 아이콘">
                                             </label>
                                             <span class="point">달력을 클릭하여 선택해주세요. &nbsp; *필수</span>
@@ -218,12 +218,12 @@
                                     <div class="list item02 f100">
                                         <span>숙박/식사</span>
                                         <div class="inner-flex">
-                                            <label for="" class="">
-                                                <input class="w60" id="" type="text" placeholder=" - " required maxlength="4">
+                                            <label for="lodgment" class="">
+                                                <input class="w60" id="lodgment" type="text" placeholder=" - " required maxlength="4">
                                                 <span>박</span>
                                             </label>
-                                            <label for="" class="">
-                                                <input class="w60" id="" type="text" placeholder=" - " required maxlength="4">
+                                            <label for="repast" class="">
+                                                <input class="w60" id="repast" type="text" placeholder=" - " required maxlength="4">
                                                 <span>식</span>
                                             </label>
                                         </div>
@@ -232,12 +232,12 @@
                                     <div class="list item03">
                                         <span>입실시간</span>
                                         <div class="inner-flex">
-                                            <label for="" class="">
-                                                <input id=""  class="w60" type="text" placeholder=" 00 " required maxlength="4">
+                                            <label for="checkIn" class="">
+                                                <input id="checkIn"  class="w60" type="text" placeholder=" 00 " required maxlength="4">
                                                 <span>일</span>
                                             </label>
-                                            <label for="" class="">
-                                                <input id="" class="w60" type="text" placeholder=" 09 " required maxlength="4">
+                                            <label for="checkIn-time" class="">
+                                                <input id="checkIn-time" class="w60" type="text" placeholder=" 09 " required maxlength="4">
                                                 <span>시</span>
                                             </label>
                                         </div>
@@ -246,12 +246,12 @@
                                     <div class="list item04">
                                         <span>퇴실시간</span>
                                         <div class="inner-flex">
-                                            <label for="" class="">
-                                                <input id=""  class="w60" type="text" placeholder=" 00 " required maxlength="4">
+                                            <label for="checkOut" class="">
+                                                <input id="checkOut"  class="w60" type="text" placeholder=" 00 " required maxlength="4">
                                                 <span>일</span>
                                             </label>
-                                            <label for="" class="">
-                                                <input id="" class="w60" type="text" placeholder=" 13 " required maxlength="4">
+                                            <label for="checkOut-time" class="">
+                                                <input id="checkOut-time" class="w60" type="text" placeholder=" 13 " required maxlength="4">
                                                 <span>시</span>
                                             </label>
                                         </div>
@@ -266,8 +266,8 @@
                                     <div class="list item05 bord-y">
                                         <span class="">숙박인원</span>
                                         <div class="inner-flex">
-                                            <label for="">
-                                                <input id="" class="w230" type="text" placeholder=" - " required>
+                                            <label for="guests-numb">
+                                                <input id="guests-numb" class="w230" type="text" placeholder=" - " required>
                                                 <span>명</span>
                                             </label>                                    
                                             <b class="point">*필수</b>
@@ -277,8 +277,8 @@
                                     <div class="list item06 bord-y">
                                         <span class="">식사인원</span>
                                         <div class="inner-flex">
-                                            <label for="">
-                                                <input id="" class="w230" type="text" placeholder=" - " required>
+                                            <label for="repast-numb">
+                                                <input id="epast-numb" class="w230" type="text" placeholder=" - " required>
                                                 <span>명</span>
                                             </label>     
                                             <b class="point">*필수</b>
@@ -292,18 +292,18 @@
                                                 <h4>1일째</h4>
                                                 <ul class="content-flex">
                                                     <li>
-                                                        <label>
-                                                            조식 <input id="" class="w55" type="text" placeholder=" - " required> 명
+                                                        <label for="breakfast01">
+                                                            조식 <input id="breakfast" class="w55" type="text" placeholder=" - " required> 명
                                                         </label>
                                                     </li>
                                                     <li>
-                                                        <label>
-                                                            중식 <input id="" class="w55" type="text" placeholder=" - " required> 명
+                                                        <label for="lunch01">
+                                                            중식 <input id="lunch" class="w55" type="text" placeholder=" - " required> 명
                                                         </label>
                                                     </li>
                                                     <li>
-                                                        <label>
-                                                            석식 <input id="" class="w55" type="text" placeholder=" - " required> 명
+                                                        <label for="dinner01">
+                                                            석식 <input id="dinner" class="w55" type="text" placeholder=" - " required> 명
                                                         </label>
                                                     </li>
                                                 </ul>
@@ -312,18 +312,18 @@
                                                 <h4>2일째</h4>
                                                 <ul class="content-flex">
                                                     <li>
-                                                        <label>
-                                                            조식 <input id="" class="w55" type="text" placeholder=" - " required> 명
+                                                        <label for="breakfast02">
+                                                            조식 <input id="breakfast02" class="w55" type="text" placeholder=" - " required> 명
                                                         </label>
                                                     </li>
                                                     <li>
-                                                        <label>
-                                                            중식 <input id="" class="w55" type="text" placeholder=" - " required> 명
+                                                        <label for="lunch02">
+                                                            중식 <input id="lunch02" class="w55" type="text" placeholder=" - " required> 명
                                                         </label>
                                                     </li>
                                                     <li>
-                                                        <label>
-                                                            석식 <input id="" class="w55" type="text" placeholder=" - " required> 명
+                                                        <label for="dinner02">
+                                                            석식 <input id="dinner012" class="w55" type="text" placeholder=" - " required> 명
                                                         </label>
                                                     </li>
                                                 </ul>
@@ -332,18 +332,18 @@
                                                 <h4>3일째</h4>
                                                 <ul class="content-flex">
                                                     <li>
-                                                        <label>
-                                                            조식 <input id="" class="w55" type="text" placeholder=" - " required> 명
+                                                        <label for="breakfast03">
+                                                            조식 <input id="breakfast03" class="w55" type="text" placeholder=" - " required> 명
                                                         </label>
                                                     </li>
                                                     <li>
-                                                        <label>
-                                                            중식 <input id="" class="w55" type="text" placeholder=" - " required> 명
+                                                        <label for="lunch03">
+                                                            중식 <input id="lunch03" class="w55" type="text" placeholder=" - " required> 명
                                                         </label>
                                                     </li>
                                                     <li>
-                                                        <label>
-                                                            석식 <input id="" class="w55" type="text" placeholder=" - " required> 명
+                                                        <label for="dinner03">
+                                                            석식 <input id="dinner03" class="w55" type="text" placeholder=" - " required> 명
                                                         </label>
                                                     </li>
                                                 </ul>
@@ -352,18 +352,18 @@
                                                 <h4>4일째</h4>
                                                 <ul class="content-flex">
                                                     <li>
-                                                        <label>
-                                                            조식 <input id="" class="w55" type="text" placeholder=" - " required> 명
+                                                        <label for="breakfast04">
+                                                            조식 <input id="breakfast04" class="w55" type="text" placeholder=" - " required> 명
                                                         </label>
                                                     </li>
                                                     <li>
-                                                        <label>
-                                                            중식 <input id="" class="w55" type="text" placeholder=" - " required> 명
+                                                        <label for="lunch04">
+                                                            중식 <input id="lunch04" class="w55" type="text" placeholder=" - " required> 명
                                                         </label>
                                                     </li>
                                                     <li>
-                                                        <label>
-                                                            석식 <input id="" class="w55" type="text" placeholder=" - " required> 명
+                                                        <label for="dinner04">
+                                                            석식 <input id="dinner04" class="w55" type="text" placeholder=" - " required> 명
                                                         </label>
                                                     </li>
                                                 </ul>
@@ -372,18 +372,18 @@
                                                 <h4>5일째</h4>
                                                 <ul class="content-flex">
                                                     <li>
-                                                        <label>
-                                                            조식 <input id="" class="w55" type="text" placeholder=" - " required> 명
+                                                        <label for="breakfast05">
+                                                            조식 <input id="breakfast05" class="w55" type="text" placeholder=" - " required> 명
                                                         </label>
                                                     </li>
                                                     <li>
-                                                        <label>
-                                                            중식 <input id="" class="w55" type="text" placeholder=" - " required> 명
+                                                        <label for="lunch05">
+                                                            중식 <input id="lunch05" class="w55" type="text" placeholder=" - " required> 명
                                                         </label>
                                                     </li>
                                                     <li>
-                                                        <label>
-                                                            석식 <input id="" class="w55" type="text" placeholder=" - " required> 명
+                                                        <label for="dinner05">
+                                                            석식 <input id="dinner05" class="w55" type="text" placeholder=" - " required> 명
                                                         </label>
                                                     </li>
                                                 </ul>
