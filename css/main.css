@@ -361,6 +361,9 @@
   height: 100%;
   object-fit: contain;
 }
+#home .mainIndex .section01 .room-simple-informate span {
+  color: #144974;
+}
 #home .mainIndex .section01 .tab-cont .map-content {
   width: 50%;
 }
