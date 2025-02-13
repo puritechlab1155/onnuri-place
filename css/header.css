@@ -134,7 +134,11 @@ button {
 }
 /* 로그인, 로그아윳 상태 시 나타나는 스타일 */
 .header .content .login-before { /* 로그아웃 상태 시 나타남 */
-    /* display: none; */
+    opacity: 0;
+}
+.header .content .login-before a {
+    pointer-events: none;
+    cursor: default;
 }
 .header .content .login-complete { /* 로그인 상태 시 나타남 */
     display: none;
