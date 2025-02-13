@@ -565,22 +565,17 @@
         margin-top: 5px;
     }
 }
-@media (max-width: 550px) {
-    #main.form .reserv-step li {
-        height: 42px;
+@media (max-width: 580px) {
+    #main.form .reservate03 .content-flex {
+        flex-direction: column;
+        flex: 1;
+        align-items: center;
     }
-    #main.form .reserv-step li span {
-        display: none;
+    #main.form .reservate03 .item07 .inner-flex li:nth-child(2) label::before {
+        content: none !important;
     }
-    #main.form #reservate .reservate-step-title {
-        display: block;
-        margin: 20px 0;
-        font-size: 22px;
-        font-weight: 600;
-        text-align: center;
-    }
-    #main.form .reservate03 .item07 .date-eat-count {
-        padding: 0;
+    #main.form .reservate03 .item07 .inner-flex li:nth-child(2) label::after {
+        content: none !important;
     }
     #main.form .reservate03 .item07 .inner-flex {
         padding: 0;
@@ -597,17 +592,22 @@
         border-color: #ddd;
     }
 }
-@media (max-width: 510px) {
-    #main.form .reservate03 .content-flex {
-        flex-direction: column;
-        flex: 1;
-        align-items: center;
+@media (max-width: 550px) {
+    #main.form .reserv-step li {
+        height: 42px;
     }
-    #main.form .reservate03 .item07 .inner-flex li:nth-child(2) label::before {
-        content: none !important;
+    #main.form .reserv-step li span {
+        display: none;
     }
-    #main.form .reservate03 .item07 .inner-flex li:nth-child(2) label::after {
-        content: none !important;
+    #main.form #reservate .reservate-step-title {
+        display: block;
+        margin: 20px 0;
+        font-size: 22px;
+        font-weight: 600;
+        text-align: center;
+    }
+    #main.form .reservate03 .item07 .date-eat-count {
+        padding: 0;
     }
 }
 @media (max-width: 482px) {
