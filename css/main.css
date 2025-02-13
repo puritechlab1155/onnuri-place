@@ -306,7 +306,7 @@
 #home .mainIndex .section01 .tab.active {
   background-size: 100% 100%;
   color: #fff;
-  background: #222;
+  background: #144974;
 }
 #home .mainIndex .section01 .tab-cont {
   display: none;
@@ -353,7 +353,7 @@
   cursor: pointer;
 }
 #home .mainIndex .section01 .tab-cont .map-imges > img {
-  width: 100%;
+  max-width: 100%;
   height: 100%;
   object-fit: contain;
 }
@@ -375,6 +375,7 @@
 #home .mainIndex .section01 .tab-cont .map-content .content-text .title .room-name {
   font-size: 20px;
   font-weight: 600;
+  color: #222;
 }
 #home .mainIndex .reservation-button {
   display: inline-flex;

@@ -12,8 +12,7 @@
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 
     <!-- rwdImageMaps CDN -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-rwdImageMaps/1.6/jquery.rwdImageMaps.min.js"></script> 
+    <script src="http://mattstow.com/experiment/responsive-image-maps/jquery.rwdImageMaps.min.js"></script>
 
     <!-- swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
@@ -313,9 +312,9 @@
                                     <div class="map-imges">
                                         <img id="mainImage" src="img/home/1nd-map03.png" usemap="#main_map" alt="1층 맵 이미지">
                                         <map name="main_map">
-                                            <area class="map01-list1" shape="rect" coords="49,113,219,277" alt="" data-img="img/home/1nd-map01.png"/>
-                                            <area class="map01-list2" shape="rect" coords="48,277,219,409" alt="" data-img="img/home/1nd-map02.png"/>
-                                            <area class="map01-list3" shape="rect" coords="399,476,692,656" alt="" data-img="img/home/1nd-map03.png"/>
+                                            <area class="map01-list1" shape="rect" coords="42,96,183,233" alt="" data-img="img/home/1nd-map01.png"/>
+                                            <area class="map01-list2" shape="rect" coords="41,234,183,347" alt="" data-img="img/home/1nd-map02.png"/>
+                                            <area class="map01-list3" shape="rect" coords="335,402,578,555" alt="" data-img="img/home/1nd-map03.png"/>
                                         </map> 
                                     </div>
                                     <!-- 맵 컨텐츠 // 오른쪽-->
@@ -589,9 +588,9 @@
                                     <div class="map-imges">
                                         <img id="mainImage2" src="img/home/1nd-map03.png" usemap="#main_2nd" alt="2층 맵 이미지">
                                         <map name="main_2nd">
-                                            <area class="map02-list1" shape="rect" coords="404,423,693,658" alt="" data-img="img/home/1nd-map01.png"/>
-                                            <area class="map02-list2" shape="rect" coords="138,220,266,346" alt="" data-img="img/home/1nd-map02.png"/>
-                                            <area class="map02-list3" shape="rect" coords="139,111,267,222" alt="" data-img="img/home/1nd-map03.png"/>
+                                            <area class="map02-list1" shape="rect" coords="42,96,183,233" alt="" data-img="img/home/1nd-map01.png"/>
+                                            <area class="map02-list2" shape="rect" coords="41,234,183,347" alt="" data-img="img/home/1nd-map02.png"/>
+                                            <area class="map02-list3" shape="rect" coords="335,402,578,555" alt="" data-img="img/home/1nd-map03.png"/>
                                         </map> 
                                     </div>
                                     <!-- 맵 컨텐츠 -->
@@ -718,6 +717,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                
                                 <!-- 그리드 방식 -->
                                 <div class="gird-area">
                                     <!-- 시안홀 -->
@@ -871,9 +871,9 @@
                                     <div class="map-imges">
                                         <img id="mainImage3" src="img/home/1nd-map03.png" usemap="#main_3nd" alt="1층 맵 이미지">
                                         <map name="main_3nd">
-                                            <area class="map03-list1" shape="rect" coords="49,113,219,277" alt="" data-img="img/home/3nd-map01.png"/>
-                                            <area class="map03-list2" shape="rect" coords="48,277,219,409" alt="" data-img="img/home/3nd-map02.png"/>
-                                            <area class="map03-list3" shape="rect" coords="399,476,692,656" alt="" data-img="img/home/3nd-map03.png"/>
+                                            <area class="map03-list1" shape="rect" coords="42,96,183,233" alt="" data-img="img/home/1nd-map01.png"/>
+                                            <area class="map03-list2" shape="rect" coords="41,234,183,347" alt="" data-img="img/home/1nd-map02.png"/>
+                                            <area class="map03-list3" shape="rect" coords="335,402,578,555" alt="" data-img="img/home/1nd-map03.png"/>
                                         </map> 
                                     </div>
                                     <!-- 맵 컨텐츠 -->
@@ -1144,9 +1144,9 @@
                                     <div class="map-imges">
                                         <img id="mainImageB1" src="img/home/1nd-map03.png" usemap="#main_B1nd" alt="1층 맵 이미지">
                                         <map name="main_B1nd">
-                                            <area class="mapB1-list1" shape="rect" coords="49,113,219,277" alt="" data-img="img/home/B1nd-map01.png"/>
-                                            <area class="mapB1-list2" shape="rect" coords="48,277,219,409" alt="" data-img="img/home/B1nd-map02.png"/>
-                                            <area class="mapB1-list3" shape="rect" coords="399,476,692,656" alt="" data-img="img/home/B1nd-map03.png"/>
+                                            <area class="mapB1-list1" shape="rect" coords="42,96,183,233" alt="" data-img="img/home/1nd-map01.png"/>
+                                            <area class="mapB1-list2" shape="rect" coords="41,234,183,347" alt="" data-img="img/home/1nd-map02.png"/>
+                                            <area class="mapB1-list3" shape="rect" coords="335,402,578,555" alt="" data-img="img/home/1nd-map03.png"/>
                                         </map> 
                                     </div>
                                     <!-- 맵 컨텐츠 -->
@@ -1816,64 +1816,78 @@
         document.addEventListener("DOMContentLoaded", function () {
             // -- area 클릭시 컨텐츠 변경 및 이미지 경로 변경 ?????????????
             const floorData = [
-                { prefix: "map01", imageId: "mainImage", usemap: "#main_map" }, // 1층
-                { prefix: "map02", imageId: "mainImage2", usemap: "#main_2nd" }, // 2층
-                { prefix: "map03", imageId: "mainImage3", usemap: "#main_3nd" }, // 3층
-                { prefix: "mapB1", imageId: "mainImageB1", usemap: "#main_B1nd" } // B1층
+                { prefix: "map01", imageId: "mainImage", usemap: "main_map" }, // 1층
+                { prefix: "map02", imageId: "mainImage2", usemap: "main_2nd" }, // 2층
+                { prefix: "map03", imageId: "mainImage3", usemap: "main_3nd" }, // 3층
+                { prefix: "mapB1", imageId: "mainImageB1", usemap: "main_B1nd" } // B1층
             ];
 
             function initFloorEvents() {
                 document.querySelectorAll(".tab-cont").forEach(activeTab => {
-                    // 현재 탭의 content-list 모두 숨기기
+                    // 모든 content-list 숨기고 기본적으로 content-list03 표시
                     activeTab.querySelectorAll(".content-list").forEach(el => el.style.display = "none");
-
-                    // 기본적으로 첫 번째 콘텐츠 보이도록 설정
                     const defaultContent = activeTab.querySelector(".content-list03");
                     if (defaultContent) defaultContent.style.display = "block";
 
+                    // 현재 탭에 맞는 imageId 및 usemap 찾기
                     const imageData = floorData.find(data => activeTab.querySelector(`#${data.imageId}`));
-                    if (imageData) {
-                        const imageElement = activeTab.querySelector(`#${imageData.imageId}`);
-                        imageElement.useMap = imageData.usemap;
+                    if (!imageData) return;
 
-                        activeTab.querySelectorAll(`map[name="${imageData.usemap.replace('#', '')}"] area`).forEach(area => {
-                            area.addEventListener("click", function (event) {
-                                event.preventDefault(); // 기본 동작 방지
+                    const imageElement = activeTab.querySelector(`#${imageData.imageId}`);
+                    if (imageElement) {
+                        imageElement.setAttribute("usemap", `#${imageData.usemap}`);
+                    }
 
-                                const targetClass = event.target.classList[0]; // 클릭한 area의 클래스명 가져오기
-                                let contentClass = "";
-
-                                // 클릭한 영역에 맞는 content-class 찾기
-                                if (targetClass.includes("list1")) contentClass = ".content-list01";
-                                else if (targetClass.includes("list2")) contentClass = ".content-list02";
-                                else if (targetClass.includes("list3")) contentClass = ".content-list03";
-
-                                // 이미지 경로 가져오기 (클릭된 영역의 data-img 속성 활용)
-                                const newSrc = event.target.dataset.img;
-                                showContent(activeTab, contentClass, imageData.imageId, newSrc);
-                            });
+                    // area 이벤트 리스너 초기화 (기존 이벤트 제거 후 다시 추가)
+                    const mapElement = activeTab.querySelector(`map[name="${imageData.usemap}"]`);
+                    if (mapElement) {
+                        mapElement.querySelectorAll("area").forEach(area => {
+                            area.removeEventListener("click", handleAreaClick); // 기존 이벤트 제거
+                            area.addEventListener("click", handleAreaClick);
                         });
                     }
                 });
             }
 
+            function handleAreaClick(event) {
+                event.preventDefault();
+
+                const targetClass = event.target.classList[0];
+                const match = targetClass.match(/list(\d+)/);
+                if (!match) return;
+
+                const contentClass = `.content-list0${match[1]}`;
+                const imgSrc = event.target.dataset.img;
+                
+                // 현재 활성화된 탭 찾기
+                const activeTab = event.target.closest(".tab-cont");
+                const imageId = floorData.find(data => activeTab.querySelector(`#${data.imageId}`))?.imageId;
+
+                if (imageId && imgSrc) {
+                    showContent(activeTab, contentClass, imageId, imgSrc);
+                }
+            }
+
             function showContent(activeTab, selector, imageId, imgSrc) {
                 activeTab.querySelectorAll(".content-list").forEach(el => el.style.display = "none");
+
                 const targetContent = activeTab.querySelector(selector);
                 if (targetContent) targetContent.style.display = "block";
 
                 const imageElement = activeTab.querySelector(`#${imageId}`);
-                if (imageElement) {
+                if (imageElement && imgSrc) {
                     imageElement.src = imgSrc;
                 }
             }
 
-            document.querySelectorAll(".tabs .tab").forEach((tab, index) => {
-                tab.addEventListener("click", function () {
+            // 탭 클릭 시 이벤트 초기화
+            document.querySelectorAll(".tabs .tab").forEach(tab => {
+                tab.addEventListener("click", () => {
                     setTimeout(initFloorEvents, 10);
                 });
             });
 
+            // 페이지 로드 시 초기화
             initFloorEvents();
 
             // -- 그리드, 맵 보기 아이콘 클릭
@@ -2016,11 +2030,10 @@
         });
     </script>
 
-    <script>
-        // 플러그인
+    <script> // 플러그인
         AOS.init();
 
-        $(document).ready(function() {
+        $(document).ready(function(e) {
             $('img[usemap]').rwdImageMaps();
         });
     </script>
