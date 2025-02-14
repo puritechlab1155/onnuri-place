@@ -2036,6 +2036,24 @@ letter-spacing: -0.8px;
   float: left;
 }
 
+/* 층별 세부페이지/////////////// */
+#home .flow-detail {
+
+}
+#home .flow-detail .sub-title {
+  
+}
+#home .flow-detail .text {
+  white-space: nowrap;
+  color: #222;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 160%; /* 28.8px */
+  letter-spacing: -0.36px;
+}
+
+
+
 /*resize*/
 @media (max-width: 1200px) {
   /*contact*/
