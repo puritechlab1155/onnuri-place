@@ -502,6 +502,18 @@
 #main.form .reservate03 input.w230 {
     max-width: 230px !important;
 }
+#main.form .reservate03 .item06 {
+    flex: 0 0 100% !important;    
+}
+#main.form .reservate03 .item06 .total-people {
+    justify-content: start !important;
+}
+#main.form .reservate03 .item06 input{
+    text-align: center;
+    background: #F7F7F7;
+    font-weight: 500;
+    pointer-events: none;
+}
 #main.form .reservate03 .item07 .date-eat-count {
     padding: 16px 0;
 }
@@ -583,6 +595,15 @@
         flex: 1;
         align-items: center;
     }
+    #main.form .reservate03 .item07 {
+        flex-direction: column !important;
+    }
+    #main.form .reservate03 .item07 > span {
+        flex: auto !important;
+    }
+    #main.form .reservate03 .item07 .date-eat-count {
+        padding: 0;
+    }
     #main.form .reservate03 .item07 .inner-flex li:nth-child(2) label::before {
         content: none !important;
     }
@@ -593,13 +614,11 @@
         padding: 0;
         padding-bottom: 10px;
     }
-    #main.form .reservate03 .item07 .inner-flex:not(:first-child) h4 {
-        border-top: 1px solid #ddd;
-    }
     #main.form .reservate03 .item07 .inner-flex h4 {
         flex: 0 0 100%;
         padding: 4px 0;
         background: #f0f0f0;
+        border-top: 1px solid #ddd;
         border-bottom: 1px solid;
         border-color: #ddd;
     }
@@ -623,7 +642,7 @@
     }
 }
 @media (max-width: 482px) {
-    #main.form .reservate03 .list > span {
+    #main.form .reservate03 .item06 > span {
         flex: 0 0 80px !important;
     }
     #main.form .reservate03 .point {
@@ -754,18 +773,18 @@
         border-bottom: 1px solid #ddd;
     }
 }
-@media (max-width: 1034px) {
+/* @media (max-width: 1034px) {
     #main.form .reservate02 .list .chapel-room {
-        /* flex-direction: column;
+        flex-direction: column;
         align-items: start !important;
-        justify-content: start; */
+        justify-content: start;
     }
     #main.form .reservate02 .list .room-item .wave {
-        /* width: 100%;
+        width: 100%;
         max-width: 340px;
-        margin: -10px 0; */
+        margin: -10px 0;
     }
-}
+} */
 @media (max-width: 648px) {
     #main.form .reservate02 .list .room-item {
         flex-direction: column;
@@ -784,12 +803,9 @@
         /* align-items: center !important; */
         justify-content: center;
     }
-    #main.form .reservate02 b {
-        /* width: 100%; */
-    }
-    #main.form #reservate .inner-flex {
-        justify-content: center; /*  */
-    }
+    /* #main.form .reservate02 b {
+        width: 100%;
+    } */
 }
 @media (max-width: 482px) {
     #main.form .reservate02 .right-input select {

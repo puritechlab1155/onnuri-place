@@ -197,7 +197,7 @@
                             <div class="list_box">
                                 <!-- 목록 -->
                                 <div class="input-container bord-t">
-                                    <div class="list item01 f100">
+                                    <!-- <div class="list item01 f100">
                                         <span>이용기간</span>
                                         <div class="calendar-area w100">
                                             <label for="start-date01" class="calendar-wrap">
@@ -205,7 +205,7 @@
                                                 <input class="input-field" id="start-date01" type="date" required>                                         
                                                 <img src="img/form/calendar.svg" alt="달력 아이콘">
                                             </label>
-                                            <!-- <div class="calendar-line"></div> -->
+                                            <div class="calendar-line"></div>
                                             <div class="wave">~</div>
                                             <label for="finish-date01" class="calendar-wrap">
                                                 <span style="display: none;">끝나는 기간</span>
@@ -216,7 +216,7 @@
                                         </div>
                                     </div>
                                     
-                                    <!-- <div class="list item02 f100">
+                                    <div class="list item02 f100">
                                         <span>숙박/식사</span>
                                         <div class="inner-flex">
                                             <label for="lodgment" class="">
@@ -268,18 +268,18 @@
                                             </label>                                    
                                             <b class="point">*필수</b>
                                         </div>
-                                    </div>
+                                    </div> -->
 
                                     <div class="list item06 bord-y">
-                                        <span class="">식사인원</span>
-                                        <div class="inner-flex">
-                                            <label for="repast-numb">
-                                                <input id="epast-numb" class="w230 onlyNumb" type="text" placeholder=" - " required>
+                                        <span class="">총 인원</span>
+                                        <div class="inner-flex total-people">
+                                            <label for="total-numb">
+                                                <input id="total-numb" class="w230 onlyNumb" type="text" placeholder=" 총 인원이 표시됩니다. " readonly required>
                                                 <span>명</span>
                                             </label>     
-                                            <b class="point">*필수</b>
+                                            <b class="point">*식사인원을 입력해주세요.</b>
                                         </div>                          
-                                    </div> -->
+                                    </div>
 
                                     <div class="list item07 w100">
                                         <span>식사인원</span>
@@ -289,17 +289,17 @@
                                                 <ul class="content-flex">
                                                     <li>
                                                         <label for="breakfast01">
-                                                            조식 <input id="breakfast" class="w55 onlyNumb" type="text" placeholder=" - " required> 명
+                                                            조식 <input id="breakfast01" class="w55 onlyNumb" type="text" placeholder=" - "> 명
                                                         </label>
                                                     </li>
                                                     <li>
                                                         <label for="lunch01">
-                                                            중식 <input id="lunch" class="w55 onlyNumb" type="text" placeholder=" - " required> 명
+                                                            중식 <input id="lunch01" class="w55 onlyNumb" type="text" placeholder=" - "> 명
                                                         </label>
                                                     </li>
                                                     <li>
                                                         <label for="dinner01">
-                                                            석식 <input id="dinner" class="w55 onlyNumb" type="text" placeholder=" - " required> 명
+                                                            석식 <input id="dinner01" class="w55 onlyNumb" type="text" placeholder=" - "> 명
                                                         </label>
                                                     </li>
                                                 </ul>
@@ -309,17 +309,17 @@
                                                 <ul class="content-flex">
                                                     <li>
                                                         <label for="breakfast02">
-                                                            조식 <input id="breakfast02" class="w55 onlyNumb" type="text" placeholder=" - " required> 명
+                                                            조식 <input id="breakfast02" class="w55 onlyNumb" type="text" placeholder=" - "> 명
                                                         </label>
                                                     </li>
                                                     <li>
                                                         <label for="lunch02">
-                                                            중식 <input id="lunch02" class="w55 onlyNumb" type="text" placeholder=" - " required> 명
+                                                            중식 <input id="lunch02" class="w55 onlyNumb" type="text" placeholder=" - "> 명
                                                         </label>
                                                     </li>
                                                     <li>
                                                         <label for="dinner02">
-                                                            석식 <input id="dinner012" class="w55 onlyNumb" type="text" placeholder=" - " required> 명
+                                                            석식 <input id="dinner02" class="w55 onlyNumb" type="text" placeholder=" - "> 명
                                                         </label>
                                                     </li>
                                                 </ul>
@@ -329,17 +329,17 @@
                                                 <ul class="content-flex">
                                                     <li>
                                                         <label for="breakfast03">
-                                                            조식 <input id="breakfast03" class="w55 onlyNumb" type="text" placeholder=" - " required> 명
+                                                            조식 <input id="breakfast03" class="w55 onlyNumb" type="text" placeholder=" - "> 명
                                                         </label>
                                                     </li>
                                                     <li>
                                                         <label for="lunch03">
-                                                            중식 <input id="lunch03" class="w55 onlyNumb" type="text" placeholder=" - " required> 명
+                                                            중식 <input id="lunch03" class="w55 onlyNumb" type="text" placeholder=" - "> 명
                                                         </label>
                                                     </li>
                                                     <li>
                                                         <label for="dinner03">
-                                                            석식 <input id="dinner03" class="w55 onlyNumb" type="text" placeholder=" - " required> 명
+                                                            석식 <input id="dinner03" class="w55 onlyNumb" type="text" placeholder=" - "> 명
                                                         </label>
                                                     </li>
                                                 </ul>
@@ -349,17 +349,17 @@
                                                 <ul class="content-flex">
                                                     <li>
                                                         <label for="breakfast04">
-                                                            조식 <input id="breakfast04" class="w55 onlyNumb" type="text" placeholder=" - " required> 명
+                                                            조식 <input id="breakfast04" class="w55 onlyNumb" type="text" placeholder=" - "> 명
                                                         </label>
                                                     </li>
                                                     <li>
                                                         <label for="lunch04">
-                                                            중식 <input id="lunch04" class="w55 onlyNumb" type="text" placeholder=" - " required> 명
+                                                            중식 <input id="lunch04" class="w55 onlyNumb" type="text" placeholder=" - "> 명
                                                         </label>
                                                     </li>
                                                     <li>
                                                         <label for="dinner04">
-                                                            석식 <input id="dinner04" class="w55 onlyNumb" type="text" placeholder=" - " required> 명
+                                                            석식 <input id="dinner04" class="w55 onlyNumb" type="text" placeholder=" - "> 명
                                                         </label>
                                                     </li>
                                                 </ul>
@@ -369,17 +369,17 @@
                                                 <ul class="content-flex">
                                                     <li>
                                                         <label for="breakfast05">
-                                                            조식 <input id="breakfast05" class="w55 onlyNumb" type="text" placeholder=" - " required> 명
+                                                            조식 <input id="breakfast05" class="w55 onlyNumb" type="text" placeholder=" - "> 명
                                                         </label>
                                                     </li>
                                                     <li>
                                                         <label for="lunch05">
-                                                            중식 <input id="lunch05" class="w55 onlyNumb" type="text" placeholder=" - " required> 명
+                                                            중식 <input id="lunch05" class="w55 onlyNumb" type="text" placeholder=" - "> 명
                                                         </label>
                                                     </li>
                                                     <li>
                                                         <label for="dinner05">
-                                                            석식 <input id="dinner05" class="w55 onlyNumb" type="text" placeholder=" - " required> 명
+                                                            석식 <input id="dinner05" class="w55 onlyNumb" type="text" placeholder=" - "> 명
                                                         </label>
                                                     </li>
                                                 </ul>
@@ -389,7 +389,6 @@
                                     </div>
 
                                     <!--  회색 박스 -->
-                                    <!-- <div class="gray-text g-bg f100">6박 이상의 식사는 고객센터로 문의 해주시기 바랍니다.</div> -->
                                     <div class="gray-text g-bg f100">
                                         * 식사시간(배식시간 기준) : <span class="br_a"></span>
                                         아침 07:30 ~ 08:00 | <br class="space_m">점심 12:30 ~ 13:00 | <br class="space_m">저녁 17:30 ~ 18:00 <span class="br"></span>
@@ -406,11 +405,11 @@
                 <!--버튼 랩핑-->
                 <div class="finish-bnt-wrap">
                     <div class="check-box">
-                        <button class="checkBtn" onclick="location.href='https://puritechlab1155.github.io/onnuri-place/index.html'">확인</button>
+                        <button class="checkBtn" onclick="location.href='https://puritechlab1155.github.io/onnuri-place/myInfo-history.html'">확인</button>
                     </div>
                     
                     <div class="delete-box">
-                        <button class="deleteBtn" type="button" onclick="location.href='https://puritechlab1155.github.io/onnuri-place/reservate2.html'" >취소</button>
+                        <button class="deleteBtn" type="button" >취소</button>
                     </div>
                 </div>
             </div>
@@ -740,11 +739,49 @@
 
     <script src="js/script.js"></script>
     <script>
-        document.querySelectorAll(".onlyNumb").forEach((input) => {
-            input.addEventListener("input", function () {
-                this.value = this.value.replace(/[^0-9]/g, ""); // 숫자 이외의 문자 제거
+        // -- 인풋 숫자 입력 시 총 인원 표시
+        document.addEventListener("DOMContentLoaded", function () {
+                const inputs = document.querySelectorAll(".onlyNumb");
+                const totalInput = document.getElementById("total-numb");
+                const checkBtn = document.querySelector(".checkBtn");
+                const deleteBtn = document.querySelector(".deleteBtn");
+                
+                function calculateTotal() {
+                    let total = 0;
+                    inputs.forEach(input => {
+                        if (input.id !== "total-numb") { // total-numb 필드는 합산에서 제외
+                            const value = parseInt(input.value, 10);
+                            if (!isNaN(value)) {
+                                total += value;
+                            }
+                        }
+                    });
+                    totalInput.value = total;
+                    checkBtn.disabled = total <= 0; // total 값이 0 이하이면 버튼 비활성화
+                }
+                
+                inputs.forEach(input => {
+                    if (input.id !== "total-numb") {
+                        input.addEventListener("input", function () {
+                            this.value = this.value.replace(/\D/g, ""); // 숫자만 입력 가능하게 설정
+                            calculateTotal();
+                        });
+                    }
+                });
+                
+                checkBtn.addEventListener("click", function (event) {
+                    if (totalInput.value <= 0) {
+                        event.preventDefault(); // 값이 0 이하일 경우 페이지 이동 방지
+                    }
+                });
+                
+                checkBtn.disabled = true; // 초기에는 비활성화 상태
+                
+                deleteBtn.addEventListener("click", function () {
+                    window.history.back(); // 이전 페이지로 이동
+                });
             });
-        });
+
     </script>
 </body>
 </html>
