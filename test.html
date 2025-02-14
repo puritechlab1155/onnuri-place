@@ -39,7 +39,7 @@
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       width: 48%;
       overflow: hidden;
-      text-align: center;
+      /* text-align: center; */
     }
     .facility-card img {
       width: 100%;
@@ -48,12 +48,15 @@
     }
     .facility-card h3 {
       font-size: 20px;
-      margin: 10px 0;
+      margin: 10px 20px;
     }
     .facility-card p {
-      padding: 10px;
-      font-size: 16px;
-      color: #666;
+        color: #222;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 160%; /* 28.8px */
+        letter-spacing: -0.36px;
+        margin: 10px 20px;
     }
     .testimonial {
       background-color: #fff;
@@ -85,39 +88,100 @@
 
   <div class="container">
     <section>
-      <h2 class="section-title">식당</h2>
-      <div class="facility">
-        <!-- 대기 공간 -->
-        <div class="facility-card">
-          <img src="img/home/room-slide-ex.jpg" alt="대기 공간">
-          <h3>대기 공간</h3>
-          <p>편안한 소파와 음료 서비스가 제공되는 대기 공간입니다.</p>
+        <!-- 본관 -->
+        <h2 class="section-title">본관 전경</h2>
+        <div class="facility">
+            <div class="facility-card">
+                <img src="img/home/room-slide-ex.jpg" alt="본관1">
+                <h3>본관</h3>
+            </div>
+
+            <div class="facility-card">
+                <img src="img/home/room-slide-ex.jpg" alt="본관2">
+                <h3>본관</h3>
+            </div>
+        </div>
+        <!-- 로비&복도 -->
+        <h2 class="section-title">로비&복도</h2>
+        <div class="facility">
+            <div class="facility-card">
+                <img src="img/home/room-slide-ex.jpg" alt="로비">
+                <h3>로비</h3>
+            </div>
+            <div class="facility-card">
+                <img src="img/home/room-slide-ex.jpg" alt="복도">
+                <h3>복도</h3>
+            </div>
+        </div>
+        <!-- 식당 -->
+        <h2 class="section-title">식당</h2>
+        <div class="facility">
+            <div class="facility-card">
+                <img src="img/home/room-slide-ex.jpg" alt="오병이어식당">
+                <h3>오병이어홀</h3>
+                <p>양면이 유리로 되어있어 자연 채광과 주변 자연을 보며 보다 쾌적한 환경속에서 식사할 수 있도록 준비되어 있습니다.</p>
+                <p>수용인원 : 200명</p>
+                <p>이용기간 : 오전 7시 30분, 오후 12시 30분, 오후 5시 30분</p>
+            </div>
+
+        </div>
+        <!-- 기도실 -->
+        <h2 class="section-title">기도실</h2>
+        <div class="facility">
+            <div class="facility-card">
+                <img src="img/home/room-slide-ex.jpg" alt="시안홀">
+                <h3>시안홀</h3>
+                <p>Acts29 비전 빌리지를 찾는 모든 이들이 시므온과 안나처럼 예수그리스도를 다시 오심을 기다리며 1년 365일 24시간 무릎으로 열방을 향해 나아가는 기도실입니다.</p>
+                <p> 이용시간 : 24시간 개방</p>
+            </div>
+            
+        </div>
+        <!-- 도서관 -->
+        <h2 class="section-title">도서관</h2>
+       
+        <div class="facility">
+            <div class="facility-card">
+                <img src="img/home/room-slide-ex.jpg" alt="하용조목사님 기념관1">
+                <h3>하용조목사님 기념관</h3>
+                <p>레이놀즐 도서관은 조용히 성경과 영적 성령을 묵상하며 도서를 읽는 공간입니다. 다양한 신앙서적과 선교관련 도서가 구비되어 있으며 컴퓨터를 통해 인터넷 검색 및 자료 정리를 할 수 있습니다.</p>
+                <p>이용시간 - 오전 9시 - 오후 10시까지</p>
+            </div>
+
+            <div class="facility-card">
+                <img src="img/home/room-slide-ex.jpg" alt="하용조목사님 기념관2">
+                <h3>하용조목사님 기념관</h3>
+            </div>
         </div>
 
-        <!-- 회의실 -->
-        <div class="facility-card">
-          <img src="img/home/room-slide-ex.jpg" alt="회의실">
-          <h3>회의실</h3>
-          <p>최신 기술이 갖춰진 회의실입니다. 팀 회의에 적합한 공간입니다.</p>
-        </div>
-      </div>
+        <!-- 부대시설 -->
+        <h2 class="section-title">그 외 공간</h2>
+        <div class="facility">
 
-      <h2 class="section-title">식당</h2>
-      <div class="facility">
-        <!-- 화장실 -->
-        <div class="facility-card">
-          <img src="img/home/room-slide-ex.jpg" alt="화장실">
-          <h3>화장실 및 편의시설</h3>
-          <p>청결한 화장실과 편의시설 구역으로 쾌적한 환경을 제공합니다.</p>
-        </div>
+            <div class="facility-card">
+            <img src="img/home/room-slide-ex.jpg" alt="풋살장">
+            <h3>풋살장</h3>
+            </div>
 
-        <!-- 카페 공간 -->
-        <div class="facility-card">
-          <img src="img/home/room-slide-ex.jpg" alt="카페 공간">
-          <h3>음료 바/카페</h3>
-          <p>고급 커피와 음료를 즐길 수 있는 아늑한 카페 공간입니다.</p>
+            <div class="facility-card">
+            <img src="img/home/room-slide-ex.jpg" alt="카페 마라">
+            <h3>카페 마라</h3>
+            </div>
         </div>
-      </div>
+        <!-- 채플 -->
+        <h2 class="section-title">채플</h2>
+        <div class="facility">
+
+            <div class="facility-card">
+                <img src="img/home/room-slide-ex.jpg" alt="하용조기념채플1">
+                <h3>하용조기념채플</h3>
+            </div>
+
+            <div class="facility-card">
+                <img src="img/home/room-slide-ex.jpg" alt="하용조기념채플2">
+                <h3>하용조기념채플</h3>
+            </div>
+
+        </div>
     </section>
 
   </div>
