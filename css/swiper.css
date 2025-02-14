@@ -108,11 +108,15 @@
 /* 예배페이지 */
 #home .mainIndex .section01 .mob-swiper .swiper-slide {
     padding: 16px 0;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
     font-size: 17px;
     cursor: pointer;
     text-align: center;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+#home .mainIndex .section01 .mob-swiper .swiper-border {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
 }
 #home .mainIndex .section01 .foor1-swiper .swiper-slide {
     width: calc(100% / 3) !important;
