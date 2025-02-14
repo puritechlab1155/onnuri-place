@@ -1116,8 +1116,12 @@ letter-spacing: -0.8px;
 #home .noticeD .title-area .title span.cap-text {
   display: block;
   margin-top: 16px;
+  line-height: 140%;
   font-size: 18px;
   font-weight: 400;
+}
+#home .noticeD .title span.cap-text .mob_br {
+  display: none;
 }
 #home .noticeD .title {
   position: relative;
@@ -1133,7 +1137,6 @@ letter-spacing: -0.8px;
   width: 100%;
   overflow: hidden;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 10px 16px;
@@ -1147,7 +1150,6 @@ letter-spacing: -0.8px;
   float: left;
   font-size: 22px;
   font-weight: 700;
-  margin-top: 6px;
 }
 #home .noticeD .notice-title .writer-wrap {
   float: right;
@@ -1372,11 +1374,11 @@ letter-spacing: -0.8px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-
-
 /* resize */
 @media (max-width: 768px) {
+  #home .noticeD .title span.cap-text .mob_br {
+    display: block;
+  }
   #home .noticeD .notice-title .appliDate-wrap {
       clear: both;
       width: fit-content;
