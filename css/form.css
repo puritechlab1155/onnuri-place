@@ -513,6 +513,10 @@
     background: #F7F7F7;
     font-weight: 500;
     pointer-events: none;
+    color: #004BBA;
+}
+#main.form .reservate03 .item06 input::placeholder {
+    font-weight: 400;
 }
 #main.form .reservate03 .item07 .date-eat-count {
     padding: 16px 0;
