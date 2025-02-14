@@ -274,6 +274,7 @@
 #main.form #reservate b {
     margin-right: 10px;
     line-height: 16px;
+    text-align: left;
     font-size: 16px;
     font-weight: 400;
     color: #F84242;
@@ -704,6 +705,19 @@
     align-items: center !important;
     justify-content: center !important;
 }
+#main.form .reservate02 .reservat-type-wrap {
+    display: flex;
+    padding-left: 20px;
+    justify-content: stretch;
+    align-items: center;
+}
+#main.form .reservate02 .reservat-type {
+    gap: 10px 24px;
+    align-items: center;
+}
+#main.form .reservate02 .reservat-type label {
+    cursor: pointer;
+}
 #main.form .reservate02 .room-personnel-wrap {
     flex-direction: column;
     flex: 1;
@@ -742,21 +756,20 @@
 #main.form .reservate02 .list .room-personnel select {
     width: 85px;
 }
-#main.form .reservate02 .list .personnel-text input {
-    width: 66px !important;
-    text-align: center;
-}
-#main.form .reservate02 .list .chapel-room {
+#main.form .reservate02 .list .room-calendar {
     padding: 8px 20px;
     gap: 10px;
     flex: 1;
     justify-content: space-between;
 }
-#main.form .reservate02 .list .room-input {
-    gap: 10px 24px;
+#main.form .reservate02 .item01 .room-calendar {
+    gap: 0 10px !important;
 }
 #main.form .reservate02 .calendar-area {
     padding: 0px !important;
+}
+#main.form .reservate02 .item01 .room-calendar {
+    flex-wrap: nowrap !important;
 }
 #main.form .reservate02 .calendar-area label img {
     margin: 0px !important;
@@ -767,6 +780,9 @@
 #main.form .reservate02 .right-input select {
     width: 73px;
 }
+#main.form .reservate02 .item01 .room-calendar {
+    padding: 0;
+}
 @media (max-width: 1242px) {
     #main.form .reservate02 .list {
         flex-direction: column !important;
@@ -776,20 +792,12 @@
         padding: 18px 0;
         border-bottom: 1px solid #ddd;
     }
+    #main.form .reservate02 .reservat-type-wrap {
+        padding: 10px 0;
+        justify-content: center;
+    }
 }
-/* @media (max-width: 1034px) {
-    #main.form .reservate02 .list .chapel-room {
-        flex-direction: column;
-        align-items: start !important;
-        justify-content: start;
-    }
-    #main.form .reservate02 .list .room-item .wave {
-        width: 100%;
-        max-width: 340px;
-        margin: -10px 0;
-    }
-} */
-@media (max-width: 648px) {
+@media (max-width: 662px) {
     #main.form .reservate02 .list .room-item {
         flex-direction: column;
         border-bottom: none;
@@ -803,13 +811,27 @@
     #main.form .reservate02 .inner-flex {
         justify-content: center;
     }
-    #main.form .reservate02 .list .chapel-room {
-        /* align-items: center !important; */
+    #main.form .reservate02 .item02 .room-calendar {
+        justify-content: center !important;
+    }
+}
+@media (max-width: 584px) {
+    #main.form .reservate02 .list .room-personnel select {
+        min-width: 218px;
+    }
+    #main.form #reservate .inner-flex {
         justify-content: center;
     }
-    /* #main.form .reservate02 b {
-        width: 100%;
-    } */
+    #main.form .reservate02 .list .contour-line {
+        display: none;
+    }
+    #main.form .reservate02 .item01 .room-calendar {
+        flex: 0 0 100%;
+        flex-wrap: wrap !important;
+    }
+    #main.form #reservate b {
+        text-align: center;
+    }
 }
 @media (max-width: 482px) {
     #main.form .reservate02 .right-input select {
@@ -828,5 +850,15 @@
     }
     #main.form .reservate02 .list .room-item h4 {
         font-size: 15px;
+    }
+    #main.form #reservate .list .room-calendar {
+        flex-direction: column;
+        gap: 0 !important;
+    }
+}
+@media (max-width: 420px) {
+    #main.form .reservate02 .reservat-type {
+        flex-direction: column;
+        align-items: start !important;
     }
 }

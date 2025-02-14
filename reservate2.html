@@ -186,7 +186,7 @@
                 <ul class="reserv-step">
                     <li>1단계 <span class="space_pc"> - 예약자 정보</span></li>
                     <li class="current_step">2단계 <span class="space_pc">- 시설예약</span></li>
-                    <li>3단계 <span class="space_pc">- 이용계획 및 이용인원</span></li>
+                    <li>3단계 <span class="space_pc">- 식사예약</span></li>
                 </ul>
 
                 <form id="reservate" class="reservate02">
@@ -196,382 +196,499 @@
                             <div class="list_box">
                                 <!-- 목록 -->
                                 <div class="input-container bord-t">
-                                    <div class="list item01">
-                                        <span>객실 예약</span>
-                                        <div class="room-personnel-wrap inner-flex">
-                                            <div class="room-item inner-flex">
-                                                <h4>본관 5인실(온돌)</h4>
-                                                <div class="room-personnel inner-flex">
-                                                    <div class="personnel-select select-wrap">
-                                                        <select id="room-select01" class="select-field">
-                                                            <option value="" disabled="" selected="">선택</option>
-                                                            <option value="1">1</option>
-                                                            <option value="2">2</option>
-                                                            <option value="3">3</option>
-                                                            <option value="4">4</option>
-                                                            <option value="5">5</option>
-                                                        </select>
+                                    <!-- 예약 구분 선택 -->
+                                    <div class="list category">
+                                        <span>예약구분</span>
+                                        <div class="reservat-type-wrap">
+                                            <div class="inner-flex reservat-type">
+                                                <label>
+                                                    <input id="" name="reservation-type" type="radio" required=""> 객실 및 예배실 예약
+                                                </label>
+                                                <label>
+                                                    <input id="" name="reservation-type" type="radio" required=""> 객실 예약
+                                                </label>
+                                                <label>
+                                                    <input id="" name="reservation-type" type="radio" required=""> 예배실 예약
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 객실예약 영역 -->
+                                    <div class="type-parlor">
+                                        <div class="list item01">
+                                            <span>객실 예약</span>
+                                            <div class="room-personnel-wrap inner-flex">
+                                                <div class="room-item inner-flex">
+                                                    <h4>본관 5인실(온돌)</h4>
+                                                    <div class="room-personnel inner-flex">
+                                                        <div class="personnel-select select-wrap">
+                                                            <select id="room-select01" class="select-field">
+                                                                <option value="" disabled="" selected="">선택</option>
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                                <option value="5">5</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="contour-line"></div>
+                                                        <div class="room-calendar inner-flex">
+                                                            <div class="room-input inner-flex">
+                                                                <div class="left-input inner-flex">
+                                                                    <div class="calendar-area">
+                                                                        <label for="lodgment01-startDt" class="calendar-wrap">
+                                                                            <input id="lodgment01-startDt" type="date" required="">                                         
+                                                                            <img src="img/form/calendar.svg" alt="달력 아이콘">
+                                                                        </label>
+                                                                    </div>
+                                                                </div> 
+                                                            </div>
+                                                            <div class="wave">~</div>
+                                                            <div class="room-input inner-flex">
+                                                                <div class="left-input inner-flex">
+                                                                    <div class="calendar-area">
+                                                                        <label for="lodgment01-endDt" class="calendar-wrap">
+                                                                            <input id="lodgment01-endDt" type="date" required="">                                         
+                                                                            <img src="img/form/calendar.svg" alt="달력 아이콘">
+                                                                        </label>
+                                                                    </div>
+                                                                </div> 
+                                                                <div class="right-input inner-flex">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <b class="f100">*최대 6인</b>
                                                     </div>
-                                                    <!-- <div class="contour-line"></div>
-                                                    <div class="personnel-text">
-                                                        <label for="people-count01">
-                                                            <input class="onlyNumb" id="people-count01" type="text" placeholder=" - " required maxlength="1"> 
-                                                            <span>명</span>
-                                                        </label>
-                                                    </div> -->
-                                                    <b>*최대 6인</b>
+                                                </div>
+                                                
 
+                                                <div class="room-item inner-flex">
+                                                    <h4>본관 15인실(온돌)</h4>
+                                                    <div class="room-personnel inner-flex">
+                                                        <div class="personnel-select select-wrap">
+                                                            <select id="room-select02"">
+                                                                <option value="" disabled="" selected="">선택</option>
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                                <option value="5">5</option>
+                                                                <option value="6">6</option>
+                                                                <option value="7">7</option>
+                                                                <option value="8">8</option>
+                                                                <option value="9">9</option>
+                                                                <option value="10">10</option>
+                                                                <option value="11">11</option>
+                                                                <option value="12">12</option>
+                                                                <option value="13">13</option>
+                                                                <option value="14">14</option>
+                                                                <option value="15">15</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="contour-line"></div>
+                                                        <div class="room-calendar inner-flex">
+                                                            <div class="room-input inner-flex">
+                                                                <div class="left-input inner-flex">
+                                                                    <div class="calendar-area">
+                                                                        <label for="lodgment02-startDt" class="calendar-wrap">
+                                                                            <input id="lodgment02-startDt" type="date" required="">                                         
+                                                                            <img src="img/form/calendar.svg" alt="달력 아이콘">
+                                                                        </label>
+                                                                    </div>
+                                                                </div> 
+                                                            </div>
+                                                            <div class="wave">~</div>
+                                                            <div class="room-input inner-flex">
+                                                                <div class="left-input inner-flex">
+                                                                    <div class="calendar-area">
+                                                                        <label for="lodgment02-endDt" class="calendar-wrap">
+                                                                            <input id="lodgment02-endDt" type="date" required="">                                         
+                                                                            <img src="img/form/calendar.svg" alt="달력 아이콘">
+                                                                        </label>
+                                                                    </div>
+                                                                </div> 
+                                                                <div class="right-input inner-flex">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <b class="f100">*최대 12-17인 / 공동화장실, 샤워실 사용</b>
+                                                    </div>
+                                                </div>
+                                                <!-- 베데스다(별관) -->
+                                                <div class="room-item inner-flex">
+                                                    <h4>별관 2인실(침대)</h4>
+                                                    <div class="room-personnel inner-flex">
+                                                        <div class="personnel-select select-wrap">
+                                                            <select id="room-select03" onchange="updateProgress()">
+                                                                <option value="" disabled="" selected="">선택</option>
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                                <option value="5">5</option>
+                                                                <option value="6">6</option>
+                                                                <option value="7">7</option>
+                                                                <option value="8">8</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="contour-line"></div>
+                                                        <div class="room-calendar inner-flex">
+                                                            <div class="room-input inner-flex">
+                                                                <div class="left-input inner-flex">
+                                                                    <div class="calendar-area">
+                                                                        <label for="lodgment03-startDt" class="calendar-wrap">
+                                                                            <input id="lodgment03-startDt" type="date" required="">                                         
+                                                                            <img src="img/form/calendar.svg" alt="달력 아이콘">
+                                                                        </label>
+                                                                    </div>
+                                                                </div> 
+                                                            </div>
+                                                            <div class="wave">~</div>
+                                                            <div class="room-input inner-flex">
+                                                                <div class="left-input inner-flex">
+                                                                    <div class="calendar-area">
+                                                                        <label for="lodgment03-endDt" class="calendar-wrap">
+                                                                            <input id="lodgment03-endDt" type="date" required="">                                         
+                                                                            <img src="img/form/calendar.svg" alt="달력 아이콘">
+                                                                        </label>
+                                                                    </div>
+                                                                </div> 
+                                                                <div class="right-input inner-flex">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                     
                                                 </div>
-                                            </div>
-                                            
 
-                                            <div class="room-item inner-flex">
-                                                <h4>본관 15인실(온돌)</h4>
-                                                <div class="room-personnel inner-flex">
-                                                    <div class="personnel-select select-wrap">
-                                                        <select id="room-select02" onchange="updateProgress()">
-                                                            <option value="" disabled="" selected="">선택</option>
-                                                            <option value="1">1</option>
-                                                            <option value="2">2</option>
-                                                            <option value="3">3</option>
-                                                            <option value="4">4</option>
-                                                            <option value="5">5</option>
-                                                            <option value="6">6</option>
-                                                            <option value="7">7</option>
-                                                            <option value="8">8</option>
-                                                            <option value="9">9</option>
-                                                            <option value="10">10</option>
-                                                            <option value="11">11</option>
-                                                            <option value="12">12</option>
-                                                            <option value="13">13</option>
-                                                            <option value="14">14</option>
-                                                            <option value="15">15</option>
-                                                        </select>
-                                                    </div>
-                                                    <b>*최대 12-17인 / 공동화장실, 샤워실 사용</b>
-                                                </div>
-                                            </div>
-                                            <!-- 베데스다(별관) -->
-                                            <div class="room-item inner-flex">
-                                                <h4>별관 2인실(침대)</h4>
-                                                <div class="room-personnel inner-flex">
-                                                    <div class="personnel-select select-wrap">
-                                                        <select id="room-select03" onchange="updateProgress()">
-                                                            <option value="" disabled="" selected="">선택</option>
-                                                            <option value="1">1</option>
-                                                            <option value="2">2</option>
-                                                            <option value="3">3</option>
-                                                            <option value="4">4</option>
-                                                            <option value="5">5</option>
-                                                            <option value="6">6</option>
-                                                            <option value="7">7</option>
-                                                            <option value="8">8</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="room-item inner-flex bord-n">
-                                                <h4>별관 4인실(침대)</h4>
-                                                <div class="room-personnel inner-flex">
-                                                    <div class="personnel-select select-wrap">
-                                                        <select id="room-select03" onchange="updateProgress()">
-                                                            <option value="" disabled="" selected="">선택</option>
-                                                            <option value="1">1</option>
-                                                            <option value="2">2</option>
-                                                            <option value="3">3</option>
-                                                            <option value="4">4</option>
-                                                            <option value="5">5</option>
-                                                            <option value="6">6</option>
-                                                            <option value="7">7</option>
-                                                            <option value="8">8</option>
-                                                            <option value="9">9</option>
-                                                            <option value="10">10</option>
-                                                            <option value="11">11</option>
-                                                            <option value="12">12</option>
-                                                            <option value="13">13</option>
-                                                            <option value="14">14</option>
-                                                            <option value="15">15</option>
-                                                            <option value="16">16</option>
-                                                            <option value="17">17</option>
-                                                            <option value="18">18</option>
-                                                            <option value="19">19</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>                
-                                    <!--  회색 박스 -->
-                                    <div class="gray-text g-bg f100">
-                                        기본 입실시간 :  오후 3시 ~
-                                        <br class="space_m"> 퇴실시간 : 오전 10시</br>
-                                        * 객실예약 시 수용인원을 초과하는 경우
-                                        <br class="space_m"> 담당자(031-331-8138)에게 문의바랍니다.
-                                    </div>      
-
-
-                                    <div class="list item02">
-                                        <span>예배실 예약</span>
-                                        <div class="chapel-reservation-wrap">
-                                            <div class="room-item inner-flex">
-                                                <h4>김사무엘홀(800석)</h4>
-                                                <div class="chapel-room inner-flex">
-                                                    <div class="room-input inner-flex">
-                                                        <div class="left-input inner-flex">
-                                                            <div class="calendar-area">
-                                                                <label for="room01-startDt" class="calendar-wrap">
-                                                                    <input id="room01-startDt" type="date" required="">                                         
-                                                                    <img src="img/form/calendar.svg" alt="달력 아이콘">
-                                                                </label>
+                                                <div class="room-item inner-flex bord-n">
+                                                    <h4>별관 4인실(침대)</h4>
+                                                    <div class="room-personnel inner-flex">
+                                                        <div class="personnel-select select-wrap">
+                                                            <select id="room-select04" onchange="updateProgress()">
+                                                                <option value="" disabled="" selected="">선택</option>
+                                                                <option value="1">1</option>
+                                                                <option value="2">2</option>
+                                                                <option value="3">3</option>
+                                                                <option value="4">4</option>
+                                                                <option value="5">5</option>
+                                                                <option value="6">6</option>
+                                                                <option value="7">7</option>
+                                                                <option value="8">8</option>
+                                                                <option value="9">9</option>
+                                                                <option value="10">10</option>
+                                                                <option value="11">11</option>
+                                                                <option value="12">12</option>
+                                                                <option value="13">13</option>
+                                                                <option value="14">14</option>
+                                                                <option value="15">15</option>
+                                                                <option value="16">16</option>
+                                                                <option value="17">17</option>
+                                                                <option value="18">18</option>
+                                                                <option value="19">19</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="contour-line"></div>
+                                                        <div class="room-calendar inner-flex">
+                                                            <div class="room-input inner-flex">
+                                                                <div class="left-input inner-flex">
+                                                                    <div class="calendar-area">
+                                                                        <label for="lodgment04-startDt" class="calendar-wrap">
+                                                                            <input id="lodgment04-startDt" type="date" required="">                                         
+                                                                            <img src="img/form/calendar.svg" alt="달력 아이콘">
+                                                                        </label>
+                                                                    </div>
+                                                                </div> 
                                                             </div>
-                                                        </div> 
-                                                        <!--<div class="right-input inner-flex">
-                                                             <div>
-                                                                <select id="room01-select01">
-                                                                    <option value="" disabled="" selected="">00</option>
-                                                                    <option value="5">5</option>
-                                                                    <option value="4">4</option>
-                                                                    <option value="3">3</option>
-                                                                    <option value="2">2</option>
-                                                                    <option value="1">1</option>
-                                                                </select>
+                                                            <div class="wave">~</div>
+                                                            <div class="room-input inner-flex">
+                                                                <div class="left-input inner-flex">
+                                                                    <div class="calendar-area">
+                                                                        <label for="lodgment04-endDt" class="calendar-wrap">
+                                                                            <input id="lodgment04-endDt" type="date" required="">                                         
+                                                                            <img src="img/form/calendar.svg" alt="달력 아이콘">
+                                                                        </label>
+                                                                    </div>
+                                                                </div> 
+                                                                <div class="right-input inner-flex">
+                                                                </div>
                                                             </div>
-                                                            <div>:</div>
-                                                            <div>
-                                                                <select id="room01-select02">
-                                                                    <option value="" disabled="" selected="">00</option>
-                                                                    <option value="5">5</option>
-                                                                    <option value="4">4</option>
-                                                                    <option value="3">3</option>
-                                                                    <option value="2">2</option>
-                                                                    <option value="1">1</option>
-                                                                </select>
-                                                            </div> 
-                                                        </div> -->
-                                                    </div>
-                                                    <div class="wave">~</div>
-                                                    <div class="room-input inner-flex">
-                                                        <div class="left-input inner-flex">
-                                                            <div class="calendar-area">
-                                                                <label for="room01-endDt" class="calendar-wrap">
-                                                                    <input id="room01-endDt" type="date" required="">                                         
-                                                                    <img src="img/form/calendar.svg" alt="달력 아이콘">
-                                                                </label>
-                                                            </div>
-                                                        </div> 
-                                                        <div class="right-input inner-flex">
-                                                            <!-- <div>
-                                                                <select id="room01-select03" class="select-field" onchange="updateProgress()">
-                                                                    <option value="" disabled="" selected="">00</option>
-                                                                    <option value="5">5</option>
-                                                                    <option value="4">4</option>
-                                                                    <option value="3">3</option>
-                                                                    <option value="2">2</option>
-                                                                    <option value="1">1</option>
-                                                                </select>
-                                                            </div>
-                                                            <div>:</div>
-                                                            <div>
-                                                                <select id="room01-select04" class="select-field" onchange="updateProgress()">
-                                                                    <option value="" disabled="" selected="">00</option>
-                                                                    <option value="5">5</option>
-                                                                    <option value="4">4</option>
-                                                                    <option value="3">3</option>
-                                                                    <option value="2">2</option>
-                                                                    <option value="1">1</option>
-                                                                </select>
-                                                            </div> -->
                                                         </div>
                                                     </div>
                                                 </div>
+
                                             </div>
-
-                                            <div class="room-item inner-flex">
-                                                <h4>스크랜턴홀(50석)</h4>
-                                                <div class="chapel-room inner-flex">
-                                                    <div class="room-input inner-flex">
-                                                        <div class="left-input inner-flex">
-                                                            <div class="calendar-area">
-                                                                <label for="room02-startDt" class="calendar-wrap">
-                                                                    <input id="room02-startDt" type="date" required="">                                         
-                                                                    <img src="img/form/calendar.svg" alt="달력 아이콘">
-                                                                </label>
-                                                            </div>
-                                                        </div> 
-
-                                                    </div>
-                                                    <div class="wave">~</div>
-                                                    <div class="room-input inner-flex">
-                                                        <div class="left-input inner-flex">
-                                                            <div class="calendar-area">
-                                                                <label for="room02-endDt" class="calendar-wrap">
-                                                                    <input id="room02-endDt" type="date" required="">                                         
-                                                                    <img src="img/form/calendar.svg" alt="달력 아이콘">
-                                                                </label>
-                                                            </div>
-                                                        </div> 
-
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="room-item inner-flex">
-                                                <h4>아펜젤러홀(50석)</h4>
-                                                <div class="chapel-room inner-flex">
-                                                    <div class="room-input inner-flex">
-                                                        <div class="left-input inner-flex">
-                                                            <div class="calendar-area">
-                                                                <label for="room03-startDt" class="calendar-wrap">
-                                                                    <input id="room03-startDt" type="date" required="">                                         
-                                                                    <img src="img/form/calendar.svg" alt="달력 아이콘">
-                                                                </label>
-                                                            </div>
-                                                        </div> 
-
-                                                    </div>
-                                                    <div class="wave">~</div>
-                                                    <div class="room-input inner-flex">
-                                                        <div class="left-input inner-flex">
-                                                            <div class="calendar-area">
-                                                                <label for="room03-endDt" class="calendar-wrap">
-                                                                    <input id="room03-endDt" type="date" required="">                                         
-                                                                    <img src="img/form/calendar.svg" alt="달력 아이콘">
-                                                                </label>
-                                                            </div>
-                                                        </div> 
-
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="room-item inner-flex">
-                                                <h4>박모세홀(320석)</h4>
-                                                <div class="chapel-room inner-flex">
-                                                    <div class="room-input inner-flex">
-                                                        <div class="left-input inner-flex">
-                                                            <div class="calendar-area">
-                                                                <label for="room04-startDt" class="calendar-wrap">
-                                                                    <input id="room04-startDt" type="date" required="">                                         
-                                                                    <img src="img/form/calendar.svg" alt="달력 아이콘">
-                                                                </label>
-                                                            </div>
-                                                        </div> 
-
-                                                    </div>
-                                                    <div class="wave">~</div>
-                                                    <div class="room-input inner-flex">
-                                                        <div class="left-input inner-flex">
-                                                            <div class="calendar-area">
-                                                                <label for="room04-endDt" class="calendar-wrap">
-                                                                    <input id="room04-endDt" type="date" required="">                                         
-                                                                    <img src="img/form/calendar.svg" alt="달력 아이콘">
-                                                                </label>
-                                                            </div>
-                                                        </div> 
-
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="room-item inner-flex">
-                                                <h4>킬보른홀(온돌, 50석)</h4>
-                                                <div class="chapel-room inner-flex">
-                                                    <div class="room-input inner-flex">
-                                                        <div class="left-input inner-flex">
-                                                            <div class="calendar-area">
-                                                                <label for="room05-startDt" class="calendar-wrap">
-                                                                    <input id="room05-startDt" type="date" required="">                                         
-                                                                    <img src="img/form/calendar.svg" alt="달력 아이콘">
-                                                                </label>
-                                                            </div>
-                                                        </div> 
-
-                                                    </div>
-                                                    <div class="wave">~</div>
-                                                    <div class="room-input inner-flex">
-                                                        <div class="left-input inner-flex">
-                                                            <div class="calendar-area">
-                                                                <label for="room05-endDt" class="calendar-wrap">
-                                                                    <input id="room05-endDt" type="date" required="">                                         
-                                                                    <img src="img/form/calendar.svg" alt="달력 아이콘">
-                                                                </label>
-                                                            </div>
-                                                        </div> 
-
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="room-item inner-flex">
-                                                <h4>위더슨홀(온돌, 50석)</h4>
-                                                <div class="chapel-room inner-flex">
-                                                    <div class="room-input inner-flex">
-                                                        <div class="left-input inner-flex">
-                                                            <div class="calendar-area">
-                                                                <label for="room06-startDt" class="calendar-wrap">
-                                                                    <input id="room06-startDt" type="date" required="">                                         
-                                                                    <img src="img/form/calendar.svg" alt="달력 아이콘">
-                                                                </label>
-                                                            </div>
-                                                        </div> 
-
-                                                    </div>
-                                                    <div class="wave">~</div>
-                                                    <div class="room-input inner-flex">
-                                                        <div class="left-input inner-flex">
-                                                            <div class="calendar-area">
-                                                                <label for="room06-endDt" class="calendar-wrap">
-                                                                    <input id="room06-endDt" type="date" required="">                                         
-                                                                    <img src="img/form/calendar.svg" alt="달력 아이콘">
-                                                                </label>
-                                                            </div>
-                                                        </div> 
-
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="room-item inner-flex bord-n">
-                                                <h4>무어홀(온돌, 50석)</h4>
-                                                <div class="chapel-room inner-flex">
-                                                    <div class="room-input inner-flex">
-                                                        <div class="left-input inner-flex">
-                                                            <div class="calendar-area">
-                                                                <label for="room07-startDt" class="calendar-wrap">
-                                                                    <input id="room07-startDt" type="date" required="">                                         
-                                                                    <img src="img/form/calendar.svg" alt="달력 아이콘">
-                                                                </label>
-                                                            </div>
-                                                        </div> 
-                                                    </div>
-                                                    <div class="wave">~</div>
-                                                    <div class="room-input inner-flex">
-                                                        <div class="left-input inner-flex">
-                                                            <div class="calendar-area">
-                                                                <label for="room07-endDt" class="calendar-wrap">
-                                                                    <input id="room07-endDt" type="date" required="">                                         
-                                                                    <img src="img/form/calendar.svg" alt="달력 아이콘">
-                                                                </label>
-                                                            </div>
-                                                        </div> 
-
-                                                    </div>
-                                                </div>
-                                            </div>
-
-      
-
-                                        </div>
-                                        
+                                        </div>         
+                                        <!--  회색 박스 -->
+                                        <div class="gray-text g-bg f100">
+                                            기본 입실시간 :  오후 3시 ~
+                                            <br class="space_m"> 퇴실시간 : 오전 10시</br>
+                                            * 객실예약 시 수용인원을 초과하는 경우
+                                            <br class="space_m"> 담당자(031-331-8138)에게 문의바랍니다.
+                                        </div>      
                                     </div>
-                                    <!--  회색 박스 -->
-                                    <div class="gray-text g-bg f100">
-                                        이용가능시간 : 오전 9시 ~ 오후 10시</br>
-                                        * 객실예약 시 수용인원을 초과하는 경우
-                                        <br class="space_m"> 담당자(031-331-8138)에게 문의바랍니다.
+                                    <!-- 애배실예약 영역 -->
+                                    <div class="type-chapel">
+                                        <div class="list item02">
+                                            <span>예배실 예약</span>
+                                            <div class="chapel-reservation-wrap">
+                                                <div class="room-item inner-flex">
+                                                    <h4>김사무엘홀(800석)</h4>
+                                                    <div class="room-calendar inner-flex">
+                                                        <div class="room-input inner-flex">
+                                                            <div class="left-input inner-flex">
+                                                                <div class="calendar-area">
+                                                                    <label for="room01-startDt" class="calendar-wrap">
+                                                                        <input id="room01-startDt" type="date" required="">                                         
+                                                                        <img src="img/form/calendar.svg" alt="달력 아이콘">
+                                                                    </label>
+                                                                </div>
+                                                            </div> 
+                                                            <!--<div class="right-input inner-flex">
+                                                                <div>
+                                                                    <select id="room01-select01">
+                                                                        <option value="" disabled="" selected="">00</option>
+                                                                        <option value="5">5</option>
+                                                                        <option value="4">4</option>
+                                                                        <option value="3">3</option>
+                                                                        <option value="2">2</option>
+                                                                        <option value="1">1</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div>:</div>
+                                                                <div>
+                                                                    <select id="room01-select02">
+                                                                        <option value="" disabled="" selected="">00</option>
+                                                                        <option value="5">5</option>
+                                                                        <option value="4">4</option>
+                                                                        <option value="3">3</option>
+                                                                        <option value="2">2</option>
+                                                                        <option value="1">1</option>
+                                                                    </select>
+                                                                </div> 
+                                                            </div> -->
+                                                        </div>
+                                                        <div class="wave">~</div>
+                                                        <div class="room-input inner-flex">
+                                                            <div class="left-input inner-flex">
+                                                                <div class="calendar-area">
+                                                                    <label for="room01-endDt" class="calendar-wrap">
+                                                                        <input id="room01-endDt" type="date" required="">                                         
+                                                                        <img src="img/form/calendar.svg" alt="달력 아이콘">
+                                                                    </label>
+                                                                </div>
+                                                            </div> 
+                                                            <div class="right-input inner-flex">
+                                                                <!-- <div>
+                                                                    <select id="room01-select03" class="select-field" onchange="updateProgress()">
+                                                                        <option value="" disabled="" selected="">00</option>
+                                                                        <option value="5">5</option>
+                                                                        <option value="4">4</option>
+                                                                        <option value="3">3</option>
+                                                                        <option value="2">2</option>
+                                                                        <option value="1">1</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div>:</div>
+                                                                <div>
+                                                                    <select id="room01-select04" class="select-field" onchange="updateProgress()">
+                                                                        <option value="" disabled="" selected="">00</option>
+                                                                        <option value="5">5</option>
+                                                                        <option value="4">4</option>
+                                                                        <option value="3">3</option>
+                                                                        <option value="2">2</option>
+                                                                        <option value="1">1</option>
+                                                                    </select>
+                                                                </div> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="room-item inner-flex">
+                                                    <h4>스크랜턴홀(50석)</h4>
+                                                    <div class="room-calendar inner-flex">
+                                                        <div class="room-input inner-flex">
+                                                            <div class="left-input inner-flex">
+                                                                <div class="calendar-area">
+                                                                    <label for="room02-startDt" class="calendar-wrap">
+                                                                        <input id="room02-startDt" type="date" required="">                                         
+                                                                        <img src="img/form/calendar.svg" alt="달력 아이콘">
+                                                                    </label>
+                                                                </div>
+                                                            </div> 
+
+                                                        </div>
+                                                        <div class="wave">~</div>
+                                                        <div class="room-input inner-flex">
+                                                            <div class="left-input inner-flex">
+                                                                <div class="calendar-area">
+                                                                    <label for="room02-endDt" class="calendar-wrap">
+                                                                        <input id="room02-endDt" type="date" required="">                                         
+                                                                        <img src="img/form/calendar.svg" alt="달력 아이콘">
+                                                                    </label>
+                                                                </div>
+                                                            </div> 
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="room-item inner-flex">
+                                                    <h4>아펜젤러홀(50석)</h4>
+                                                    <div class="room-calendar inner-flex">
+                                                        <div class="room-input inner-flex">
+                                                            <div class="left-input inner-flex">
+                                                                <div class="calendar-area">
+                                                                    <label for="room03-startDt" class="calendar-wrap">
+                                                                        <input id="room03-startDt" type="date" required="">                                         
+                                                                        <img src="img/form/calendar.svg" alt="달력 아이콘">
+                                                                    </label>
+                                                                </div>
+                                                            </div> 
+
+                                                        </div>
+                                                        <div class="wave">~</div>
+                                                        <div class="room-input inner-flex">
+                                                            <div class="left-input inner-flex">
+                                                                <div class="calendar-area">
+                                                                    <label for="room03-endDt" class="calendar-wrap">
+                                                                        <input id="room03-endDt" type="date" required="">                                         
+                                                                        <img src="img/form/calendar.svg" alt="달력 아이콘">
+                                                                    </label>
+                                                                </div>
+                                                            </div> 
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="room-item inner-flex">
+                                                    <h4>박모세홀(320석)</h4>
+                                                    <div class="room-calendar inner-flex">
+                                                        <div class="room-input inner-flex">
+                                                            <div class="left-input inner-flex">
+                                                                <div class="calendar-area">
+                                                                    <label for="room04-startDt" class="calendar-wrap">
+                                                                        <input id="room04-startDt" type="date" required="">                                         
+                                                                        <img src="img/form/calendar.svg" alt="달력 아이콘">
+                                                                    </label>
+                                                                </div>
+                                                            </div> 
+
+                                                        </div>
+                                                        <div class="wave">~</div>
+                                                        <div class="room-input inner-flex">
+                                                            <div class="left-input inner-flex">
+                                                                <div class="calendar-area">
+                                                                    <label for="room04-endDt" class="calendar-wrap">
+                                                                        <input id="room04-endDt" type="date" required="">                                         
+                                                                        <img src="img/form/calendar.svg" alt="달력 아이콘">
+                                                                    </label>
+                                                                </div>
+                                                            </div> 
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="room-item inner-flex">
+                                                    <h4>킬보른홀(온돌, 50석)</h4>
+                                                    <div class="room-calendar inner-flex">
+                                                        <div class="room-input inner-flex">
+                                                            <div class="left-input inner-flex">
+                                                                <div class="calendar-area">
+                                                                    <label for="room05-startDt" class="calendar-wrap">
+                                                                        <input id="room05-startDt" type="date" required="">                                         
+                                                                        <img src="img/form/calendar.svg" alt="달력 아이콘">
+                                                                    </label>
+                                                                </div>
+                                                            </div> 
+
+                                                        </div>
+                                                        <div class="wave">~</div>
+                                                        <div class="room-input inner-flex">
+                                                            <div class="left-input inner-flex">
+                                                                <div class="calendar-area">
+                                                                    <label for="room05-endDt" class="calendar-wrap">
+                                                                        <input id="room05-endDt" type="date" required="">                                         
+                                                                        <img src="img/form/calendar.svg" alt="달력 아이콘">
+                                                                    </label>
+                                                                </div>
+                                                            </div> 
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="room-item inner-flex">
+                                                    <h4>위더슨홀(온돌, 50석)</h4>
+                                                    <div class="room-calendar inner-flex">
+                                                        <div class="room-input inner-flex">
+                                                            <div class="left-input inner-flex">
+                                                                <div class="calendar-area">
+                                                                    <label for="room06-startDt" class="calendar-wrap">
+                                                                        <input id="room06-startDt" type="date" required="">                                         
+                                                                        <img src="img/form/calendar.svg" alt="달력 아이콘">
+                                                                    </label>
+                                                                </div>
+                                                            </div> 
+
+                                                        </div>
+                                                        <div class="wave">~</div>
+                                                        <div class="room-input inner-flex">
+                                                            <div class="left-input inner-flex">
+                                                                <div class="calendar-area">
+                                                                    <label for="room06-endDt" class="calendar-wrap">
+                                                                        <input id="room06-endDt" type="date" required="">                                         
+                                                                        <img src="img/form/calendar.svg" alt="달력 아이콘">
+                                                                    </label>
+                                                                </div>
+                                                            </div> 
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="room-item inner-flex bord-n">
+                                                    <h4>무어홀(온돌, 50석)</h4>
+                                                    <div class="room-calendar inner-flex">
+                                                        <div class="room-input inner-flex">
+                                                            <div class="left-input inner-flex">
+                                                                <div class="calendar-area">
+                                                                    <label for="room07-startDt" class="calendar-wrap">
+                                                                        <input id="room07-startDt" type="date" required="">                                         
+                                                                        <img src="img/form/calendar.svg" alt="달력 아이콘">
+                                                                    </label>
+                                                                </div>
+                                                            </div> 
+                                                        </div>
+                                                        <div class="wave">~</div>
+                                                        <div class="room-input inner-flex">
+                                                            <div class="left-input inner-flex">
+                                                                <div class="calendar-area">
+                                                                    <label for="room07-endDt" class="calendar-wrap">
+                                                                        <input id="room07-endDt" type="date" required="">                                         
+                                                                        <img src="img/form/calendar.svg" alt="달력 아이콘">
+                                                                    </label>
+                                                                </div>
+                                                            </div> 
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+        
+
+                                            </div>
+                                            
+                                        </div>
+                                        <!--  회색 박스 -->
+                                        <div class="gray-text g-bg f100">
+                                            이용가능시간 : 오전 9시 ~ 오후 10시</br>
+                                            * 객실예약 시 수용인원을 초과하는 경우
+                                            <br class="space_m"> 담당자(031-331-8138)에게 문의바랍니다.
+                                        </div>
                                     </div>
 
                                 </div>
@@ -917,11 +1034,7 @@
 
     <script src="js/script.js"></script>
     <script>
-        document.querySelectorAll(".onlyNumb").forEach((input) => {
-            input.addEventListener("input", function () {
-                this.value = this.value.replace(/[^0-9]/g, ""); // 숫자 이외의 문자 제거
-            });
-        });
+        
     </script>
 </body>
 </html>
