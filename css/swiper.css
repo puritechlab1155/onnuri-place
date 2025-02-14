@@ -111,12 +111,12 @@
     font-size: 17px;
     cursor: pointer;
     text-align: center;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
 }
 #home .mainIndex .section01 .mob-swiper .swiper-border {
+    gap: 16px;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
+    justify-content: center;
 }
 #home .mainIndex .section01 .foor1-swiper .swiper-slide {
     width: calc(100% / 3) !important;
