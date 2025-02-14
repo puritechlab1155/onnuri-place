@@ -214,7 +214,7 @@
                                         <span>비밀번호</span>
                                         <div class="password-container">
                                             <label for="password">
-                                                <input id="password" type="password" placeholder="4자리를 입력해주세요." required maxlength="4" title="숫자 4자리를 입력해주세요.">
+                                                <input id="password" type="password" placeholder="4자리를 입력해주세요." maxlength="4" title="숫자 4자리를 입력해주세요.">
                                             </label>
                                             <b>(숫자만)</b>
                                         </div>
@@ -223,7 +223,7 @@
                                     <div class="list item03">
                                         <span>이름</span>
                                         <label for="name">
-                                            <input id="name" type="text" placeholder=" - " required>
+                                            <input class="essential" id="name" type="text" placeholder=" - " required>
                                         </label>
                                         <b>*필수</b>
                                     </div>
@@ -231,21 +231,21 @@
                                     <div class="list item04">
                                         <span>이메일</span>
                                         <label for="e-mail">
-                                            <input id="e-mail" type="email" placeholder=" - " required>
+                                            <input id="e-mail" type="email" placeholder=" - ">
                                         </label>                                    
                                     </div>
 
                                     <div class="list item05 bord-n bord-y">
                                         <span>일반전화</span>
                                         <label for="landline-phone">
-                                            <input id="landline-phone" type="tel" placeholder=" - " required>
+                                            <input id="landline-phone" type="tel" placeholder=" - ">
                                         </label>                                    
                                     </div>
 
                                     <div class="list item06 bord-n">
                                         <span>휴대전화</span>
                                         <label for="mobile-phone">
-                                            <input id="mobile-phone" type="tel" placeholder=" - " required maxlength="13">
+                                            <input class="essential" id="mobile-phone" type="tel" placeholder=" - "  maxlength="13" required>
                                         </label>    
                                         <b>*필수</b>
                                     </div>
@@ -256,7 +256,7 @@
                                     <div class="list item07 bord-b-y">
                                         <span class="y-bg">소속교회</span>
                                         <label for="affiliated-church">
-                                            <input id="affiliated-church" type="text" placeholder=" - " required>
+                                            <input class="essential" id="affiliated-church" type="text" placeholder=" - " required>
                                         </label>   
                                         <b>*필수</b>
                                     </div>
@@ -264,35 +264,35 @@
                                     <div class="list item08 bord-b-y">
                                         <span class="y-bg">목사님 성함</span>
                                         <label for="pastors-name">
-                                            <input id="pastors-name" type="text" placeholder=" - " required>
+                                            <input id="pastors-name" type="text" placeholder=" - ">
                                         </label>                                    
                                     </div>
 
                                     <div class="list item09 bord-b-y">
                                         <span class="y-bg">교회전화</span>
                                         <label for="church-phone">
-                                            <input id="church-phone" type="tel" placeholder=" - " required>
+                                            <input id="church-phone" type="tel" placeholder=" - ">
                                         </label>                                    
                                     </div>
 
                                     <div class="list item10 bord-b-y">
                                         <span class="y-bg">주소</span>
                                         <label for="address" class="w100">
-                                            <input id="address" type="text" placeholder=" - " required>
+                                            <input id="address" type="text" placeholder=" - ">
                                         </label><!-- // 노란색 영역 -->                           
                                     </div>
 
                                     <div class="list item11">
                                         <span>소속공동체</span>
                                         <label for="community-grop">
-                                            <input id="community-grop" type="text" placeholder=" - " required>
+                                            <input id="community-grop" type="text" placeholder=" - ">
                                         </label>                                    
                                     </div>
 
                                     <div class="list item12">
                                         <span>다락방장/<br class="space_m">순장이름</br></span>
                                         <label for="attic-manager">
-                                            <input id="attic-manager" type="text" placeholder=" - " required>
+                                            <input id="attic-manager" type="text" placeholder=" - ">
                                         </label>                                    
                                     </div>
                                     <!-- 개인예약시 숨김처리 되는 부분 -->
@@ -300,28 +300,28 @@
                                         <div class="list item13 f100">
                                             <span>행사명</span>
                                             <label for="event-name" class="w100">
-                                                <input id="event-name" type="text" placeholder=" - " required>
+                                                <input id="event-name" type="text" placeholder=" - ">
                                             </label>                                    
                                         </div>
 
                                         <div class="list item14">
                                             <span>단체명</span>
                                             <label for="grop-name">
-                                                <input id="grop-name" type="text" placeholder=" - " required>
+                                                <input id="grop-name" type="text" placeholder=" - ">
                                             </label>                                    
                                         </div>
                                         
                                         <div class="list item15">
                                             <span>대표자명</span>
                                             <label for="exponent-name">
-                                                <input id="exponent-name" type="text" placeholder=" - " required>
+                                                <input id="exponent-name" type="text" placeholder=" - ">
                                             </label>                                    
                                         </div>
 
                                         <div class="list item16 f100">
                                             <span>사무실전화</span>
                                             <label for="office-phone" class="w100">
-                                                <input id="office-phone" type="tel" placeholder=" - " required>
+                                                <input id="office-phone" type="tel" placeholder=" - ">
                                             </label>                                    
                                         </div>
 
@@ -361,11 +361,11 @@
                 <!--버튼 랩핑-->
                 <div class="finish-bnt-wrap">
                     <div class="check-box">
-                        <button class="checkBtn" onclick="location.href='https://puritechlab1155.github.io/onnuri-place/reservate2.html'">확인</button>
+                        <button class="checkBtn" id="submitBtn" onclick="location.href='https://puritechlab1155.github.io/onnuri-place/reservate3.html'" disabled>확인</button>
                     </div>
                     
                     <div class="delete-box">
-                        <button class="deleteBtn" type="button" onclick="location.href='https://puritechlab1155.github.io/onnuri-place/index.html'" >취소</button>
+                        <button class="deleteBtn" type="button">취소</button>
                     </div>
                 </div>
             </div>
@@ -696,8 +696,8 @@
     <script src="js/script.js"></script>
     <script>
         // -- 인풋 형식
-        // 전화번호 형식
         document.addEventListener("DOMContentLoaded", function () {
+            // 전화번호 형식
             function formatMobilePhone(input) {
                 let value = input.value.replace(/\D/g, ""); // 숫자만 남김
                 
@@ -747,29 +747,6 @@
                 });
             });
 
-            // -- 휴대전화 오류 검증
-            function validateMobTel() {
-                const mobPhonInput = document.getElementById('mobile-phone');
-                const mobPhon = mobPhonInput.value;
-
-                const mobPhonRegex = /^\d{3}-\d{4}-\d{4}$/;
-
-                if (!mobPhonRegex.test(mobPhon)) {
-                    mobPhonInput.setCustomValidity("올바른 전화번호 형식을 입력해주세요.");
-                } else {
-                    mobPhonInput.setCustomValidity("");
-                }
-
-                // 오류 메시지 강제 출력
-                mobPhonInput.reportValidity();
-            }
-
-            // input 이벤트에서 유효성 검사 실행
-            document.querySelector('#mobile-phone').addEventListener("input", function () {
-                validateMobTel();
-            });
-
-
             // -- 이메일 오류 검증
             function validateGmail() {
                 const emailInput = document.getElementById('e-mail');
@@ -790,7 +767,7 @@
             document.getElementById('e-mail').addEventListener('input', validateGmail);
         });
 
-        // 비밀번호 4자리 숫자만
+        // -- 비밀번호 4자리 숫자만
         document.getElementById("password").addEventListener("input", function (event) {
             this.value = this.value.replace(/[^0-9]/g, ""); // 숫자가 아니면 제거
         });
@@ -842,6 +819,50 @@
             if (searchBtn) {
                 searchBtn.addEventListener("click", onClickSearch);
             }
+        });
+
+        // -- 필수 인풋값 + 휴대전화 형식 버튼 활성화
+        document.addEventListener("DOMContentLoaded", function () {
+            const inputs = document.querySelectorAll(".essential");
+            const submitBtn = document.getElementById("submitBtn");
+            const mobPhonInput = document.getElementById("mobile-phone");
+            
+            function validateMobTel() {
+                const mobPhon = mobPhonInput.value;
+                const mobPhonRegex = /^\d{3}-\d{4}-\d{4}$/;
+                
+                if (!mobPhonRegex.test(mobPhon)) {
+                    mobPhonInput.setCustomValidity("올바른 전화번호 형식을 입력해주세요.");
+                } else {
+                    mobPhonInput.setCustomValidity("");
+                }
+                
+                mobPhonInput.reportValidity();
+            }
+
+            function checkInputs() {
+                let allFilled = true;
+                inputs.forEach(input => {
+                    if (!input.value.trim()) {
+                        allFilled = false;
+                    }
+                });
+                
+                if (!/^\d{3}-\d{4}-\d{4}$/.test(mobPhonInput.value)) {
+                    allFilled = false;
+                }
+                
+                submitBtn.disabled = !allFilled;
+            }
+
+            inputs.forEach(input => {
+                input.addEventListener("input", () => {
+                    validateMobTel();
+                    checkInputs();
+                });
+            });
+
+            checkInputs();
         });
 
 

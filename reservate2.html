@@ -699,7 +699,7 @@
                 <!--버튼 랩핑-->
                 <div class="finish-bnt-wrap">
                     <div class="check-box">
-                        <button class="checkBtn" onclick="location.href='https://puritechlab1155.github.io/onnuri-place/reservate3.html'">확인</button>
+                        <button class="checkBtn" id="submitBtn" onclick="location.href='https://puritechlab1155.github.io/onnuri-place/reservate3.html'">확인</button>
                     </div>
                     
                     <div class="delete-box">
@@ -1040,6 +1040,7 @@
             const typeParlor = document.querySelector(".type-parlor");
             const typeChapel = document.querySelector(".type-chapel");
             const checkBtn = document.querySelector(".checkBtn");
+            const deleteBtn = document.querySelector(".deleteBtn");
 
             function updateDisplay() {
                 if (integrated.checked) {
@@ -1097,6 +1098,11 @@
             // 초기 설정
             integrated.checked = true;
             updateDisplay();
+
+            // 취소 버튼
+            deleteBtn.addEventListener("click", function () {
+                window.history.back(); // 이전 페이지로 이동
+            });
 
         });
 
