@@ -202,13 +202,13 @@
                                         <div class="reservat-type-wrap">
                                             <div class="inner-flex reservat-type">
                                                 <label>
-                                                    <input id="" name="reservation-type" type="radio" required=""> 객실 및 예배실 예약
+                                                    <input id="Integrated" name="reservation-type" type="radio" required=""> 객실 및 예배실 예약
                                                 </label>
                                                 <label>
-                                                    <input id="" name="reservation-type" type="radio" required=""> 객실 예약
+                                                    <input id="parlor" name="reservation-type" type="radio" required=""> 객실 예약
                                                 </label>
                                                 <label>
-                                                    <input id="" name="reservation-type" type="radio" required=""> 예배실 예약
+                                                    <input id="chapel" name="reservation-type" type="radio" required=""> 예배실 예약
                                                 </label>
                                             </div>
                                         </div>
@@ -1034,7 +1034,35 @@
 
     <script src="js/script.js"></script>
     <script>
-        
+        document.addEventListener("DOMContentLoaded", function () {
+            const integrated = document.getElementById("Integrated");
+            const parlor = document.getElementById("parlor");
+            const chapel = document.getElementById("chapel");
+            const typeParlor = document.querySelector(".type-parlor");
+            const typeChapel = document.querySelector(".type-chapel");
+
+            function updateDisplay() {
+                if (integrated.checked) {
+                    typeParlor.style.display = "block";
+                    typeChapel.style.display = "block";
+                } else if (parlor.checked) {
+                    typeParlor.style.display = "block";
+                    typeChapel.style.display = "none";
+                } else if (chapel.checked) {
+                    typeParlor.style.display = "none";
+                    typeChapel.style.display = "block";
+                }
+            }
+
+            integrated.addEventListener("change", updateDisplay);
+            parlor.addEventListener("change", updateDisplay);
+            chapel.addEventListener("change", updateDisplay);
+
+            // 초기 설정
+            integrated.checked = true;
+            updateDisplay();
+        });
+
     </script>
 </body>
 </html>
