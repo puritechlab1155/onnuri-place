@@ -2039,19 +2039,30 @@ letter-spacing: -0.8px;
 #home .flow-detail {
 
 }
-#home .flow-detail .sub-title {
-  
+#home .flow-detail .title-area {
+  text-align: center;
+  margin: 40px 0;
 }
-#home .flow-detail .text {
-  white-space: nowrap;
+#home .flow-detail .title-area h3.title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: -0.36px;
   color: #222;
+}
+#home .flow-detail .cap-text {
+  display: block;
+  margin-top: 16px;
+  line-height: 140%;
   font-size: 18px;
   font-weight: 400;
-  line-height: 160%; /* 28.8px */
-  letter-spacing: -0.36px;
 }
-
-
+#home .flow-detail .title .mt_40 {
+  margin-top: 40px;
+}
+#home .flow-detail img.mb_40 {
+  margin-bottom: 40px;
+}
 
 /*resize*/
 @media (max-width: 1200px) {
