@@ -516,6 +516,7 @@
 #main.form .reservate03 .list .total-people input {
     width: 108px !important;
     background: #f2f2f2;
+    text-align: center;
 }
 #main.form .reservate03 .item06 input::placeholder {
     font-weight: 400;

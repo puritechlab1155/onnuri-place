@@ -797,49 +797,57 @@
 
     <script src="js/script.js"></script>
     <script>
-        // -- 인풋 숫자 입력 시 총 인원 표시
         document.addEventListener("DOMContentLoaded", function () {
-                const inputs = document.querySelectorAll(".onlyNumb");
-                const totalInput = document.getElementById("total-numb");
-                const checkBtn = document.querySelector(".checkBtn");
-                const deleteBtn = document.querySelector(".deleteBtn");
+            function updateTotal(day) {
+                const breakfast = document.getElementById(`breakfast${day}`).value || 0;
+                const lunch = document.getElementById(`lunch${day}`).value || 0;
+                const dinner = document.getElementById(`dinner${day}`).value || 0;
+        
+                const total = parseInt(breakfast) + parseInt(lunch) + parseInt(dinner);
+                document.getElementById(`total-numb${day}`).value = isNaN(total) ? "" : total;
+        
+                checkSubmitButton();
+            }
+        
+            function allowOnlyNumbers(event) {
+                event.target.value = event.target.value.replace(/[^0-9]/g, '');
+            }
+        
+            function checkSubmitButton() {
+                let isActive = false;
                 
-                function calculateTotal() {
-                    let total = 0;
-                    inputs.forEach(input => {
-                        if (input.id !== "total-numb") { // total-numb 필드는 합산에서 제외
-                            const value = parseInt(input.value, 10);
-                            if (!isNaN(value)) {
-                                total += value;
-                            }
-                        }
-                    });
-                    totalInput.value = total;
-                    checkBtn.disabled = total <= 0; // total 값이 0 이하이면 버튼 비활성화
+                for (let i = 1; i <= 5; i++) {
+                    const totalValue = document.getElementById(`total-numb0${i}`).value;
+                    if (totalValue && parseInt(totalValue) > 0) {
+                        isActive = true;
+                        break;
+                    }
                 }
-                
-                inputs.forEach(input => {
-                    if (input.id !== "total-numb") {
-                        input.addEventListener("input", function () {
-                            this.value = this.value.replace(/\D/g, ""); // 숫자만 입력 가능하게 설정
-                            calculateTotal();
-                        });
-                    }
-                });
-                
-                checkBtn.addEventListener("click", function (event) {
-                    if (totalInput.value <= 0) {
-                        event.preventDefault(); // 값이 0 이하일 경우 페이지 이동 방지
-                    }
-                });
-                
-                checkBtn.disabled = true; // 초기에는 비활성화 상태
-                
-                deleteBtn.addEventListener("click", function () {
-                    window.history.back(); // 이전 페이지로 이동
-                });
-            });
+        
+                document.getElementById("submitBtn").disabled = !isActive;
+            }
+        
+            for (let i = 1; i <= 5; i++) {
+                document.getElementById(`breakfast0${i}`).addEventListener("input", () => updateTotal(`0${i}`));
+                document.getElementById(`lunch0${i}`).addEventListener("input", () => updateTotal(`0${i}`));
+                document.getElementById(`dinner0${i}`).addEventListener("input", () => updateTotal(`0${i}`));
+        
+                document.getElementById(`breakfast0${i}`).addEventListener("input", allowOnlyNumbers);
+                document.getElementById(`lunch0${i}`).addEventListener("input", allowOnlyNumbers);
+                document.getElementById(`dinner0${i}`).addEventListener("input", allowOnlyNumbers);
+            }
+        
+            // 페이지 로드 시 버튼 비활성화
+            document.getElementById("submitBtn").disabled = true;
+        });
 
-    </script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // 취소 버튼 클릭 시 이전 페이지로 이동
+            document.querySelector(".deleteBtn").addEventListener("click", function () {
+                window.history.back();
+            });
+        });
+        </script>
+        
 </body>
 </html>
