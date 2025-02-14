@@ -562,7 +562,6 @@
 #home .notice-title .text {
   white-space: nowrap;
   color: #222;
-  font-family: "Pretendard-Regular";
   font-size: 18px;
   font-weight: 400;
   line-height: 160%; /* 28.8px */
@@ -576,8 +575,6 @@
 }
 #home .notice-date { 
   color: #777;
-  font-family: "Pretendard-Regular";
-  font-size: 18px;
   font-weight: 400;
   line-height: 160%; /* 28.8px */
   letter-spacing: -0.36px;
@@ -1106,7 +1103,7 @@
   min-height: 210px;
   text-align: center;
   color: #fff;
-  background: linear-gradient(rgba(0, 0, 0, 0.382), rgba(0, 0, 0, 0.382)),url(../img/about.jpg) no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.382), rgba(0, 0, 0, 0.382)),url(../img/home/mv_slide_img01.png) no-repeat center center;
   background-size: cover;
 }
 #home .noticeD .title-area .title span.notice-main-title {
@@ -1131,7 +1128,6 @@ letter-spacing: -0.8px;
 #home .noticeD .notice-content {
   margin-top: 26px;
 }
-
 /*공지 제목 영역*/
 #home .noticeD .notice-content .notice-title {
   width: 100%;
@@ -1153,37 +1149,34 @@ letter-spacing: -0.8px;
   font-weight: 700;
   margin-top: 6px;
 }
-#home .noticeD .notice-title .appliDate-wrap { /*신청일 박스 >> 훈련공지에만 나타남*/
+#home .noticeD .notice-title .writer-wrap {
   float: right;
   display: flex;
+  gap: 24px;
   align-items: center;
   text-align: center;
 }
-#home .noticeD .appliDate-wrap li {
-  padding: 10px 16px;
-  padding-right: 0;
-  font-weight: 400;
-}
-#home .noticeD .appliDate-wrap li.list-appliDate {
-  width: fit-content;
+#home .noticeD .notice-title .writer-wrap li {
   position: relative;
-  color: #111;
-  font-size: 18px;
 }
-#home .noticeD .appliDate-wrap li.list-appliDate::before {
+#home .noticeD .notice-title .writer-wrap .writer::after {
   content: '';
-  display: block;
   width: 1px;
-  height: 14px;
-  background: #D1D1D1;
+  height: 12px;
+  display: block;
+  background: #ccc;
   position: absolute;
-  right: -6px;
-  top: 13px
+  top: 50%;
+  right: -11px;
+  transform: translateY(-50%);
 }
-#home .noticeD .appliDate-wrap li.notice-appliDate {
-  flex: 1;
-  color: #777;
-  font-size: 16px;
+#home .noticeD .notice-title .mailto-text {
+  display: flex;
+  align-self: center;
+  gap: 4px;
+}
+#home .noticeD .notice-title .mailto-text .mailto {
+  font-size: 15px;
 }
 
 /*첨부파일 영역*/
@@ -1276,7 +1269,7 @@ letter-spacing: -0.8px;
   padding: 8px 16px;
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 10px 24px;
   float: right;
 }
 #home .noticeD .information-posit ul {
@@ -1307,9 +1300,11 @@ letter-spacing: -0.8px;
 
 /*공지 텍스트 영역-*/
 #home .noticeD .attachment-area .notice-text-wrap {
+  padding: 0 16px !important;
   padding-top: 32px;
 }
 #home .noticeD .notice-text-wrap p {
+  white-space: pre-line;
   line-height: 160%;
 }
 
@@ -1347,7 +1342,7 @@ letter-spacing: -0.8px;
 /* 세부내용 변경 페이지네이션 */
 #home .noticeD .notice-detail-change {
   overflow: hidden;
-  margin-top: 180px;
+  margin-top: 10%;
   margin-bottom: 72px;
   position: relative;
 }
@@ -1413,12 +1408,13 @@ letter-spacing: -0.8px;
       margin-top: 0;
   }
   #home .noticeD .information-posit ul {
-      font-size: 14px;
+      font-size: 14px !important;
   }
   #home .noticeD .information-posit {
-      display: block;
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
       float: left;
-      padding: 8px 0;
   }
 }
 @media (max-width: 548px) {
