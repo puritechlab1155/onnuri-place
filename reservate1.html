@@ -361,7 +361,7 @@
                 <!--버튼 랩핑-->
                 <div class="finish-bnt-wrap">
                     <div class="check-box">
-                        <button class="checkBtn" id="submitBtn" onclick="location.href='https://puritechlab1155.github.io/onnuri-place/reservate3.html'" disabled>확인</button>
+                        <button class="checkBtn" id="submitBtn" onclick="location.href='https://puritechlab1155.github.io/onnuri-place/reservate2.html'" disabled>확인</button>
                     </div>
                     
                     <div class="delete-box">
@@ -826,6 +826,9 @@
             const inputs = document.querySelectorAll(".essential");
             const submitBtn = document.getElementById("submitBtn");
             const mobPhonInput = document.getElementById("mobile-phone");
+            const deleteBtn = document.querySelector(".deleteBtn");
+
+            console.log(deleteBtn);
             
             function validateMobTel() {
                 const mobPhon = mobPhonInput.value;
@@ -860,6 +863,10 @@
                     validateMobTel();
                     checkInputs();
                 });
+            });
+            
+            deleteBtn.addEventListener("click", function() { // 뒤로가기 오류???????????????
+                window.history.back();
             });
 
             checkInputs();
