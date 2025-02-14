@@ -405,6 +405,11 @@
         flex: 0 0 140px;
     }
 }
+@media (max-width: 915px) {
+    #main.form #reservate span.br {
+        display: block;
+    }
+}
 @media (max-width: 767px) {
     #main.form #reservate .bord-y {
         border-bottom: 1px solid #ddd !important;
@@ -422,6 +427,11 @@
     }
     #main.form #reservate .list {
         flex: 0 0 100%;
+    }
+}
+@media (max-width: 654px) {
+    #main.form #reservate span.br_a {
+        display: block;
     }
 }
 @media (max-width: 482px) {

@@ -187,25 +187,26 @@
                 <ul class="reserv-step">
                     <li>1단계 <span class="space_pc"> - 예약자 정보</span></li>
                     <li>2단계 <span class="space_pc">- 시설예약</span></li>
-                    <li class="current_step">3단계 <span class="space_pc">- 이용계획 및 이용인원</span></li>
+                    <li class="current_step">3단계 <span class="space_pc">- 식사예약</span></li>
                 </ul>
 
                 <form id="reservate" class="reservate03">
                     <fieldset>
-                        <div class="reservate-step-title">이용계획 및 이용인원</div>
+                        <div class="reservate-step-title">식사예약</div>
                         <div class="input-wrap"> 
                             <div class="list_box">
                                 <!-- 목록 -->
                                 <div class="input-container bord-t">
                                     <div class="list item01 f100">
-                                        <span>사용기간</span>
+                                        <span>이용기간</span>
                                         <div class="calendar-area w100">
                                             <label for="start-date01" class="calendar-wrap">
                                                 <span style="display: none;">시작 기간</span>
                                                 <input class="input-field" id="start-date01" type="date" required>                                         
                                                 <img src="img/form/calendar.svg" alt="달력 아이콘">
                                             </label>
-                                            <div class="calendar-line"></div>
+                                            <!-- <div class="calendar-line"></div> -->
+                                            <div class="wave">~</div>
                                             <label for="finish-date01" class="calendar-wrap">
                                                 <span style="display: none;">끝나는 기간</span>
                                                 <input class="input-field" id="finish-date01" type="date" required>
@@ -215,7 +216,7 @@
                                         </div>
                                     </div>
                                     
-                                    <div class="list item02 f100">
+                                    <!-- <div class="list item02 f100">
                                         <span>숙박/식사</span>
                                         <div class="inner-flex">
                                             <label for="lodgment" class="">
@@ -227,7 +228,7 @@
                                                 <span>식</span>
                                             </label>
                                         </div>
-                                    </div>
+                                    </div> 
                                     
                                     <div class="list item03">
                                         <span>입실시간</span>
@@ -257,11 +258,6 @@
                                         </div>
                                     </div>
 
-                                    <!--  회색 박스 -->
-                                    <div class="gray-text g-bg f100">
-                                        기본 입실시간 :  오후 3시이후 |
-                                        <br class="space_m"> 퇴실시간 : 오전 11시 이전 (이외 시간은 협의필요)</br>
-                                    </div>
 
                                     <div class="list item05 bord-y">
                                         <span class="">숙박인원</span>
@@ -283,7 +279,7 @@
                                             </label>     
                                             <b class="point">*필수</b>
                                         </div>                          
-                                    </div>
+                                    </div> -->
 
                                     <div class="list item07 w100">
                                         <span>식사인원</span>
@@ -395,7 +391,10 @@
                                     <!--  회색 박스 -->
                                     <!-- <div class="gray-text g-bg f100">6박 이상의 식사는 고객센터로 문의 해주시기 바랍니다.</div> -->
                                     <div class="gray-text g-bg f100">
-                                        6박 이상의 식사는 담당자
+                                        * 식사시간(배식시간 기준) : <span class="br_a"></span>
+                                        아침 07:30 ~ 08:00 | <br class="space_m">점심 12:30 ~ 13:00 | <br class="space_m">저녁 17:30 ~ 18:00 <span class="br"></span>
+                                        (규정된 배식 시간을 지켜주시기 바랍니다.)<br>
+                                        * 6박 이상의 식사는 담당자
                                         <br class="space_m"> (031-331-8138)에게 문의바랍니다.</br>
                                     </div>
                                 </div>
