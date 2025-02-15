@@ -1933,6 +1933,24 @@
                     mapArea.style.display = "flex";
                 }
             });
+
+            //
+            document.querySelectorAll(".tab-cont").forEach(tab => {
+                const roomButtons = tab.querySelectorAll(".mob-swiper .swiper-slide");
+                const contentLists = tab.querySelectorAll(".content-list");
+
+                roomButtons.forEach((button, index) => {
+                    button.addEventListener("click", () => {
+                        // 모든 content-list 숨기기
+                        contentLists.forEach(content => content.style.display = "none");
+                        
+                        // 현재 선택된 content-list 보이기
+                        if (contentLists[index]) {
+                            contentLists[index].style.display = "block";
+                        }
+                    });
+                });
+            });
         });
 
     </script>
