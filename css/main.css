@@ -1538,6 +1538,7 @@ letter-spacing: -0.8px;
   color: #222;
   padding: 0 8px;
   border: 1px solid #E8E8E8;
+  border-radius: 0px;
 }
 #home .notice form.search input[type="text"]::placeholder {
   color: #999;
