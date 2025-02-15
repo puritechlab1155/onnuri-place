@@ -1893,6 +1893,27 @@ letter-spacing: -0.8px;
   width: 100%;
   text-align: center;
 }
+#home .notice .check-wrap div.notice-appliGo {
+  color: #222;
+}
+#home .notice .check-wrap .notice-list-link .mob-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-right: 24px;
+  position: relative;
+  display: none;
+} 
+#home .notice .check-wrap .notice-list-link .mob-title::after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 15px;
+  background: #777;
+  position: absolute;
+  top: 50%;
+  right: -13px;
+  transform: translateY(-50%);
+}
 /* 비밀번호 입력 팝업창 */
 #home .pop-wrap {
   width: 100%;
@@ -1971,7 +1992,58 @@ letter-spacing: -0.8px;
   color: #777;
   background-color: #ddd;
 }
-
+@media (max-width: 824px) {
+  #home .notice .check-wrap li.list-numb {
+    display: block !important;
+  }
+  #home .notice .check-wrap div.notice-numb {
+    display: block !important;
+  }
+}
+@media (max-width: 767px) {
+  #home .notice .check-wrap .notice-list-link {
+    display: block !important;
+    padding: 8px 0;
+  }
+  #home .notice .check-wrap div.notice-title {
+    display: block !important;
+  }
+  #home .notice .check-wrap .notice-list-link > div {
+    width: 100% !important;
+    float: none;
+    text-align: left;
+    margin: 0 !important;
+    padding: 4px 0 !important;
+  }
+  #home .notice .check-wrap .notice-title .text {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+  #home .notice .check-wrap .notice-date, 
+  #home .notice .check-wrap div.notice-appliGo {
+    font-size: 16px !important;
+  }
+  #home .notice .check-wrap .notice-list-link .mob-title {
+    display: block;
+    width: fit-content;
+    float: left;
+  }
+  #home .notice .check-wrap div.notice-numb {
+    width: fit-content !important;
+    float: right;
+    margin-top: 2px !important;
+    margin-left: 6px !important;
+  }
+  #home .notice .check-wrap div.notice-title {
+    width: fit-content !important;
+    float: left;
+  }
+  #home .notice .check-wrap div.notice-appliDate {
+    clear: both;
+  }
+}
 
 /* --- questions.html 스타일 --- */
 #home .question .questions-wrap {
