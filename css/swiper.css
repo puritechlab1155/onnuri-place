@@ -113,7 +113,7 @@
     text-align: center;
 }
 #home .mainIndex .section01 .mob-swiper .swiper-border {
-    gap: 16px;
+    gap: 1vw;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
     justify-content: center;
@@ -122,8 +122,11 @@
     width: calc(100% / 3) !important;
     color: #222;
 }
-#home .mainIndex .section01 .foor2-swiper .swiper-slide ,
-#home .mainIndex .section01 .foor3-swiper .swiper-slide ,
-#home .mainIndex .section01 .foor4-swiper .swiper-slide {
-    width: 20% !important;
+#home .mainIndex .section01 .mob-swiper .swiper-slide {
+    width: 25% !important;
+}
+@media (max-width: 382px) {
+    #home .mainIndex .section01 .mob-swiper .swiper-slide {
+        font-size: 15px;
+    }
 }
