@@ -1876,6 +1876,26 @@ letter-spacing: -0.8px;
   }
 }
 
+
+/* --- reservate-check.html 스타일  --- */ 
+#home .notice .check-wrap .notice-list-link {
+  padding: 14px 0;
+  border-bottom: 1px solid #ddd;
+}
+#home .notice .check-wrap li.list-appliDate {
+  flex: 0 0 186px;
+}
+#home .notice .check-wrap .notice-appliDate {
+  flex: 0 0 186px;
+}
+#home .notice .check-wrap .notice-title .text {
+  width: 100%;
+  text-align: center;
+}
+/* 비밀번호 입력 팝업창 */
+
+
+
 /* --- questions.html 스타일 --- */
 #home .question .questions-wrap {
   width: 100%;
