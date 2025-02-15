@@ -1497,7 +1497,7 @@ letter-spacing: -0.8px;
   transform: translateY(6px);
 }
 #home .notice .custom-dropdown .options {
-  width: 97px;
+  max-width: 97px;
   display: none; 
   position: absolute;
   top: 40px;
@@ -1529,7 +1529,7 @@ letter-spacing: -0.8px;
   align-items: center;
 }
 #home .notice form.search input[type="text"]{
-  max-width: 434px;
+  max-width: 80%;
   height: 40px;
   box-sizing: border-box;
   float: left;
@@ -1786,8 +1786,11 @@ letter-spacing: -0.8px;
   }
   #home .notice .section01 .notice-list-link {
       display: block;
-      padding: 24px 0;
+      overflow: hidden;
+      padding: 0;
+      padding-bottom: 10px;
       position: relative;
+      border-bottom: 1px solid #ddd;
   }
   #home .notice .section01 .notice-title .text {
       margin: 6px 0;
