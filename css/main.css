@@ -1470,7 +1470,7 @@ letter-spacing: -0.8px;
   justify-content: center;
 }
 /*검색 카테고리*/
-#home .notice form.search_categoty label {
+#home .notice .search_categoty label {
   padding: 10px 0;
   float: left;
   margin-right: 8px;
@@ -1528,7 +1528,10 @@ letter-spacing: -0.8px;
   justify-content: end;
   align-items: center;
 }
-#home .notice form.search input[type="text"]{
+#home .notice .search_categoty {
+  display: flex;
+}
+#home .notice .search input[type="text"]{
   max-width: 80%;
   height: 40px;
   box-sizing: border-box;
@@ -1540,20 +1543,20 @@ letter-spacing: -0.8px;
   border: 1px solid #E8E8E8;
   border-radius: 0px;
 }
-#home .notice form.search input[type="text"]::placeholder {
+#home .notice .search input[type="text"]::placeholder {
   color: #999;
   font-weight: 400;
 }
-#home .notice form.search input[type="text"]:focus {
+#home .notice .search input[type="text"]:focus {
   outline: none;
 } 
-#home .notice form.search button.searchBtn {
+#home .notice .search button.searchBtn {
   width: 40px;
   height: 40px;
   text-align: center;
   background: #144974;
 }
-#home .notice form.search button.searchBtn > img {
+#home .notice .search button.searchBtn > img {
   vertical-align: -4px;
 }
 
@@ -1837,7 +1840,7 @@ letter-spacing: -0.8px;
   #home .notice li.total-text {
     border-bottom: 2px solid #8b8b8b;
   }
-  #home .notice form.search input[type="text"] {
+  #home .notice .search input[type="text"] {
     font-size: 15px !important;
     padding: 0 5px !important;
   }
@@ -1852,7 +1855,7 @@ letter-spacing: -0.8px;
       margin: 0px;
       color: #222 !important;
   }
-  #home .notice form.search_categoty label {
+  #home .notice .search_categoty label {
       display: none;
   }
 }

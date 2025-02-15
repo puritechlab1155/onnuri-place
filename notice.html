@@ -209,7 +209,7 @@
                                     <div class="search_inner">
                                         <!--검색 카테고리-->
                                         <form class="search_categoty">
-                                            <label>검색 카테고리</label>
+                                            <label for="searchBox">검색 카테고리</label>
                                             <div class="custom-dropdown">
                                                 <div class="selected">
                                                     전체
@@ -221,15 +221,15 @@
                                                     <div class="option" data-value="notice">글쓴이</div>
                                                 </div>
                                             </div>
+                                            <!--검색창-->
+                                            <div class="search">
+                                                <input id="searchBox" type="text" placeholder="검색어 입력">
+                                                <button type="button" class="searchBtn">
+                                                    <img src="img/notice/search-icon.png" alt="검색 아이콘">
+                                                </button>
+                                            </div>
                                         </form>
-                                        <!--검색창-->
-                                        <form class="search">
-                                            <label style="display: none;">검색</label>
-                                            <input type="text" placeholder="검색어 입력">
-                                            <button type="button" class="searchBtn">
-                                                <img src="img/notice/search-icon.png" alt="검색 아이콘">
-                                            </button>
-                                        </form>
+                                        
                                     </div>
                                 </div>
                                 <!-- 게시글 토탈 -->
