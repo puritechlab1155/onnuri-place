@@ -1893,7 +1893,82 @@ letter-spacing: -0.8px;
   text-align: center;
 }
 /* 비밀번호 입력 팝업창 */
-
+#home .pop-wrap {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #00000062;
+}
+#home .pop-container {
+  width: 100%;
+  padding: 0 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+}
+#home .pop-inner {
+  overflow: hidden;
+  max-width: 500px;
+  margin: 0 auto;
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: #fafafa;
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px #00000044;
+}
+#home .pop-content-wrap {
+  padding: 0 20px;
+}
+#home .pop-title {
+  line-height: 150%;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: #222;
+}
+#home .pop-content {
+  margin-top: 40px;
+  text-align: center;
+}
+#home .pop-content input {
+  padding: 10px;
+  font-size: 18px;
+  border: 2px solid #bdbfc2;
+  border-radius: 6px;
+  text-align: center;
+}
+#home .pop-content input::placeholder {
+  font-size: 15px;
+}
+#home .popup-button-wrap {
+  margin-top: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#home .popup-button-wrap .btn-item-container {
+  flex: 0 0 50%;
+}
+#home .popup-button-wrap .btn-item {
+  width: 100%;
+  padding: 16px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+}
+#home .popup-button-wrap .finishBtn {
+  color: #fff;
+  background-color: #144974;
+}
+#home .popup-button-wrap .closeBtn {
+  color: #777;
+  background-color: #ddd;
+}
 
 
 /* --- questions.html 스타일 --- */
