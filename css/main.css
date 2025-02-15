@@ -715,18 +715,18 @@
     font-weight: 600;
     position: absolute;
     z-index: 10;
-
   }
   #home .mainIndex .reservation-button-box {
     position: absolute;
     right: 16px;
     top: 8px;
-    /* transform: translateY(-50%); */
   }
   #home .mainIndex .reservation-button {
     font-size: 14px;
   }
-
+  #home .mainIndex .section01 .tab-cont-list .gird-area {
+    display: none !important;
+  }
   /*section02*/
   #home .mainIndex .section02 .content {
     flex-direction: column;
