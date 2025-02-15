@@ -290,7 +290,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 27px;
+  gap: 1vw;
   margin: 46px 0 40px;
 }
 #home .mainIndex .section01 .tab {
@@ -720,8 +720,11 @@
   #home .mainIndex .reservation-button-box {
     position: absolute;
     right: 16px;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 8px;
+    /* transform: translateY(-50%); */
+  }
+  #home .mainIndex .reservation-button {
+    font-size: 14px;
   }
 
   /*section02*/
@@ -742,6 +745,9 @@
   }
   #home .mainIndex .main_visual .text-box .text-box-inner .text p {
     font-size: 36px;
+  }
+  #home .mainIndex .main_visual .text-box .text-box-inner .slide-link .button-sub-text {
+    font-size: 13px;
   }
   /*section title */
   #home .mainIndex .title-area .title img {
