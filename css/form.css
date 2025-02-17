@@ -900,6 +900,9 @@
     #main.form .reservate-detail .room-item .inner-flex {
         align-items: center !important;
     }
+    #main.form .reservate-detail .list > span {
+        border-bottom: none;
+    }
 }
 @media (max-width: 482px) {
     #main.form .reservate-detail .room-item .inner-flex span {
