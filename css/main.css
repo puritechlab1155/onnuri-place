@@ -2293,10 +2293,10 @@ letter-spacing: -0.8px;
   width: 100%;
   height: auto;
   border-bottom: 2px solid #ddd;
-  max-height: 364px;
+  max-height: 364px !important;
 }
 #flow-detail .flow-contents img.mh {
-  max-height: 364px;
+  max-height: 364px !important;
 }
 #flow-detail .facility-card h3 {
   font-size: 20px;
