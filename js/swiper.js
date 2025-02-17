@@ -6,8 +6,16 @@ var mvSwiper = new Swiper(".mv-swiper", {
     },
     pagination: {
         el: ".main_visual .mv-swiper-pagination",
+        clickable: true, // 페이지네이션 클릭 가능하게 설정
     },
+    loop: true, // 슬라이드가 무한 순환
+    autoplay: {
+        delay: 2000, // 슬라이드가 자동으로 전환되기까지의 시간 간격 (2초)
+        disableOnInteraction: false, // 사용자가 상호작용 후에도 자동 재생 유지
+    },
+    speed: 500, // 슬라이드가 자동으로 전환되는 속도 (빠르게)
 });
+
 
 /* section01 */
 var s1swiper = new Swiper(".s1-swiper", {

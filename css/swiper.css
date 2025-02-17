@@ -3,7 +3,9 @@
     width: 100%;
     height: 800px;
 }
-
+.main_visual .swiper-wrapper {
+    /* transition-timing-function: linear; */
+}
 .main_visual .swiper-slide {
     display: flex;
     justify-content: center;
