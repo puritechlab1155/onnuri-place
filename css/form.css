@@ -844,7 +844,12 @@
         flex-wrap: wrap !important;
     }
     #main.form #reservate b {
+        min-width: 50px;
         text-align: center;
+        font-size: 13px;
+    }
+    #main.form #reservate .list label {
+        margin-right: 0px;
     }
 }
 @media (max-width: 482px) {
@@ -870,12 +875,7 @@
         gap: 0 !important;
     }
 }
-@media (max-width: 450px) {
-    #main.form #reservate b {
-        flex: 0 0 1;
-        display: block;
-    }
-}
+
 @media (max-width: 420px) {
     #main.form .reservate02 .reservat-type {
         flex-direction: column;
