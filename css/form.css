@@ -870,6 +870,12 @@
         gap: 0 !important;
     }
 }
+@media (max-width: 450px) {
+    #main.form #reservate b {
+        flex: 0 0 1;
+        display: block;
+    }
+}
 @media (max-width: 420px) {
     #main.form .reservate02 .reservat-type {
         flex-direction: column;
@@ -911,7 +917,7 @@
     #main.form .reservate-detail .room-item .inner-flex span {
         font-size: 15px;
     } 
-    #main.form #reservate .list > span {
+    #main.form .reservate-detail .list > span {
         font-size: 20px !important;
     }
 }
