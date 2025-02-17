@@ -876,3 +876,36 @@
         align-items: start !important;
     }
 }
+
+/* reservate-detail.html */
+#main.form .reservate-detail .list {
+    flex-direction: column !important;
+}
+#main.form .reservate-detail .list > span {
+    flex: auto !important;
+    border-bottom: 1px solid #ddd;
+    font-size: 24px !important;
+}
+#main.form .reservate-detail {
+    margin-top: 80px;
+    margin-bottom: 120px;
+}
+#main.form .reservate-detail .room-item .inner-flex {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 16px;
+    align-items: start !important;
+}
+@media (max-width: 662px) {
+    #main.form .reservate-detail .room-item .inner-flex {
+        align-items: center !important;
+    }
+}
+@media (max-width: 482px) {
+    #main.form .reservate-detail .room-item .inner-flex span {
+        font-size: 15px;
+    } 
+    #main.form #reservate .list > span {
+        font-size: 20px !important;
+    }
+}
