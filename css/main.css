@@ -402,6 +402,12 @@
   background: #F1F3F5;
   border-radius: 3px;
 }
+#home .mainIndex .section01 .gird-area .room-simple-informate li:last-child {
+  flex: 1;
+  display: flex;
+  min-width: fit-content;
+  justify-content: flex-end;
+}
 #home .mainIndex .section01 .content-text .room-simple-informate > ul {
   margin-top: 10px;
   display: flex;
@@ -467,7 +473,7 @@
   padding: 20px 16px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 0.6vw;
   box-sizing: border-box;
   border: 1px solid #ddd;
 }
@@ -481,7 +487,6 @@
 #home .mainIndex .grid-content-list .room-simple-informate .reservate-count ,
 #home .mainIndex .grid-content-list .room-simple-informate .application-count {
   background: #5eb7ff77 !important;
-  margin-left: -120px;
   padding: 6px 10px;
 }
 
@@ -582,6 +587,7 @@
 }
 /* 팝업창 */
 #home .mainIndex .pop-container {
+  width: fit-content;
   z-index: 1000;
   position: fixed;
   top: 120px;
@@ -1142,7 +1148,7 @@
   padding-top: 80px;
 }
 #home .noticeD .notice-detail {
-  padding-top: 40px;
+  /* padding-top: 40px; */
   background: none;
 }
 #home .noticeD .notice-detail .inner {
@@ -1552,11 +1558,11 @@ letter-spacing: -0.8px;
   transform: translateY(6px);
 }
 #home .notice .custom-dropdown .options {
-  max-width: 97px;
+  width: 100%;
   display: none; 
   position: absolute;
   top: 40px;
-  left: -1px;
+  left: 0;
   z-index: 1000; 
   border: 1px solid #E8E8E8;
   border-top: none;
@@ -1830,7 +1836,7 @@ letter-spacing: -0.8px;
   #home .notice .content ul.table-title {
       display: none;
   }
-  #home .notice .custom-dropdown, #home .notice .custom-dropdown .options {
+  #home .notice .custom-dropdown {
     width: 70px !important;
   }
   #home .notice div.notice-division {

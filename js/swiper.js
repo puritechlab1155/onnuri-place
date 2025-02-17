@@ -39,7 +39,77 @@ var s3swiper = new Swiper(".s3-swiper", {
     },
 });
 
+var s3swiper = new Swiper(".s4-swiper", {
+    navigation: {
+        nextEl: ".swiper04-next",
+        prevEl: ".swiper04-pre",
+    },
+});
+
+var s3swiper = new Swiper(".s5-swiper", {
+    navigation: {
+        nextEl: ".swiper02-next",
+        prevEl: ".swiper02-pre",
+    },
+});
+
+var s3swiper = new Swiper(".s6-swiper", {
+    navigation: {
+        nextEl: ".swiper03-next",
+        prevEl: ".swiper03-pre",
+    },
+});
+
+var s3swiper = new Swiper(".s7-swiper", {
+    navigation: {
+        nextEl: ".swiper02-next",
+        prevEl: ".swiper02-pre",
+    },
+});
+
+var s3swiper = new Swiper(".s8-swiper", {
+    navigation: {
+        nextEl: ".swiper03-next",
+        prevEl: ".swiper03-pre",
+    },
+});
+
 var g1swiper = new Swiper(".g1-swiper", {
+    navigation: {
+        nextEl: ".swiper05-next",
+        prevEl: ".swiper05-pre",
+    },
+});
+
+var g1swiper = new Swiper(".g2-swiper", {
+    navigation: {
+        nextEl: ".swiper01-next",
+        prevEl: ".swiper01-pre",
+    },
+});
+
+var g1swiper = new Swiper(".g3-swiper", {
+    navigation: {
+        nextEl: ".swiper01-next",
+        prevEl: ".swiper01-pre",
+    },
+});
+
+var g1swiper = new Swiper(".g4-swiper", {
+    navigation: {
+        nextEl: ".swiper01-next",
+        prevEl: ".swiper01-pre",
+    },
+});
+
+var g1swiper = new Swiper(".g5-swiper", {
+    navigation: {
+        nextEl: ".swiper01-next",
+        prevEl: ".swiper01-pre",
+    },
+});
+
+var g1swiper = new Swiper(".g6-swiper", {
     navigation: {
         nextEl: ".swiper01-next",
         prevEl: ".swiper01-pre",
