@@ -2288,18 +2288,15 @@ letter-spacing: -0.8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 48%;
   overflow: hidden;
-  /* text-align: center; */
 }
-/* #flow-detail .facility-card { 
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-} */
 #flow-detail .facility-card img {
   width: 100%;
   height: auto;
   border-bottom: 2px solid #ddd;
+  max-height: 364px;
+}
+#flow-detail .flow-contents img.mh {
+  max-height: 364px;
 }
 #flow-detail .facility-card h3 {
   font-size: 20px;
