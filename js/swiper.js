@@ -10,7 +10,7 @@ var mvSwiper = new Swiper(".mv-swiper", {
     },
     loop: true, // 슬라이드가 무한 순환
     autoplay: {
-        delay: 2000, // 슬라이드가 자동으로 전환되기까지의 시간 간격 (2초)
+        delay: 1500, // 슬라이드가 자동으로 전환되기까지의 시간 간격 (2초)
         disableOnInteraction: false, // 사용자가 상호작용 후에도 자동 재생 유지
     },
     speed: 500, // 슬라이드가 자동으로 전환되는 속도 (빠르게)
