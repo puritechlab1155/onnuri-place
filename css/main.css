@@ -580,6 +580,7 @@
 #home .mainIndex .section02 .content .more-button-box {
   margin-top: 64px;
 }
+/* 팝업창 */
 #home .mainIndex .pop-container {
   width: fit-content;
   z-index: 1000;
@@ -589,6 +590,7 @@
   transform: none !important;
 }
 #home .mainIndex .pop-inner {
+  min-width: 300px;
   height: auto;
   margin: 0;
   border-radius: 0;
@@ -600,6 +602,9 @@
   white-space: pre-line;
   margin-top: 20px;
   color: #333;
+}
+#home .mainIndex .pop-content-wrap .space_mob {
+  display: none;
 }
 /*resize*/
 @media (max-width: 1014px) {
@@ -754,6 +759,21 @@
   #home .mainIndex .section02 .content .list-wrap {
     width: 100%;
   }
+  /* 팝업창 */
+  #home .mainIndex .pop-container {
+    width: 100%;
+    max-width: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+  }
+  #home .mainIndex .pop-title {
+    margin-top: 30px;
+    font-size: 18px;
+  }
+  #home .mainIndex .popup-button-wrap .btn-item {
+    font-size: 15px !important;
+  }
 }
 @media (max-width: 524px) { /*모바일 폰트 사이즈로 줄기*/
   /*main_visual*/
@@ -779,6 +799,14 @@
   }
   #home .mainIndex .title-area .title-text {
     font-size: 16px;
+  }
+  /* 팝업창 */
+  #home .mainIndex .pop-content {
+    font-size: 14px !important;
+    white-space: inherit !important;
+  }
+  #home .mainIndex .pop-content .space_mob {
+    display: block !important;
   }
 }
 
