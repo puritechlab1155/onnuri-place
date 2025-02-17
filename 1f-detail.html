@@ -14,18 +14,45 @@
     <link rel="stylesheet" href="css/main.css">
 
     <style>
-            .section-title {
+    #flow-detail .mt_40 { margin-top: 40px; }
+    /* #flow-detail .mb_40 { margin-bottom: 40px; } */
+    #flow-detail .w_100 { width: 100% !important; }
+    #flow-detail .facility-card p span.web { display: block; }
+    #flow-detail .section-title {
       font-size: 24px;
       margin-bottom: 20px;
       color: #222;
     }
-    .facility {
+    #flow-detail .facility {
       display: flex;
+      justify-content: space-between;
       flex-wrap: wrap;
-      gap: 20px;
       margin-bottom: 40px;
+      /* width: 48%; */
     }
-    .facility-card {
+    #flow-detail .facility_border { /* 이미지 한장 */
+        border-radius: 10px;
+        width: 48%;
+    }
+    #flow-detail .flow-contents img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    #flow-detail .card-flex-containner, #flow-detail .facility .w_100>div.img-flex { 
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    #flow-detail .facility-box {
+        width: 48%;
+    }
+    #flow-detail .facility-box .section-title {
+
+    }
+    #flow-detail .facility-box .facility {
+
+    }
+    #flow-detail .facility-card { 
       background-color: white;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -33,39 +60,70 @@
       overflow: hidden;
       /* text-align: center; */
     }
-    .facility-card img {
+    /* #flow-detail .facility-card { 
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+    } */
+    #flow-detail .facility-card img {
       width: 100%;
       height: auto;
       border-bottom: 2px solid #ddd;
     }
-    .facility-card h3 {
+    #flow-detail .facility-card h3 {
       font-size: 20px;
       margin: 10px 20px;
     }
-    .facility-card p {
+    #flow-detail .facility-card p {
         color: #222;
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 400;
         line-height: 160%; /* 28.8px */
         letter-spacing: -0.36px;
         margin: 10px 20px;
     }
-    .testimonial {
+    #flow-detail .testimonial {
       background-color: #fff;
       padding: 20px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       border-radius: 10px;
       margin-bottom: 40px;
     }
-    .testimonial h3 {
+    #flow-detail .testimonial h3 {
       font-size: 22px;
       margin-bottom: 10px;
     }
-    .testimonial p {
+    #flow-detail .testimonial p {
       font-size: 18px;
       color: #555;
     }
+    @media (max-width: 1200px) {
+        #flow-detail .facility-card p {
+            font-size: 16px;
+            line-height: 160%;
+            margin: 10px 20px;
+        } 
+    }
+    @media (max-width: 980px) {
+        #flow-detail .facility-card p span.web { display: inline; }
+    }
+    @media (max-width: 768px) {
+        /* #flow-detail .facility-card p span.web { display: inline-block; } */
+        #flow-detail h2{
+            font-size: 20px !important;
+        }
+        #flow-detail .facility-card h3 {
+            font-size: 18px;
+        } 
+        #flow-detail .facility-box, #flow-detail .facility_border, #flow-detail .facility-card {
+            width: 100% !important;
+        }
+    }
+    @media (max-width: 500px) {
+        #flow-detail span.mob { display: block !important; }
 
+    }
     </style>
 </head>
 <body>
@@ -228,7 +286,7 @@
             </div>
         </header>
 
-        <main id="main" class="flow-detail notice">
+        <main id="flow-detail" class="flow-detail notice">
             <div class= "inner">
                 <!--channel-->
                 <ul class="channel">
@@ -240,134 +298,150 @@
                         <a href="https://puritechlab1155.github.io/onnuri-place/1f-detail.html">1층</a>
                     </li>
                 </ul>
-                    <!--공지 타이틀-->
-                    <div class="title-area">
-                        <h3 class="title">
-                            <span class="notice-main-title">1층 시설 안내</span> 
-                            <span class="cap-text mt_40">*Acts29 비전 빌리지는 성도님들의 기도와 헌금으로 유지 운영되는 시설이오니 이용시 절약 및 안전에 주의 해주시기 바랍니다.</span>
-                            <span class="cap-text">*시설을 사용하실때 예배와 기도하는 마음으로 정숙과 질서를 유지해 주시기 바랍니다.</span>
-                        </h3>
-                    </div>
+                <!--공지 타이틀-->
+                <div class="title-area">
+                    <h3 class="title">
+                        <span class="notice-main-title">1층 시설 안내</span> 
+                        <span class="cap-text mt_40">*Acts29 비전 빌리지는 성도님들의<span class="mob"></span> 기도와 헌금으로 유지 운영되는 시설이오니<span class="mob"></span> 이용시 절약 및 안전에 주의 해주시기 바랍니다.</span>
+                        <span class="cap-text">*시설을 사용하실때 예배와 기도하는 마음으로<span class="mob"></span> 정숙과 질서를 유지해 주시기 바랍니다.</span>
+                    </h3>
+                </div>
 
-                <div class="flow-contents">
-                    <!-- 본관 -->
+                <div class="flow-contents mt_60">
+                    <!-- 시설현황도 -->
                     <h2 class="section-title">시설현황도</h2>
-                    <img class="mb_40" src="img/flow/flow-detail1.jpg" alt="시설현황도">
-<!-- 
-                    <div class="facility">
-                        <div class="facility-card">
-                            <img src="img/home/room-slide-ex.jpg" alt="시설현황도">
-                            <h3>본관</h3>
-                        </div>
-
-                        <div class="facility-card">
-                            <img src="img/home/room-slide-ex.jpg" alt="본관2">
-                            <h3>본관</h3>
-                        </div>
-                    </div> -->
-
-
-
+                    <div class="facility_border w_100">
+                        <img class="mb_40" src="img/flow/flow-detail1.jpg" alt="시설현황도">
+                    </div>
                     <!-- 본관 -->
                     <h2 class="section-title">본관 전경</h2>
                     <div class="facility">
-                        <div class="facility-card">
-                            <img src="img/home/room-slide-ex.jpg" alt="본관1">
-                            <h3>본관</h3>
+                        <div class="facility_border">
+                            <img src="img/flow/000" alt="시설현황도">
                         </div>
-
-                        <div class="facility-card">
-                            <img src="img/home/room-slide-ex.jpg" alt="본관2">
-                            <h3>본관</h3>
+                        <div class="facility_border">
+                            <img src="img/flow/000" alt="시설현황도">
                         </div>
                     </div>
                     <!-- 로비&복도 -->
                     <h2 class="section-title">로비&복도</h2>
                     <div class="facility">
                         <div class="facility-card">
-                            <img src="img/home/room-slide-ex.jpg" alt="로비">
+                            <img src="img/flow/000" alt="로비">
                             <h3>로비</h3>
                         </div>
                         <div class="facility-card">
-                            <img src="img/home/room-slide-ex.jpg" alt="복도">
+                            <img src="img/flow/000" alt="복도">
                             <h3>복도</h3>
                         </div>
                     </div>
-                    <!-- 식당 -->
-                    <h2 class="section-title">식당</h2>
-                    <div class="facility">
-                        <div class="facility-card">
-                            <img src="img/home/room-slide-ex.jpg" alt="오병이어식당">
-                            <h3>오병이어홀</h3>
-                            <p>양면이 유리로 되어있어 자연 채광과 주변 자연을 보며 보다 쾌적한 환경속에서 식사할 수 있도록 준비되어 있습니다.</p>
-                            <p>수용인원 : 200명</p>
-                            <p>이용기간 : 오전 7시 30분, 오후 12시 30분, 오후 5시 30분</p>
+                    <!-- 식당&기도실 -->
+                    <div class="card-flex-containner">
+                        <!-- 식당 -->
+                        <div class="facility-box">
+                            <h2 class="section-title">식당</h2>
+
+                            <div class="facility">
+                                <div class="facility-card w_100">
+                                    <img src="img/home/room/1nd-obyeongio01.jpg" alt="오병이어식당">
+                                    <h3>오병이어홀</h3>
+                                    <p>양면이 유리로 되어있어 자연 채광과 주변 <span class="mob"></span>자연을 보며 보다 쾌적한 <span class="web"></span> 환경속에서 식사할 수 <span class="mob"></span>있도록 준비되어 있습니다.</p>
+                                    <p>수용인원 : 200명</p>
+                                    <p>이용기간 : 오전 7시 30분, 오후 12시 30분, 오후 5시 30분</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 기도실 -->
+                        <div class="facility-box">
+                            <h2 class="section-title">기도실</h2>
+                            <div class="facility">
+                                <div class="facility-card w_100">
+                                    <img src="img/flow/000" alt="시안홀">
+                                    <h3>시안홀</h3>
+                                    <p>Acts29 비전 빌리지를 찾는 모든 이들이 <span class="mob"></span>시므온과 안나처럼<span class="web"></span> 예수그리스도를 다시 오심을<span class="mob"></span> 기다리며 1년 365일 24시간 무릎으로 <span class="web"></span>열방을 <span class="mob"></span>향해 나아가는 기도실입니다.</p>
+                                    <p> 이용시간 : 24시간 개방</p>
+                                </div>
+                            </div>
                         </div>
 
-                    </div>
-                    <!-- 기도실 -->
-                    <h2 class="section-title">기도실</h2>
-                    <div class="facility">
-                        <div class="facility-card">
-                            <img src="img/home/room-slide-ex.jpg" alt="시안홀">
-                            <h3>시안홀</h3>
-                            <p>Acts29 비전 빌리지를 찾는 모든 이들이 시므온과 안나처럼 예수그리스도를 다시 오심을 기다리며 1년 365일 24시간 무릎으로 열방을 향해 나아가는 기도실입니다.</p>
-                            <p> 이용시간 : 24시간 개방</p>
-                        </div>
-                        
                     </div>
                     <!-- 도서관 -->
                     <h2 class="section-title">도서관</h2>
-                
                     <div class="facility">
-                        <div class="facility-card">
-                            <img src="img/home/room-slide-ex.jpg" alt="하용조목사님 기념관1">
+                        <div class="facility-card w_100">
+                            <div class="img-flex">
+                                <div class="facility_border">
+                                    <img src="img/flow/000" alt="하용조목사님 기념관2">
+                                </div>                            <div class="facility_border">
+                                <img src="img/flow/000" alt="하용조목사님 기념관2">
+                            </div>
+                        </div>
                             <h3>하용조목사님 기념관</h3>
-                            <p>레이놀즐 도서관은 조용히 성경과 영적 성령을 묵상하며 도서를 읽는 공간입니다. 다양한 신앙서적과 선교관련 도서가 구비되어 있으며 컴퓨터를 통해 인터넷 검색 및 자료 정리를 할 수 있습니다.</p>
+                            <p>레이놀즐 도서관은 조용히 성경과 영적 성령을 <span class="mob"></span>묵상하며 도서를 읽는 공간입니다. <span class="mob"></span>
+                                <span class="web"></span>다양한 신앙서적과 선교관련 도서가 구비되어 <span class="mob"></span>있으며 컴퓨터를 통해 인터넷 검색 및 자료 <span class="mob"></span>정리를 할 수 있습니다.</p>
                             <p>이용시간 - 오전 9시 - 오후 10시까지</p>
                         </div>
-
-                        <div class="facility-card">
-                            <img src="img/home/room-slide-ex.jpg" alt="하용조목사님 기념관2">
-                            <h3>하용조목사님 기념관</h3>
-                        </div>
                     </div>
-
-                    <!-- 부대시설 -->
-                    <h2 class="section-title">그 외 공간</h2>
+                    <!-- 카페&풋살장 -->
+                    <h2 class="section-title">카페&풋살장</h2>
                     <div class="facility">
-
+                        <!-- 카페 -->
                         <div class="facility-card">
-                        <img src="img/home/room-slide-ex.jpg" alt="풋살장">
-                        <h3>풋살장</h3>
+                            <img src="img/flow/000" alt="카페 마라">
+                            <h3>카페 마라</h3>
                         </div>
-
+                        <!-- 풋살장 -->
                         <div class="facility-card">
-                        <img src="img/home/room-slide-ex.jpg" alt="카페 마라">
-                        <h3>카페 마라</h3>
+                            <img src="img/flow/000" alt="풋살장">
+                            <h3>풋살장</h3>
                         </div>
                     </div>
                     <!-- 채플 -->
-                    <h2 class="section-title">채플</h2>
+                    <h2 class="section-title">하용조기념채플</h2>
                     <div class="facility">
-
-                        <div class="facility-card">
-                            <img src="img/home/room-slide-ex.jpg" alt="하용조기념채플1">
-                            <h3>하용조기념채플</h3>
+                        <div class="facility_border">
+                            <img src="img/flow/000" alt="하용조기념채플1">
                         </div>
-
-                        <div class="facility-card">
-                            <img src="img/home/room-slide-ex.jpg" alt="하용조기념채플2">
-                            <h3>하용조기념채플</h3>
+                        <div class="facility_border">
+                            <img src="img/flow/000" alt="하용조기념채플2">
                         </div>
-
                     </div>
+                    <!-- 열방광장 -->
+                    <h2 class="section-title">광장</h2>
+                    <div class="facility-card w_100">
+                    <!-- <div class="facility-card w_100">
+                        <div class="img-flex">
+                            <div class="facility_border">
+                                <img src="img/flow/000" alt="하용조목사님 기념관2">
+                            </div>                            <div class="facility_border">
+                            <img src="img/flow/000" alt="하용조목사님 기념관2">
+                        </div>
+                    </div> -->
+                        <h3>열방광장</h3>
+                        <p>열방광장은 다양한 야외 활동을 위해 <span class="mob"></span>준비되어져 있습니다. <br>
+                            다양한 야외 활동을 위한 공간인 열방광장은<span class="mob"></span> 오병이어 식당 후면에 준비되어져 있으며 <span class="mob"></span>심신을 단련하여 땀 흘려 하나되는 공간입니다. </p>
+                        <p>이용시간 - 오전 9시 - 오후 10시까지</p>
+                    </div>
+                    <!-- 벧엘등산로 -->
+                    <h2 class="section-title mt_40">벧엘등산로</h2>
+                    <div class="facility-card w_100">
+                        <h3>벧엘등산로</h3>
+                        <p>벧엘등산로는 가파른 산언덕을 오르고 꽃재 정상을 거쳐 순교자 기념관에 이르는 등산로입니다. <br>
+                            벧엘 예배당 앞을 지나 가파른 산언덕을 오르고 가쁜 숨을 내시며 선교자적 열정을 체함하며 순교자의 피흘림을 통해 이땅에 뿌려졌던 복음의 열매가 나임을 알고 하나님의 사랑을 만나는 등산로입니다</p>
+                        <p>위치 : 벧엘 예배당 앞에서 출발</p>
+                    </div>
+                    <!-- 피난안내도 --> 
+                    <h2 class="section-title mt_40">피난안내도</h2>
+                    <div class="facility_border w_100">
+                        <img class="mb_40" src="img/flow/1f-last.jpg" alt="피난안내도">
+                    </div>
+                    <!-- <img class="mb_40" src="img/flow/1f-last.jpg" alt="시설현황도"> -->
 
 
-                    <!--  -->
-                    <h2 class="section-title">피난안내도</h2>
-                    <img class="mb_40" src="img/flow/1f-last.jpg" alt="시설현황도">
-
+                        </div>
+                    </div>
+                    
+                    </div>
                 </div>
             </div>
         </main>
