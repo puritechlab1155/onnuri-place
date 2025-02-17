@@ -2244,6 +2244,120 @@ letter-spacing: -0.8px;
 #home .flow-detail img.mb_40 {
   margin-bottom: 40px;
 }
+#flow-detail .mt_40 { margin-top: 40px; }
+/* #flow-detail .mb_40 { margin-bottom: 40px; } */
+#flow-detail .w_100 { width: 100% !important; }
+#flow-detail .facility-card p span.web { display: block; }
+#flow-detail .section-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #222;
+}
+#flow-detail .facility {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  /* width: 48%; */
+}
+#flow-detail .facility_border { /* 이미지 한장 */
+    border-radius: 10px;
+    width: 48%;
+}
+#flow-detail .flow-contents img {
+    width: 100%;
+    border-radius: 10px;
+}
+#flow-detail .card-flex-containner, #flow-detail .facility .w_100>div.img-flex { 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#flow-detail .facility-box {
+    width: 48%;
+}
+#flow-detail .facility-box .section-title {
+
+}
+#flow-detail .facility-box .facility {
+
+}
+#flow-detail .facility-card { 
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 48%;
+  overflow: hidden;
+  /* text-align: center; */
+}
+/* #flow-detail .facility-card { 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+} */
+#flow-detail .facility-card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #ddd;
+}
+#flow-detail .facility-card h3 {
+  font-size: 20px;
+  margin: 10px 20px;
+}
+#flow-detail .facility-card p {
+    color: #222;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 160%; /* 28.8px */
+    letter-spacing: -0.36px;
+    margin: 10px 20px;
+}
+#flow-detail .testimonial {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+#flow-detail .testimonial h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+#flow-detail .testimonial p {
+  font-size: 18px;
+  color: #555;
+}
+@media (max-width: 1200px) {
+    #flow-detail .facility-card p {
+        font-size: 16px;
+        line-height: 160%;
+        margin: 10px 20px;
+    } 
+}
+@media (max-width: 980px) {
+    #flow-detail .facility-card p span.web { display: inline; }
+}
+@media (max-width: 768px) {
+    /* #flow-detail .facility-card p span.web { display: inline-block; } */
+    #flow-detail h2{
+        font-size: 20px !important;
+    }
+    #flow-detail .facility-card h3 {
+        font-size: 18px;
+    } 
+    #flow-detail .facility-box, #flow-detail .facility_border, #flow-detail .facility-card {
+        width: 100% !important;
+    }
+}
+@media (max-width: 500px) {
+    #flow-detail span.mob { display: block !important; }
+
+}
+
+
+
+
 
 /*resize*/
 @media (max-width: 1200px) {
