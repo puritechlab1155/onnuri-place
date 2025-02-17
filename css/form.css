@@ -272,6 +272,7 @@
     align-items: center;
 }
 #main.form #reservate b {
+    min-width: 50px;
     margin-right: 10px;
     line-height: 16px;
     text-align: left;
@@ -844,7 +845,6 @@
         flex-wrap: wrap !important;
     }
     #main.form #reservate b {
-        min-width: 50px;
         text-align: center;
         font-size: 13px;
     }
