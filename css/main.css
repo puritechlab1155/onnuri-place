@@ -1107,8 +1107,9 @@
   min-height: 210px;
   text-align: center;
   color: #fff;
-  background: linear-gradient(rgba(0, 0, 0, 0.382), rgba(0, 0, 0, 0.382)),url(../img/home/mv_slide_img01.png) no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.382), rgba(0, 0, 0, 0.382)), url(../img/home/mv_slide_img01.jpg) no-repeat center center;
   background-size: cover;
+  background-position-y: 25%;
 }
 #home .noticeD .title-area .title span.notice-main-title {
 font-family: "Pretendard-Bold";
@@ -2135,7 +2136,8 @@ letter-spacing: -0.8px;
 }
 /*channel 클래스 >> notice.html과 동일한 스타일*/
 #home .channel {
-  padding-top: 40px;
+  padding-top: 80px;
+  margin-bottom: 80px;
 }
 #home .channel {
   display: flex;
@@ -2218,7 +2220,7 @@ letter-spacing: -0.8px;
 
 /* 층별 세부페이지/////////////// */
 #home .flow-detail {
-
+  margin-bottom: 80px;
 }
 #home .flow-detail .title-area {
   text-align: center;
