@@ -1472,6 +1472,35 @@
                     </div>
                 </div>
             </div><!-- //section02 -->
+
+            <!-- 팝업창 -->
+            <div class="pop-container">
+                <div class="pop-inner">
+                    <div class="pop-content-wrap">
+                        <h4 class="pop-title">Acts29비전빌리지 홈페이지입니다.</h4>
+                        <div class="pop-content">
+                            온누리교회의 핵심 가치는 "전도와 선교" 입니다.
+                            예수 그리스도의 이름을 모르는 자들에게 주님의 사랑을 전하며
+                            땅끝까지 모든 족속으로 제자를 삼아 세례를 주고
+                            아버지와 아들과 성령의 이름으로 세례를 주며 주께서 분부한
+                            모든 것을 가르쳐 지키게 하는 교회가 바로 온누리교회라고 믿습니다.
+
+                            Acts29 VISION VILLAGE를 통해서 하나님의 사람들이 키워지고
+                            주님 나라 복음을 들고 땅끝까지 달려갈 것이며 기도로 무장한 성도들이
+                            지역 사회를 변화 시키고 예배와 선교의 공동체로 세워지기 위해서
+                            여러분의 기도와 참여를 기대합니다.
+                        </div>
+                    </div>
+                    <div class="popup-button-wrap">
+                        <div class="btn-item-container">
+                            <button class="finishBtn btn-item">닫기</button>
+                        </div>
+                        <div class="btn-item-container">
+                            <button class="closeBtn btn-item">하루동안 보지 않기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
 
         <footer id="footer" class="footer">
@@ -1933,7 +1962,7 @@
                 }
             });
 
-            //
+            // 모바일 버전 탭 클릭 이벤트
             document.querySelectorAll(".tab-cont").forEach(tab => {
                 const roomButtons = tab.querySelectorAll(".mob-swiper .swiper-slide");
                 const contentLists = tab.querySelectorAll(".content-list");
@@ -1952,10 +1981,47 @@
             });
         });
 
+        // 팝업 닫기
+        const popup = document.querySelector(".pop-container");
+        const buttons = document.querySelectorAll(".finishBtn, .closeBtn");
+
+        buttons.forEach(button => {
+            button.addEventListener("click", function () {
+                popup.style.display = "none";
+            });
+        });
+
+        // 팝업 하루동안 보자 않기 (아래 코드로 변경)
+        // document.addEventListener("DOMContentLoaded", function () {
+        // const popup = document.querySelector(".pop-container");
+        // const finishBtn = document.querySelector(".finishBtn");
+        // const closeBtn = document.querySelector(".closeBtn");
+
+        // // 1. 로컬스토리지 확인 (하루 동안 유지)
+        // const hidePopup = localStorage.getItem("hidePopup");
+        // if (hidePopup && new Date().getTime() < parseInt(hidePopup, 10)) {
+        //     popup.style.display = "none"; // 하루 동안 팝업 숨김
+        // }
+
+        // // 2. 닫기 버튼 (단순히 숨김)
+        // finishBtn.addEventListener("click", function () {
+        //     popup.style.display = "none";
+        // });
+
+        // // 3. 하루 동안 보지 않기 버튼
+        // closeBtn.addEventListener("click", function () {
+        //     const now = new Date();
+        //     const tomorrow = new Date(now);
+        //     tomorrow.setHours(23, 59, 59, 999); // 오늘 자정까지 만료 시간 설정
+
+        //     localStorage.setItem("hidePopup", tomorrow.getTime()); // 로컬스토리지 저장
+        //     popup.style.display = "none"; // 팝업 숨기기
+        // });
+    // });
+
     </script>
 
     <script>
-
         $(document).ready(function() {
             // 스크롤 시 헤더 스타일 변경 및 모바일 메뉴 클릭 이벤트
             let $header = $('.header');

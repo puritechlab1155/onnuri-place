@@ -580,6 +580,27 @@
 #home .mainIndex .section02 .content .more-button-box {
   margin-top: 64px;
 }
+#home .mainIndex .pop-container {
+  width: fit-content;
+  z-index: 1000;
+  position: fixed;
+  top: 120px;
+  left: 20px;
+  transform: none !important;
+}
+#home .mainIndex .pop-inner {
+  height: auto;
+  margin: 0;
+  border-radius: 0;
+}
+#home .mainIndex .pop-title {
+  margin-top: 40px;
+}
+#home .mainIndex .pop-content {
+  white-space: pre-line;
+  margin-top: 20px;
+  color: #333;
+}
 /*resize*/
 @media (max-width: 1014px) {
   /*main_visual*/
@@ -760,6 +781,8 @@
     font-size: 16px;
   }
 }
+
+
 
 
 /* --- myInfo html 3개와 login html 스타일 --- */
@@ -2270,19 +2293,26 @@ letter-spacing: -0.8px;
     border-radius: 10px;
 }
 #flow-detail .card-flex-containner, #flow-detail .facility .w_100>div.img-flex { 
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 45px;
 }
 #flow-detail .facility-box {
     width: 48%;
 }
-#flow-detail .facility-box .section-title {
+#flow-detail .card-flex-containner, #flow-detail .facility .w_100>div.img-flex { 
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 45px;
+}
+/* #flow-detail .facility-box .section-title {
 
 }
 #flow-detail .facility-box .facility {
 
-}
+} */
 #flow-detail .facility-card { 
   background-color: white;
   border-radius: 10px;
@@ -2355,6 +2385,11 @@ letter-spacing: -0.8px;
     line-height: 160%;
     margin: 10px 20px;
   } 
+}
+@media (max-width: 1173px) {
+  #flow-detail .card-flex-containner, #flow-detail .facility .w_100>div.img-flex {
+    gap: 30px !important;
+  }
 }
 @media (max-width: 980px) {
   #flow-detail .facility-card p span.web { display: inline; }
