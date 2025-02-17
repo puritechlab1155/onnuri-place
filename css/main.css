@@ -582,7 +582,6 @@
 }
 /* 팝업창 */
 #home .mainIndex .pop-container {
-  width: fit-content;
   z-index: 1000;
   position: fixed;
   top: 120px;
@@ -805,7 +804,7 @@
     font-size: 14px !important;
     white-space: inherit !important;
   }
-  #home .mainIndex .pop-content .space_mob {
+  #home .mainIndex .pop-content-wrap .space_mob {
     display: block !important;
   }
 }
