@@ -339,8 +339,8 @@
 }
 #main.form .finish-bnt-wrap .deleteBtn {
     border: 1px solid #DDDDDD;
-    color: #000000;
-    background: #F2F2F2;
+    color: #fff;
+    background: #dd0000;
 }
 #main.form #reservate .inner-flex {
     width: 100%;
