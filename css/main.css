@@ -688,6 +688,24 @@
     left: 36%;
     animation: fadeIn 1s infinite;
   }
+  @keyframes fadeIn {
+    0% {
+        opacity: 0; 
+        transform: translateY(-10px); 
+    }
+    50% {
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+    90% {
+      opacity: 1; 
+      transform: translateY(0); 
+    }
+    100% {
+        opacity: 0; 
+        transform: translateY(0); 
+    }
+  }
   #home .mainIndex .mouse_icon .scroll_arrow span:nth-child(1) {
     bottom: 20px;
     animation-delay: 0.1s;
