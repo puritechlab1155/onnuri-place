@@ -2029,10 +2029,6 @@
                 changeHead();
             });
 
-            $menuItem.mouseenter (function(){
-                $(this).css({ color: '#E5FF00' });
-            });
-
             // 햄버거 아이콘 클릭 이벤트
             $hamIcon.click(function() {
                 changeHead();
@@ -2061,6 +2057,9 @@
                     $userBtn.css({ color: '#222' });
                     $line.css({ background: '#999' });
                     $hamIcon.css({ background: '#222' });
+                    $menuItem.mouseenter (function(){
+                        $(this).css({ color: '#9A2626' });
+                    });
 
                 }
                 else { // 스크롤 탑이 0
@@ -2073,6 +2072,9 @@
                     $userBtn.css({ color: '#fff' });
                     $line.css({ background: '#fff' });
                     $hamIcon.css({ background: '#fff' });
+                    $menuItem.mouseenter (function(){
+                        $(this).css({ color: '#E5FF00' });
+                    });
                 }
             } 
 
