@@ -1272,12 +1272,12 @@ letter-spacing: -0.8px;
   margin-top: 3px;
   margin-left: 6px;
   color: #767676;
-  font-size: 18px;
+  font-size: 16px;
 }
 #home .noticeD .attachment-header .file-count {
-  font-size: 18px;
-  color: #222;
   margin-top: 2px;
+  font-size: 16px;
+  color: #222;
 }
 #home .noticeD .attachment-header .file-count .count-text{
   display: inline-block;
@@ -1285,16 +1285,10 @@ letter-spacing: -0.8px;
 }
 #home .noticeD .attachment-list {
   width: 100%;
-  max-width: 563px;
   padding: 16px;
-  border: 1px solid #F0F0F0;
+  padding-bottom: 0;
   border-top: none;
   background: #fff;
-  position: absolute;
-  top: 51px;
-  left: 0;
-  z-index: 500;
-  display: none;
 }
 #home .noticeD .attachment-item a{
   display: block;
@@ -1325,7 +1319,9 @@ letter-spacing: -0.8px;
 
 /*공지 정보 영역 */
 #home .noticeD .attachment-area .notice-information {
-  width: 100%;
+  width: fit-content;
+  float: right;
+  margin-top: 2px;
   overflow: hidden;
 }
 #home .noticeD .information-posit {
@@ -1459,12 +1455,7 @@ letter-spacing: -0.8px;
       flex-wrap: wrap;
   }
   #home .noticeD .attachment-area .notice-information {
-      order: 3; 
-      margin-top: 120px;
-      margin-bottom: 50px;
-  }
-  #home .noticeD .attachment-area .notice-text-wrap {
-      order: 2;
+    float: none;
   }
   #home .noticeD .attachment-area .apply {
       order: 4;
@@ -1472,12 +1463,6 @@ letter-spacing: -0.8px;
   }
   #home .noticeD .information-posit ul {
       font-size: 14px !important;
-  }
-  #home .noticeD .information-posit {
-      flex-direction: column;
-      justify-content: start;
-      align-items: start;
-      float: left;
   }
 }
 @media (max-width: 548px) {
@@ -2191,8 +2176,8 @@ letter-spacing: -0.8px;
 }
 /*channel 클래스 >> notice.html과 동일한 스타일*/
 #home .channel {
-  padding-top: 80px;
-  margin-bottom: 80px;
+  padding-top: 40px;
+  margin-bottom: 40px;
 }
 #home .channel {
   display: flex;
