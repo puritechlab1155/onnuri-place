@@ -2040,6 +2040,7 @@
                 // 열렸을때
                 } else if ($offcanvas.hasClass('active')) {
                     $hamIcon.css({ background: '#222' });
+                    $logoImg.attr('src', 'img/avv_logo2.png');
                 }
             });
 
@@ -2048,7 +2049,7 @@
 
                 if ($scrollTop > 0) { // 스크롤 탑이 0 이상
                     $header.css({ background: '#fff' });
-                    $logoImg.attr('src', 'img/offcanvas-logo2.png');
+                    $logoImg.attr('src', 'img/avv_logo2.png');
                     $menuItem.css({ color: '#222' });
                     $menuItem.mouseleave (function(){
                         $(this).css({ color: '#222' });
@@ -2062,7 +2063,7 @@
 
                 }
                 else { // 스크롤 탑이 0
-                    $header.css({ background: '#0000003b' });
+                    $header.css({ background: '#03387a' });
                     $logoImg.attr('src', 'img/offcanvas-logo2.png');
                     $menuItem.css({ color: '#fff' });
                     $menuItem.mouseleave (function(){

@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 mobileoffcanvas.style.height = '100vh';
                 offcanvas.style.transform = 'translateX(0%)'; // 메뉴 열기
                 header.style.backgroundColor = '#fff';
-                headerLogoImg.src = 'img/offcanvas-logo.png'; // 활성화 상태의 로고
+                // headerLogoImg.src = 'img/offcanvas-logo.png'; // 활성화 상태의 로고
                 hamIcon.forEach(function(span) {
                     span.style.backgroundColor = '#222';
                 });
