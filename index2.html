@@ -2011,7 +2011,6 @@
 
     <script>
         $(document).ready(function() {
-            // 스크롤 시 헤더 스타일 변경 및 모바일 메뉴 클릭 이벤트
             let $header = $('.header');
             let $logoImg = $('.logo img');
             let $menuItem = $('.pc_display .gnb-item > a');
@@ -2019,65 +2018,72 @@
             let $line = $('.line');
             let $hamIcon = $('.offcanvas-open span');
             let $offcanvas = $('.offcanvas');
+            let $scrollTop = $(window).scrollTop(); // 전역 변수로 선언
 
-            // 초기 헤더 스타일 설정
             changeHead();
 
-
-            $(window).scroll(function() {
-                changeHead();
-            });
-
-            // 햄버거 아이콘 클릭 이벤트
             $hamIcon.click(function() {
-                changeHead();
-
-                // 스크롤 탑이 0이고, 닫혔을때
-                if ($scrollTop === 0 && !$offcanvas.hasClass('active')) { 
-                    $logoImg.attr('src', 'img/offcanvas-logo2.png');
-                    $hamIcon.css({ background: '#fff' });
-                    
-                // 열렸을때
-                } else if ($offcanvas.hasClass('active')) {
-                    $hamIcon.css({ background: '#222' });
+                if(!$offcanvas.hasClass('active')) {
                     $logoImg.attr('src', 'img/avv_logo2.png');
+                }
+
+                $scrollTop = $(window).scrollTop(); // 현재 스크롤 값을 가져옴
+                
+                if($scrollTop === 0 && $offcanvas.hasClass('active')){
+                    $logoImg.attr('src', 'img/offcanvas-logo2.png');
+                    $header.css({ background: '#03387a'});
+                    $hamIcon.css({ background: '#fff' });
+
+                } else if($scrollTop > 0 && $offcanvas.hasClass('active')) {
+                    $logoImg.attr('src', 'img/offcanvas-logo2.png');
+                    $header.css({ background: '#03387a'});
+                    $hamIcon.css({ background: '#fff' });
+
                 }
             });
 
             function changeHead() {
-                let $scrollTop = $(window).scrollTop();
+                $scrollTop = $(window).scrollTop(); // 함수 내에서도 스크롤 값을 업데이트
 
-                if ($scrollTop > 0) { // 스크롤 탑이 0 이상
-                    $header.css({ background: '#fff' });
-                    $logoImg.attr('src', 'img/avv_logo2.png');
-                    $menuItem.css({ color: '#222' });
-                    $menuItem.mouseleave (function(){
-                        $(this).css({ color: '#222' });
-                    });
-                    $userBtn.css({ color: '#222' });
-                    $line.css({ background: '#999' });
-                    $hamIcon.css({ background: '#222' });
-                    $menuItem.mouseenter (function(){
-                        $(this).css({ color: '#9A2626' });
-                    });
-
-                }
-                else { // 스크롤 탑이 0
+                if ($scrollTop === 0) {
                     $header.css({ background: '#03387a' });
-                    $logoImg.attr('src', 'img/offcanvas-logo2.png');
                     $menuItem.css({ color: '#fff' });
-                    $menuItem.mouseleave (function(){
+                    $menuItem.mouseleave(function() {
                         $(this).css({ color: '#fff' });
                     });
                     $userBtn.css({ color: '#fff' });
                     $line.css({ background: '#fff' });
                     $hamIcon.css({ background: '#fff' });
-                    $menuItem.mouseenter (function(){
+                    $menuItem.mouseenter(function() {
                         $(this).css({ color: '#E5FF00' });
                     });
-                }
-            } 
+                    oriImg();
 
+                } else {
+                    $header.css({ background: '#fff' });
+                    $menuItem.css({ color: '#222' });
+                    $menuItem.mouseleave(function() {
+                        $(this).css({ color: '#222' });
+                    } );
+                    $userBtn.css({ color: '#222' });
+                    $line.css({ background: '#999' });
+                    $hamIcon.css({ background: '#222' });
+                    $menuItem.mouseenter(function() {
+                        $(this).css({ color: '#9A2626' });
+                    });
+                    $logoImg.attr('src', 'img/avv_logo2.png'); // 🔹 스크롤이 있으면 변경
+                }
+            }
+
+            function oriImg(){
+                $logoImg.attr('src', 'img/offcanvas-logo2.png');
+            }
+
+            $(window).scroll(function() {
+                $scrollTop = $(window).scrollTop();
+
+                changeHead();
+            });
         });
     </script>
 
