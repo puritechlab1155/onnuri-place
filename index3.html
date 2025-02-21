@@ -38,7 +38,7 @@
                 <div class="content">
                     <h1 class="logo">
                         <a href="https://puritechlab1155.github.io/onnuri-place/index.html">
-                            <img src="img/offcanvas-logo3.svg" alt="온누리선교재단 / Acts29 Visionvillage" class="logo-img">
+                            <img src="img/offcanvas-logo3.png" alt="온누리선교재단 / Acts29 Visionvillage" class="logo-img">
                             <span class="blind">온누리선교재단 / Acts29 Visionvillage</span>
                         </a>
                     </h1>
@@ -2130,20 +2130,20 @@
             let $userBtn = $('.login-link > a');
             let $line = $('.line');
             let $hamIcon = $('.offcanvas-open span');
-            let $offcanvas = $('.offcanvas');
+            let $offcanvasBtn = $('.offcanvas-open')
             let $scrollTop = $(window).scrollTop(); // 전역 변수로 선언
 
-            $hamIcon.click(function() {
-                if($scrollTop === 0 && !$offcanvas.hasClass('active')) {
+            $offcanvasBtn.click(function() {
+                if($scrollTop === 0 && !$(this).hasClass('active')) {
                     $logoImg.attr('src', 'img/avv_logo3.png');
                 }
                 
-                if($scrollTop === 0 && $offcanvas.hasClass('active')){
+                if($scrollTop === 0 && $(this).hasClass('active')){
                     $logoImg.attr('src', 'img/offcanvas-logo3.png');
                     $header.css({ background: 'transparent' });
                     $hamIcon.css({ background: '#fff' });
 
-                } else if($scrollTop > 0 && $offcanvas.hasClass('active')) {
+                } else if($scrollTop > 0 && $(this).hasClass('active')) {
                     $logoImg.attr('src', 'img/avv_logo3.png');
                     $header.css({ background: '#fff'});
                     $hamIcon.css({ background: '#222' });
