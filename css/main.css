@@ -505,27 +505,24 @@
   z-index: 10000;
 }
 .main-modal-content {
-  padding: 20px;
+  padding: 60px;
   position: relative;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1320px;
   text-align: center;
 }
 .close-button {
   width: fit-content;
-  margin: 0 auto;
-  margin-top: 20px;
-  padding: 4px 16px;
-  display: block;
-  height: fit-content;
-  font-size: 40px;
+  padding: 0 14px;
+  padding-bottom: 2px;
+  font-size: 50px;
   font-weight: 500;
   color: #144974;
-  border-radius: 4px;
+  border-radius: 50%;
   background: #fff;
   position: absolute;
-  top: 10px;
-  right: 30px;
+  top: 27px;
+  right: 32px;
   z-index: 999;
   cursor: pointer !important;
 }

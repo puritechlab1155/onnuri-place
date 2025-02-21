@@ -2084,6 +2084,8 @@
         // 시설예약하기 모달 팝업창
         document.addEventListener("DOMContentLoaded", function () {
             let isModalEnabled = window.innerWidth > 767; // 초기값 설정
+            let oldSwiperInstance = null;
+            let swiperConfig = {};
 
             function setupModalEvents() {
                 document.querySelectorAll(".room-img").forEach(img => {
@@ -2097,6 +2099,23 @@
                 });
             }
 
+            function restoreOriginalSwiper() {
+                if (oldSwiperInstance) {
+                    new Swiper(oldSwiperInstance.el, swiperConfig);
+                    oldSwiperInstance = null;
+                }
+            }
+
+            function closeModal() {
+                const modalContainer = document.querySelector(".modal-overlay");
+                if (modalContainer) {
+                    modalContainer.remove();
+                    document.body.style.overflow = "";
+
+                    restoreOriginalSwiper(); // 기존 슬라이드 복원
+                }
+            }
+
             function openModal() {
                 if (window.innerWidth <= 767) return; // 767px 이하일 때 실행 안 함
 
@@ -2104,9 +2123,8 @@
                 if (!parentContainer) return;
 
                 let oldSwiper = parentContainer.querySelector(".swiper");
-                let oldSwiperInstance = oldSwiper?.swiper;
+                oldSwiperInstance = oldSwiper?.swiper;
 
-                let swiperConfig = {};
                 if (oldSwiperInstance) {
                     swiperConfig = oldSwiperInstance.params;
                     oldSwiperInstance.destroy(true, true);
@@ -2144,22 +2162,12 @@
                 });
 
                 modalContainer.querySelector(".close-button").addEventListener("click", function () {
-                    modalContainer.remove();
-                    document.body.style.overflow = "";
-
-                    if (oldSwiper) {
-                        new Swiper(oldSwiper, swiperConfig);
-                    }
+                    closeModal();
                 });
 
                 modalContainer.addEventListener("click", function (e) {
                     if (e.target === modalContainer) {
-                        modalContainer.remove();
-                        document.body.style.overflow = "";
-
-                        if (oldSwiper) {
-                            new Swiper(oldSwiper, swiperConfig);
-                        }
+                        closeModal();
                     }
                 });
             }
@@ -2178,6 +2186,8 @@
                         setupModalEvents();
                     } else {
                         removeModalEvents();
+                        closeModal(); // 화면 크기가 767px 이하로 줄어들면 모달 닫기
+                        restoreOriginalSwiper(); // 기존 슬라이드 기능 복원
                     }
                 }
             });
