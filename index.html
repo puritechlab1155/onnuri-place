@@ -36,9 +36,9 @@
         <header id="header" class="header">
             <div class="inner">
                 <div class="content">
-                    <h1 class="logo" style="max-width: 80px; margin-right: 86px;">
+                    <h1 class="logo">
                         <a href="https://puritechlab1155.github.io/onnuri-place/index.html">
-                            <img src="img/offcanvas-logo2.png" alt="온누리선교재단 / Acts29 Visionvillage" class="logo-img">
+                            <img src="img/avv_logo3.png" alt="온누리선교재단 / Acts29 Visionvillage" class="logo-img">
                             <span class="blind">온누리선교재단 / Acts29 Visionvillage</span>
                         </a>
                     </h1>
@@ -2021,7 +2021,7 @@
             let $userBtn = $('.login-link > a');
             let $line = $('.line');
             let $hamIcon = $('.offcanvas-open span');
-            let $offcanvas = $('.offcanvas');
+            let $offcanvasBtn = $('.offcanvas-open')
 
             // 초기 헤더 스타일 설정
             changeHead();
@@ -2036,12 +2036,12 @@
                 changeHead();
 
                 // 스크롤 탑이 0이고, 닫혔을때
-                if ($scrollTop === 0 && !$offcanvas.hasClass('active')) { 
-                    $logoImg.attr('src', 'img/offcanvas-logo2.png');
+                if ($scrollTop === 0 && !$(this).hasClass('active')) { 
+                    $logoImg.attr('src', 'avv_logo3.png');
                     $hamIcon.css({ background: '#fff' });
                     
                 // 열렸을때
-                } else if ($offcanvas.hasClass('active')) {
+                } else if ($(this).hasClass('active')) {
                     $hamIcon.css({ background: '#222' });
                 }
             });
@@ -2051,7 +2051,7 @@
 
                 if ($scrollTop > 0) { // 스크롤 탑이 0 이상
                     $header.css({ background: '#fff' });
-                    $logoImg.attr('src', 'img/offcanvas-logo2.png');
+                    $logoImg.attr('src', 'img/avv_logo3.png');
                     $menuItem.css({ color: '#222' });
                     $menuItem.mouseleave (function(){
                         $(this).css({ color: '#222' });
@@ -2065,15 +2065,15 @@
 
                 }
                 else { // 스크롤 탑이 0
-                    $header.css({ background: '#0000003b' });
-                    $logoImg.attr('src', 'img/offcanvas-logo2.png');
-                    $menuItem.css({ color: '#fff' });
+                    $header.css({ background: '#fff' }); //0000003b
+                    $logoImg.attr('src', 'img/avv_logo3.png');
+                    $menuItem.css({ color: '#222' });
                     $menuItem.mouseleave (function(){
                         $(this).css({ color: '#fff' });
                     });
                     $userBtn.css({ color: '#fff' });
                     $line.css({ background: '#fff' });
-                    $hamIcon.css({ background: '#fff' });
+                    $hamIcon.css({ background: '#222' });
                     $menuItem.mouseenter (function(){
                         $(this).css({ color: '#E5FF00' });
                     });
