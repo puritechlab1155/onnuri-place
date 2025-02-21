@@ -505,6 +505,7 @@
   z-index: 10000;
 }
 .main-modal-content {
+  padding: 20px;
   position: relative;
   width: 100%;
   max-width: 1200px;
@@ -517,11 +518,16 @@
   padding: 4px 16px;
   display: block;
   height: fit-content;
-  font-size: 20px;
+  font-size: 40px;
   font-weight: 500;
-  color: #fff;
+  color: #144974;
   border-radius: 4px;
-  background: #144974;
+  background: #fff;
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  z-index: 999;
+  cursor: pointer !important;
 }
 .main-modal-content .swiper-slide img {
   width: 100%;
