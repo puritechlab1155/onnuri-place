@@ -133,8 +133,6 @@
     letter-spacing: -0.8px;
 }
 
-
-
 /* --- 소개 페이지 index.html 스타일   --- */
 #home .mainIndex .blind {
   position: absolute;
@@ -426,7 +424,7 @@
 #home .mainIndex .section01 .swiper-button-prev:after {
   content: '';
 }
-#home .mainIndex .section01 .swiper-button {
+#home .mainIndex .swiper-button {
   width: 38px;
   height: 74px;
 }
@@ -491,6 +489,46 @@
 }
 #home .mainIndex .section01 .d-none {
   display: none;
+}
+
+/* 섹션01 슬라이드 모달 스타일 */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+.modal-content {
+  position: relative;
+  background: #fafafa;
+  padding: 20px;
+  width: 80%;
+  max-width: 890px;
+  text-align: center;
+  border-radius: 20px;
+}
+.close-button {
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 4px 16px;
+  display: block;
+  height: fit-content;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 4px;
+  background: #144974;
+}
+.modal-content .swiper-slide img {
+  width: 100%;
+  object-fit: cover;
 }
 
 /* section02 */

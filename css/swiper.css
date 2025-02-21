@@ -65,48 +65,6 @@
     border-radius: 10px;
 }
 
-/* section04  >> 디자인 변경으로 주석처리*/
-/* .s4-swiper {
-    width: 100%;
-    max-width: 690px;
-    height: 524px;
-    margin: 0;
-}
-.s4-swiper .swiper-slide {
-    width: 100%;
-    max-width: 690px;
-}
-.s4-swiper .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.s4-swiper-pagination {
-    padding: 0 15px;
-    border-radius: 999px;
-    background: rgba(255, 255, 255, 0.8);
-    width: fit-content;
-
-    left: auto;
-    right: 14px;
-    top: 24px;
-    bottom: auto;
-
-    filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.07));
-
-    color: rgba(0, 0, 0, 0.5);
-    font-family: 'Pretendard-Medium';
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 160%;
-    letter-spacing: -0.36px;
-}
-.s4-swiper-pagination .swiper-pagination-current {
-    color: #000;
-} */
-
 /* 예배페이지 */
 #home .mainIndex .section01 .mob-swiper .swiper-slide {
     padding: 16px 0;
@@ -131,4 +89,21 @@
     #home .mainIndex .section01 .mob-swiper .swiper-slide {
         font-size: 15px;
     }
+}
+
+/* 예배페이지 모달 */
+.modal-content .swiper-button-next:after, 
+.modal-content .swiper-button-prev:after {
+    padding: 0 0.7vw;
+    height: 74px;
+    line-height: 74px;
+    color: #fff;
+    font-size: 24px;
+    background: #00000093;
+}
+.modal-content .swiper-button-next {
+    right: 0 !important;
+}
+.modal-content .swiper-button-prev {
+    left: 0 !important;
 }
