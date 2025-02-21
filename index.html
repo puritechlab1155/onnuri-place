@@ -2083,79 +2083,103 @@
         
         // 시설예약하기 모달 팝업창
         document.addEventListener("DOMContentLoaded", function () {
-            document.querySelectorAll(".room-img").forEach(img => {
-                img.addEventListener("click", function () {
-                    const parentContainer = this.closest(".content-slide") || this.closest(".grid-content-list");
-                    if (!parentContainer) return;
+            let isModalEnabled = window.innerWidth > 767; // 초기값 설정
 
-                    // 기존 Swiper 인스턴스 찾기
-                    let oldSwiper = parentContainer.querySelector(".swiper");
-                    let oldSwiperInstance = oldSwiper?.swiper;
+            function setupModalEvents() {
+                document.querySelectorAll(".room-img").forEach(img => {
+                    img.addEventListener("click", openModal);
+                });
+            }
 
-                    // 기존 Swiper 제거 후 데이터 저장
-                    let swiperConfig = {};
-                    if (oldSwiperInstance) {
-                        swiperConfig = oldSwiperInstance.params; // 기존 Swiper 설정 저장
-                        oldSwiperInstance.destroy(true, true);
-                    }
+            function removeModalEvents() {
+                document.querySelectorAll(".room-img").forEach(img => {
+                    img.removeEventListener("click", openModal);
+                });
+            }
 
-                    // 모달 생성
-                    const modalContainer = document.createElement("div");
-                    modalContainer.classList.add("modal-overlay");
+            function openModal() {
+                if (window.innerWidth <= 767) return; // 767px 이하일 때 실행 안 함
 
-                    // 기존 슬라이드 복사
-                    let clonedSlides = Array.from(parentContainer.querySelectorAll(".swiper-slide"))
-                        .map(slide => `<div class="swiper-slide">${slide.innerHTML}</div>`)
-                        .join("");
+                const parentContainer = this.closest(".content-slide") || this.closest(".grid-content-list");
+                if (!parentContainer) return;
 
-                    modalContainer.innerHTML = `
-                        <div class="main-modal-content">
-                            <div class="swiper modal-swiper">
-                                <div class="swiper-wrapper">
-                                    ${clonedSlides}
-                                </div>
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div>
+                let oldSwiper = parentContainer.querySelector(".swiper");
+                let oldSwiperInstance = oldSwiper?.swiper;
+
+                let swiperConfig = {};
+                if (oldSwiperInstance) {
+                    swiperConfig = oldSwiperInstance.params;
+                    oldSwiperInstance.destroy(true, true);
+                }
+
+                const modalContainer = document.createElement("div");
+                modalContainer.classList.add("modal-overlay");
+
+                let clonedSlides = Array.from(parentContainer.querySelectorAll(".swiper-slide"))
+                    .map(slide => `<div class="swiper-slide">${slide.innerHTML}</div>`)
+                    .join("");
+
+                modalContainer.innerHTML = `
+                    <div class="main-modal-content">
+                        <div class="swiper modal-swiper">
+                            <div class="swiper-wrapper">
+                                ${clonedSlides}
                             </div>
-                            <span class="close-button">닫기</span>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
                         </div>
-                    `;
+                        <span class="close-button">닫기</span>
+                    </div>
+                `;
 
-                    document.body.appendChild(modalContainer);
-                    document.body.style.overflow = "hidden";
+                document.body.appendChild(modalContainer);
+                document.body.style.overflow = "hidden";
 
-                    // 모달 Swiper 초기화
-                    new Swiper(".modal-swiper", {
-                        slidesPerView: 1,
-                        navigation: {
-                            nextEl: ".swiper-button-next",
-                            prevEl: ".swiper-button-prev",
-                        },
-                    });
+                new Swiper(".modal-swiper", {
+                    slidesPerView: 1,
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                });
 
-                    // 모달 닫기
-                    modalContainer.querySelector(".close-button").addEventListener("click", function () {
+                modalContainer.querySelector(".close-button").addEventListener("click", function () {
+                    modalContainer.remove();
+                    document.body.style.overflow = "";
+
+                    if (oldSwiper) {
+                        new Swiper(oldSwiper, swiperConfig);
+                    }
+                });
+
+                modalContainer.addEventListener("click", function (e) {
+                    if (e.target === modalContainer) {
                         modalContainer.remove();
                         document.body.style.overflow = "";
 
-                        // 기존 Swiper 다시 초기화
                         if (oldSwiper) {
                             new Swiper(oldSwiper, swiperConfig);
                         }
-                    });
-
-                    modalContainer.addEventListener("click", function (e) {
-                        if (e.target === modalContainer) {
-                            modalContainer.remove();
-                            document.body.style.overflow = "";
-
-                            // 기존 Swiper 다시 초기화
-                            if (oldSwiper) {
-                                new Swiper(oldSwiper, swiperConfig);
-                            }
-                        }
-                    });
+                    }
                 });
+            }
+
+            // 초기 로딩 시 적용
+            if (isModalEnabled) {
+                setupModalEvents();
+            }
+
+            // 윈도우 크기 변경 시 적용
+            window.addEventListener("resize", function () {
+                let newState = window.innerWidth > 767;
+                if (newState !== isModalEnabled) {
+                    isModalEnabled = newState;
+                    if (isModalEnabled) {
+                        setupModalEvents();
+                    } else {
+                        removeModalEvents();
+                    }
+                }
             });
         });
     </script>

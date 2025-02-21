@@ -816,6 +816,9 @@
   #home .mainIndex .section01 .tab-cont-list .gird-area {
     display: none !important;
   }
+  .modal-overlay {
+    display: none;
+  }
   /*section02*/
   #home .mainIndex .section02 .content {
     flex-direction: column;
