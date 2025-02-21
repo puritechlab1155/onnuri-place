@@ -92,18 +92,18 @@
 }
 
 /* 예배페이지 모달 */
-.modal-content .swiper-button-next:after, 
-.modal-content .swiper-button-prev:after {
-    padding: 0 0.7vw;
+.main-modal-content .swiper-button-next:after, 
+.main-modal-content .swiper-button-prev:after {
+    padding: 0 14px;
     height: 74px;
     line-height: 74px;
     color: #fff;
     font-size: 24px;
     background: #00000093;
 }
-.modal-content .swiper-button-next {
+.main-modal-content .swiper-button-next {
     right: 0 !important;
 }
-.modal-content .swiper-button-prev {
+.main-modal-content .swiper-button-prev {
     left: 0 !important;
 }
