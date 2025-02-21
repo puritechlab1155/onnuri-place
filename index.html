@@ -2085,29 +2085,29 @@
         document.addEventListener("DOMContentLoaded", function () {
             document.querySelectorAll(".room-img").forEach(img => {
                 img.addEventListener("click", function () {
-                    // 클릭한 이미지가 속한 부모 요소(content-slide 또는 grid-content-list) 찾기
                     const parentContainer = this.closest(".content-slide") || this.closest(".grid-content-list");
                     if (!parentContainer) return;
 
-                    // 기존 Swiper 제거 (복제될 때 새로 초기화해야 하므로)
+                    // 기존 Swiper 인스턴스 찾기
                     let oldSwiper = parentContainer.querySelector(".swiper");
-                    if (oldSwiper && oldSwiper.swiper) {
-                        oldSwiper.swiper.destroy();
+                    let oldSwiperInstance = oldSwiper?.swiper;
+
+                    // 기존 Swiper 제거 후 데이터 저장
+                    let swiperConfig = {};
+                    if (oldSwiperInstance) {
+                        swiperConfig = oldSwiperInstance.params; // 기존 Swiper 설정 저장
+                        oldSwiperInstance.destroy(true, true);
                     }
 
-                    // 모달 컨테이너 생성
+                    // 모달 생성
                     const modalContainer = document.createElement("div");
                     modalContainer.classList.add("modal-overlay");
 
-                    // 복제된 슬라이드 요소 생성 (스타일 & 이벤트 포함)
+                    // 기존 슬라이드 복사
                     let clonedSlides = Array.from(parentContainer.querySelectorAll(".swiper-slide"))
-                        .map(slide => {
-                            let clonedSlide = slide.cloneNode(true); // 요소 깊은 복사 (스타일 유지)
-                            return `<div class="swiper-slide">${clonedSlide.innerHTML}</div>`;
-                        })
+                        .map(slide => `<div class="swiper-slide">${slide.innerHTML}</div>`)
                         .join("");
 
-                    // 복제된 요소 삽입
                     modalContainer.innerHTML = `
                         <div class="main-modal-content">
                             <div class="swiper modal-swiper">
@@ -2117,14 +2117,14 @@
                                 <div class="swiper-button-next"></div>
                                 <div class="swiper-button-prev"></div>
                             </div>
-                            <span class="close-button">닫기</span> <!--&times; >> X버튼-->
+                            <span class="close-button">닫기</span>
                         </div>
                     `;
 
                     document.body.appendChild(modalContainer);
-                    document.body.style.overflow = "hidden"; // 스크롤 방지
+                    document.body.style.overflow = "hidden";
 
-                    // Swiper 새로 초기화
+                    // 모달 Swiper 초기화
                     new Swiper(".modal-swiper", {
                         slidesPerView: 1,
                         navigation: {
@@ -2133,17 +2133,26 @@
                         },
                     });
 
-                    // 닫기 버튼 클릭 시 모달 제거
+                    // 모달 닫기
                     modalContainer.querySelector(".close-button").addEventListener("click", function () {
                         modalContainer.remove();
-                        document.body.style.overflow = ""; // 스크롤 복원
+                        document.body.style.overflow = "";
+
+                        // 기존 Swiper 다시 초기화
+                        if (oldSwiper) {
+                            new Swiper(oldSwiper, swiperConfig);
+                        }
                     });
 
-                    // 모달 외부 클릭 시 닫기
                     modalContainer.addEventListener("click", function (e) {
                         if (e.target === modalContainer) {
                             modalContainer.remove();
-                            document.body.style.overflow = ""; // 스크롤 복원
+                            document.body.style.overflow = "";
+
+                            // 기존 Swiper 다시 초기화
+                            if (oldSwiper) {
+                                new Swiper(oldSwiper, swiperConfig);
+                            }
                         }
                     });
                 });
