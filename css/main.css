@@ -512,9 +512,12 @@
   text-align: center;
 }
 .close-button {
-  width: fit-content;
-  padding: 0 14px;
-  padding-bottom: 2px;
+  display: block;
+  width: 62px;
+  height: 64px;
+  padding-bottom: 4px;
+  box-sizing: border-box; 
+  line-height: 60px;
   font-size: 50px;
   font-weight: 500;
   color: #144974;
