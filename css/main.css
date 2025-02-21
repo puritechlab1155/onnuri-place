@@ -198,7 +198,7 @@
   display: block;
   width: 100%;
   font-family: "Pretendard-Bold";
-  font-size: clamp(22px, 3vw, 36px);
+  font-size: clamp(20px, 1.6vw, 36px);
   font-weight: 700;
   line-height: 120%;
   letter-spacing: -0.36px;
@@ -489,6 +489,9 @@
   background: #5eb7ff77 !important;
   padding: 6px 10px;
 }
+#home .mainIndex .section01 .d-none {
+  display: none;
+}
 
 /* section02 */
 #home .mainIndex .section02 {
@@ -719,6 +722,9 @@
     animation-delay: 0.5s;
   }
   /*section01*/
+  #home .mainIndex .section01 .d-none {
+    display: block;
+  }
   #home .mainIndex .section01 {
     padding: 73px 0 0;
   }
@@ -800,9 +806,6 @@
 }
 @media (max-width: 524px) { /*모바일 폰트 사이즈로 줄기*/
   /*main_visual*/
-  #home .mainIndex .main_visual .d-none {
-    display: block;
-  }
   #home .mainIndex .main_visual .text-box .text-box-inner .text span {
     font-size: 18px;
   }
