@@ -662,7 +662,7 @@
   #home .mainIndex .main_visual .swiper-button-prev {
     display: none;
   }
-)
+}
 @media (max-width: 1014px) {
   /*main_visual*/
   #home .mainIndex .main_visual .swiper-button-next, 
