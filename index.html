@@ -26,6 +26,10 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/main.css">
+
+    <style>
+        
+    </style>
 </head>
 <body>
     <section id="home">
@@ -34,7 +38,7 @@
                 <div class="content">
                     <h1 class="logo">
                         <a href="https://puritechlab1155.github.io/onnuri-place/index.html">
-                            <img src="img/avv_logo3.png" alt="온누리선교재단 / Acts29 Visionvillage" class="logo-img">
+                            <img src="img/img/offcanvas-logo3.png.png" alt="온누리선교재단 / Acts29 Visionvillage" class="logo-img">
                             <span class="blind">온누리선교재단 / Acts29 Visionvillage</span>
                         </a>
                     </h1>
@@ -1607,7 +1611,7 @@
                     <h2>제 1 장 이용약관</h2>
                     <p><b>제 1 조 (목적)</b>
                         <br>
-                        본 약관은 온누리선교재단(이하 “단체”라 합니다)이 운영하는 웹사이트 ‘온누리선교재단’ (actvillage.org) (이하 “웹사이트”라 합니다)에서 제공하는 온라인 서비스(이하 “서비스”라 한다)를 이용함에 있어 사이버몰과 이용자의 권리, 의무 및 책임사항을 규정함을 목적으로 합니다.
+                        본 약관은 온누리선교재단(이하 “단체”라 합니다)이 운영하는 웹사이트 ‘온누리선교재단’ (<a href="https://www.acts29training.org">acts29training.org</a>) (이하 “웹사이트”라 합니다)에서 제공하는 온라인 서비스(이하 “서비스”라 한다)를 이용함에 있어 사이버몰과 이용자의 권리, 의무 및 책임사항을 규정함을 목적으로 합니다.
                         <br><br>
                         <b>제 2 조 (용어의 정의)</b>
                         <br>
@@ -2004,13 +2008,122 @@
             localStorage.setItem("hidePopup", tomorrow.getTime()); // 로컬스토리지 저장
             popup.style.display = "none"; // 팝업 숨기기
         });
+
+        // 시설예약하기 모달 팝업창
+        let isModalEnabled = window.innerWidth > 767; // 초기값 설정
+        let oldSwiperInstance = null;
+        let swiperConfig = {};
+
+        function setupModalEvents() {
+            document.querySelectorAll(".room-img").forEach(img => {
+                img.addEventListener("click", openModal);
+            });
+        }
+
+        function removeModalEvents() {
+            document.querySelectorAll(".room-img").forEach(img => {
+                img.removeEventListener("click", openModal);
+            });
+        }
+
+        function restoreOriginalSwiper() {
+            if (oldSwiperInstance) {
+                new Swiper(oldSwiperInstance.el, swiperConfig);
+                oldSwiperInstance = null;
+            }
+        }
+
+        function closeModal() {
+            const modalContainer = document.querySelector(".modal-overlay");
+            if (modalContainer) {
+                modalContainer.remove();
+                document.body.style.overflow = "";
+
+                restoreOriginalSwiper(); // 기존 슬라이드 복원
+            }
+        }
+
+        function openModal() {
+            if (window.innerWidth <= 767) return; // 767px 이하일 때 실행 안 함
+
+            const parentContainer = this.closest(".content-slide") || this.closest(".grid-content-list");
+            if (!parentContainer) return;
+
+            let oldSwiper = parentContainer.querySelector(".swiper");
+            oldSwiperInstance = oldSwiper?.swiper;
+
+            if (oldSwiperInstance) {
+                swiperConfig = oldSwiperInstance.params;
+                oldSwiperInstance.destroy(true, true);
+            }
+
+            const modalContainer = document.createElement("div");
+            modalContainer.classList.add("modal-overlay");
+
+            let clonedSlides = Array.from(parentContainer.querySelectorAll(".swiper-slide"))
+                .map(slide => `<div class="swiper-slide">${slide.innerHTML}</div>`)
+                .join("");
+
+            modalContainer.innerHTML = `
+                <div class="main-modal-content">
+                    <div class="swiper modal-swiper">
+                        <div class="swiper-wrapper">
+                            ${clonedSlides}
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <span class="close-button">&times;</span>
+                </div>
+            `;
+
+            document.body.appendChild(modalContainer);
+            document.body.style.overflow = "hidden";
+
+            new Swiper(".modal-swiper", {
+                slidesPerView: 1,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+
+            modalContainer.querySelector(".close-button").addEventListener("click", function () {
+                closeModal();
+            });
+
+            modalContainer.addEventListener("click", function (e) {
+                if (e.target === modalContainer) {
+                    closeModal();
+                }
+            });
+        }
+
+        // 초기 로딩 시 적용
+        if (isModalEnabled) {
+            setupModalEvents();
+        }
+
+        // 윈도우 크기 변경 시 적용
+        window.addEventListener("resize", function () {
+            let newState = window.innerWidth > 767;
+            if (newState !== isModalEnabled) {
+                isModalEnabled = newState;
+                if (isModalEnabled) {
+                    setupModalEvents();
+                } else {
+                    removeModalEvents();
+                    closeModal(); // 화면 크기가 767px 이하로 줄어들면 모달 닫기
+                    restoreOriginalSwiper(); // 기존 슬라이드 기능 복원
+                }
+            }
+        });
     });
 
     </script>
 
     <script>
         $(document).ready(function() {
-            // 스크롤 시 헤더 스타일 변경 및 모바일 메뉴 클릭 이벤트
             let $header = $('.header');
             let $logoImg = $('.logo img');
             let $menuItem = $('.pc_display .gnb-item > a');
@@ -2018,174 +2131,67 @@
             let $line = $('.line');
             let $hamIcon = $('.offcanvas-open span');
             let $offcanvasBtn = $('.offcanvas-open')
+            let $scrollTop = $(window).scrollTop(); // 전역 변수로 선언
 
-            // 초기 헤더 스타일 설정
+            $offcanvasBtn.click(function() {
+                if($scrollTop === 0 && !$(this).hasClass('active')) {
+                    $logoImg.attr('src', 'img/avv_logo3.png');
+                }
+                
+                if($scrollTop === 0 && $(this).hasClass('active')){
+                    $logoImg.attr('src', 'img/offcanvas-logo3.png');
+                    $header.css({ background: 'transparent' });
+                    $hamIcon.css({ background: '#fff' });
+
+                } else if($scrollTop > 0 && $(this).hasClass('active')) {
+                    $logoImg.attr('src', 'img/avv_logo3.png');
+                    $header.css({ background: '#fff'});
+                    $hamIcon.css({ background: '#222' });
+
+                }
+            });
+
             changeHead();
 
-
-            $(window).scroll(function() {
-                changeHead();
-            });
-
-            // 햄버거 아이콘 클릭 이벤트
-            $hamIcon.click(function() {
-                changeHead();
-
-                // 스크롤 탑이 0이고, 닫혔을때
-                if ($scrollTop === 0 && !$(this).hasClass('active')) { 
-                    $logoImg.attr('src', 'avv_logo3.png');
-                    $hamIcon.css({ background: '#fff' });
-                    
-                // 열렸을때
-                } else if ($(this).hasClass('active')) {
-                    $hamIcon.css({ background: '#222' });
-                }
-            });
-
             function changeHead() {
-                let $scrollTop = $(window).scrollTop();
-
-                if ($scrollTop > 0) { // 스크롤 탑이 0 이상
-                    $header.css({ background: '#fff' });
-                    $logoImg.attr('src', 'img/avv_logo3.png');
-                    $menuItem.css({ color: '#222' });
-                    $menuItem.mouseleave (function(){
-                        $(this).css({ color: '#222' });
-                    });
-                    $userBtn.css({ color: '#222' });
-                    $line.css({ background: '#999' });
-                    $hamIcon.css({ background: '#222' });
-                    $menuItem.mouseenter (function(){
-                        $(this).css({ color: '#9A2626' });
-                    });
-
-                }
-                else { // 스크롤 탑이 0
-                    $header.css({ background: '#fff' }); //0000003b
-                    $logoImg.attr('src', 'img/avv_logo3.png');
-                    $menuItem.css({ color: '#222' });
-                    $menuItem.mouseleave (function(){
-                        $(this).css({ color: '#222' });
+                if ($scrollTop === 0) {
+                    $header.css({ background: 'transparent' });
+                    $menuItem.css({ color: '#fff' });
+                    $menuItem.mouseleave(function() {
+                        $(this).css({ color: '#fff' });
                     });
                     $userBtn.css({ color: '#fff' });
                     $line.css({ background: '#fff' });
+                    $hamIcon.css({ background: '#fff' });
+                    $menuItem.mouseenter(function() {
+                        $(this).css({ color: '#E5FF00' });
+                    });
+                    oriImg();
+
+                } else {
+                    $header.css({ background: '#fff' });
+                    $menuItem.css({ color: '#222' });
+                    $menuItem.mouseleave(function() {
+                        $(this).css({ color: '#222' });
+                    } );
+                    $userBtn.css({ color: '#222' });
+                    $line.css({ background: '#999' });
                     $hamIcon.css({ background: '#222' });
-                    $menuItem.mouseenter (function(){
+                    $menuItem.mouseenter(function() {
                         $(this).css({ color: '#9A2626' });
                     });
-                }
-            } 
-        });
-        
-        // 시설예약하기 모달 팝업창
-        document.addEventListener("DOMContentLoaded", function () {
-            let isModalEnabled = window.innerWidth > 767; // 초기값 설정
-            let oldSwiperInstance = null;
-            let swiperConfig = {};
-
-            function setupModalEvents() {
-                document.querySelectorAll(".room-img").forEach(img => {
-                    img.addEventListener("click", openModal);
-                });
-            }
-
-            function removeModalEvents() {
-                document.querySelectorAll(".room-img").forEach(img => {
-                    img.removeEventListener("click", openModal);
-                });
-            }
-
-            function restoreOriginalSwiper() {
-                if (oldSwiperInstance) {
-                    new Swiper(oldSwiperInstance.el, swiperConfig);
-                    oldSwiperInstance = null;
+                    $logoImg.attr('src', 'img/avv_logo3.png'); // 🔹 스크롤이 있으면 변경
                 }
             }
 
-            function closeModal() {
-                const modalContainer = document.querySelector(".modal-overlay");
-                if (modalContainer) {
-                    modalContainer.remove();
-                    document.body.style.overflow = "";
-
-                    restoreOriginalSwiper(); // 기존 슬라이드 복원
-                }
+            function oriImg(){
+                $logoImg.attr('src', 'img/offcanvas-logo3.png');
             }
 
-            function openModal() {
-                if (window.innerWidth <= 767) return; // 767px 이하일 때 실행 안 함
+            $(window).scroll(function() {
+                $scrollTop = $(window).scrollTop();
 
-                const parentContainer = this.closest(".content-slide") || this.closest(".grid-content-list");
-                if (!parentContainer) return;
-
-                let oldSwiper = parentContainer.querySelector(".swiper");
-                oldSwiperInstance = oldSwiper?.swiper;
-
-                if (oldSwiperInstance) {
-                    swiperConfig = oldSwiperInstance.params;
-                    oldSwiperInstance.destroy(true, true);
-                }
-
-                const modalContainer = document.createElement("div");
-                modalContainer.classList.add("modal-overlay");
-
-                let clonedSlides = Array.from(parentContainer.querySelectorAll(".swiper-slide"))
-                    .map(slide => `<div class="swiper-slide">${slide.innerHTML}</div>`)
-                    .join("");
-
-                modalContainer.innerHTML = `
-                    <div class="main-modal-content">
-                        <div class="swiper modal-swiper">
-                            <div class="swiper-wrapper">
-                                ${clonedSlides}
-                            </div>
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                        </div>
-                        <span class="close-button">&times;</span>
-                    </div>
-                `;
-
-                document.body.appendChild(modalContainer);
-                document.body.style.overflow = "hidden";
-
-                new Swiper(".modal-swiper", {
-                    slidesPerView: 1,
-                    navigation: {
-                        nextEl: ".swiper-button-next",
-                        prevEl: ".swiper-button-prev",
-                    },
-                });
-
-                modalContainer.querySelector(".close-button").addEventListener("click", function () {
-                    closeModal();
-                });
-
-                modalContainer.addEventListener("click", function (e) {
-                    if (e.target === modalContainer) {
-                        closeModal();
-                    }
-                });
-            }
-
-            // 초기 로딩 시 적용
-            if (isModalEnabled) {
-                setupModalEvents();
-            }
-
-            // 윈도우 크기 변경 시 적용
-            window.addEventListener("resize", function () {
-                let newState = window.innerWidth > 767;
-                if (newState !== isModalEnabled) {
-                    isModalEnabled = newState;
-                    if (isModalEnabled) {
-                        setupModalEvents();
-                    } else {
-                        removeModalEvents();
-                        closeModal(); // 화면 크기가 767px 이하로 줄어들면 모달 닫기
-                        restoreOriginalSwiper(); // 기존 슬라이드 기능 복원
-                    }
-                }
+                changeHead();
             });
         });
     </script>
